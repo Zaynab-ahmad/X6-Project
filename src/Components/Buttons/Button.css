@@ -1,0 +1,24 @@
+.mainButton {
+    padding: 18px 24px;
+    height: fit-content;
+    width: fit-content;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 8px;
+}
+@media (max-width: 1440px) {
+    .mainButton {
+        font-size: 14px;
+        border-radius: 6px;
+        }
+    .smallerBorderRaduis {
+            border-radius: 6px;
+        }   
+}
+
+@media (max-width:390px) {
+    .fullWidthMed {
+            width: 100%;
+        }
+    
+}

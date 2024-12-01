@@ -6,7 +6,7 @@ export default function Button({ text, isFullWidth, isSmallerBorderRaduis, isBla
       <button
         className={`
           mainButton
-          ${isFullWidth ? "fullWidthMed" : ""} 
+          ${isFullWidth ? "fullWidth" : ""} 
           ${isSmallerBorderRaduis ? "smallerBorderRaduis" : ""}
         `.trim()}
         style={{

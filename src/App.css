@@ -1,24 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Manrope", serif;
-    background-color: var(--black-shade08);
-    
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", serif;
 }
 :root {
-    --absolute-colors1: #FFFFFF;
-    --absolute-colors1: #000000;
-    --primary-color-red: #E50000;
-    --primary-color-gray: #999999;
-    --black-shade06: #0F0F0F;
-    --black-shade08: #141414;
-    --black-shade10: #1A1A1A;
-    --black-shade12: #1F1F1F;
-    --black-shade15: #262626;
-    --black-shade20: #333333;
-    --black-shade25: #404040;
-    --black-shade30: #4D4D4D;
-    
+  --absolute-white: #ffffff;
+  --absolute-black: #000000;
+  --primary-color-red: #e50000;
+  --primary-color-gray: #999999;
+  --black-shade06: #0f0f0f;
+  --black-shade08: #141414;
+  --black-shade10: #1a1a1a;
+  --black-shade12: #1f1f1f;
+  --black-shade15: #262626;
+  --black-shade20: #333333;
+  --black-shade25: #404040;
+  --black-shade30: #4d4d4d;
+}
+html,
+body,
+#root {
+  height: 100%;
+  background-color: var(--black-shade08);
+}
+.xContainer {
+  padding: 0 8.4375%;
+}
+.customMargin {
+    margin-bottom: 150px;
+}
+
+@media (max-width: 1440px) {
+  .xContainer {
+    padding: 0 5.5556%;
+  }
+  .customMargin {
+      margin-bottom: 120px;
+  }
+}
+
+@media (max-width: 576px) {
+  .xContainer {
+    padding: 0 4.1026%;
+  }
+   .customMargin {
+       margin-bottom: 80px;
+   }
 }

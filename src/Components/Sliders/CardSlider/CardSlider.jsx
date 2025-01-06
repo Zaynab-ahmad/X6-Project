@@ -28,9 +28,9 @@ export default function CardSlider({ cards, slidesToShow }) {
   const [currentSlide, setCurrentSlide] = useState(0);
   const settings = {
     infinite: true,
-    speed: 500,
+    speed: 200,
     slidesToShow: slidesToShow,
-    slidesToScroll: 1,
+    slidesToScroll: 5,
     arrows: false,
     beforeChange: (_, next) => setCurrentSlide(next),
     responsive: [

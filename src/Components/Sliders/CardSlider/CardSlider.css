@@ -99,12 +99,6 @@
 
   .paginationDot {
     width: 14px;
-    background: linear-gradient(to left,
-          #e50000 0%,
-          #220e0e 90.96%,
-          #140f0f 97.47%,
-          #0f0f0f 100%);
-
   }
 
   .paginationDot.active {

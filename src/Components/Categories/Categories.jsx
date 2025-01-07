@@ -25,14 +25,14 @@ export default function Categories() {
       key={index}
       text={data.text}
       imagesArray={data.imagesArray}
-      badge={true}
+      badge={false}
     />
   ));
   return (
     <div id ="Categories" className="xContainer customMargin">
       <HomeMoviesAndShowsTitle title="Explore our wide variety of categories" home={true}/>
       <HomeParagraph paragraph ="Whether you're looking for a comedy to make you laugh, a drama to make you think, or a documentary to learn something new"/>
-      <CardSlider cards={cards} slidesToShow={4} />
+      <CardSlider cards={cards} slidesToShow={5} />
     </div>
   );
 }

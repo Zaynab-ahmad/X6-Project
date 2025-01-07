@@ -22,6 +22,7 @@
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  /* Two equal-width columns */
   position: relative;
   z-index: 1;
   justify-content: center;
@@ -38,10 +39,17 @@
 .multiImgsZA {
   width: 100%;
   height: auto;
-  aspect-ratio: 1 / 1;
   border-radius: 10px;
   object-fit: cover;
   transition: all 0.3s ease;
+}
+
+.defaultRatio {
+  aspect-ratio: 3 / 3.6; /*width to height ratio*/
+}
+
+.customRatio {
+  aspect-ratio: 1 / 0.95;
 }
 
 .genreZA {
@@ -62,9 +70,11 @@
     font-weight: 600;
     line-height: 27px;
   }
+
   .multiImgsCardTextZA {
     font-size: 18px;
   }
+
   .multiImgsCardTextZAWithBadge {
     font-size: 20px;
     line-height: 30px;
@@ -94,12 +104,16 @@
     padding: 24px;
   }
 
-  .imageGallery {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .multiImgsZA {
     border-radius: 4px;
+  }
+
+  .defaultRatio {
+    aspect-ratio: 3 / 3.4;
+  }
+
+  .customRatio {
+    aspect-ratio: 1 / 0.94;
   }
 
   .multiImgsCardTextZA,
@@ -121,22 +135,39 @@
     height: 24px;
   }
 }
+
 @media (max-width: 768px) {
   .genreZA .multiImgsCardTextZA {
     font-size: 14px !important;
     line-height: 21px !important;
   }
+
   .genreZA img {
     width: 20px;
     height: 20px;
   }
+
   .multiImgsCardTextZAWithBadge {
     font-size: 16px;
     line-height: 24px;
   }
 }
+
 @media (max-width: 576px) {
   .multiImgsCardZA {
     padding: 20px;
   }
+
+  .multiImgsZA {
+    border-radius: 4px;
+  }
+
+  .defaultRatio {
+    aspect-ratio: 3 / 3.28;
+  }
+
+  .customRatio {
+    aspect-ratio: 1 / 0.96;
+  }
+
 }

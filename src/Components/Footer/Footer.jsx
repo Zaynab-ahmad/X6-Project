@@ -1,4 +1,4 @@
-import { Row, Col, Container } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import React, { useState, useEffect } from "react";
 import "./Footer.css";
 import Facebook from "../../assets/Icons/facebook.svg";
@@ -29,7 +29,7 @@ export default function Footer() {
   }, []);
   return (
     <div className="footer">
-    <div className="xContainer text-white">
+    <div className="xContainer">
         <Row className="footerTopSection customFootergapZA">
         {/* Home Section */}
         <Col className="col-6 col-md-4 col-lg-2 d-flex flex-column">

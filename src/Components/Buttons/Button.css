@@ -7,6 +7,9 @@
     font-weight: 600;
     border-radius: 8px;
 }
+.mainButton:hover {
+    filter: brightness(0.8);
+}
 @media (max-width: 1440px) {
     .mainButton {
         font-size: 14px;

@@ -18,7 +18,8 @@ export default function MultiImgsCard({ text, imagesArray, badge }) {
           }}>
           {imagesArray.slice(0, 4).map((movie, index) => (
             <div key={index}>
-              <img className="multiImgsZA" src={movie.src} alt={movie.alt} />
+              <img className={`multiImgsZA ${badge ? 'customRatio' : 'defaultRatio'}`}
+              src={movie.src} alt={movie.alt} />
             </div>
           ))}
         </div>

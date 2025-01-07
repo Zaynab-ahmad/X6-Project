@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Manrope", serif;
 }
+
 :root {
   --absolute-white: #ffffff;
   --absolute-black: #000000;
@@ -19,25 +21,29 @@
   --black-shade25: #404040;
   --black-shade30: #4d4d4d;
 }
+
 html,
 body,
 #root {
   height: 100%;
   background-color: var(--black-shade08);
 }
+
 .xContainer {
   padding: 0 8.4375%;
 }
+
 .customMargin {
-    margin-bottom: 150px;
+  margin-bottom: 150px;
 }
 
 @media (max-width: 1440px) {
   .xContainer {
     padding: 0 5.5556%;
   }
+
   .customMargin {
-      margin-bottom: 120px;
+    margin-bottom: 120px;
   }
 }
 
@@ -45,7 +51,8 @@ body,
   .xContainer {
     padding: 0 4.1026%;
   }
-   .customMargin {
-       margin-bottom: 80px;
-   }
+
+  .customMargin {
+    margin-bottom: 80px;
+  }
 }

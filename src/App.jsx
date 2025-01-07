@@ -11,6 +11,10 @@ import ShowsPageOpen from './Pages/ShowsPageOpen/ShowsPageOpen'
 import Subscription from './Pages/Subscription/Subscription'
 import Support from './Pages/Support/Support'
 import MainFooter from './Components/MainFooter/MainFooter';
+import "../src/assets/Imgs/Logo.png";
+import "../src/assets/Icons/search.svg";
+import '../src/assets/Icons/Ring.svg';
+
 function App() {
  
   return (

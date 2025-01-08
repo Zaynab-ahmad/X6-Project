@@ -1,8 +1,6 @@
 import { useState } from 'react';
-import Button from '../Buttons/Button'
 import './NavBar.css'
 import Nav from 'react-bootstrap/Nav';
-import { LinkContainer } from 'react-router-bootstrap';
 import ring from '../../assets/Icons/Ring.svg';
 import search from '../../assets/Icons/search.svg';
 import logo from '../../assets/Imgs/Logo.png';
@@ -13,8 +11,8 @@ export default function NavBar() {
     const [activeLink, setActiveLink] = useState('Home');
 
     return (
-        <div className='kr-navbar '>
-            <img className='kr-logo' src={logo} alt="" />
+        <div className='kr-navbar xContainer'>
+            <img className='kr-logo' src={logo} alt="logo" />
             <Nav className='kr-navigation-container' variant="pills" defaultActiveKey="/home">
                 <Nav.Item className='kr-navitem'>
                     <Nav.Link as={Link} to={'/'}
@@ -43,11 +41,11 @@ export default function NavBar() {
 
             </Nav>
             <div className='kr-icons-container'>
-                <img src={search} alt="" />
-                <img src={ring} alt="" />
+                <img src={search} alt="search" />
+                <img src={ring} alt="ring" />
             </div>
             <button className='barsBtn'>
-                <img src={bars} alt="" />
+                <img src={bars} alt="bars" />
             </button>
             
 

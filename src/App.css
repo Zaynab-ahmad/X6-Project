@@ -30,7 +30,8 @@ body,
 }
 
 .xContainer {
-  padding: 0 8.4375%;
+  padding-left:  8.4375%;
+  padding-right:  8.4375%;
 }
 
 .customMargin {
@@ -39,7 +40,8 @@ body,
 
 @media (max-width: 1440px) {
   .xContainer {
-    padding: 0 5.5556%;
+    padding-left:  5.5556%;
+    padding-right:  5.5556%;
   }
 
   .customMargin {
@@ -49,7 +51,8 @@ body,
 
 @media (max-width: 576px) {
   .xContainer {
-    padding: 0 4.1026%;
+    padding-left: 4.1026%;
+    padding-right: 4.1026%;
   }
 
   .customMargin {

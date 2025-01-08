@@ -7,25 +7,21 @@ import icon3 from"./../../assets/Icons/smartTV.svg"
 import icon4 from "./../../assets/Icons/laptops.svg"
 import icon5 from"./../../assets/Icons/gaming.svg"
 import icon6 from "./../../assets/Icons/VRheadsets.svg"
+import HomeMoviesAndShowsTitle from '../SharedTitlesAndParagraph/HomeMoviesAndShows/HomeMoviesAndShowsTitle'
+import HomeParagraph from '../SharedTitlesAndParagraph/HomeParagraph/HomeParagraph'
 export default function Devices() {
 
   
   return (
     // the device section
-    <div className='StreamingExperienceTay'>
+    <div className='StreamingExperienceTay xContainer customMargin'>
        {/* the devicetitle */}
-      <div className='StreamingExperienceTitleTay'>
-        {/* the maintitleof sectin */}
-        <h3 className='StreamingExperienceH3Tay'>We Provide you streaming experience across various devices.</h3>
-        {/* the paragraph of section */}
-        <p className='StreamingExperiencePTay'>With StreamVibe, you can enjoy your favorite movies and TV shows anytime,
+       <div className='deviceTitle'>
+       <HomeMoviesAndShowsTitle title ="We Provide you streaming experience across various devices." home={true}/>
+       <HomeParagraph paragraph ="With StreamVibe, you can enjoy your favorite movies and TV shows anytime,
            anywhere. Our platform is designed to be compatible with 
-           a wide range of devices, 
-           ensuring that you 
-          never miss a moment of entertainment.</p>
-
-      </div>
-
+           a wide range of devices, ensuring that you never miss a moment of entertainment."/>
+       </div>
       {/* the devicecards */}
       <div className='StreamingExperienceCardsTay'>
               {/* onepartofdevicecards */}

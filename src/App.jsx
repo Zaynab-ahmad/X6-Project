@@ -1,3 +1,4 @@
+
 import './App.css'
 import { Routes, Route } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -11,22 +12,22 @@ import ShowsPageOpen from './Pages/ShowsPageOpen/ShowsPageOpen'
 import Subscription from './Pages/Subscription/Subscription'
 import Support from './Pages/Support/Support'
 import MainFooter from './Components/MainFooter/MainFooter'
+
 function App() {
- 
   return (
     <>
-      <NavBar/>
+      <NavBar />
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/movies-and-shows' element={<MoviesAndShows />} />
-        <Route path='/moviespageopen/:id' element={<MoviesPageOpen />} />
-        <Route path='/showspageopen/:id' element={<ShowsPageOpen />} />
-        <Route path='/subscription' element={<Subscription />} />
-        <Route path='/support' element={<Support />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/movies-and-shows" element={<MoviesAndShows />} />
+        <Route path="/moviespageopen/:id" element={<MoviesPageOpen />} />
+        <Route path="/showspageopen/:id" element={<ShowsPageOpen />} />
+        <Route path="/subscription" element={<Subscription />} />
+        <Route path="/support" element={<Support />} />
       </Routes>
-      <MainFooter/>
+      <MainFooter />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

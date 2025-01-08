@@ -1,0 +1,109 @@
+.plans {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.plan {
+  background-color: #1a1a1a;
+  box-sizing: border-box;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+.plan h2 {
+  background-color: inherit;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.plan p {
+  background-color: inherit;
+  color: #999999;
+  margin-bottom: 20px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.price{
+ background-color: inherit;
+  margin-bottom: 20px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 73%;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 0px;
+  gap: 4px;
+}
+
+.price span {
+  background-color: inherit;
+  color: #aaa;
+  width: 63px;
+  height: 13px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 73%;
+  color: #999999;
+}
+
+button {
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  padding: 18px;
+  margin: 5px 0;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+button.trial {
+  background-color: #141414;
+  border: 1px solid #262626;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+  background-color: inherit;
+}
+
+
+@media (max-width: 768px) {
+  .button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .plan {
+    flex: 1 1 100%;
+  }
+}

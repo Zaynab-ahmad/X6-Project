@@ -1,0 +1,128 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #141414;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 80px;
+  padding: 20px;
+  position: relative;
+  background: #141414;
+}
+
+.part1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.part2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 14px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.pa {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #999999;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.toggle-buttons {
+  background-color: #0f0f0f;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-sizing: border-box;
+  border: 1px solid #262626;
+}
+
+.toggle {
+  background-color: inherit;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 24px;
+  gap: 10px;
+  width: 99px;
+  height: 55px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.toggle2{
+  color:#999999;
+}
+
+.toggle.active {
+  background-color: #1f1f1f;
+}
+
+
+@media (max-width: 425px) {
+  .container {
+    max-width: 100%;
+    padding: 1rem;
+    flex-direction: column;
+  }
+  .part1 {
+    align-items: start;
+    flex-direction: column;
+  }
+  .toggle-buttons {
+    margin-bottom: 1rem;
+  }
+  .plans {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+  .part1 {
+    text-align: left;
+  }
+
+  .part2 {
+    max-width: 100%; 
+  }
+}

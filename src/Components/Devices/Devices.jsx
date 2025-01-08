@@ -1,3 +1,4 @@
+
 import DevicesCard from '../Cards/DevicesCard/DevicesCard'
 import './Devices.css'
 import icon1 from "./../../assets/Icons/smartphone.svg"
@@ -7,8 +8,9 @@ import icon4 from "./../../assets/Icons/laptops.svg"
 import icon5 from"./../../assets/Icons/gaming.svg"
 import icon6 from "./../../assets/Icons/VRheadsets.svg"
 export default function Devices() {
-  return (
 
+  
+  return (
     // the device section
     <div className='StreamingExperienceTay'>
        {/* the devicetitle */}
@@ -49,6 +51,8 @@ export default function Devices() {
                 <DevicesCard  icon={icon5} title={"Gaming Consoles"}/>
                 <DevicesCard  icon={icon6} title={"VR Headsets "}/>
          </div>
+
     </div>
+      
   )
 }

@@ -111,7 +111,7 @@ color: var(--absolute-white);
     flex-direction: column !important;
     flex-wrap: wrap;
    text-align: center;
-    /*margin-bottom: 2px;*/
+   /*margin-bottom: 50px;*/
     gap: 10px;
    
 }
@@ -120,7 +120,7 @@ color: var(--absolute-white);
     font-size: 24px;
     line-height: 36px;
     align-items: center;
-    color: #ffffff;
+   
     
 }
 .ctaTextSection p

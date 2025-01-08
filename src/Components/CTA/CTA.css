@@ -110,6 +110,7 @@ color: var(--absolute-white);
     display: flex;
     flex-direction: column !important;
     flex-wrap: wrap;
+    text-align: center;
     gap: 10px;
    
 }

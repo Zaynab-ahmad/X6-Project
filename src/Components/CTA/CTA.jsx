@@ -1,9 +1,10 @@
-import './CTA.css'
-
+import Button from '../Buttons/Button';
+import './CTA.css';
 export default function CTA() {
   return (
-    <div>
-      CTA
+    <div className=''>
+    
     </div>
-  )
+  );
 }
+

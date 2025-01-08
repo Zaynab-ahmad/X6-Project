@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom';
 import bars from '../../assets/Icons/bars.svg'
 
 export default function NavBar() {
+
     const [activeLink, setActiveLink] = useState('Home');
 
     return (
@@ -51,5 +52,6 @@ export default function NavBar() {
 
         </div>
     )
+
 
 }

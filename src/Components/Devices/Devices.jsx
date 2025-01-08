@@ -13,6 +13,7 @@ export default function Devices() {
 
   
   return (
+
     // the device section
     <div className='StreamingExperienceTay xContainer customMargin'>
        {/* the devicetitle */}
@@ -47,6 +48,7 @@ export default function Devices() {
                 <DevicesCard  icon={icon5} title={"Gaming Consoles"}/>
                 <DevicesCard  icon={icon6} title={"VR Headsets "}/>
          </div>
+
 
     </div>
       

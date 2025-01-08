@@ -8,6 +8,7 @@ import overlay from '../../../assets/Imgs/overlay.png'
 
 export default function HomeHero() {
   return (
+
     <div className='heroContainer'>
       
       <div className='kr-subcontainer-1'>

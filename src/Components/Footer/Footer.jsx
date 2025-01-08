@@ -28,6 +28,7 @@ export default function Footer() {
     return () => window.removeEventListener("resize", updatePadding);
   }, []);
   return (
+
     <div className="footer">
     <div className="xContainer">
         <Row className="footerTopSection customFootergapZA">
@@ -163,6 +164,7 @@ export default function Footer() {
         
 
     </div>
+
     </div>
 
   );

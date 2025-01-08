@@ -145,6 +145,7 @@ export default function FAQs() {
     
     
     </>
+
   )
 }
 

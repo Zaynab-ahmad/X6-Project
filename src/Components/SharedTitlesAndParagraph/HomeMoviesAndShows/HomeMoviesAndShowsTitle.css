@@ -1,0 +1,45 @@
+.homeTitleZA,
+.moviesAndShowsTitle {
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 57px;
+  color: var(--absolute-white);
+  margin: 0;
+}
+.homeTitleZA {
+   padding-bottom: 14px;
+}
+.moviesAndShowsTitle {
+    padding-bottom: 15.5px;
+}
+@media (max-width: 1440px) {
+  .homeTitleZA {
+    font-size: 28px;
+    line-height: 42px;
+   padding-bottom: 10px;
+  }
+  .moviesAndShowsTitle {
+    font-size: 30px;
+    line-height: 45px;
+   padding-bottom: 11.5;
+  }
+  @media (max-width: 1200px) {
+    .homeTitleZA
+     {
+      font-size: 26px;
+    }
+}
+}
+@media (max-width: 576px) {
+  .homeTitleZA,
+  .moviesAndShowsTitle {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .homeTitleZA {
+   padding-bottom: 8px;
+  }
+  .moviesAndShowsTitle {
+   padding-bottom: 0;
+  }
+}

@@ -8,11 +8,13 @@ import './Home.css'
 export default function Home() {
   return (
     <div>
+      
       <HomeHero/>
       <Categories/>
       <Devices/>
       <FAQs/>
-      <Pricing/> 
+      <Pricing/>
+      
     </div>
   )
 }

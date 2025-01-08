@@ -1,0 +1,265 @@
+
+.CardTay{ 
+  display: flex; 
+ align-items: start;
+ flex-direction: column;
+  margin-bottom: 30px;
+  top:10px;
+  width: 26.654%;
+  padding: 50px 0px 0px 0px;
+  gap: 30px;
+  border-radius: 12px 0px 0px 0px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  border: 1px solid rgba(38, 38, 38, 1);
+}
+.CardTitleTay{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 80.470%;
+  gap: 16px;
+  opacity: 0px;
+}
+.CardIconTay{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:54px;
+    padding: 16px 0px 0px 0px;
+    gap: 10px;
+    border-radius: 5px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    background: rgba(20, 20, 20, 1);
+    border: 1px solid rgba(31, 31, 31, 1) ; }  
+.IconTay{
+padding: 2px;
+width: 36.61px;
+height: 26.8px;
+left: 0px;
+gap: 0px;
+border: 1px 0px 0px 0px;
+opacity: 0px;
+}
+.CardTitleH4Tay{
+gap: 0px;
+opacity: 0px;
+font-family: Manrope;
+font-size: 24px;
+font-weight: 600;
+line-height: 36px;
+text-align: left;
+margin-bottom: 0px;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: rgba(255, 255, 255, 1);
+}
+.CardPTay{
+  padding-left: 50px;
+  padding-right: 50px;
+  width: Fill (412.33px)px; 
+  gap: 0px;
+  opacity: 0px;
+  font-family: Manrope;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@media(max-width:576px){
+  .CardTay{
+    margin-bottom: 30px;
+    width: 100%;
+    padding: 24px 0px 0px 0px;
+    gap: 20px;
+    border-radius: 10px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+  }
+  .CardTitleTay{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 24px;
+    width: 86.70%;
+    gap: 10px;
+    opacity: 0px;
+    margin-bottom: 20px;
+  }
+  .CardIconTay{
+    width:44px;
+    padding: 10px 0px 0px 0px;
+    gap: 10px;
+    border-radius: 8px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+  }
+  .IconTay{
+    width: 16px;
+    height: 21.6px;
+    top: 0px;
+    left: -0px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+  }
+  .CardTitleH4Tay{
+    width: 259px;
+    height: 27px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color:rgba(255, 255, 255, 1);
+ 
+    }
+
+  .CardPTay{
+    width: 86.70%;
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom:24px;
+  }}
+
+@media(min-width:577px)and(max-width:992px){
+
+  .CardTay{
+     display: flex;
+     align-items: start;
+    flex-direction: column;
+    padding: 24px 0px 0px 0px;
+    gap: 20px;
+    border-radius: 10px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+  }
+  .CardTitleTay{
+    gap: 10px;
+    opacity: 0px;
+  }
+  .CardIconTay{
+    width:35px;
+    padding: 10px 0px 0px 0px;
+    gap: 10px;
+    border-radius: 8px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+  }
+  .IconTay{
+    width: 12px;
+    height: 21.6px;
+    top: 0px;
+    left: -0px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+
+  }
+  .CardPTay{
+    width: 333px;
+    font-family: Manrope;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom:24px;
+  }
+}
+
+@media(min-width:993px)and(max-width:1439px){
+  .CardTay{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+  width:32.29%;
+  height: Hug (230px)px;
+  padding: 40px 0px 0px 0px;
+  gap: 24px;
+  border-radius: 10px 0px 0px 0px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  border: 1px solid rgba(38, 38, 38, 1);
+  }
+ .CardTitleTay{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  width:80.629%;
+  height: Hug (54px)px;
+  gap: 12px;
+  opacity: 0px;
+  }
+.CardIconTay{
+width: 16.216%;
+height: Hug (54px)px;
+padding: 12px 0px 0px 0px;
+gap: 10px;
+border-radius: 10px 0px 0px 0px;
+border: 1px 0px 0px 0px;
+opacity: 0px;
+  }
+ .IconTay{
+  width: 27.46px;
+  height: 20.1px;
+  left: 0px;
+  gap: 0px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  }
+
+ .CardPTay{
+  width: 333px;
+  height: 72px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+
+  
+  }}
+
+  
+
+
+
+
+
+
+
+
+
+

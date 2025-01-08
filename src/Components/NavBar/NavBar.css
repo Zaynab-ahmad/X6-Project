@@ -1,0 +1,182 @@
+.kr-navbar {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    background-color: transparent;
+    z-index: 99999;
+    font-size: 14px;
+
+}
+
+.kr-logo {
+    width: 165.83px;
+    height: 50px;
+    background-color: transparent;
+    transition: 0.3s ease-in-out;
+}
+.kr-logo:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+
+}
+
+.kr-navigation-container {
+
+    padding: 8px 25px 8px 5px !important;
+    background-color: #0F0F0F !important;
+    border: solid 3px #1F1F1F !important;
+    border-radius: 10px !important;
+    justify-self: center !important;
+    display: flex !important;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+}
+.kr-navigation-container:hover{
+    transform: scale(1.2);
+    padding: 8px 25px !important;
+    cursor: pointer;
+}
+
+.kr-navitem {
+    height: fit-content !important;
+    width: fit-content !important;
+    padding: 0 !important;
+    border-radius: 10px !important;
+    background-color: #0F0F0F;
+    align-items: center;
+    display: flex;
+    font-size:14px ;
+    line-height: 21px;
+    font-weight: 500;
+    
+
+}
+
+.active-link {
+    background-color: #1A1A1A !important;
+    border: none !important;
+    color: #FFFFFF !important;
+    border-radius: 8px !important;
+    padding: 12px 20px !important;
+    margin: 0 5px;
+
+
+
+}
+
+.notactive-link {
+    background-color: #0F0F0F !important;
+    color: #BFBFBF !important;
+    padding: 0 !important;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+nav {
+    display: flex !important;
+}
+
+.kr-icons-container img {
+    width: 24px;
+    height: 24px;
+
+    margin-left: 7px;
+    margin-right: 7px
+}
+
+.kr-icons-container {
+    padding-left: 89px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    transition: 0.3s ease-in-out;
+}
+.kr-icons-container:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.barsBtn{
+    display: none;
+    padding: 12px;
+    border: solid 3px #1F1F1F !important;
+    border-radius: 6px;
+    transition: 0.3s ease-in-out;
+}
+.barsBtn:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+
+
+@media (max-width:1920px) and (min-width:1700px) {
+    .kr-navbar {     
+        padding-top: 30px;     
+        padding-bottom: 30px;     
+    }
+    .kr-logo {
+        width: 199px;
+        height: 60px;
+        background-color: transparent;
+    }
+
+    .kr-icons-container img {
+        width: 34px;
+        height: 34px;
+
+        margin-left: 15px;
+        margin-right: 15px
+    }
+    .active-link {
+        
+        padding: 14px 24px !important;
+        margin: 0 5px;
+    }
+    .notactive-link {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .kr-navitem {
+        font-size:18px ;
+        line-height: 27px;        
+    }
+    .kr-navigation-container {
+        padding: 10px 40px 10px 10px !important;
+        border: solid 4px #1F1F1F !important;
+        border-radius: 12px !important;   
+    }
+}
+ 
+@media (max-width: 1000px ) {
+    .kr-navbar{
+        padding-top: 24px  !important;
+        padding-bottom: 24px ;
+    }
+    .kr-navigation-container {
+        display: none !important;
+    }
+    .kr-icons-container{
+        display: none !important;
+    }
+    .barsBtn{
+        display: block;
+    }
+
+    
+}
+@media (max-width: 390px) {
+    .kr-navbar{
+        padding-top: 10px  !important;
+        padding-bottom: 10px !important;
+    }
+    .kr-logo{
+        width: 116px;
+        height: 35px;
+    }
+    
+}

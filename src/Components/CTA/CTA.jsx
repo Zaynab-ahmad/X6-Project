@@ -1,3 +1,4 @@
+
 import Button from '../Buttons/Button'
 import './CTA.css'
 import CTAImg from '../../assets/Imgs/CTA.png';
@@ -20,3 +21,4 @@ export default function CTA() {
     </div>
   );
 }
+

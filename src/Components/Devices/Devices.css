@@ -1,0 +1,158 @@
+.StreamingExperienceTay{
+    width:100%;
+    top: 1962px;
+    left: 161px;
+    gap: 80px;
+    opacity: 0px;
+}
+.StreamingExperienceTitleTay{
+    margin-bottom: 80px;
+    width:100%;
+    height: Hug (125px)px;
+    padding: 0px 300px 0px 0px;
+    gap: 14px;
+    opacity: 0px;
+}
+.StreamingExperienceH3Tay{
+width: 1297px;
+height: 57px;
+gap: 0px;
+opacity: 0px;
+font-family: Manrope;
+font-size: 38px;
+font-weight: 700;
+line-height: 57px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: rgba(255, 255, 255, 1);
+}
+.StreamingExperiencePTay{
+width: 1297px;
+height: 54px;
+gap: 0px;
+opacity: 0px;
+font-family: Manrope;
+font-size: 18px;
+font-weight: 400;
+line-height: 27px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: rgba(153, 153, 153, 1);
+}
+.StreamingExperienceCardsTay{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width:100%;
+    height: Hug (596px)px;
+    gap: 30px;
+    opacity: 0px;
+}
+.StreamingExperienceOnepartcardsTay{
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 30px;
+        opacity: 0px;
+}
+.StreamingExperienceTowcardcardsTay{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    gap: 30px;
+    opacity: 0px;
+}
+
+.StreamingTay{
+  display: none;
+}
+
+
+@media(max-width:576px){
+  .StreamingExperienceTay{
+    top: 1203px;
+    left: 15px;
+    gap: 40px;
+    opacity: 0px;
+    }
+  .StreamingExperienceTitleTay{
+    width:92.564%;
+    gap: 10px;
+    opacity: 0px;
+    }
+    .StreamingExperienceH3Tay{
+        width: 361px;
+        height: 60px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: Manrope;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 30px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color:rgba(255, 255, 255, 1);
+    }
+  .StreamingExperiencePTay{
+        width: 361px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: Manrope;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color:rgba(153, 153, 153, 1);
+
+    }
+   .StreamingExperienceCardsTay{
+    display: none;
+   }
+   .StreamingTay{
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   }
+
+}
+
+@media(min-width:577px)and(max-width:992px){
+    .StreamingExperienceTitleTay{
+    gap: 10px;
+    opacity: 0px;
+ }
+.StreamingExperienceH3Tay{
+    width: 361px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Manrope;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+ }
+.StreamingExperiencePTay{
+
+    font-size: 25px;
+    font-weight: 400; 
+}
+
+.StreamingTay{
+  display: none;
+}
+
+
+
+} 

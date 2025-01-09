@@ -1,15 +1,19 @@
 .heroContainer {
-    height: 100vh;
+    
+    margin-bottom: 150px;
+    position: relative;
+    
 }
 
 .kr-subcontainer-1 {
     position: relative;
     height: 699px;
     width: 100%;
-    background: url(../../../assets/Imgs/hero1.png);
-    background-position: center;
-    background-size: cover;
+    background: url(../../../assets/Imgs/hero1.png) ;
+    background-position: center center;
+    background-size: cover !important;
     background-repeat: no-repeat;
+    
     z-index: 90;
     animation: zoomOut 1s ease-in-out forwards;
 
@@ -120,9 +124,10 @@
     display: flex;
     justify-content: center;
     background-color: transparent;
-    width: 250px;
     overflow-x: hidden;
 }
+
+
 @keyframes zoomOut {
     0%{
         background-size: 200%;

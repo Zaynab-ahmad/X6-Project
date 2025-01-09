@@ -1,8 +1,8 @@
 import './FAQs.css'
 import ACCO from '../FAQ_ACCO/ACCO' 
-import HomeMoviesAndShowsTitle from '../SharedTitlesAndParagraph/HomeMoviesAndShows/HomeMoviesAndShowsTitle'
 import HomeParagraph from '../SharedTitlesAndParagraph/HomeParagraph/HomeParagraph'
 import Button from '../Buttons/Button'
+import HomeMoviesAndShowsTitle from '../SharedTitlesAndParagraph/HomeMoviesAndShows/HomeMoviesAndShowsTitle'
  
   //  const maba = [
   //   { number : '01' , 
@@ -50,12 +50,12 @@ export default function FAQs() {
   return (
     <>
     <div className="xContainer customMargin">
-      <div className="FAQ-top d-flex flex-column flex-lg-row justify-content-center align-items-start align-items-lg-center">
-        <div className='d-flex flex-column justify-content-center align-items-start'>
-        <HomeMoviesAndShowsTitle title="Frequently Asked Questions" home={true}/>
+      <div className="FAQ-top d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-start align-items-lg-center">
+        <div className='d-flex flex-column justify-content-center align-items-start pe-2'>
+          <HomeMoviesAndShowsTitle title="Frequently Asked Questions" home={true} fontSizeType="type4" lineHeightType="type4"/>
         <HomeParagraph paragraph="Got questions? We've got answers! Check out our FAQ section to find answers to the most common questions about StreamVibe."/>
         </div>
-          <Button text="Ask a Question" isFullWidth={false} isSmallerBorderRadius={true} isBlack={false} paddingType="type3"/>
+          <Button text="Ask a Question" isFullWidth={false} isSmallerBorderRadius={true} isBlack={false} paddingType="type2"/>
           
         
       </div>

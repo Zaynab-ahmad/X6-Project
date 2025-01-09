@@ -18,7 +18,7 @@ export default function Devices() {
     <div className='StreamingExperienceTay xContainer customMargin'>
        {/* the devicetitle */}
        <div className='deviceTitle'>
-       <HomeMoviesAndShowsTitle title ="We Provide you streaming experience across various devices." home={true}/>
+       <HomeMoviesAndShowsTitle title ="We Provide you streaming experience across various devices." home={true} fontSizeType="type4" lineHeightType="type4"/>
        <HomeParagraph paragraph ="With StreamVibe, you can enjoy your favorite movies and TV shows anytime,
            anywhere. Our platform is designed to be compatible with 
            a wide range of devices, ensuring that you never miss a moment of entertainment."/>
@@ -29,7 +29,7 @@ export default function Devices() {
               <div className='StreamingExperienceOnepartcardsTay'>
                 <DevicesCard  icon={icon1}  title={"Smartphones"} />
                 <DevicesCard  icon={icon2} title={"Tablet"}/>
-                <DevicesCard  icon={icon3}title={"Smart TV"}/>
+                <DevicesCard  icon={icon3} title={"Smart TV"}/>
               </div>
               {/* towpartofdevicecards */}
               <div className='StreamingExperienceTowcardcardsTay'>

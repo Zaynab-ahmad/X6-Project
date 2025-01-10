@@ -5,12 +5,14 @@ import Play from '../../../assets/Icons/playicon1.svg';
 import overlay from '../../../assets/Imgs/overlay.png'
 
 
+
 export default function HomeHero() {
   return (
+
     <div className='heroContainer'>
       
       <div className='kr-subcontainer-1'>
-      <img className='overlayImg' src={overlay} alt="" />
+      <img className='overlayImg' src={overlay} alt="overlay" />
         <div className='layer-1'></div>
         <div className='layer-2'></div>
         <div className='HeroCenter'><img className='HeroCenterImg' alt="" src={HeroCenter} /></div>
@@ -41,5 +43,6 @@ export default function HomeHero() {
         </div>
 
     </div>
+
   )
 }

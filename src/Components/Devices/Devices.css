@@ -1,0 +1,76 @@
+.StreamingExperienceTay{
+    width:100%;
+    top: 1962px;
+    left: 161px;
+    gap: 80px;
+    opacity: 0px;
+}
+.deviceTitle {
+  width: 82%;
+}
+.StreamingExperienceCardsTay{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width:100%;
+    height: Hug (596px)px;
+    gap: 30px;
+    opacity: 0px;
+}
+.StreamingExperienceOnepartcardsTay{
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 30px;
+        opacity: 0px;
+}
+.StreamingExperienceTowcardcardsTay{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    gap: 30px;
+    opacity: 0px;
+}
+
+.StreamingTay{
+  display: none;
+}
+
+@media (max-width: 1440px){
+  .deviceTitle {
+      width: 87%;
+    }
+}
+@media(max-width:576px){
+  .deviceTitle {
+      width: 100%;
+    }
+  .StreamingExperienceTay{
+    top: 1203px;
+    left: 15px;
+    gap: 40px;
+    opacity: 0px;
+    }
+  
+
+   .StreamingExperienceCardsTay{
+    display: none;
+   }
+   .StreamingTay{
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   }
+
+}
+
+@media(min-width:577px)and(max-width:992px){  
+.StreamingTay{
+  display: none;
+}
+} 

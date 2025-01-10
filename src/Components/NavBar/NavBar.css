@@ -4,10 +4,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px 80px;
+    padding-top: 24px;
+    padding-bottom: 24px;
     background-color: transparent;
     z-index: 99999;
     font-size: 14px;
+    
 
 }
 .logoContainer{
@@ -75,10 +77,6 @@
     padding: 0 !important;
     margin-left: 8px;
     margin-right: 8px;
-
-
-
-
 }
 
 nav {
@@ -160,10 +158,9 @@ nav {
 
 
 @media (max-width:1920px) and (min-width:1700px) {
-    .kr-navbar {
-        
-        padding: 30px 162px;
-        
+    .kr-navbar {     
+        padding-top: 30px;     
+        padding-bottom: 30px;     
     }
     .kr-logo {
         width: 199px;
@@ -200,7 +197,8 @@ nav {
  
 @media (max-width: 1000px ) {
     .kr-navbar{
-        padding: 24px 30px !important;
+        padding-top: 24px  !important;
+        padding-bottom: 24px ;
     }
     .kr-navigation-container {
         display: none !important;
@@ -219,7 +217,8 @@ nav {
 }
 @media (max-width: 390px) {
     .kr-navbar{
-        padding: 40px 16px 14px 16px !important;
+        padding-top: 40px  !important;
+        padding-bottom: 14px !important;
     }
     .kr-logo{
         width: 116px;

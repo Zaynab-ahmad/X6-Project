@@ -13,9 +13,8 @@
     background-position: center center;
     background-size: cover !important;
     background-repeat: no-repeat;
-    
     z-index: 90;
-    animation: zoomOut 1s ease-in-out forwards;
+    animation: zoomOut 1s ease-in-out forwards !important;
 
 
 }
@@ -50,7 +49,7 @@
     mix-blend-mode: overlay;
 }
 .HeroCenter{
-    height: 80%;
+    height: 90%;
     width: 100%;
     position: absolute;
     top: 0;
@@ -74,7 +73,7 @@
 
 .kr-subcontainer-2 {
     position: absolute;
-    bottom: 0;
+    bottom: -20px;
     padding: 0 150px;
     z-index: 100;
     background-color: transparent;
@@ -130,10 +129,10 @@
 
 @keyframes zoomOut {
     0%{
-        background-size: 200%;
+        transform: scale(2);
     }
     100%{
-        background-size: 100%;
+        transform: scale(1);
     }
 }
 
@@ -170,14 +169,16 @@
     }
 
     .kr-subcontainer-2 .kr-text-container p {
-        font-size: 18px;
-        line-height: 27px;
+        font-size: 18px !important;
+        line-height: 27px !important;
+        
 
     }
 
     .kr-subcontainer-2 {
         padding-left: 412px;
         padding-right: 412px;
+        bottom: -200px;
     }
 }
 
@@ -240,6 +241,7 @@
     .kr-subcontainer-2 {
         padding-left: 20px;
         padding-right: 20px;
+        bottom: -30px;
     }
 
     .kr-subcontainer-2 .kr-text-container h1 {
@@ -262,10 +264,14 @@
     .kr-subcontainer-1 {
         height: 500px;
     }
+    .HeroCenter{
+        height: 80%;
+    }
 
     .kr-subcontainer-2 {
         padding-left: 0px;
         padding-right: 0px;
+        bottom: -60px;
     }
     .kr-subcontainer-2 .kr-text-container h1 {
         font-size: 28px;

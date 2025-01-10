@@ -13,7 +13,7 @@ export default function MultiImgsCard({ text, imagesArray, badge, pageName, sect
 
   const handleImageClick = (movie) => {
     if (pageName === "moviesAndShowsPage") {
-      navigate(`//pageopen/${section}/${movie.id}`); 
+      navigate(`/pageopen/${section}/${movie.id}`); 
     }
   };
 

@@ -1,5 +1,6 @@
 import MultiImgsCard from "../Cards/MltiImgsCard/MultiImgsCard";
 import CardSlider from "../Sliders/CardSlider/CardSlider";
+import './Categories.css'
 
 import {
   ActionMovies,
@@ -8,7 +9,6 @@ import {
   DramaMovies,
   HorrorMovies,
 } from "../../Data/data";
-import "./Categories.css";
 import HomeParagraph from "../SharedTitlesAndParagraph/HomeParagraph/HomeParagraph";
 import HomeMoviesAndShowsTitle from "../SharedTitlesAndParagraph/HomeMoviesAndShows/HomeMoviesAndShowsTitle";
 

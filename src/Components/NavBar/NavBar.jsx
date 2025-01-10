@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Button from '../Buttons/Button'
 import './NavBar.css'
 import Nav from 'react-bootstrap/Nav';
@@ -11,6 +11,19 @@ import bars from '../../assets/Icons/bars.svg'
 
 export default function NavBar() {
     const [activeLink, setActiveLink] = useState('Home');
+    const [isDropdownOpen, setIsdDropdownOpen]= useState(false);
+    const toggleDropdown = ()=> {
+        setIsdDropdownOpen(!isDropdownOpen);
+    }
+    const closeDropdown = (e)=>{
+        if(!e.target.closest('.barsBtn')){
+            setIsdDropdownOpen(false);
+        }
+    }
+    useEffect( ()=>{
+        document.addEventListener('click',closeDropdown);
+        return ()=> document.removeEventListener('click',closeDropdown);
+    }, []);
 
     return (
         <div className='kr-navbar '>
@@ -35,7 +48,7 @@ export default function NavBar() {
                         onClick={() => setActiveLink('link-2')}
                         className={activeLink === 'link-2' ? 'active-link' : 'notactive-link'} eventKey="link-2" href='/X6-Project/support'>Support</Nav.Link>
                 </Nav.Item>
-                <Nav.Item  style={{ textDecoration: 'none' }} as={Link} to={'/Subscriptions'} className='kr-navitem'>
+                <Nav.Item  style={{ textDecoration: 'none' }} as={Link} to={'/subscriptions'} className='kr-navitem'>
                     <Nav.Link
                         onClick={() => setActiveLink('link-3')}
                         className={activeLink === 'link-3' ? 'active-link' : 'notactive-link'} eventKey="link-3" href='/X6-Project/Subscriptions' >Subscriptions</Nav.Link>
@@ -46,9 +59,22 @@ export default function NavBar() {
                 <img src={search} alt="" />
                 <img src={ring} alt="" />
             </div>
-            <button className='barsBtn'>
+            <button className={isDropdownOpen ? 'barsBtn open' : 'barsBtn'} onClick={toggleDropdown}>
                 <img src={bars} alt="" />
             </button>
+            {isDropdownOpen&&
+            (
+                <div className='dropdownmenu'>
+                    <Link className='dropdownitem' to={'/'}>home</Link>
+                    <Link className='dropdownitem'  to={'/movies-and-shows'}>Movies & shows</Link>
+                    <Link className='dropdownitem'  to={'/support'}>Support</Link>
+                    <Link className='dropdownitem'  to={'/subscriptions'}>Subscriptions</Link>
+
+                </div>
+            )
+            
+            
+            }
             
 
         </div>

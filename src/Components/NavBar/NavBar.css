@@ -35,7 +35,7 @@
     transition: 0.3s ease-in-out;
 }
 .kr-navigation-container:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
     padding: 8px 25px !important;
     cursor: pointer;
 }
@@ -109,10 +109,50 @@ nav {
     border: solid 3px #1F1F1F !important;
     border-radius: 6px;
     transition: 0.3s ease-in-out;
+
+}
+.barsBtn.open{
+    
+    padding: 12px;
+    border: solid 3px #1F1F1F !important;
+    border-bottom: none !important;
+    border-radius: 6px;
+    transition: 0.3s ease-in-out;
+    width: 150px;
+    
+
 }
 .barsBtn:hover{
     cursor: pointer;
-    transform: scale(1.2);
+    
+}
+.dropdownmenu{
+    position: absolute;
+    top: 70px;
+    right: 30px;
+    background-color: var(--black-shade06);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    z-index: 100px;
+    min-width: 150px;
+    border: solid 3px #1F1F1F !important;
+    border-top: none !important;
+
+}
+.dropdownitem{
+    width: 100%;
+    text-align: center;
+    color: white;
+    display: block;
+    text-decoration: none;
+    transition: 0.3s;
+    padding: 10px;
+}
+.dropdownitem:hover{
+    background-color:#1F1F1F ;
 }
 
 
@@ -169,16 +209,23 @@ nav {
     .barsBtn{
         display: block;
     }
+    .barsBtn .active{
+        display: block;
+    }
 
     
 }
 @media (max-width: 390px) {
     .kr-navbar{
-        padding: 10px 40px 10px 10px !important;
+        padding: 40px 16px 14px 16px !important;
     }
     .kr-logo{
         width: 116px;
         height: 35px;
+    }
+    .dropdownmenu{
+        right: 16px;
+        top: 85px ;
     }
     
 }

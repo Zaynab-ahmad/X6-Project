@@ -13,9 +13,8 @@
     background-position: center center;
     background-size: cover !important;
     background-repeat: no-repeat;
-    
     z-index: 90;
-    animation: zoomOut 1s ease-in-out forwards;
+    animation: zoomOut 1s ease-in-out forwards !important;
 
 
 }
@@ -130,10 +129,10 @@
 
 @keyframes zoomOut {
     0%{
-        background-size: 200%;
+        transform: scale(2);
     }
     100%{
-        background-size: 100%;
+        transform: scale(1);
     }
 }
 

@@ -12,7 +12,7 @@ export default function MoviesSection() {
             Movies
         </div>
       <HomeMoviesAndShowsTitle title="Our Genres" home={false} fontSizeType="type3" lineHeightType="type3"/>
-<OurGenres/>   
+      <OurGenres/>   
       
     </div>
     </div>

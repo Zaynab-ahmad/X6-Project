@@ -1,23 +1,24 @@
+import { useNavigate } from "react-router-dom";
 import "./MultiImgsCard.css";
 import Rightarrow from "../../../assets/icons/rightarrow.svg";
-import { useNavigate } from "react-router-dom"; // Import useNavigate
 
 export default function MultiImgsCard({ text, imagesArray, badge, pageName, section }) {
   const navigate = useNavigate();
 
   const handleCardClick = () => {
     if (pageName === "homePage") {
-      navigate("/movies-and-shows"); 
+      navigate("/movies-and-shows");
     }
   };
 
-  const handleImageClick = (movie) => {
-    if (pageName === "moviesAndShowsPage") {
-      navigate(`/pageopen/${section}/${movie.id}`); 
-    }
-  };
+ const handleImageClick = (movie) => {
+  if (pageName === "moviesAndShowsPage") {
+    navigate(`/pageopen/${section || "movies"}/${movie.id}`);
+  }
+};
 
-  
+
+
   const gapValue = badge ? "2.86%" : "1.82%";
 
   return (
@@ -42,9 +43,7 @@ export default function MultiImgsCard({ text, imagesArray, badge, pageName, sect
                 className={`multiImgsZA ${badge ? "customRatio" : "defaultRatio"}`}
                 src={movie.src}
                 alt={movie.alt}
-                onClick={() => { 
-                  handleImageClick(movie);
-                }}
+                onClick={() => handleImageClick(movie)} // Correctly passing the function reference
               />
             </div>
           ))}

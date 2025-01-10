@@ -1,6 +1,6 @@
 .kr-navbar {
     width: 100%;
-    position: fixed;
+    /* position: fixed; */
     display: flex;
     justify-content: space-between;
     align-items: center;

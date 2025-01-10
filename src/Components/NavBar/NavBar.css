@@ -10,7 +10,9 @@
     font-size: 14px;
 
 }
-
+.logoContainer{
+    background-color: transparent;
+}
 .kr-logo {
     width: 165.83px;
     height: 50px;

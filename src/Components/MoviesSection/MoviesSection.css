@@ -14,3 +14,13 @@
     border-radius: 8px;
     top: -4%;
 }
+@media (max-width: 576px) {
+    .moviesSectionZA {
+        border: none;
+        padding: 0px;
+    }
+
+    .moviesBadgeZA {
+        display: none;
+    }
+}

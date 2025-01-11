@@ -9,6 +9,10 @@
   overflow: hidden;
   width: 100%;
   cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+.multiImgsCardZA:hover {
+  box-shadow: inset 0px 0px 8px 3px var(--primary-color-gray);
 }
 
 .imageGalleryContainer {
@@ -100,6 +104,7 @@
   width: 86px;
   z-index: 10;
 }
+
 
 @media (max-width: 1440px) {
   .multiImgsCardZA {

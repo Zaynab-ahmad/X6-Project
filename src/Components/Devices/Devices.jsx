@@ -1,3 +1,4 @@
+
 import DevicesCard from '../Cards/DevicesCard/DevicesCard'
 import './Devices.css'
 import Container from 'react-bootstrap/Container';
@@ -9,6 +10,8 @@ import icon3 from"./../../assets/Icons/smartTV.svg"
 import icon4 from "./../../assets/Icons/laptops.svg"
 import icon5 from"./../../assets/Icons/gaming.svg"
 import icon6 from "./../../assets/Icons/VRheadsets.svg"
+import HomeMoviesAndShowsTitle from '../SharedTitlesAndParagraph/HomeMoviesAndShows/HomeMoviesAndShowsTitle'
+import HomeParagraph from '../SharedTitlesAndParagraph/HomeParagraph/HomeParagraph'
 export default function Devices() {
   return ( 
     <div className='StreamingExpTay'>   
@@ -46,8 +49,6 @@ export default function Devices() {
                   
           </div>    
         </div>
-  
 
-  
   )
 }

@@ -1,0 +1,66 @@
+
+
+@media (max-width:358px) {
+  .FAQ-accordion{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    width: 100%;
+    gap: 80px;
+    padding: 0 145px;
+  }}
+  /* //////////////edit */
+  @media (max-width :1530px) {
+    .FAQ-accordion{
+        gap: 40px;
+        padding: 0 5.5556%;
+    }
+    .FAQ-accordion .left-acco,
+    .FAQ-accordion .right-acco
+    {
+        width: 620px;
+    }
+  }
+  /* edit */
+  @media (max-width:665px) {
+    .FAQ-accordion,
+    .FAQ-accordion .left-acco,
+    .FAQ-accordion .right-acco{
+        gap: 20px;
+        width: 358px;
+    }
+    .FAQ-accordion{
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 4.1026%;
+    }
+  }
+  @media (max-width:1900px) {
+    .FAQ-accordion{
+        gap: 40px;
+        justify-content: space-between;
+    }
+  }
+  @media (max-width:1439px) {
+    .FAQ-accordion{
+        flex-direction: column;
+        align-items: center;
+         padding: 0 4.1026%;
+    }
+  }
+  @media (max-width:389px) {
+    
+    .FAQ-accordion,
+    .FAQ-accordion .left-acco,
+    .FAQ-accordion .right-acco{
+        gap: 10px;
+        width: 300px;
+        padding: 0;
+    }
+    .FAQ-accordion{
+        align-items: center;
+        justify-content: center;
+    }
+  }
+
+

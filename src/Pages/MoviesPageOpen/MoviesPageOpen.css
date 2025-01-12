@@ -1,0 +1,14 @@
+.moviesPageContainer {
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #f8f9fa;
+    /* A light background for visibility */
+    color: #212529;
+    /* Ensure text is visible */
+}
+
+.pageTitle {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}

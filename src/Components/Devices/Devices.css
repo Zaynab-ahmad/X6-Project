@@ -3,6 +3,10 @@
   left: 161px;
   gap: 80px;
 }
+.deviceTitle {
+  width: 82%;
+}
+
 .StreamingExpTitleTay{
 gap: 14px;
 margin-bottom: 80px;
@@ -32,7 +36,7 @@ color:rgba(153, 153, 153, 1);
 width:100%;
 gap: 30px;
 }
- @media(max-width:576px){
+@media(max-width:576px){
   .StreamingExTitleTay{
     font-size: 20px;
     font-weight: 700;
@@ -113,3 +117,6 @@ line-height: 24px;
  
   
   
+
+
+

@@ -12,7 +12,7 @@ export default function Home() {
       <Categories/>
       <Devices/>
       <FAQs/>
-      <Pricing/> 
+      <Pricing/>
     </div>
   )
 }

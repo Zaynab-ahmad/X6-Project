@@ -1,53 +1,56 @@
+.FAQ-accordion{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+}
+.left-acco , 
+.right-acco{
+  width: 758px;
+}
+@media (max-width:1900px) {
+  .FAQ-accordion{
+    gap: 20px;
+  }
+  .left-acco , 
+  .right-acco{
+    width: 620px;
+  }
+}
 
+@media (max-width:1416px) {
+  .FAQ-accordion{
+    gap: 15px;
+    justify-content: space-around;
+  }
+  .left-acco , 
+  .right-acco{
+    width: 460px;
+  }
+}
 
 @media (max-width:358px) {
   .FAQ-accordion{
     display: flex;
-    flex-wrap: wrap;
     padding: 0;
     width: 100%;
-    gap: 80px;
+    gap: 20px;
     padding: 0 145px;
   }}
-  /* //////////////edit */
-  @media (max-width :1530px) {
-    .FAQ-accordion{
-        gap: 40px;
-        padding: 0 5.5556%;
-    }
-    .FAQ-accordion .left-acco,
-    .FAQ-accordion .right-acco
-    {
-        width: 620px;
-    }
-  }
+
   /* edit */
   @media (max-width:665px) {
-    .FAQ-accordion,
     .FAQ-accordion .left-acco,
     .FAQ-accordion .right-acco{
         gap: 20px;
-        width: 358px;
+        width: 350px;
     }
     .FAQ-accordion{
-        flex-direction: column;
-        justify-content: center;
-        padding: 0 4.1026%;
+      width: 355px;
+      align-items: center;
     }
+
   }
-  @media (max-width:1900px) {
-    .FAQ-accordion{
-        gap: 40px;
-        justify-content: space-between;
-    }
-  }
-  @media (max-width:1439px) {
-    .FAQ-accordion{
-        flex-direction: column;
-        align-items: center;
-         padding: 0 4.1026%;
-    }
-  }
+  
   @media (max-width:389px) {
     
     .FAQ-accordion,

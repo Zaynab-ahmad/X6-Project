@@ -37,7 +37,6 @@ const [isopen , setisopen] = useState(false) ;
           className={lin ? "FAQ-line" : "hide"}
           /> */}
           <div className={lin ? "FAQ-line" : "hide"}>
-            
           </div>
     </>
   )

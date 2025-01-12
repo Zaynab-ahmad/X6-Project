@@ -56,14 +56,12 @@ export default function FAQs() {
         <HomeParagraph paragraph="Got questions? We've got answers! Check out our FAQ section to find answers to the most common questions about StreamVibe."/>
         </div>
           <Button text="Ask a Question" isFullWidth={false} isSmallerBorderRadius={true} isBlack={false} paddingType="type2"/>
-          
-        
       </div>
       </div>
 
       {/*/////////////////  */}
 
-      <div className="FAQ-accordion">
+      <div className="FAQ-accordion xContainer customMargin">
         <div className="left-acco">
           <ACCO
           number = "01"

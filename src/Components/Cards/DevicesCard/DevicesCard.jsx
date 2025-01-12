@@ -1,8 +1,11 @@
 import './DevicesCard.css'
 export default function DevicesCard( {icon , title} ) {
   return (  
-    <>         
-        <div className='CardTay'>
+    <>     
+
+
+ 
+    <div className='CardTay'>
             <div className='CardTitleTay'>
               <div className='CardIconTay'>
                   <img className='IconTay' src={icon}/>
@@ -16,6 +19,10 @@ export default function DevicesCard( {icon , title} ) {
             from the Google Play Store or the Apple App Store
             </p>  
         </div>
+  
+ 
+
+     
 
     </>    
 

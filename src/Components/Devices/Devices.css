@@ -1,23 +1,13 @@
-.StreamingExperienceTay{
-    width:100%;
-    top: 1962px;
-    left: 161px;
-    gap: 80px;
-    opacity: 0px;
+.StreamingExpTay{
+  top: 1962px;
+  left: 161px;
+  gap: 80px;
 }
-.StreamingExperienceTitleTay{
-    margin-bottom: 80px;
-    width:100%;
-    height: Hug (125px)px;
-    padding: 0px 300px 0px 0px;
-    gap: 14px;
-    opacity: 0px;
+.StreamingExpTitleTay{
+gap: 14px;
+margin-bottom: 80px;
 }
-.StreamingExperienceH3Tay{
-width: 1297px;
-height: 57px;
-gap: 0px;
-opacity: 0px;
+.StreamingExpH3Tay{
 font-family: Manrope;
 font-size: 38px;
 font-weight: 700;
@@ -25,13 +15,10 @@ line-height: 57px;
 text-align: left;
 text-underline-position: from-font;
 text-decoration-skip-ink: none;
-color: rgba(255, 255, 255, 1);
+color:rgba(255, 255, 255, 1);
 }
-.StreamingExperiencePTay{
-width: 1297px;
-height: 54px;
+.StreamingExpPTay{
 gap: 0px;
-opacity: 0px;
 font-family: Manrope;
 font-size: 18px;
 font-weight: 400;
@@ -39,58 +26,21 @@ line-height: 27px;
 text-align: left;
 text-underline-position: from-font;
 text-decoration-skip-ink: none;
-color: rgba(153, 153, 153, 1);
+color:rgba(153, 153, 153, 1);
 }
-.StreamingExperienceCardsTay{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width:100%;
-    height: Hug (596px)px;
-    gap: 30px;
-    opacity: 0px;
+.CardsTay{
+width:100%;
+gap: 30px;
 }
-.StreamingExperienceOnepartcardsTay{
-        margin-bottom: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        gap: 30px;
-        opacity: 0px;
-}
-.StreamingExperienceTowcardcardsTay{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width:100%;
-    gap: 30px;
-    opacity: 0px;
-}
-
-.StreamingTay{
-  display: none;
-}
-
-
-@media(max-width:576px){
-  .StreamingExperienceTay{
-    top: 1203px;
-    left: 15px;
-    gap: 40px;
-    opacity: 0px;
+ @media(max-width:576px){
+  .StreamingExTitleTay{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
     }
-  .StreamingExperienceTitleTay{
-    width:92.564%;
-    gap: 10px;
-    opacity: 0px;
-    }
-    .StreamingExperienceH3Tay{
+  .StreamingExH3Tay{
         width: 361px;
         height: 60px;
-        gap: 0px;
-        opacity: 0px;
         font-family: Manrope;
         font-size: 20px;
         font-weight: 700;
@@ -98,41 +48,22 @@ color: rgba(153, 153, 153, 1);
         text-align: left;
         text-underline-position: from-font;
         text-decoration-skip-ink: none;
-        color:rgba(255, 255, 255, 1);
-    }
-  .StreamingExperiencePTay{
-        width: 361px;
-        gap: 0px;
-        opacity: 0px;
-        font-family: Manrope;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 21px;
-        text-align: left;
-        text-underline-position: from-font;
-        text-decoration-skip-ink: none;
-        color:rgba(153, 153, 153, 1);
-
-    }
-   .StreamingExperienceCardsTay{
-    display: none;
-   }
-   .StreamingTay{
-    display:flex ;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-   }
-
+        color:rgba(255, 255, 255, 1);}
+        .StreamingExPTay{
+          width: 361px;
+          height: 42px;
+          padding:0px;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 21px;
+        }
 }
-
-@media(min-width:577px)and(max-width:992px){
-    .StreamingExperienceTitleTay{
+@media(min-width:577px)and(max-width:991px){
+    .StreamingExTitleTay{
     gap: 10px;
     opacity: 0px;
  }
-.StreamingExperienceH3Tay{
-    width: 361px;
+.StreamingExH3Tay{
     gap: 0px;
     opacity: 0px;
     font-family: Manrope;
@@ -143,16 +74,42 @@ color: rgba(153, 153, 153, 1);
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
  }
-.StreamingExperiencePTay{
-
+.StreamingExPTay{
     font-size: 25px;
     font-weight: 400; 
 }
-
-.StreamingTay{
-  display: none;
-}
-
-
-
+}  
+@media(min-width:1200px)and(max-width:1439px){
+.StreamingExH3Tay{
+width: 1129px;
+height: 42px;
+font-size: 28px;
+font-weight: 700;
+line-height: 42px;
+ }
+.StreamingExPTay{
+width: 1129px;
+height: 48px;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
 } 
+}
+@media(min-width:1439px){
+ .StreamingExTitleTay{ 
+  gap: 14px;
+}
+  .StreamingExH3Tay{
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 57px;
+     }
+    .StreamingExPTay{
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 27px;   
+    } 
+} 
+ 
+  
+  

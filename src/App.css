@@ -8,6 +8,7 @@
 }
 
 :root {
+
   --absolute-white: #ffffff;
   --absolute-black: #000000;
   --primary-color-red: #e50000;
@@ -58,4 +59,5 @@ body,
   .customMargin {
     margin-bottom: 80px;
   }
+
 }

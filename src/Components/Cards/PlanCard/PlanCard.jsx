@@ -1,6 +1,6 @@
 import React from "react";
 import MainButton from "../../Buttons/Button.jsx";
-import { Card, Col, Row, Button } from "react-bootstrap";
+import { Card, Col, Row } from "react-bootstrap";
 import "./PlanCard.css";
 
 export default function PlanCard({ plans, isMonthly }) {
@@ -29,7 +29,7 @@ export default function PlanCard({ plans, isMonthly }) {
               ${price}
               <span className="period fs-5 card-features">{period}</span>
             </div>
-            <div className="d-flex justify-content-center flex-row mb-5 gap-md-5 gap-sm-4 gap-xs-4 gap-lg-4 gap-xl-4 gap-xxl-3">
+            <div className="d-flex justify-content-center flex-row mb-5 gap-4 gap-md-5 gap-sm-4 gap-xs-4 gap-lg-4 gap-xl-4 gap-xxl-3">
               <MainButton
                 text="Start a Free Trail"
                 isFullWidth={false}

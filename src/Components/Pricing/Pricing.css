@@ -1,19 +1,22 @@
 
 
-
-.main-title {
+h1 {
   font-size: 1.7rem;
   margin-bottom: 10px;
 }
 
-.main-paragraph {
+.pa {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
   font-size: 18px;
   line-height: 150%;
   color: var(--primary-color-gray);
 }
 
-.toggle-btn {
+.toggle-buttons {
   background-color: var(--black-shade06);
+  box-sizing: border-box;
   padding: 10px 0;
   border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -23,12 +26,14 @@
   border: 1px solid var(--black-shade15);
 }
 
-.toggle {
+.toggle2 {
   color: var(--primary-color-gray);
 }
 
 .btn-check:checked + .btn,
-.btn.active {
+.btn.active,
+.btn:first-child:active,
+.btn:active {
   color: var(--bs-btn-active-color);
   background-color: var(--black-shade15);
   border-color: var(--black-shade15);
@@ -37,12 +42,4 @@
   -moz-border-radius: 5px !important;
   -ms-border-radius: 5px !important;
   -o-border-radius: 5px !important;
-}
-
-.w-{
-  width:15%;
-}
-
-.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-     padding: 0;
 }

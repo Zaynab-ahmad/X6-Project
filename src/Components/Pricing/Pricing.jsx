@@ -41,8 +41,8 @@ function Pricing() {
   };
 
   return (
-    <Container className="mt-4 xContainer customMargin">
-      <Row className="w-100 p-4">
+    <Container className="mt-4 d-flex flex-column">
+      <Row>
         <Col
           md={10}
           lg={11}
@@ -50,18 +50,18 @@ function Pricing() {
           className="d-flex justify-content-start flex-column">
           <Row className="d-flex div-flex">
             <Col md={10}>
-              <h1 className="main-title">Choose the plan that is right for you</h1>
-              <p className="main-paragraph">
+              <h1>Choose the plan that is right for you</h1>
+              <p className="pa">
                 Join StreamVibe and select from our flexible subscription
                 options tailored to suit your viewing preferences. Get ready for
                 non-stop entertainment!
               </p>
             </Col>
             <Col xs={6} md={2} className="d-flex align-items-center">
-              <ButtonGroup toggle className="toggle-btn p-2">
+              <ButtonGroup toggle className="toggle-buttons p-2">
                 <ToggleButton
                   type="radio"
-                  variant="text-center p-3 toggle"
+                  variant="text-center p-3 toggle2"
                   name="radio"
                   value={true}
                   checked={isMonthly}
@@ -70,7 +70,7 @@ function Pricing() {
                 </ToggleButton>
                 <ToggleButton
                   type="radio"
-                  variant="text-center p-3 toggle"
+                  variant="text-center p-3 toggle2"
                   name="radio"
                   value={false}
                   checked={!isMonthly}

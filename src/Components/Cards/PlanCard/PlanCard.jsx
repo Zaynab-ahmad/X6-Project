@@ -3,7 +3,7 @@ import MainButton from "../../Buttons/Button.jsx";
 import { Card, Col, Row, Button } from "react-bootstrap";
 import "./PlanCard.css";
 
-function PlanCards({ plans, isMonthly }) {
+export default function PlanCard({ plans, isMonthly }) {
   const displayedPlans = plans.map((plan, index) => {
     const price = isMonthly ? plan.monthlyPrice : plan.yearlyPrice;
     const period = isMonthly ? "/month" : "/year";
@@ -17,6 +17,7 @@ function PlanCards({ plans, isMonthly }) {
         xl={4}
         className="mb-3 d-flex px-3">
         <Card className="plan p-3 h-100">
+
           <Card.Body className="p-0">
             <Card.Title className="text-light mb-3 card-title fs-3">
               {plan.name}
@@ -50,7 +51,9 @@ function PlanCards({ plans, isMonthly }) {
     );
   });
 
-  return <Row className="m-0">{displayedPlans}</Row>;
+  return (
+    <Row className="m-0">
+      {displayedPlans}
+    </Row>
+  );
 }
-
-export default PlanCards;

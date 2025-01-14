@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./Pricing.css";
-import PlanCards from "/X6-Project/src/Components/Cards/PlanCard/PlanCard";
 import {
   Container,
   Row,
@@ -8,6 +7,7 @@ import {
   ButtonGroup,
   ToggleButton
 } from "react-bootstrap";
+import PlanCard from "../Cards/PlanCard/PlanCard";
 
 function Pricing() {
   const [isMonthly, setIsMonthly] = useState(true);
@@ -83,7 +83,7 @@ function Pricing() {
         </Col>
       </Row>
       <Container className="mt-3 d-flex justify-content-center align-items-center">
-        <PlanCards plans={plansData} isMonthly={isMonthly} />
+        <PlanCard plans={plansData} isMonthly={isMonthly} />
       </Container>
     </Container>
   );

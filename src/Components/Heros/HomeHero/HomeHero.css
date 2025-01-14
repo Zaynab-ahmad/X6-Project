@@ -1,273 +1,246 @@
+/* General Styles */
 .heroContainer {
-    height: 100vh;
+  margin-bottom: 22.5%;
+  position: relative;
 }
 
+/* kr-subcontainer-1 Styles */
 .kr-subcontainer-1 {
-    position: relative;
-    height: 699px;
-    width: 100%;
-    background: url(../../../assets/Imgs/hero1.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 90;
-    animation: zoomOut 1s ease-in-out forwards;
+  position: relative;
+  height: 836px;
+  width: 100%;
+  background: url(../../../assets/Imgs/hero1.png) center center / cover no-repeat;
+  z-index: 90;
+  animation: zoomOut 1s ease-in-out forwards !important;
+}
 
-
+.kr-subcontainer-1 .layer-1,
+.kr-subcontainer-1 .layer-2 {
+  height: 67%;
+  width: 100%;
+  position: absolute;
+  z-index: 97;
 }
 
 .kr-subcontainer-1 .layer-1 {
-    height: 581px;
-    width: 100%;
-    background: linear-gradient(#141414, #14141400);
-    z-index: 97;
-    position: absolute;
-    top: 0;
+  top: 0;
+  background: linear-gradient(#141414, #14141400);
 }
 
 .kr-subcontainer-1 .layer-2 {
-    height: 581px;
-    width: 100%;
-    background: linear-gradient(#14141400, #141414);
-    z-index: 97;
-    position: absolute;
-    bottom: 0;
-
+  bottom: -1px;
+  background: linear-gradient(#14141400, #141414);
 }
 
-.overlayImg {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: 98;
-    opacity: 10%;
-    mix-blend-mode: overlay;
+/* HeroCenter Styles */
+.HeroCenter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 85%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
 }
-.HeroCenter{
-    height: 80%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 99;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
-}
+
 .kr-subcontainer-1 .HeroCenterImg {
-    background-color: transparent;
-    transition: transform 2s ease-in-out;
-    animation: rotateShrink 1s ease-in-out;
-
+  position: absolute;
+  top: 26%;
+  left: auto;
+  opacity: 0.82;
+  width: 470px;
+  height: 470px;
+  transition: transform 2s ease-in-out;
+  animation: rotateShrink 1s ease-in-out;
 }
-.HeroCenterImg:hover{
-    cursor: pointer;
-    
+
+.HeroCenterImg:hover {
+  cursor: pointer;
 }
 
+/* kr-subcontainer-2 Styles */
 .kr-subcontainer-2 {
-    position: absolute;
-    bottom: 0;
-    padding: 0 150px;
-    z-index: 100;
-    background-color: transparent;
-
-
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  bottom: -33%;
+  padding: 0 412px;
+  z-index: 100;
+  background-color: transparent;
 }
 
 .kr-subcontainer-2 .kr-text-container {
-    width: fit-content;
-    text-align: center;
-    background-color: transparent;
-    text-align: center;
+  text-align: center;
 }
 
 .kr-subcontainer-2 .kr-text-container h1 {
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 72px;
-    color: white;
-    background-color: transparent;
+  font-size: 58px;
+  font-weight: 700;
+  line-height: 87px;
+  color: white;
+}
+
+.kr-subcontainer-2 .kr-text-container p {
+  font-size: 18px !important;
+  line-height: 27px !important;
 }
 
 .kr-subcontainer-2 .kr-text-container .longParagraph {
-
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    color: #999999;
-    background-color: transparent;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--primary-color-gray);
 }
 
 .shortParagraph {
-    display: none;
-}
-
-.kr-subcontainer-2 .kr-btn img {
-    background-color: transparent;
-    width: 24px;
-    height: 24px;
-
+  display: none;
 }
 
 .kr-subcontainer-2 .kr-btn {
-    margin-top: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: center;
-    background-color: transparent;
-    width: 250px;
-    overflow-x: hidden;
+  margin: 60px auto 0;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  overflow-x: hidden;
 }
+
+.kr-subcontainer-2 .kr-btn img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Animations */
 @keyframes zoomOut {
-    0%{
-        background-size: 200%;
-    }
-    100%{
-        background-size: 100%;
-    }
+  0% {
+    transform: scale(2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 @keyframes rotateShrink {
-    0%{
-        transform: scale(1) rotate(0deg);
-    }
-    50%{
-        transform: scale(0.7) rotate(180deg);
-    }
-    100%{
-        transform: scale(1) rotate(360deg);
-    }
-    
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+
+  50% {
+    transform: scale(0.7) rotate(180deg);
+  }
+
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
 }
 
+/* Media Queries */
+@media (max-width: 1440px) {
+  .kr-subcontainer-1 {
+    height: 699px;
+  }
 
+  .heroContainer {
+    margin-bottom: 19.99%;
+  }
 
+  .kr-subcontainer-2 {
+    padding: 0 150px;
+  }
 
-@media (max-width: 1920px) and (min-width: 1700px) {
-    .kr-subcontainer-1 {
-        height: 836px;
-        background-size: cover;
-    }
+  .kr-subcontainer-2 .kr-text-container h1 {
+    font-size: 48px;
+    line-height: 72px;
+  }
 
-    .HeroCenterImg {
-        width: 470px;
-        height: 470px;
-    }
+  .HeroCenterImg {
+    width: 300px !important;
+    height: 300px !important;
+  }
 
-    .kr-subcontainer-2 .kr-text-container h1 {
-        font-size: 58px;
-        line-height: 87px;
-    }
-
-    .kr-subcontainer-2 .kr-text-container p {
-        font-size: 18px;
-        line-height: 27px;
-
-    }
-
-    .kr-subcontainer-2 {
-        padding-left: 412px;
-        padding-right: 412px;
-    }
+  .kr-subcontainer-2 .kr-btn {
+    margin-top: 40px;
+  }
 }
 
 @media (max-width: 1280px) {
-    .HeroCenterImg {
-        width: 270px;
-        height: 270px;
+  .heroContainer {
+      margin-bottom: 32.7%;
     }
-
-    .kr-subcontainer-2 .kr-text-container h1 {
-        font-size: 40px;
-        line-height: 50px;
-    }
-
-    .kr-subcontainer-2 {
-        padding-left: 80px;
-        padding-right: 80px;
-    }
+  .kr-subcontainer-2 {
+    padding: 0 80px;
+  }
 }
 
 @media (max-width: 768px) {
-    .HeroCenterImg {
-        width: 250px;
-        height: 250px;
+  .heroContainer {
+      margin-bottom: 46.7%;
     }
+  
+  .kr-subcontainer-1 {
+    height: 600px;
+  }
 
-    .kr-subcontainer-1 {
-        height: 600px;
-    }
+  .HeroCenterImg {
+    width: 250px;
+    height: 250px;
+  }
 
-    .kr-subcontainer-2 {
-        padding-left: 50px;
-        padding-right: 50px;
-    }
+  .kr-subcontainer-2 {
+    padding: 0 50px;
+  }
 
-    .kr-subcontainer-2 .kr-text-container h1 {
-        font-size: 40px;
-    }
-    .shortParagraph {
-        display: block;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 21px;
-        color: #999999;
-        background-color: transparent;
-    }
+  .kr-subcontainer-2 .kr-text-container h1 {
+    font-size: 40px;
+  }
 
-    .longParagraph {
-        display: none;
-    }
+  .shortParagraph {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--primary-color-gray);
+  }
 
+  .longParagraph {
+    display: none;
+  }
 }
 
-@media (max-width: 480px) {
-    .HeroCenterImg {
-        width: 200px;
-        height: 200px;
-    }
+@media (max-width: 576px) {
+      .heroContainer {
+          margin-bottom: 61.3%;
+        }
+  .kr-subcontainer-1 {  
+      background: url(../../../assets/Imgs/hero3.png) center center / cover no-repeat;
+    height: 500px;
+  }
 
-    .kr-subcontainer-2 {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
+  .HeroCenter {
+    height: 80%;
+  }
 
-    .kr-subcontainer-2 .kr-text-container h1 {
-        font-size: 28px;
-        line-height: 42px;
-    }
-    
+  .HeroCenterImg {
+    top: 38% !important;
+    width: 200px !important;
+    height: 200px !important;
+  }
 
+  .kr-subcontainer-2 {
+    bottom: -43%;
+    padding: 0 20px;
+  }
 
+  .kr-subcontainer-2 .kr-btn {
+    margin-top: 30px;
+  }
 
-
-}
-
-@media (max-width: 390px) {
-    .HeroCenterImg {
-        width: 200px;
-        height: 200px;
-    }
-
-    .kr-subcontainer-1 {
-        height: 500px;
-    }
-
-    .kr-subcontainer-2 {
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-    .kr-subcontainer-2 .kr-text-container h1 {
-        font-size: 28px;
-        line-height: 42px;
-    }
-
-
-
-
+  .kr-subcontainer-2 .kr-text-container h1 {
+    font-size: 28px;
+    line-height: 42px;
+  }
 }

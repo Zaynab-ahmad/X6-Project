@@ -5,7 +5,7 @@
 
 .controlsWrapper {
   position: absolute;
-  top: -106px;
+  top: -90px;
   right: 2%;
   display: flex;
   align-items: center;
@@ -32,12 +32,16 @@
   background-color: var(--black-shade10);
   border: 1px solid var(--black-shade12);
   border-radius: 8px;
+  transition: border-color 0.3s ease;
+  cursor: pointer;
 
   img {
     width: 28px;
     height: 28px;
-    cursor: pointer;
   }
+}
+.customArrow:hover {
+  border-color: var(--primary-color-gray);
 }
 
 .customPagination {
@@ -157,9 +161,7 @@
 
   .customScrollbar {
     display: flex;
-
-
-  }
+ }
 
 }
 

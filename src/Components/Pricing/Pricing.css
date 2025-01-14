@@ -1,10 +1,5 @@
-body {
-  font-family: "Manrope";
-  background-color: var(--black-shade08);
-  color: var(--absolute-white);
-  margin: 0;
-  padding: 0;
-}
+
+
 
 .main-title {
   font-size: 1.7rem;

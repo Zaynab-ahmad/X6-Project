@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Button.css";
 
 export default function Button({
@@ -19,9 +19,23 @@ export default function Button({
   // Fallback to a default padding if paddingType is invalid
   const selectedPadding = paddingOptions[paddingType] || paddingOptions.type1;
 
-  // Determine padding based on screen size
-  const padding =
-    window.innerWidth > 1400 ? selectedPadding.lg : selectedPadding.md;
+  const [padding, setPadding] = useState("");
+
+  const updatePadding = () => {
+    if (window.innerWidth > 1400) {
+      setPadding(selectedPadding.lg);
+    } else {
+      setPadding(selectedPadding.md);
+    }
+  };
+
+  useEffect(() => {
+    updatePadding(); // Set initial padding value
+    window.addEventListener("resize", updatePadding); // Update padding on resize
+
+    // Cleanup the event listener on unmount
+    return () => window.removeEventListener("resize", updatePadding);
+  }, [paddingType]); // Re-run when paddingType changes
 
   return (
     <div>
@@ -31,7 +45,7 @@ export default function Button({
         style={{
           background: isBlack ? "var(--black-shade08)" : "var(--primary-color-red)",
           border: isBlack ? "1px solid var(--black-shade15)" : "none",
-          padding: padding, // Apply calculated padding
+          padding: padding, // Apply dynamically calculated padding
         }}
       >
         {text}

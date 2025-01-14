@@ -6,6 +6,9 @@ export default function DevicesCard( {icon , title} ) {
 
  
     <div className='CardTay'>
+              <div className='devicesCardOverlay'></div>
+              <div className='devicesCard'>
+
             <div className='CardTitleTay'>
               <div className='CardIconTay'>
                   <img className='IconTay' src={icon}/>
@@ -18,6 +21,7 @@ export default function DevicesCard( {icon , title} ) {
             StreamVibe is optimized for both Android and iOS smartphones. Download our app 
             from the Google Play Store or the Apple App Store
             </p>  
+              </div>
         </div>
   
  

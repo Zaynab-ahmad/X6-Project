@@ -1,3 +1,4 @@
+
 import { useParams } from "react-router-dom";
 import MoviesPageDes from "../../Components/MoviesPageDes/MoviesPageDes";
 import MoviesPageCast from "../../Components/MoviesPageCast/MoviesPageCast";
@@ -15,3 +16,4 @@ export default function MoviesPageOpen() {
     </div>
   );
 }
+

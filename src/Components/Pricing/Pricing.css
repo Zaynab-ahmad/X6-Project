@@ -1,22 +1,19 @@
 
 
-h1 {
+
+.main-title {
   font-size: 1.7rem;
   margin-bottom: 10px;
 }
 
-.pa {
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 400;
+.main-paragraph {
   font-size: 18px;
   line-height: 150%;
   color: var(--primary-color-gray);
 }
 
-.toggle-buttons {
+.toggle-btn {
   background-color: var(--black-shade06);
-  box-sizing: border-box;
   padding: 10px 0;
   border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -26,14 +23,12 @@ h1 {
   border: 1px solid var(--black-shade15);
 }
 
-.toggle2 {
+.toggle {
   color: var(--primary-color-gray);
 }
 
 .btn-check:checked + .btn,
-.btn.active,
-.btn:first-child:active,
-.btn:active {
+.btn.active {
   color: var(--bs-btn-active-color);
   background-color: var(--black-shade15);
   border-color: var(--black-shade15);
@@ -42,4 +37,12 @@ h1 {
   -moz-border-radius: 5px !important;
   -ms-border-radius: 5px !important;
   -o-border-radius: 5px !important;
+}
+
+.w-{
+  width:15%;
+}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+     padding: 0;
 }

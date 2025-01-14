@@ -29,7 +29,8 @@ export default function Devices() {
                 never miss a moment of entertainment."
         />
       </div>
-      <div className="CardsTay">
+     
+        <Container className="m-0 p-0">
           <Row>
             <Col xs={12} sm={12} lg={6} xl={4}>
               <DevicesCard icon={icon1} title={"Smartphones"} />
@@ -50,7 +51,9 @@ export default function Devices() {
               <DevicesCard icon={icon6} title={"VR Headsets"} />
             </Col>
           </Row>
-      </div>
+
+        </Container>
+      
     </div>
   );
 }

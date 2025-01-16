@@ -1,0 +1,29 @@
+/* Container for the toggle buttons */
+.customToggleContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--black-shade06);
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 50px;
+    border: 1px solid var(--black-shade15);
+}
+
+.customToggleButton {
+    background: transparent;
+    color: var(--primary-color-gray);
+    border: none;
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.customToggleButton.active {
+    background-color: var(--black-shade12);
+}

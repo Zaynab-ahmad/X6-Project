@@ -1,0 +1,65 @@
+.cardRowEM {
+  row-gap: 30px;
+}
+
+.toggleBtn {
+  display: flex;
+  background-color: var(--black-shade06);
+  border: 1px solid var(--black-shade15);
+  padding: 10px;
+  border-radius: 10px;
+  width: fit-content;
+  height: fit-content;
+}
+
+.toggle {
+  color: var(--primary-color-gray);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  border: none;
+  padding: 14px 24px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-check:checked+.btn,
+.btn.active {
+  color: white;
+  background-color: var(--black-shade12);
+  border-radius: 10px !important;
+}
+.pricingTopEM {
+  padding-bottom: 50px;
+}
+@media (max-width:1440px) {
+  .toggleBtn {
+    padding: 8px;
+    border-radius: 8px;
+  }
+
+  .toggle {
+    font-size: 14px;
+    line-height: 21px;
+    padding: 12px 20px;
+
+  }
+
+  .btn-check:checked+.btn,
+  .btn.active {
+    border-radius: 6px !important;
+  }
+    .pricingTopEM {
+      padding-bottom: 40px;
+      
+    }
+}
+@media (max-width:576px) {
+    .pricingTopEM {
+        padding-bottom: 40px;
+    
+      }
+
+}

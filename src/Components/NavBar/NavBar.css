@@ -1,233 +1,222 @@
 .kr-navbar {
-    width: 100%;
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 24px 80px;
-    background-color: transparent;
-    z-index: 99999;
-    font-size: 14px;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: transparent;
+  z-index: 99999;
+  font-size: 14px;
+  transition: background-color 0.3s ease-in-out;
+}
+.scrolled {
+  background-color: #0f0f0fcf;
+}
 
-}
-.logoContainer{
-    background-color: transparent;
-}
 .kr-logo {
-    width: 165.83px;
-    height: 50px;
-    background-color: transparent;
-    transition: 0.3s ease-in-out;
+  width: 199px;
+  height: 60px;
+  background-color: transparent;
+  transition: 0.3s ease-in-out;
 }
-.kr-logo:hover{
-    transform: scale(1.2);
-    cursor: pointer;
 
+.kr-logo:hover {
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
 .kr-navigation-container {
+  padding: 10px 40px 10px 10px !important;
 
-    padding: 8px 25px 8px 5px !important;
-    background-color: #0F0F0F !important;
-    border: solid 3px #1F1F1F !important;
-    border-radius: 10px !important;
-    justify-self: center !important;
-    display: flex !important;
-    align-items: center;
-    transition: 0.3s ease-in-out;
-}
-.kr-navigation-container:hover{
-    transform: scale(1.1);
-    padding: 8px 25px !important;
-    cursor: pointer;
+  background-color: #0f0f0f !important;
+  border: solid 4px #1f1f1f !important;
+
+  border-radius: 12px !important;
+
+  justify-self: center !important;
+  display: flex !important;
+  align-items: center;
 }
 
 .kr-navitem {
-    height: fit-content !important;
-    width: fit-content !important;
-    padding: 0 !important;
-    border-radius: 10px !important;
-    background-color: #0F0F0F;
-    align-items: center;
-    display: flex;
-    font-size:14px ;
-    line-height: 21px;
-    font-weight: 500;
-    
+  height: fit-content !important;
+  width: fit-content !important;
+  padding: 0 !important;
+  border-radius: 10px !important;
+  background-color: #0f0f0f;
+  align-items: center;
+  display: flex;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
 
+.kr-navitem:hover {
+  transform: scale(1.1);
 }
 
 .active-link {
-    background-color: #1A1A1A !important;
-    border: none !important;
-    color: #FFFFFF !important;
-    border-radius: 8px !important;
-    padding: 12px 20px !important;
-    margin: 0 5px;
-
-
-
+  background-color: #1a1a1a !important;
+  border: none !important;
+  color: #ffffff !important;
+  border-radius: 8px !important;
+  padding: 14px 24px !important;
+  margin: 0 5px;
 }
 
 .notactive-link {
-    background-color: #0F0F0F !important;
-    color: #BFBFBF !important;
-    padding: 0 !important;
-    margin-left: 8px;
-    margin-right: 8px;
-
-
-
-
-}
-
-nav {
-    display: flex !important;
+  background-color: #0f0f0f !important;
+  color: #bfbfbf !important;
+  padding: 0 !important;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .kr-icons-container img {
+  width: 34px;
+  height: 34px;
+  margin-left: 15px;
+  margin-right: 15px;
+  transition: 0.3s ease-in-out;
+}
+
+.kr-icons-container img:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.barsBtn {
+  display: none;
+  padding: 12px;
+  background-color: var(--black-shade15);
+  border: solid 3px #1f1f1f !important;
+  border-radius: 6px;
+  transition: 0.3s ease-in-out;
+}
+
+.barsBtn.open {
+  padding: 12px;
+  border: solid 3px #1f1f1f !important;
+  border-bottom: none !important;
+  border-radius: 6px;
+  transition: 0.3s ease-in-out;
+  width: 150px;
+}
+
+.barsBtn:hover {
+  cursor: pointer;
+}
+
+.dropdownmenu {
+  position: absolute;
+  top: 70px;
+  right: 30px;
+  background-color: var(--black-shade06);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  z-index: 100px;
+  min-width: 150px;
+  border: solid 3px #1f1f1f !important;
+  border-top: none !important;
+}
+
+.dropdownitem {
+  width: 100%;
+  text-align: center;
+  color: white;
+  display: block;
+  text-decoration: none;
+  transition: 0.3s;
+  padding: 10px;
+}
+
+.dropdownitem:hover {
+  background-color: #1f1f1f;
+}
+
+@media (max-width: 1440px) {
+  .kr-navbar {
+    padding-top: 24px !important;
+    padding-bottom: 24px;
+  }
+
+  .kr-logo {
+    width: 165.83px;
+    height: 50px;
+  }
+
+  .kr-navigation-container {
+    padding: 8px 25px 8px 5px !important;
+    border: solid 3px #1f1f1f !important;
+    border-radius: 10px !important;
+  }
+
+  .kr-navitem {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .active-link {
+    padding: 12px 20px !important;
+    margin: 0 5px;
+  }
+
+  .notactive-link {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  .kr-icons-container img {
     width: 24px;
     height: 24px;
-
     margin-left: 7px;
-    margin-right: 7px
+    margin-right: 7px;
+  }
 }
 
-.kr-icons-container {
-    padding-left: 89px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
-    transition: 0.3s ease-in-out;
-}
-.kr-icons-container:hover{
-    cursor: pointer;
-    transform: scale(1.2);
-}
-.barsBtn{
-    display: none;
-    padding: 12px;
-    border: solid 3px #1F1F1F !important;
-    border-radius: 6px;
-    transition: 0.3s ease-in-out;
+@media (max-width: 992px) {
+  .kr-navbar {
+    padding-top: 24px !important;
+    padding-bottom: 24px;
+  }
 
-}
-.barsBtn.open{
-    
-    padding: 12px;
-    border: solid 3px #1F1F1F !important;
-    border-bottom: none !important;
-    border-radius: 6px;
-    transition: 0.3s ease-in-out;
-    width: 150px;
-    
+  .kr-navigation-container {
+    display: none !important;
+  }
 
-}
-.barsBtn:hover{
-    cursor: pointer;
-    
-}
-.dropdownmenu{
-    position: absolute;
-    top: 70px;
-    right: 30px;
-    background-color: var(--black-shade06);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    z-index: 100px;
-    min-width: 150px;
-    border: solid 3px #1F1F1F !important;
-    border-top: none !important;
+  .kr-icons-container {
+    display: none !important;
+  }
 
-}
-.dropdownitem{
-    width: 100%;
-    text-align: center;
-    color: white;
+  .barsBtn {
     display: block;
-    text-decoration: none;
-    transition: 0.3s;
-    padding: 10px;
+  }
+
+  .barsBtn .active {
+    display: block;
+  }
 }
-.dropdownitem:hover{
-    background-color:#1F1F1F ;
-}
 
+@media (max-width: 576px) {
+  .kr-navbar {
+    padding-top: 40px !important;
+    padding-bottom: 14px !important;
+  }
 
+  .kr-logo {
+    width: 116px;
+    height: 35px;
+  }
 
-@media (max-width:1920px) and (min-width:1700px) {
-    .kr-navbar {
-        
-        padding: 30px 162px;
-        
-    }
-    .kr-logo {
-        width: 199px;
-        height: 60px;
-        background-color: transparent;
-    }
-
-    .kr-icons-container img {
-        width: 34px;
-        height: 34px;
-
-        margin-left: 15px;
-        margin-right: 15px
-    }
-    .active-link {
-        
-        padding: 14px 24px !important;
-        margin: 0 5px;
-    }
-    .notactive-link {
-        margin-left: 15px;
-        margin-right: 15px;
-    }
-    .kr-navitem {
-        font-size:18px ;
-        line-height: 27px;        
-    }
-    .kr-navigation-container {
-        padding: 10px 40px 10px 10px !important;
-        border: solid 4px #1F1F1F !important;
-        border-radius: 12px !important;   
-    }
-}
- 
-@media (max-width: 1000px ) {
-    .kr-navbar{
-        padding: 24px 30px !important;
-    }
-    .kr-navigation-container {
-        display: none !important;
-    }
-    .kr-icons-container{
-        display: none !important;
-    }
-    .barsBtn{
-        display: block;
-    }
-    .barsBtn .active{
-        display: block;
-    }
-
-    
-}
-@media (max-width: 390px) {
-    .kr-navbar{
-        padding: 40px 16px 14px 16px !important;
-    }
-    .kr-logo{
-        width: 116px;
-        height: 35px;
-    }
-    .dropdownmenu{
-        right: 16px;
-        top: 85px ;
-    }
-    
+  .dropdownmenu {
+    right: 16px;
+    top: 85px;
+  }
 }

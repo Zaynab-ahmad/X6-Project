@@ -1,0 +1,32 @@
+.devicesCardsRow {
+    gap: 30px;
+}
+
+
+.StreamingExpTitleTay{
+width: 77%;
+}
+
+
+
+@media (max-width:1440px){
+    .StreamingExTitleTay{
+    width:80%
+ }
+
+
+}  
+@media(max-width:576px){
+  .StreamingExTitleTay{
+    width: 100%
+    }
+
+       
+}
+
+ 
+  
+  
+
+
+

@@ -2,18 +2,18 @@ import './HomeHero.css'
 import HeroCenter from '../../../assets/Imgs/hero2.png';
 import Button from '../../Buttons/Button';
 import Play from '../../../assets/Icons/playicon1.svg';
-import overlay from '../../../assets/Imgs/overlay.png'
+
 
 
 export default function HomeHero() {
   return (
+
     <div className='heroContainer'>
       
       <div className='kr-subcontainer-1'>
-      <img className='overlayImg' src={overlay} alt="" />
         <div className='layer-1'></div>
         <div className='layer-2'></div>
-        <div className='HeroCenter'><img className='HeroCenterImg' alt="" src={HeroCenter} /></div>
+        <div className='HeroCenter'><img className='HeroCenterImg' alt="Hero Icon" src={HeroCenter} /></div>
 
 
       </div>
@@ -25,10 +25,9 @@ export default function HomeHero() {
           </div>
           <div className='kr-btn'>
             <Button
-              
               text={
                 <>
-                  <img src={Play} alt="" />Start Watching Now
+                  <img src={Play} alt="play" />Start Watching Now
                 </>
               }
               isFullWidth={true}
@@ -41,5 +40,6 @@ export default function HomeHero() {
         </div>
 
     </div>
+
   )
 }

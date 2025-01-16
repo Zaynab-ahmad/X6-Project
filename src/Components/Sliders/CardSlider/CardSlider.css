@@ -1,0 +1,181 @@
+.sliderContainer {
+  position: relative;
+  padding-top: 50px;
+}
+
+.controlsWrapper {
+  position: absolute;
+  top: -90px;
+  right: 2%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--black-shade06);
+  border: 1px solid var(--black-shade12);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.sliderItemZA {
+  width: 86.2% !important;
+}
+
+.itemCustomWidthZA {
+  width: 85% !important;
+}
+
+.customArrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+  background-color: var(--black-shade10);
+  border: 1px solid var(--black-shade12);
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+  cursor: pointer;
+
+  img {
+    width: 28px;
+    height: 28px;
+  }
+}
+.customArrow:hover {
+  border-color: var(--primary-color-gray);
+}
+
+.customPagination {
+  display: flex;
+  gap: 3px;
+}
+
+.paginationDot {
+  width: 16px;
+  height: 4px;
+  background: var(--black-shade20);
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.paginationDot.active {
+  background: var(--primary-color-red);
+  width: 23px;
+}
+
+
+.customScrollbar {
+  position: relative;
+  display: none;
+  height: 5px;
+  width: 22.1%;
+  background: var(--black-shade20);
+  border-radius: 100px;
+  margin-top: 24px;
+  justify-self: center;
+}
+
+.scrollbarSegment {
+  height: 100%;
+  border-radius: inherit;
+}
+
+@media (max-width: 1440px) {
+  .sliderContainer {
+    padding-top: 40px;
+  }
+
+  .controlsWrapper {
+    gap: 10px;
+    border-radius: 10px;
+    padding: 12px;
+  }
+
+  .customArrow {
+    padding: 10px;
+    border-radius: 6px;
+
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .paginationDot {
+    width: 14px;
+  }
+
+  .paginationDot.active {
+    width: 18px;
+  }
+
+  .sliderItemZA {
+    width: 93.7% !important;
+  }
+
+  .itemCustomWidthZA {
+    width: 89.3% !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .sliderItemZA {
+    width: 88% !important;
+  }
+}
+
+
+@media (max-width: 992px) {
+  .controlsWrapper {
+    gap: 8px;
+    border-radius: 6px;
+    padding: 8px;
+  }
+
+  .customArrow {
+    padding: 6px;
+
+    img {
+
+      width: 18px;
+      height: 18px;
+
+    }
+  }
+
+  .paginationDot {
+    width: 10px;
+  }
+
+  .paginationDot.active {
+    width: 12px;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+  .controlsWrapper {
+    display: none;
+  }
+
+  .customScrollbar {
+    display: flex;
+ }
+
+}
+
+@media (max-width: 576px) {
+  .sliderItemZA {
+    width: 95.7% !important;
+  }
+
+  .sliderContainer {
+    padding-top: 20px;
+  }
+
+  .itemCustomWidthZA {
+    width: 64.6% !important;
+    margin-left: 16.5% !important;
+  }
+}

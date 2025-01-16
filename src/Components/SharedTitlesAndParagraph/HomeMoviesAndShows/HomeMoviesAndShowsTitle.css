@@ -1,0 +1,31 @@
+.homeTitleZA,
+.moviesAndShowsTitle {
+  font-weight: 700;
+  color: var(--absolute-white);
+  margin: 0;
+  text-wrap: balance;
+}
+.homeTitleZA {
+   padding-bottom: 14px;
+}
+.moviesAndShowsTitle {
+    padding-bottom: 15.5px;
+}
+@media (max-width: 1440px) {
+  .homeTitleZA {
+   padding-bottom: 10px;
+  }
+  .moviesAndShowsTitle {
+   padding-bottom: 11.5;
+  }
+ 
+}
+
+@media (max-width: 576px) {
+  .homeTitleZA {
+   padding-bottom: 8px;
+  }
+  .moviesAndShowsTitle {
+   padding-bottom: 0;
+  }
+}

@@ -1,0 +1,26 @@
+.moviesSectionZA {
+    border: 1px solid var(--black-shade15);
+    position: relative;
+    padding: 50px;
+    border-radius: 12px;
+}
+.moviesBadgeZA {
+    background-color: var(--primary-color-red);
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px 24px;
+    border-radius: 8px;
+    top: -4%;
+}
+@media (max-width: 576px) {
+    .moviesSectionZA {
+        border: none;
+        padding: 0px;
+    }
+
+    .moviesBadgeZA {
+        display: none;
+    }
+}

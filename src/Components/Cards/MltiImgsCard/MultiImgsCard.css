@@ -1,0 +1,180 @@
+.multiImgsCardZA {
+  background-color: var(--black-shade10);
+  border: 1px solid var(--black-shade15);
+  padding: 30px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  transition: padding 0.3s ease;
+  overflow: hidden;
+  width: 100%;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+.multiImgsCardZA:hover {
+  box-shadow: inset 0px 0px 8px 3px var(--primary-color-gray);
+}
+
+.imageGalleryContainer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.imageGallery {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* Two equal-width columns */
+  position: relative;
+  z-index: 1;
+  justify-content: center;
+}
+
+.gradientOverlay {
+  position: absolute;
+  top: 1px;
+  left: -1px;
+  background: linear-gradient(to bottom, rgba(26, 26, 26, 0) 0%, #1a1a1a 100%);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.multiImgsZA {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.defaultRatio {
+  aspect-ratio: 3 / 3.6; /*width to height ratio*/
+}
+
+.customRatio {
+  aspect-ratio: 1 / 0.95;
+}
+
+.genreZA {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--black-shade10);
+  z-index: 100;
+
+  .leftGenreZA {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .multiImgsCardTextZA,
+  .multiImgsCardTextZAWithBadge {
+    color: var(--absolute-white);
+    font-weight: 600;
+    line-height: 27px;
+  }
+
+  .multiImgsCardTextZA {
+    font-size: 18px;
+  }
+
+  .multiImgsCardTextZAWithBadge {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.genreZA img {
+  width: 30px;
+  height: 30px;
+}
+
+.badgeZA {
+  color: var(--absolute-white);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 12px;
+  border-radius: 5px;
+  background-color: var(--primary-color-red);
+  margin-bottom: 4px;
+  padding: 10px;
+  width: 86px;
+  z-index: 10;
+}
+
+
+@media (max-width: 1440px) {
+  .multiImgsCardZA {
+    padding: 24px;
+  }
+
+  .multiImgsZA {
+    border-radius: 4px;
+  }
+
+  .defaultRatio {
+    aspect-ratio: 3 / 3.4;
+  }
+
+  .customRatio {
+    aspect-ratio: 1 / 0.94;
+  }
+
+  .multiImgsCardTextZA,
+  .multiImgsCardTextZAWithBadge {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+
+  .badgeZA {
+    font-size: 12px;
+    padding: 8px;
+    line-height: 9px;
+    border-radius: 4px;
+    width: 66px;
+  }
+
+  .genreZA img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .genreZA .multiImgsCardTextZA {
+    font-size: 14px !important;
+    line-height: 21px !important;
+  }
+
+  .genreZA img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .multiImgsCardTextZAWithBadge {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .multiImgsCardZA {
+    padding: 20px;
+  }
+
+  .multiImgsZA {
+    border-radius: 4px;
+  }
+
+  .defaultRatio {
+    aspect-ratio: 3 / 3.28;
+  }
+
+  .customRatio {
+    aspect-ratio: 1 / 0.96;
+  }
+
+}

@@ -1,0 +1,28 @@
+.FAQ-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.FAQ-column {
+  flex: 1 1 calc(50% - 10px);
+  max-width: calc(50% - 10px);
+}
+.faqHeading {
+  margin-bottom: 50px;
+}
+   @media(max-width: 1440px){
+   .faqHeading {
+     margin-bottom: 40px;
+   }
+  }
+
+@media (max-width: 768px) {
+  .FAQ-column {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+   
+}

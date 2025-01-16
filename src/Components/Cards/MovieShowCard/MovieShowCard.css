@@ -1,0 +1,51 @@
+.MovieShowCard {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 377px;
+    border-radius: 12px;
+    border: solid 1px #262626;
+    background-color: #1A1A1A;
+    width: fit-content;
+
+
+}
+.thumbnailImg{
+    width: 243.6px;
+    height: 281px;
+    border-radius: 12px;
+}
+.detailSection{
+    background-color: transparent;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  
+}
+.lengthTime {
+    width: fit-content;
+    display: flex;
+    padding: 6px 10px 6px 6px;
+    border-radius: 51px;
+    background-color: #141414;
+    border: solid 1px #262626;
+    color: #999999;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+   
+}
+.viewCount{
+    width: fit-content;
+    display: flex;
+    padding: 6px 10px 6px 6px;
+    border-radius: 51px;
+    background-color: #141414;
+    border: solid 1px #262626;
+    color: #999999;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+
+}

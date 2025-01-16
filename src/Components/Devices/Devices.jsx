@@ -11,7 +11,18 @@ import icon5 from "./../../assets/Icons/gaming.svg";
 import icon6 from "./../../assets/Icons/VRheadsets.svg";
 import HomeMoviesAndShowsTitle from "../SharedTitlesAndParagraph/HomeMoviesAndShows/HomeMoviesAndShowsTitle";
 import HomeParagraph from "../SharedTitlesAndParagraph/HomeParagraph/HomeParagraph";
+
 export default function Devices() {
+  // Array of devices with icons and titles
+  const devices = [
+    { icon: icon1, title: "Smartphones" },
+    { icon: icon2, title: "Tablet" },
+    { icon: icon3, title: "Smart TV" },
+    { icon: icon4, title: "Laptops" },
+    { icon: icon5, title: "Gaming Consoles" },
+    { icon: icon6, title: "VR Headsets" },
+  ];
+
   return (
     <div className="StreamingExpTay xContainer customMargin">
       <div className="StreamingExpTitleTay">
@@ -29,31 +40,13 @@ export default function Devices() {
                 never miss a moment of entertainment."
         />
       </div>
-     
-        <Container className="m-0 p-0">
-          <Row>
-            <Col xs={12} sm={12} lg={6} xl={4}>
-              <DevicesCard icon={icon1} title={"Smartphones"} />
-            </Col>
-            <Col xs={12} sm={12} lg={6} xl={4}>
-              <DevicesCard icon={icon2} title={"Tablet"} />
-            </Col>
-            <Col xs={12} sm={12} lg={6} xl={4}>
-              <DevicesCard icon={icon3} title={"Smart TV"} />
-            </Col>
-            <Col xs={12} sm={12} lg={6} xl={4}>
-              <DevicesCard icon={icon4} title={"Laptops"} />
-            </Col>
-            <Col xs={12} sm={12} lg={6} xl={4}>
-              <DevicesCard icon={icon5} title={"Gaming Consoles"} />
-            </Col>
-            <Col xs={12} sm={12} lg={6} xl={4}>
-              <DevicesCard icon={icon6} title={"VR Headsets"} />
-            </Col>
-          </Row>
-
-        </Container>
-      
+      <Row>
+        {devices.map((device, index) => (
+          <Col key={index} xs={12} md={6} lg={4}>
+            <DevicesCard icon={device.icon} title={device.title} />
+          </Col>
+        ))}
+      </Row>
     </div>
   );
 }

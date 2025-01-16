@@ -19,8 +19,8 @@ const faqData = [
 export default function FAQs() {
   return (
     <div className="xContainer customMargin">
-      <div className="FAQ-top d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-start align-items-lg-center">
-        <div className="d-flex flex-column justify-content-center align-items-start pe-2">
+      <div className="faqHeading d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-start align-items-lg-center">
+        <div className="d-flex flex-column justify-content-center align-items-start">
           <HomeMoviesAndShowsTitle 
             title="Frequently Asked Questions" 
             home={true} 
@@ -41,39 +41,35 @@ export default function FAQs() {
       </div>
 
       {/* FAQ Accordion Section */}
-      <Container className='m-0 p-0'>
+      
         
       <Row>
-        <Col xs={12} md={6}>
+        <Col md={12} lg={6}>
           <div className="FAQ-accordion">
             {faqData.slice(0, 4).map((faq, index) => (
               <ACCO 
                 key={index} 
                 number={faq.number} 
                 que={faq.que} 
-                ans={faq.ans} 
-                lin={faq.lin} 
-                state={false} 
+                ans={faq.ans}                 
               />
             ))}
           </div>
         </Col>
-        <Col xs={12} md={6}>
+        <Col md={12} lg={6}>
           <div className="FAQ-accordion">
             {faqData.slice(4).map((faq, index) => (
               <ACCO 
                 key={index} 
                 number={faq.number} 
                 que={faq.que} 
-                ans={faq.ans} 
-                lin={faq.lin} 
-                state={false} 
+                ans={faq.ans}          
               />
             ))}
           </div>
         </Col>
       </Row>
-      </Container>
+      
     </div>
   );
 }

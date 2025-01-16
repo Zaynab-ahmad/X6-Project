@@ -1,7 +1,5 @@
-// import React, { useState, useEffect } from "react";
 import Button from "../Buttons/Button";
 import "./CTA.css";
-// import CTAMobile from "../../assets/Imgs/CTAMobile.png";
 import HomeParagraph from "../SharedTitlesAndParagraph/HomeParagraph/HomeParagraph";
 import HomeMoviesAndShowsTitle from "../SharedTitlesAndParagraph/HomeMoviesAndShows/HomeMoviesAndShowsTitle";
 

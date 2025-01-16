@@ -1,42 +1,94 @@
-.plan {
+.planEM {
   background-color: var(--black-shade10);
-  font-family: "Manrope";
   border-radius: 12px;
-  -webkit-border-radius: 12px;
-  -moz-border-radius: 12px;
-  -ms-border-radius: 12px;
-  -o-border-radius: 12px;
+  border: 1px solid var(--black-shade15);
+  padding: 50px;
+  gap: 50px;
+  color: white;
+  width: fit-content;
 }
 
-.child:nth-child(even){
-  padding: 0 10px !important;
+.cardTitleEM {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  padding-bottom: 16px;
 }
 
-.card-features {
-    line-height: 73%;
-    color: var(--primary-color-gray);
-}
-
-.card-paragraph {
-  font-size: 16px;
-  height: 30%;
-  line-height: 150%;
-}
-
-.price{
-  margin-bottom: 20px;
-  font-weight: 600;
-  align-items: flex-end;
-}
-
-.period {
+.cardParagraphEM {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
   color: var(--primary-color-gray);
+  padding-bottom: 50px;
 }
 
-.h-{
-  height: 40%;
+.priceEM {
+  font-size: 40px;
+  line-height: 29.2px;
+  font-weight: 600;
+  padding-bottom: 50px;
 }
 
-@media (max-width:1920px){
+.periodEM {
+  color: var(--primary-color-gray);
+  font-size: 18px;
+  line-height: 13.14px;
+  font-weight: 500;
+}
 
+@media (max-width: 1440px) {
+  .planEM {
+    border-radius: 10px;
+    padding: 40px;
+    gap: 40px;
+  }
+  .cardTitleEM {
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 12px;
+  }
+  .cardParagraphEM {
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 40px;
+  }
+  .priceEM {
+    font-size: 30px;
+    line-height: 21.9px;
+    padding-bottom: 40px;
+  }
+
+  .periodEM {
+    font-size: 16px;
+    line-height: 11.68px;
+  }
+}
+@media (max-width: 576px) {
+  .planEM {
+    padding: 24px;
+    gap: 30px;
+  }
+  .cardTitleEM {
+    font-size: 18px;
+    line-height: 27px;
+    padding-bottom: 10px;
+  }
+
+  .cardParagraphEM {
+    font-size: 14px;
+    line-height: 21px;
+    padding-bottom: 30px;
+  }
+
+  .priceEM {
+    font-size: 24px;
+    line-height: 17.52px;
+    padding-bottom: 30px;
+  }
+
+  .periodEM {
+    font-size: 14px;
+    line-height: 10.22px;
+  }
 }

@@ -27,6 +27,7 @@ export default function MoviesAndShows() {
   return (
     <>
       <MoviesAndShowsHero />
+      
       <div>
         {/* Toggle Buttons for Small Screens */}
         {isSmallScreen && (

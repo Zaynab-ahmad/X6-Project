@@ -30,6 +30,10 @@ import Action5 from '../assets/Imgs/Action5.webp'
 import Action6 from '../assets/Imgs/Action6.webp'
 import Action7 from '../assets/Imgs/Action7.webp'
 import Action8 from '../assets/Imgs/Action8.webp'
+import Action9 from '../assets/Imgs/Action9.svg'
+import Action10 from '../assets/Imgs/Action10.svg'
+import Action11 from '../assets/Imgs/Action11.svg'
+import Action12 from '../assets/Imgs/Action12.svg'
 
  // Importing Drama  movies images
  import Drama1 from '../assets/Imgs/Drama1.webp'
@@ -80,7 +84,11 @@ export const ActionMovies = [
   { id: 5, src: Action5, alt: "Action Movie 5", title: "The Dark Knight Rises", description: "A story of a man who is trying to save the world from a"},
   { id: 6, src: Action6, alt: "Action Movie 6", title: "The Dark Knight Rises", description: "A story of a man who is trying to save the world from a"},
   { id: 7, src: Action7, alt: "Action Movie 7", title: "The Dark Knight Rises", description: "A story of a man who is trying to save the world from a"},
-  { id: 8, src: Action8, alt: "Action Movie 8", title: "The Dark Knight Rises", description: "A story of a man who is trying to save the world from a"}
+  { id: 8, src: Action8, alt: "Action Movie 8", title: "The Dark Knight Rises", description: "A story of a man who is trying to save the world from a"},
+  { id: 9, src: Action9, alt: "Action Movie 9", title: "The Dark Knight Rises", description: "A story of a man who is trying to save the world from a"},
+  { id: 10, src: Action10, alt: "Action Movie 10", title: "The Dark Knight Rises", description: "A story of a man who is trying to save the world from a"},
+  { id: 11, src: Action11, alt: "Action Movie 11", title: "The Dark Knight Rises", description: "A story of a man who is trying to save the world from a"},
+  { id: 12, src: Action12, alt: "Action Movie 12", title: "The Dark Knight Rises", description: "A story of a man who is trying to save the world from a"}
 ]
 export const AdventureMovies = [
   { id: 1, src: Adventure1, alt: "Adventure Movie 1", title: "The Dark Knight", description: "A story of a man who is trying to save the world from a dangerous virus." },

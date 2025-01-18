@@ -12,6 +12,8 @@ export default function HomeMoviesAndShowsTitle({
     type2: { lg: "38px", md: "30px", sm: "24px" },
     type3: { lg: "38px", md: "28px", sm: "24px" },
     type4: { lg: "38px", md: "28px", sm: "20px" },
+    type5: { lg: "48px", md: "38px", sm: "28px" },
+
   };
 
   const lineHeights = {
@@ -19,6 +21,8 @@ export default function HomeMoviesAndShowsTitle({
     type2: { lg: "57px", md: "45px", sm: "36px" },
     type3: { lg: "57px", md: "42px", sm: "36px" },
     type4: { lg: "57px", md: "42px", sm: "30px" },
+    type5: { lg: "72px", md: "57px", sm: "42px" },
+
   };
 
   const paddingType = {

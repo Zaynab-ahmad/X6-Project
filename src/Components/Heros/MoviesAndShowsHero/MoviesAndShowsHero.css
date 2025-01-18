@@ -20,6 +20,7 @@
   background: linear-gradient(to top, #141414 0%, #14141400 100%);
   z-index: 2;
   pointer-events: none;
+  border-radius: inherit !important;
 }
 
 .heroContentZA {
@@ -37,6 +38,7 @@
 }
 .MoviesAndShowsHeroTZA {
   padding-bottom: 30px;
+  width: 80%;
 }
 .heroButtonsZA {
   display: flex;
@@ -78,6 +80,7 @@
   z-index: 2;
   padding-top: 170px;
   margin-bottom: 100px;
+    border-radius: inherit !important;
 }
 @media (max-width: 1440px) {
   .MoviesAndShowsHeroZA {
@@ -111,6 +114,7 @@
     .heroVideoZA {
       padding-top: 142px;
       margin-bottom: 60px;
+
     }
     .heroContentZA {
       padding: 16px 24px 16px 24px;

@@ -17,7 +17,7 @@ import mustWatch1 from '../assets/Imgs/Movies/MustWatchMovies1.webp';
 import mustWatch2 from '../assets/Imgs/Movies/MustWatchMovies2.webp';
 import mustWatch3 from '../assets/Imgs/Movies/MustWatchMovies3.webp';
 import mustWatch4 from '../assets/Imgs/Movies/MustWatchMovies4.webp';
- 
+
 // Importing must watch movies cover images
 import MustWatchMovies1cover from '../assets/Imgs/Movies/MustWatchMovies1cover.webp';
 import MustWatchMovies2cover from '../assets/Imgs/Movies/MustWatchMovies2cover.webp';
@@ -31,7 +31,7 @@ import Adventure3 from '../assets/Imgs/Adventure3.webp'
 import Adventure4 from '../assets/Imgs/Adventure4.webp'
 import Adventure5 from '../assets/Imgs/Adventure5.webp'
 import Adventure6 from '../assets/Imgs/Adventure6.webp'
- 
+
 // Importing Adventure  movies cover images
 import Adventure1cover from '../assets/Imgs/adventure1cover.webp'
 import Adventure2cover from '../assets/Imgs/adventure2cover.webp'
@@ -62,58 +62,82 @@ import Action7Cover from '../assets/Imgs/action7cover.webp'
 import Action8Cover from '../assets/Imgs/action8cover.webp'
 
 
- // Importing Drama  movies images
- import Drama1 from '../assets/Imgs/Drama1.webp'
- import Drama2 from '../assets/Imgs/Drama2.webp'
- import Drama3 from '../assets/Imgs/Drama3.webp'
- import Drama4 from '../assets/Imgs/Drama4.webp'
- import Drama5 from '../assets/Imgs/Drama5.webp'
- import Drama6 from '../assets/Imgs/Drama6.webp'
- import Drama7 from '../assets/Imgs/Drama7.webp'
- import Drama8 from '../assets/Imgs/Drama8.webp'
+// Importing Drama  movies images
+import Drama1 from '../assets/Imgs/Drama1.webp'
+import Drama2 from '../assets/Imgs/Drama2.webp'
+import Drama3 from '../assets/Imgs/Drama3.webp'
+import Drama4 from '../assets/Imgs/Drama4.webp'
+import Drama5 from '../assets/Imgs/Drama5.webp'
+import Drama6 from '../assets/Imgs/Drama6.webp'
+import Drama7 from '../assets/Imgs/Drama7.webp'
+import Drama8 from '../assets/Imgs/Drama8.webp'
 
 // Importing Drama  movies cover images
- import Drama1cover from '../assets/Imgs/drama1cover.webp'
- import Drama2cover from '../assets/Imgs/drama2cover.webp'
- import Drama3cover from '../assets/Imgs/drama3cover.webp'
- import Drama4cover from '../assets/Imgs/drama4cover.webp'
- import Drama5cover from '../assets/Imgs/drama5cover.webp'
- import Drama6cover from '../assets/Imgs/drama6cover.webp'
- import Drama7cover from '../assets/Imgs/drama7cover.webp'
- import Drama8cover from '../assets/Imgs/drama8cover.webp'
+import Drama1cover from '../assets/Imgs/drama1cover.webp'
+import Drama2cover from '../assets/Imgs/drama2cover.webp'
+import Drama3cover from '../assets/Imgs/drama3cover.webp'
+import Drama4cover from '../assets/Imgs/drama4cover.webp'
+import Drama5cover from '../assets/Imgs/drama5cover.webp'
+import Drama6cover from '../assets/Imgs/drama6cover.webp'
+import Drama7cover from '../assets/Imgs/drama7cover.webp'
+import Drama8cover from '../assets/Imgs/drama8cover.webp'
 
 
- 
- // Importing Comedy  movies images
- import Comedy1 from '../assets/Imgs/Comedy1.webp'
- import Comedy2 from '../assets/Imgs/Comedy2.webp'
- import Comedy3 from '../assets/Imgs/Comedy3.webp'
- import Comedy4 from '../assets/Imgs/Comedy4.webp'
- import Comedy5 from '../assets/Imgs/Comedy5.webp'
- import Comedy6 from '../assets/Imgs/Comedy6.webp'
- import Comedy7 from '../assets/Imgs/Comedy7.webp'
 
- // Importing Comedy  movies cover images
- import Comedy1cover from '../assets/Imgs/comedy1cover.webp'
- import Comedy2cover from '../assets/Imgs/comedy2cover.webp'
- import Comedy3cover from '../assets/Imgs/comedy3cover.webp'
- import Comedy4cover from '../assets/Imgs/comedy4cover.webp'
- import Comedy5cover from '../assets/Imgs/comedy5cover.webp'
- import Comedy6cover from '../assets/Imgs/comedy6cover.webp'
- import Comedy7cover from '../assets/Imgs/comedy7cover.webp'
+// Importing Comedy  movies images
+import Comedy1 from '../assets/Imgs/Comedy1.webp'
+import Comedy2 from '../assets/Imgs/Comedy2.webp'
+import Comedy3 from '../assets/Imgs/Comedy3.webp'
+import Comedy4 from '../assets/Imgs/Comedy4.webp'
+import Comedy5 from '../assets/Imgs/Comedy5.webp'
+import Comedy6 from '../assets/Imgs/Comedy6.webp'
+import Comedy7 from '../assets/Imgs/Comedy7.webp'
 
- // Importing Comedy  Horror images
- import Horror1 from '../assets/Imgs/Horror1.webp'
- import Horror2 from '../assets/Imgs/Horror2.webp'
- import Horror3 from '../assets/Imgs/Horror3.webp'
- import Horror4 from '../assets/Imgs/Horror4.webp'
+// Importing Comedy  movies cover images
+import Comedy1cover from '../assets/Imgs/comedy1cover.webp'
+import Comedy2cover from '../assets/Imgs/comedy2cover.webp'
+import Comedy3cover from '../assets/Imgs/comedy3cover.webp'
+import Comedy4cover from '../assets/Imgs/comedy4cover.webp'
+import Comedy5cover from '../assets/Imgs/comedy5cover.webp'
+import Comedy6cover from '../assets/Imgs/comedy6cover.webp'
+import Comedy7cover from '../assets/Imgs/comedy7cover.webp'
 
- // Importing Comedy  Horror cover images
- import Horror1cover from '../assets/Imgs/horror1cover.webp'
- import Horror2cover from '../assets/Imgs/horror2cover.webp'
- import Horror3cover from '../assets/Imgs/horror3cover.webp'
- import Horror4cover from '../assets/Imgs/horror4cover.webp'
+// Importing Comedy  Horror images
+import Horror1 from '../assets/Imgs/Horror1.webp'
+import Horror2 from '../assets/Imgs/Horror2.webp'
+import Horror3 from '../assets/Imgs/Horror3.webp'
+import Horror4 from '../assets/Imgs/Horror4.webp'
 
+// Importing Comedy  Horror cover images
+import Horror1cover from '../assets/Imgs/horror1cover.webp'
+import Horror2cover from '../assets/Imgs/horror2cover.webp'
+import Horror3cover from '../assets/Imgs/horror3cover.webp'
+import Horror4cover from '../assets/Imgs/horror4cover.webp'
+
+//importing new released movies images
+import NewRelease1 from '../assets/Imgs/Movies/NewReleasesMovies1.png'
+import NewRelease2 from '../assets/Imgs/Movies/NewReleasesMovies2.webp'
+import NewRelease3 from '../assets/Imgs/Movies/NewReleasesMovies3.webp'
+import NewRelease4 from '../assets/Imgs/Movies/NewReleasesMovies4.webp'
+import NewRelease5 from '../assets/Imgs/Movies/NewReleasesMovies5.webp'
+
+//importing new released shows images
+import NewReleasedShow1 from '../assets/Imgs/Shows/NewReleasedShows1.webp'
+import NewReleasedShow2 from '../assets/Imgs/Shows/NewReleasedShows2.webp'
+import NewReleasedShow3 from '../assets/Imgs/Shows/NewReleasedShows3.webp'
+import NewReleasedShow4 from '../assets/Imgs/Shows/NewReleasedShows4.webp'
+
+//importing trending shows images
+import TrendingShow1 from '../assets/Imgs/Shows/TrendingShows1.png'
+import TrendingShow2 from '../assets/Imgs/Shows/TrendingShows2.webp'
+import TrendingShow3 from '../assets/Imgs/Shows/TrendingShows3.webp'
+import TrendingShow4 from '../assets/Imgs/Shows/TrendingShows4.webp'
+
+//importing must watch shows
+import MustWatchShow1 from '../assets/Imgs/Shows/MustWatchShows1.webp'
+import MustWatchShow2 from '../assets/Imgs/Shows/MustWatchShows2.webp'
+import MustWatchShow3 from '../assets/Imgs/Shows/MustWatchShows3.webp'
+import MustWatchShow4 from '../assets/Imgs/Shows/MustWatchShows4.webp'
 
 
 export const Trendingimages = [
@@ -138,7 +162,7 @@ export const ActionMovies = [
   { id: 13, src: Action4, coverSrc: Action4Cover, alt: "The Expendables", title: "The Expendables", description: "A team of elite mercenaries tasked with a mission to overthrow a Latin American dictator whom they soon discover to be a mere puppet controlled by a corrupt ex-CIA agent" },
   { id: 14, src: Action5, coverSrc: Action5Cover, alt: "FREEDOM", title: "FREEDOM", description: "Corrupt cops mess with a weak-looking insurance guy, not knowing he's actually a total badass Step back to 1979." },
   { id: 15, src: Action6, coverSrc: Action6Cover, alt: "Bad Boys", title: "Bad Boys", description: "Miami-Dade detectives Mike Lowrey and Marcus Burnett  blow a fuse when $100 million worth of heroin they recently confiscated is heisted from station headquarters." },
-  { id: 16, src: Action7, coverSrc: Action7Cover, alt: "The Foreigner", title: "The Foreigner", description: "Quan is a humble London businessman whose long-buried past erupts in a revenge-fueled vendetta when the only person left for him to love -- his teenage daughter -- dies in a senseless act of politically motivated terrorism."},
+  { id: 16, src: Action7, coverSrc: Action7Cover, alt: "The Foreigner", title: "The Foreigner", description: "Quan is a humble London businessman whose long-buried past erupts in a revenge-fueled vendetta when the only person left for him to love -- his teenage daughter -- dies in a senseless act of politically motivated terrorism." },
   { id: 17, src: Action8, coverSrc: Action8Cover, alt: "Iron Man", title: "Iron Man", description: "After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight evil." },
 ];
 
@@ -162,21 +186,50 @@ export const DramaMovies = [
 ];
 
 export const ComedyMovies = [
-  { id: 32, src: Comedy1, coverSrc:Comedy1cover, alt: "Comedy Movie 1", title: "Good Newwz", description: "Two couples with the same surname pursue in-vitro fertilization and wait for their upcoming babies." },
-  { id: 33, src: Comedy2, coverSrc:Comedy2cover, alt: "Comedy Movie 2", title: "Central Intelligence", description: "Two high school friends reunite and find themselves caught up in a CIA operation that could change their lives." },
-  { id: 34, src: Comedy3, coverSrc:Comedy3cover, alt: "Comedy Movie 3", title: "Bhool Bhulaiyaa 3", description: "In Kolkata, Rooh Baba enters a spooky estate where he confronts a pair of vindictive ghosts, both asserting to be Manjulika." },
-  { id: 35, src: Comedy4, coverSrc:Comedy4cover, alt: "Comedy Movie 4", title: "Udanchhoo", description: "Guru G runs a black money operation through his ashram with help from his trusted devotees. The group become involved in a big con mystery." },
-  { id: 36, src: Comedy5, coverSrc:Comedy5cover, alt: "Comedy Movie 5", title: "Pagalpanti", description: "Things get complicated when three couples decide to earn quick money by deceiving two local gangsters and stealing from them." },
-  { id: 37, src: Comedy6, coverSrc:Comedy6cover, alt: "Comedy Movie 6", title: "Nanu Ki Jaanu", description: "Nanu Ki Jaanu is a dark comedy, the story of which revolves around a Delhi land mafia agent who tries to deal with the arrival of a ghost in his apartment." },
-  { id: 38, src: Comedy7, coverSrc:Comedy7cover, alt: "Comedy Movie 7", title: "Bridesmaids", description: "Annie  is a single woman whose own life is a mess, but when she learns that her lifelong best friend, Lillian , is engaged, she has no choice but to serve as the maid of honor." },
+  { id: 32, src: Comedy1, coverSrc: Comedy1cover, alt: "Comedy Movie 1", title: "Good Newwz", description: "Two couples with the same surname pursue in-vitro fertilization and wait for their upcoming babies." },
+  { id: 33, src: Comedy2, coverSrc: Comedy2cover, alt: "Comedy Movie 2", title: "Central Intelligence", description: "Two high school friends reunite and find themselves caught up in a CIA operation that could change their lives." },
+  { id: 34, src: Comedy3, coverSrc: Comedy3cover, alt: "Comedy Movie 3", title: "Bhool Bhulaiyaa 3", description: "In Kolkata, Rooh Baba enters a spooky estate where he confronts a pair of vindictive ghosts, both asserting to be Manjulika." },
+  { id: 35, src: Comedy4, coverSrc: Comedy4cover, alt: "Comedy Movie 4", title: "Udanchhoo", description: "Guru G runs a black money operation through his ashram with help from his trusted devotees. The group become involved in a big con mystery." },
+  { id: 36, src: Comedy5, coverSrc: Comedy5cover, alt: "Comedy Movie 5", title: "Pagalpanti", description: "Things get complicated when three couples decide to earn quick money by deceiving two local gangsters and stealing from them." },
+  { id: 37, src: Comedy6, coverSrc: Comedy6cover, alt: "Comedy Movie 6", title: "Nanu Ki Jaanu", description: "Nanu Ki Jaanu is a dark comedy, the story of which revolves around a Delhi land mafia agent who tries to deal with the arrival of a ghost in his apartment." },
+  { id: 38, src: Comedy7, coverSrc: Comedy7cover, alt: "Comedy Movie 7", title: "Bridesmaids", description: "Annie  is a single woman whose own life is a mess, but when she learns that her lifelong best friend, Lillian , is engaged, she has no choice but to serve as the maid of honor." },
 ];
 
 export const HorrorMovies = [
-  { id: 39, src: Horror1, coverSrc:Horror1cover, alt: "Horror Movie 1", title: "Us", description: "Accompanied by her husband, son and daughter, Adelaide Wilson returns to the beachfront home where she grew up as a child." },
-  { id: 40, src: Horror2, coverSrc:Horror2cover, alt: "Horror Movie 2", title: "Scream", description: "Twenty-five years after the original series of murders in Woodsboro, a new killer emerges, and Sidney Prescott must return to uncover the truth." },
-  { id: 41, src: Horror3, coverSrc:Horror3cover, alt: "Horror Movie 3", title: "The Flesheater", description: "Flesh Eater rises from the dead to turn teens into ghouls on Halloween." },
-  { id: 42, src: Horror4, coverSrc:Horror4cover, alt: "Horror Movie 4", title: "The Human Centipede ", description: "The film concerns a deranged German surgeon who kidnaps three tourists and conjoins them surgically, mouth to anus, forming the eponymous human centipede." },
+  { id: 39, src: Horror1, coverSrc: Horror1cover, alt: "Horror Movie 1", title: "Us", description: "Accompanied by her husband, son and daughter, Adelaide Wilson returns to the beachfront home where she grew up as a child." },
+  { id: 40, src: Horror2, coverSrc: Horror2cover, alt: "Horror Movie 2", title: "Scream", description: "Twenty-five years after the original series of murders in Woodsboro, a new killer emerges, and Sidney Prescott must return to uncover the truth." },
+  { id: 41, src: Horror3, coverSrc: Horror3cover, alt: "Horror Movie 3", title: "The Flesheater", description: "Flesh Eater rises from the dead to turn teens into ghouls on Halloween." },
+  { id: 42, src: Horror4, coverSrc: Horror4cover, alt: "Horror Movie 4", title: "The Human Centipede ", description: "The film concerns a deranged German surgeon who kidnaps three tourists and conjoins them surgically, mouth to anus, forming the eponymous human centipede." },
 ];
+
+export const NewreleaseImages = [
+  { id: 43, src: NewRelease1, alt: "NewRelease Movie 1", Title: "Adipurush", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
+  { id: 44, src: NewRelease2, alt: "NewRelease Movie 2", Title: "The Kashmir Files", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
+  { id: 45, src: NewRelease3, alt: "NewRelease Movie 3", Title: "sin city", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
+  { id: 46, src: NewRelease4, alt: "NewRelease Movie 4", Title: "The Tomorrow War", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
+  { id: 47, src: NewRelease5, alt: "NewRelease Movie 5", Title: "Misfire", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
+]
+
+export const NewReleasedShowsImages = [
+  { id: 48, src: NewReleasedShow1, alt: "NewReleased Show 1", Title: "High Town", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
+  { id: 49, src: NewReleasedShow2, alt: "NewReleased Show 2", Title: "Mirzapur", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
+  { id: 50, src: NewReleasedShow3, alt: "NewReleased Show 3", Title: "Into The Shadows", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
+  { id: 51, src: NewReleasedShow4, alt: "NewReleased Show 4", Title: "Peaky Blinders", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
+  
+]
+export const TrendingShowsImages = [
+  { id: 52, src: TrendingShow1, alt: "Trending Show 1", Title: "Stranger Things", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
+  { id: 53, src: TrendingShow2, alt: "Trending Show 2", Title: "Money Heist", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
+  { id: 54, src: TrendingShow3, alt: "Trending Show 3", Title: "Lucifer", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
+  { id: 55, src: TrendingShow4, alt: "Trending Show 4", Title: "The Gray Man", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
+]
+export const MustWatchShowsImages=[
+  { id: 56, src: MustWatchShow1, alt: "Must Watch 1", Title: "Duranga", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
+  { id: 57, src: MustWatchShow2, alt: "Must Watch 2", Title: "Money Heist", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
+  { id: 58, src: MustWatchShow3, alt: "Must Watch 3", Title: "Mai", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
+  { id: 59, src: MustWatchShow4, alt: "Must Watch 4", Title: "Stranger Things", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
+]
+
 export const AllMovies = [
   ...Trendingimages,
   ...mustWatchMoviesimages,

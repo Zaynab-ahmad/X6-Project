@@ -2,6 +2,9 @@ import "./ShowsSection.css";
 
 import HomeMoviesAndShowsTitle from "../SharedTitlesAndParagraph/HomeMoviesAndShows/HomeMoviesAndShowsTitle";
 import OurGenres from "../OurGenres/OurGenres";
+import NewReleasedShows from "../NewReleasedShows/NewReleasedShows";
+import TrendingShows from "../TrendingShows/TrendingShows";
+import MustWatchShows from "../MustWatchShows/MustWatchShows";
 
 export default function ShowsSection() {
   return (
@@ -15,6 +18,12 @@ export default function ShowsSection() {
           lineHeightType="type3"
         />
         <OurGenres />
+        <HomeMoviesAndShowsTitle title="Trending Shows" home={false} fontSizeType="type3" lineHeightType="type3"/>
+        <TrendingShows/>
+        <HomeMoviesAndShowsTitle title="New Released Shows" home={false} fontSizeType="type3" lineHeightType="type3"/>
+        <NewReleasedShows/>
+        <HomeMoviesAndShowsTitle title="Must-Watch Shows" home={false} fontSizeType="type3" lineHeightType="type3"/>
+        <MustWatchShows/>
       </div>
     </div>
   );

@@ -1,26 +1,69 @@
 import React from 'react'
 import './MovieShowCard.css'
-import image from '../../../assets/Imgs/Movies/MustWatchMovies2.png'
 import clock from '../../../assets/Icons/clock.svg'
-import views from '../../../assets/Icons/views.svg'
+import seasonimg from '../../../assets/Icons/season.svg'
+import viewsicon from '../../../assets/Icons/views.svg'
 
-export default function MovieShowCard() {
+export default function MovieShowCard({ length, views, src, section, releaseDate, rating, seasons }) {
   return (
-    <div className='MovieShowCard'>
-        <img className='thumbnailImg' src={image} alt="" />
-        <div className='detailSection'>
-            <div className='lengthTime'>
+    <div className={section=="MustWatch" ? "MustWatchCard" : "MovieShowCard"}>
+      <img className={section=="MustWatch" ? "mustWatchThumbnail" :"thumbnailImg"} src={src} alt="" />
+      <div className='detailSection'>
+        {
+          section == "TrendingMovies" ?
+            <>
+              <div className='lengthTime'>
                 <img src={clock} alt="" />
-                <span>1h 30min</span>
+                <span>{length}</span>
 
-            </div>
-            <div className='viewCount'>
-                <img src={views} alt="" />
-                <span>2K</span>
+              </div>
+              <div className='viewCount'>
+                <img src={viewsicon} alt="" />
+                <span>{views}</span>
 
 
-            </div>
-        </div>
+              </div>
+            </>
+            :
+            section == "NewReleases" ?
+              <>
+                <div className='releaseDate'>
+                  <span>Released at {releaseDate}</span>
+
+                </div>
+              </>
+              :
+              section == "MustWatch" ?
+                <>
+                  <div className='lengthTime'>
+                    <img src={clock} alt="" />
+                    <span>{length}</span>
+
+                  </div>
+                  <div className='viewCount'>
+                    <img  className='ratingImage' src={rating} alt="" />
+                    <span>20k</span>
+                  </div>
+
+                </>
+                :
+                section == "NewReleasedShows" ?
+                  <>
+                    <div className='lengthTime'>
+                      <img src={clock} alt="" />
+                      <span>{length}</span>
+
+                    </div>
+                    <div className='viewCount'>
+                      <img  src={seasonimg} alt="" />
+                      <span>{seasons}</span>
+                    </div>
+                  </>
+                  :
+                  <>
+                  </>
+        }
+      </div>
 
 
 

@@ -25,7 +25,7 @@ export default function OurGenres() {
           imagesArray={data.imagesArray}
           badge={false}
           pageName="moviesAndShowsPage" 
-    
+
         />
       ));
   return (

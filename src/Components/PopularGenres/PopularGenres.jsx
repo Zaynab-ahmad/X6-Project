@@ -7,6 +7,8 @@ import {
 } from "../../Data/data";
 import MultiImgsCard from "../Cards/MltiImgsCard/MultiImgsCard";
 import CardSlider from "../Sliders/CardSlider/CardSlider";
+import HomeMoviesAndShowsTitle from "../SharedTitlesAndParagraph/HomeMoviesAndShows/HomeMoviesAndShowsTitle";
+
 
 
 export default function PopularGenres({sho}) {
@@ -27,6 +29,15 @@ export default function PopularGenres({sho}) {
   ));
   return (
     <>
+    <div className="MA-pop-Mo">
+      <HomeMoviesAndShowsTitle
+          title="Popular Top 10 In Geners"
+          home={false}
+          fontSizeType="type3"
+          lineHeightType="type3"
+          className ="MA-margin"
+        />
+        </div>
      <CardSlider cards={cardsMA} slidesToShow={4} />
     </>
    

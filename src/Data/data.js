@@ -149,7 +149,7 @@ export const ActionMovies = [
   { id: 19, src: Action10, alt: "Action Movie 10", title: "The Dark Knight Rises", description: "A story of a man who is trying to save the world from a"},
   { id: 20, src: Action11, alt: "Action Movie 11", title: "The Dark Knight Rises", description: "A story of a man who is trying to save the world from a"},
   { id: 21, src: Action12, alt: "Action Movie 12", title: "The Dark Knight Rises", description: "A story of a man who is trying to save the world from a"}
-]
+
   ];
 
 

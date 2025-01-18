@@ -1,7 +1,5 @@
-// import React, { useState, useEffect } from "react";
 import Button from "../Buttons/Button";
 import "./CTA.css";
-// import CTAMobile from "../../assets/Imgs/CTAMobile.png";
 import HomeParagraph from "../SharedTitlesAndParagraph/HomeParagraph/HomeParagraph";
 import HomeMoviesAndShowsTitle from "../SharedTitlesAndParagraph/HomeMoviesAndShows/HomeMoviesAndShowsTitle";
 
@@ -15,7 +13,7 @@ export default function CTA() {
             <div className="d-none d-sm-block">
             <HomeMoviesAndShowsTitle
               title= "Start your free trial today!"
-              home={true}
+              titlePadding="home"
               fontSizeType="type1"
               lineHeightType="type1"
             />
@@ -29,7 +27,7 @@ export default function CTA() {
                   today!
                 </>
               }
-              home={true}
+              titlePadding="home"
               fontSizeType="type1"
               lineHeightType="type1"
             />

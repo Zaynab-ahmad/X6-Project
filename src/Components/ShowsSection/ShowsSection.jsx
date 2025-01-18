@@ -6,12 +6,12 @@ import PopularGenres from "../PopularGenres/PopularGenres";
 
 export default function ShowsSection() {
   return (
-    <div className=" xContainer customMargin">
+    <div id = "showsSec" className=" xContainer customMargin">
       <div className="showsSectionZA">
         <div className="showsBadgeZA">Shows</div>
         <HomeMoviesAndShowsTitle
           title="Our Genres"
-          home={false}
+          titlePadding="movies"
           fontSizeType="type3"
           lineHeightType="type3"
         />

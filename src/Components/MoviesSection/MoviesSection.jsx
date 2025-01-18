@@ -12,6 +12,7 @@ export default function MoviesSection() {
         <div className='moviesBadgeZA'>
             Movies
         </div>
+
       <HomeMoviesAndShowsTitle title="Our Genres" home={false} fontSizeType="type3" lineHeightType="type3"/>
       <OurGenres/>  
       <div className="MA-pop-Mo">
@@ -27,6 +28,7 @@ export default function MoviesSection() {
       />
       </div>
      
+
       
     </div>
     </div>

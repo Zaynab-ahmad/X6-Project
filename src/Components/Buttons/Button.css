@@ -9,6 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 .mainButton:hover {
     filter: brightness(0.8);
@@ -22,10 +23,12 @@
             border-radius: 6px;
         }   
 }
-
-@media (max-width:390px) {
+@media (min-width: 768px) and (max-width: 1280px) {
+.mainButton{padding: 12px 9px !important;} 
+}
+@media (max-width:576px) {
     .fullWidth {
-            width: 100%;
+            width: 100% !important;
         }
     
 }

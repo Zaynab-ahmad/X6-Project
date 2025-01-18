@@ -1,0 +1,14 @@
+.SupportTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 235px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 992px) {
+    .SupportTop {
+        flex-direction: column;
+        gap: 50px;
+    }
+}

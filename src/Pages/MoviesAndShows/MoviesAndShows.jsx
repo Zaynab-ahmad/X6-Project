@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import ShowsSection from "../../Components/ShowsSection/ShowsSection";
 import MoviesSection from "../../Components/MoviesSection/MoviesSection";
 import "./MoviesAndShows.css";
-import MoviesAndShowsHero from "../../Components/Heros/MoviesAndShowsHero/MoviesAndShowsHero";
+import SliderHero from "../../Components/Heros/SliderHero/SliderHero";
 
 export default function MoviesAndShows() {
   const [activeSection, setActiveSection] = useState("movies");
@@ -26,30 +26,31 @@ export default function MoviesAndShows() {
 
   return (
     <>
-      <MoviesAndShowsHero />
-      
+
+      <SliderHero />
+
       <div>
         {/* Toggle Buttons for Small Screens */}
         {isSmallScreen && (
           <div className="xContainer">
-          <div className="customToggleContainer">
-            <button
-              className={`customToggleButton ${
-                activeSection === "movies" ? "active" : ""
-              }`}
-              onClick={() => setActiveSection("movies")}
-            >
-              Movies
-            </button>
-            <button
-              className={`customToggleButton ${
-                activeSection === "shows" ? "active" : ""
-              }`}
-              onClick={() => setActiveSection("shows")}
-            >
-              Shows
-            </button>
-          </div>
+            <div className="customToggleContainer">
+              <button
+                className={`customToggleButton ${
+                  activeSection === "movies" ? "active" : ""
+                }`}
+                onClick={() => setActiveSection("movies")}
+              >
+                Movies
+              </button>
+              <button
+                className={`customToggleButton ${
+                  activeSection === "shows" ? "active" : ""
+                }`}
+                onClick={() => setActiveSection("shows")}
+              >
+                Shows
+              </button>
+            </div>
           </div>
         )}
 

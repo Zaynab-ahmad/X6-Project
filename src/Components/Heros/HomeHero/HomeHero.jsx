@@ -33,6 +33,8 @@ export default function HomeHero() {
               isFullWidth={true}
               isSmallerBorderRaduis={false}
               isBlack={false}
+              paddingType="type1" 
+
             />
 
           </div>

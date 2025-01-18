@@ -78,7 +78,7 @@ export default function NavBar() {
                         Support
                     </Nav.Link>
                 </Nav.Item>
-                <Nav.Item style={{ textDecoration: 'none' }} as={Link} to={'/subscriptions'} className="kr-navitem">
+                <Nav.Item style={{ textDecoration: 'none' }} as={Link} to={'/subscription'} className="kr-navitem">
                     <Nav.Link
                         onClick={() => setActiveLink('link-3')}
                         className={activeLink === 'link-3' ? 'active-link' : 'notactive-link'}

@@ -14,7 +14,7 @@ export default function MoviesPageOpen() {
   return (
     <div>
       {/* Pass the dynamic id and section */}
-      <MoviesAndShowsHero src={cover.coverSrc}  title={cover.title} description={cover.description} />
+      <MoviesAndShowsHero src={cover.coverSrc}  videoLink={cover.videoLink} title={cover.title} description={cover.description} />
       <MoviesPageDes />
       <MoviesPageCast />
       <MoviesPageInfo />

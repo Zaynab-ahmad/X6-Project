@@ -1,122 +1,205 @@
-.sliderHeroZA{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    padding-top: 170px;
-    margin-bottom: 180px;
-
+.sliderHeroZA {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding-top: 170px;
+  margin-bottom: 200px !important;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
-.sliderItem {
-    position: relative;
-    width: 100%;
-    height: 100%;
-   
+.slick-list {
+  height: 100%;
+}
+.slick-track {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.slick-slide > div {
+  height: 100%;
+}
+.heroSliderItemZA {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .herobackgroundZA {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    object-position: center;
-    z-index: 1;
-
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  z-index: 0;
+  border-radius: 12px;
 }
 
-.heroOverlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to top, #141414 0%, #14141400 100%);
-    z-index: 2;
+.sliderHeroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #141414 0%, #14141400 100%);
+  z-index: 2;
 }
 
-.heroContent {
-    position: absolute;
-    bottom: 70px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 3;
-    width: 100%;
-    max-width: 800px;
-    padding: 20px;
-    box-sizing: border-box;
-    text-align: center;
+.sliderHeroContent {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-.heroButtons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
+.sliderHeroTZA {
+  width: 72%;
+  padding-bottom: 30px;
 }
 
-.heroIcons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 12px;
-    background-color: var(--black-shade06);
-    border-radius: 8px;
-    border: 1px solid var(--black-shade15);
-    box-sizing: border-box;
+.sliderHeroButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+.SliderHeroIconsGroupzA {
+  gap: 10px;
+}
+.sliderHeroIconsZA {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  background-color: var(--black-shade06);
+  border-radius: 8px;
+  border: 1px solid var(--black-shade15);
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+.sliderHeroIconsZA:hover {
+  border-color: var(--primary-color-gray);
 }
 
 .customHeroArrowZA {
-    position: absolute;
-    bottom: 50px;
-    z-index: 4;
-    width: 56px;
-    height: 56px;
-    background-color: var(--black-shade06);
-    border: 1px solid var(--black-shade12);
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+  position: absolute;
+  bottom: 50px;
+  z-index: 4;
+  width: 56px;
+  height: 56px;
+  background-color: var(--black-shade06);
+  border: 1px solid var(--black-shade12);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+.customHeroArrowZA:hover {
+  border-color: var(--primary-color-gray);
 }
 
 .leftHeroArrowZA {
-    left: 50px;
+  left: 50px;
 }
- 
+
 .rightHeroArrowZA {
-    right: 50px;
+  right: 50px;
 }
 
-/* Custom Pagination */
-.customDots {
-    position: absolute;
-    bottom: 50px;
-    left:45%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3px;
-    margin-top: 10px;
+.heroCustomDots {
+  position: absolute;
+  bottom: 50px;
+  left: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
 }
 
-.customDots li {
-    list-style: none;
+.heroCustomDots .dot {
+  width: 16.33px;
+  height: 4px;
+  background-color: var(--black-shade20);
+  border-radius: 100px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, width 0.3s ease;
 }
 
-.customDots .dot {
-    width: 16.33px;
-    height: 4px;
-    background-color: var(--primary-color-gray);
-    border-radius: 100px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+.heroCustomDots .slick-active .dot {
+  background-color: var(--primary-color-red);
+  width: 23px;
 }
 
-.customDots .slick-active .dot {
-    background-color: var(--primary-color-red);
-    width: 23px;
+.heroCustomDots li {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+}
+@media (max-width: 1440px) {
+  .sliderHeroZA {
+    padding-top: 138px;
+    margin-bottom: 118px !important;
+  }
+  .sliderHeroTZA {
+    width: 73%;
+    padding-bottom: 24px;
+  }
+  .SliderHeroIconsGroupzA {
+    gap: 8px;
+  }
+  .customHeroArrowZA {
+    bottom: 30px;
+    width: 48px;
+    height: 48px;
+  }
+  .leftHeroArrowZA {
+    left: 45px;
+  }
+
+  .rightHeroArrowZA {
+    right: 45px;
+  }
+}
+@media (max-width: 992px) {
+  .slick-slider {
+    height: 100%;
+  }
+  .sliderHeroZA {
+    padding-top: 142px;
+    margin-bottom: 80px !important;
+  }
+  .sliderHeroTZA {
+    width: 70%;
+    padding-bottom: 20px;
+  }
+  .sliderHeroButtons {
+    padding: 0 24px 16px 24px;
+  }
+  .customHeroArrowZA {
+    display: none;
+  }
+  .heroCustomDots {
+    display: none;
+  }
+  .herobackgroundZA {
+    object-fit: cover;
+  }
+  .sliderHeroContent {
+    bottom: 0;
+  }
 }

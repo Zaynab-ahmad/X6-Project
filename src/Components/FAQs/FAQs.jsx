@@ -18,12 +18,12 @@ const faqData = [
 
 export default function FAQs() {
   return (
-    <div className="xContainer customMargin">
-      <div className="faqHeading d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-start align-items-lg-center">
-        <div className="d-flex flex-column justify-content-center align-items-start">
+    <div id ="FAQ" className="xContainer customMargin">
+      <div className="headingZA d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-start align-items-lg-center">
+        <div className="faqTMA d-flex flex-column justify-content-center align-items-start">
           <HomeMoviesAndShowsTitle 
             title="Frequently Asked Questions" 
-            home={true} 
+            titlePadding="home" 
             fontSizeType="type4" 
             lineHeightType="type4" 
           />

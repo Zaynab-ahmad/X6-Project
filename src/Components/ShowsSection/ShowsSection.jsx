@@ -3,6 +3,9 @@ import "./ShowsSection.css";
 import HomeMoviesAndShowsTitle from "../SharedTitlesAndParagraph/HomeMoviesAndShows/HomeMoviesAndShowsTitle";
 import OurGenres from "../OurGenres/OurGenres";
 import PopularGenres from "../PopularGenres/PopularGenres";
+import NewReleasedShows from "../NewReleasedShows/NewReleasedShows";
+import TrendingShows from "../TrendingShows/TrendingShows";
+import MustWatchShows from "../MustWatchShows/MustWatchShows";
 
 export default function ShowsSection() {
   return (
@@ -16,7 +19,8 @@ export default function ShowsSection() {
           lineHeightType="type3"
         />
         <OurGenres />
-        <div className="MA-pop-sh">
+
+    <div className="MA-pop-sh">
           <HomeMoviesAndShowsTitle
             title="Popular Top 10 In Geners"
             home={false}
@@ -27,7 +31,13 @@ export default function ShowsSection() {
           sho = {false}
           />
         </div>
-       
+        <HomeMoviesAndShowsTitle title="Trending Shows" home={false} fontSizeType="type3" lineHeightType="type3"/>
+        <TrendingShows/>
+        <HomeMoviesAndShowsTitle title="New Released Shows" home={false} fontSizeType="type3" lineHeightType="type3"/>
+        <NewReleasedShows/>
+        <HomeMoviesAndShowsTitle title="Must-Watch Shows" home={false} fontSizeType="type3" lineHeightType="type3"/>
+        <MustWatchShows/>
+
       </div>
     </div>
   );

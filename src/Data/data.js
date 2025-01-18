@@ -17,7 +17,7 @@ import mustWatch1 from '../assets/Imgs/Movies/MustWatchMovies1.webp';
 import mustWatch2 from '../assets/Imgs/Movies/MustWatchMovies2.webp';
 import mustWatch3 from '../assets/Imgs/Movies/MustWatchMovies3.webp';
 import mustWatch4 from '../assets/Imgs/Movies/MustWatchMovies4.webp';
- 
+
 // Importing must watch movies cover images
 import MustWatchMovies1cover from '../assets/Imgs/Movies/MustWatchMovies1cover.webp';
 import MustWatchMovies2cover from '../assets/Imgs/Movies/MustWatchMovies2cover.webp';
@@ -31,7 +31,7 @@ import Adventure3 from '../assets/Imgs/Adventure3.webp'
 import Adventure4 from '../assets/Imgs/Adventure4.webp'
 import Adventure5 from '../assets/Imgs/Adventure5.webp'
 import Adventure6 from '../assets/Imgs/Adventure6.webp'
- 
+
 // Importing Adventure  movies cover images
 import Adventure1cover from '../assets/Imgs/adventure1cover.webp'
 import Adventure2cover from '../assets/Imgs/adventure2cover.webp'
@@ -66,58 +66,82 @@ import Action7Cover from '../assets/Imgs/action7cover.webp'
 import Action8Cover from '../assets/Imgs/action8cover.webp'
 
 
- // Importing Drama  movies images
- import Drama1 from '../assets/Imgs/Drama1.webp'
- import Drama2 from '../assets/Imgs/Drama2.webp'
- import Drama3 from '../assets/Imgs/Drama3.webp'
- import Drama4 from '../assets/Imgs/Drama4.webp'
- import Drama5 from '../assets/Imgs/Drama5.webp'
- import Drama6 from '../assets/Imgs/Drama6.webp'
- import Drama7 from '../assets/Imgs/Drama7.webp'
- import Drama8 from '../assets/Imgs/Drama8.webp'
+// Importing Drama  movies images
+import Drama1 from '../assets/Imgs/Drama1.webp'
+import Drama2 from '../assets/Imgs/Drama2.webp'
+import Drama3 from '../assets/Imgs/Drama3.webp'
+import Drama4 from '../assets/Imgs/Drama4.webp'
+import Drama5 from '../assets/Imgs/Drama5.webp'
+import Drama6 from '../assets/Imgs/Drama6.webp'
+import Drama7 from '../assets/Imgs/Drama7.webp'
+import Drama8 from '../assets/Imgs/Drama8.webp'
 
 // Importing Drama  movies cover images
- import Drama1cover from '../assets/Imgs/drama1cover.webp'
- import Drama2cover from '../assets/Imgs/drama2cover.webp'
- import Drama3cover from '../assets/Imgs/drama3cover.webp'
- import Drama4cover from '../assets/Imgs/drama4cover.webp'
- import Drama5cover from '../assets/Imgs/drama5cover.webp'
- import Drama6cover from '../assets/Imgs/drama6cover.webp'
- import Drama7cover from '../assets/Imgs/drama7cover.webp'
- import Drama8cover from '../assets/Imgs/drama8cover.webp'
+import Drama1cover from '../assets/Imgs/drama1cover.webp'
+import Drama2cover from '../assets/Imgs/drama2cover.webp'
+import Drama3cover from '../assets/Imgs/drama3cover.webp'
+import Drama4cover from '../assets/Imgs/drama4cover.webp'
+import Drama5cover from '../assets/Imgs/drama5cover.webp'
+import Drama6cover from '../assets/Imgs/drama6cover.webp'
+import Drama7cover from '../assets/Imgs/drama7cover.webp'
+import Drama8cover from '../assets/Imgs/drama8cover.webp'
 
 
- 
- // Importing Comedy  movies images
- import Comedy1 from '../assets/Imgs/Comedy1.webp'
- import Comedy2 from '../assets/Imgs/Comedy2.webp'
- import Comedy3 from '../assets/Imgs/Comedy3.webp'
- import Comedy4 from '../assets/Imgs/Comedy4.webp'
- import Comedy5 from '../assets/Imgs/Comedy5.webp'
- import Comedy6 from '../assets/Imgs/Comedy6.webp'
- import Comedy7 from '../assets/Imgs/Comedy7.webp'
 
- // Importing Comedy  movies cover images
- import Comedy1cover from '../assets/Imgs/comedy1cover.webp'
- import Comedy2cover from '../assets/Imgs/comedy2cover.webp'
- import Comedy3cover from '../assets/Imgs/comedy3cover.webp'
- import Comedy4cover from '../assets/Imgs/comedy4cover.webp'
- import Comedy5cover from '../assets/Imgs/comedy5cover.webp'
- import Comedy6cover from '../assets/Imgs/comedy6cover.webp'
- import Comedy7cover from '../assets/Imgs/comedy7cover.webp'
+// Importing Comedy  movies images
+import Comedy1 from '../assets/Imgs/Comedy1.webp'
+import Comedy2 from '../assets/Imgs/Comedy2.webp'
+import Comedy3 from '../assets/Imgs/Comedy3.webp'
+import Comedy4 from '../assets/Imgs/Comedy4.webp'
+import Comedy5 from '../assets/Imgs/Comedy5.webp'
+import Comedy6 from '../assets/Imgs/Comedy6.webp'
+import Comedy7 from '../assets/Imgs/Comedy7.webp'
 
- // Importing Comedy  Horror images
- import Horror1 from '../assets/Imgs/Horror1.webp'
- import Horror2 from '../assets/Imgs/Horror2.webp'
- import Horror3 from '../assets/Imgs/Horror3.webp'
- import Horror4 from '../assets/Imgs/Horror4.webp'
+// Importing Comedy  movies cover images
+import Comedy1cover from '../assets/Imgs/comedy1cover.webp'
+import Comedy2cover from '../assets/Imgs/comedy2cover.webp'
+import Comedy3cover from '../assets/Imgs/comedy3cover.webp'
+import Comedy4cover from '../assets/Imgs/comedy4cover.webp'
+import Comedy5cover from '../assets/Imgs/comedy5cover.webp'
+import Comedy6cover from '../assets/Imgs/comedy6cover.webp'
+import Comedy7cover from '../assets/Imgs/comedy7cover.webp'
 
- // Importing Comedy  Horror cover images
- import Horror1cover from '../assets/Imgs/horror1cover.webp'
- import Horror2cover from '../assets/Imgs/horror2cover.webp'
- import Horror3cover from '../assets/Imgs/horror3cover.webp'
- import Horror4cover from '../assets/Imgs/horror4cover.webp'
+// Importing Comedy  Horror images
+import Horror1 from '../assets/Imgs/Horror1.webp'
+import Horror2 from '../assets/Imgs/Horror2.webp'
+import Horror3 from '../assets/Imgs/Horror3.webp'
+import Horror4 from '../assets/Imgs/Horror4.webp'
 
+// Importing Comedy  Horror cover images
+import Horror1cover from '../assets/Imgs/horror1cover.webp'
+import Horror2cover from '../assets/Imgs/horror2cover.webp'
+import Horror3cover from '../assets/Imgs/horror3cover.webp'
+import Horror4cover from '../assets/Imgs/horror4cover.webp'
+
+//importing new released movies images
+import NewRelease1 from '../assets/Imgs/Movies/NewReleasesMovies1.png'
+import NewRelease2 from '../assets/Imgs/Movies/NewReleasesMovies2.webp'
+import NewRelease3 from '../assets/Imgs/Movies/NewReleasesMovies3.webp'
+import NewRelease4 from '../assets/Imgs/Movies/NewReleasesMovies4.webp'
+import NewRelease5 from '../assets/Imgs/Movies/NewReleasesMovies5.webp'
+
+//importing new released shows images
+import NewReleasedShow1 from '../assets/Imgs/Shows/NewReleasedShows1.webp'
+import NewReleasedShow2 from '../assets/Imgs/Shows/NewReleasedShows2.webp'
+import NewReleasedShow3 from '../assets/Imgs/Shows/NewReleasedShows3.webp'
+import NewReleasedShow4 from '../assets/Imgs/Shows/NewReleasedShows4.webp'
+
+//importing trending shows images
+import TrendingShow1 from '../assets/Imgs/Shows/TrendingShows1.png'
+import TrendingShow2 from '../assets/Imgs/Shows/TrendingShows2.webp'
+import TrendingShow3 from '../assets/Imgs/Shows/TrendingShows3.webp'
+import TrendingShow4 from '../assets/Imgs/Shows/TrendingShows4.webp'
+
+//importing must watch shows
+import MustWatchShow1 from '../assets/Imgs/Shows/MustWatchShows1.webp'
+import MustWatchShow2 from '../assets/Imgs/Shows/MustWatchShows2.webp'
+import MustWatchShow3 from '../assets/Imgs/Shows/MustWatchShows3.webp'
+import MustWatchShow4 from '../assets/Imgs/Shows/MustWatchShows4.webp'
 
 
 export const Trendingimages = [
@@ -137,6 +161,7 @@ export const mustWatchMoviesimages = [
 
 export const ActionMovies = [
 
+
   { id: 10, src: Action1, coverSrc: Action1Cover, alt: "Welcome To The Punch", title: "Welcome To The Punch", description: "a former English criminal Jacob Sternwood, who comes out of hiding in Iceland, in an effort to save his son Ruan Sternwoodwhen a heist goes wrong.", videoLink: "https://www.youtube.com/watch?v=16K6BDTn9iI" },
   { id: 11, src: Action2, coverSrc: Action2Cover, alt: "Black Panther", title: "Black Panther", description: "story of T'Challa  who has just been crowned king in his country, Wakanda. He had to replace his father King T'Chaka who died from an explosion at the PBB office.", videoLink: "https://www.youtube.com/watch?v=16K6BDTn9iI" },
   { id: 12, src: Action3, coverSrc: Action3Cover, alt: "The Batman", title: "The Batman", description: "Batman ventures into Gotham City's underworld when a sadistic killer leaves behind a trail of cryptic clues. He must bring justice to the abuse of power and corruption that plagues the metropolis.", videoLink: "https://www.youtube.com/watch?v=16K6BDTn9iI" },
@@ -151,6 +176,7 @@ export const ActionMovies = [
   { id: 21, src: Action12, alt: "Action Movie 12", title: "The Dark Knight Rises", description: "A story of a man who is trying to save the world from a"}
 
   ];
+
 
 
 export const AdventureMovies = [
@@ -188,6 +214,35 @@ export const HorrorMovies = [
   { id: 45, src: Horror3, coverSrc:Horror3cover, alt: "Horror Movie 3", title: "The Flesheater", description: "Flesh Eater rises from the dead to turn teens into ghouls on Halloween.", videoLink: "https://www.youtube.com/watch?v=16K6BDTn9iI" },
   { id: 46, src: Horror4, coverSrc:Horror4cover, alt: "Horror Movie 4", title: "The Human Centipede ", description: "The film concerns a deranged German surgeon who kidnaps three tourists and conjoins them surgically, mouth to anus, forming the eponymous human centipede.", videoLink: "https://www.youtube.com/watch?v=16K6BDTn9iI" },
 ];
+
+export const NewreleaseImages = [
+  { id: 43, src: NewRelease1, alt: "NewRelease Movie 1", Title: "Adipurush", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
+  { id: 44, src: NewRelease2, alt: "NewRelease Movie 2", Title: "The Kashmir Files", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
+  { id: 45, src: NewRelease3, alt: "NewRelease Movie 3", Title: "sin city", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
+  { id: 46, src: NewRelease4, alt: "NewRelease Movie 4", Title: "The Tomorrow War", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
+  { id: 47, src: NewRelease5, alt: "NewRelease Movie 5", Title: "Misfire", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
+]
+
+export const NewReleasedShowsImages = [
+  { id: 48, src: NewReleasedShow1, alt: "NewReleased Show 1", Title: "High Town", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
+  { id: 49, src: NewReleasedShow2, alt: "NewReleased Show 2", Title: "Mirzapur", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
+  { id: 50, src: NewReleasedShow3, alt: "NewReleased Show 3", Title: "Into The Shadows", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
+  { id: 51, src: NewReleasedShow4, alt: "NewReleased Show 4", Title: "Peaky Blinders", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
+  
+]
+export const TrendingShowsImages = [
+  { id: 52, src: TrendingShow1, alt: "Trending Show 1", Title: "Stranger Things", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
+  { id: 53, src: TrendingShow2, alt: "Trending Show 2", Title: "Money Heist", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
+  { id: 54, src: TrendingShow3, alt: "Trending Show 3", Title: "Lucifer", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
+  { id: 55, src: TrendingShow4, alt: "Trending Show 4", Title: "The Gray Man", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
+]
+export const MustWatchShowsImages=[
+  { id: 56, src: MustWatchShow1, alt: "Must Watch 1", Title: "Duranga", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
+  { id: 57, src: MustWatchShow2, alt: "Must Watch 2", Title: "Money Heist", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
+  { id: 58, src: MustWatchShow3, alt: "Must Watch 3", Title: "Mai", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
+  { id: 59, src: MustWatchShow4, alt: "Must Watch 4", Title: "Stranger Things", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
+]
+
 export const AllMovies = [
   ...Trendingimages,
   ...mustWatchMoviesimages,

@@ -11,7 +11,7 @@ export default function MoviesSection() {
         <div className='moviesBadgeZA'>
             Movies
         </div>
-      <HomeMoviesAndShowsTitle title="Our Genres" home={false} fontSizeType="type3" lineHeightType="type3"/>
+      <HomeMoviesAndShowsTitle title="Our Genres" titlePadding="movies" fontSizeType="type3" lineHeightType="type3"/>
       <OurGenres/>   
       
     </div>

@@ -28,7 +28,7 @@ export default function Devices() {
       <div className="StreamingExpTitleTay headingZA">
         <HomeMoviesAndShowsTitle
           title="We Provide you streaming experience across various devices."
-          home={true}
+          titlePadding="home"
           fontSizeType="type4"
           lineHeightType="type4"
         />

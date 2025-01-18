@@ -10,7 +10,7 @@ export default function ShowsSection() {
         <div className="showsBadgeZA">Shows</div>
         <HomeMoviesAndShowsTitle
           title="Our Genres"
-          home={false}
+          titlePadding="movies"
           fontSizeType="type3"
           lineHeightType="type3"
         />

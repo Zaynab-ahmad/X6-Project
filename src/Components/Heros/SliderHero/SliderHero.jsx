@@ -41,7 +41,7 @@ export default function SliderHero() {
     dots: true,
     appendDots: (dots) => (
       <div style={{ marginTop: "20px" }}>
-        <ul className="customDots">{dots}</ul>
+        <ul className="heroCustomDots">{dots}</ul>
       </div>
     ), // Customize dots container
     customPaging: (i) => <div className="dot"></div>,
@@ -81,18 +81,18 @@ export default function SliderHero() {
     <div className="sliderHeroZA xContainer">
       <Slider {...settings}>
         {slides.map((slide, index) => (
-          <div key={index} className="sliderItem">
+          <div key={index} className="heroSliderItemZA">
             <img
               className="herobackgroundZA"
               src={slide.src}
               alt={slide.title}
             />
-            <div className="heroOverlay"></div>
-            <div className="heroContent">
+            <div className="sliderHeroOverlay"></div>
+            <div className="sliderHeroContent">
               <div className="sliderHeroTZA">
                 <HomeMoviesAndShowsTitle
                   title={slide.title}
-                  home={false}
+                  titlePadding="else"
                   fontSizeType="type2"
                   lineHeightType="type2"
                 />
@@ -100,7 +100,7 @@ export default function SliderHero() {
                   <HomeParagraph paragraph={slide.description} />
                 </div>
               </div>
-              <div className="heroButtons d-flex flex-column flex-lg-row align-items-center justify-content-center">
+              <div className="sliderHeroButtons d-flex flex-column flex-lg-row align-items-center justify-content-center">
                 <Button
                   text={
                     <>
@@ -114,14 +114,14 @@ export default function SliderHero() {
                   paddingType="type4"
                 />
 
-                <div className="heroIconsGroupzA d-flex">
-                  <button className="heroIcons">
+                <div className="SliderHeroIconsGroupzA d-flex">
+                  <button className="sliderHeroIconsZA">
                     <img src={Plus} alt="Add to Watchlist" />
                   </button>
-                  <button className="heroIcons">
+                  <button className="sliderHeroIconsZA">
                     <img src={Like} alt="Like" />
                   </button>
-                  <button className="heroIcons">
+                  <button className="sliderHeroIconsZA">
                     <img src={Volume} alt="Volume" />
                   </button>
                 </div>

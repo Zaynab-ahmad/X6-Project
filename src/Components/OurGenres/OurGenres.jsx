@@ -30,7 +30,7 @@ export default function OurGenres() {
       ));
   return (
     <div>
-    <CardSlider cards={cards} slidesToShow={5} />
+    <CardSlider cards={cards} slidesToShow={4} />
 
     </div>
   )

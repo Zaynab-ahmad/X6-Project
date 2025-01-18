@@ -34,7 +34,7 @@ export default function Categories() {
 
     <div id ="Categories" className="categories xContainer customMargin">
       <div className="categoriesTxtZA headingZA">
-      <HomeMoviesAndShowsTitle title="Explore our wide variety of categories" home={true} fontSizeType="type4" lineHeightType="type4"/>
+      <HomeMoviesAndShowsTitle title="Explore our wide variety of categories" titlePadding="home" fontSizeType="type4" lineHeightType="type4"/>
       <HomeParagraph paragraph ="Whether you're looking for a comedy to make you laugh, a drama to make you think, or a documentary to learn something new"/> 
       </div>
       <CardSlider cards={cards} slidesToShow={5} />

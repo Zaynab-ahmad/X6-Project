@@ -42,7 +42,7 @@ function Pricing() {
         <div className="pricingTEM">
           <HomeMoviesAndShowsTitle
             title="Choose the plan that is right for you"
-            home={true}
+            titlePadding="home"
             fontSizeType="type4"
             lineHeightType="type4"
           />

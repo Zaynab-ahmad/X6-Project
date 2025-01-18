@@ -1,63 +1,122 @@
 .MoviesAndShowsHeroZA {
-    padding-top: 170px;
-    margin-bottom: 100px;
-    height: 100vh;
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    background-position: center;
-    background-size: cover;
-    background-clip: content-box;
-    border-radius: 12px;
+  padding-top: 170px;
+  margin-bottom: 100px;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  background-clip: content-box;
+  border-radius: 12px;
 }
 
-
-
 .heroOverlayZA {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to top, #141414 0%, #14141400 100%);
-    z-index: 2;
-    pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #141414 0%, #14141400 100%);
+  z-index: 2;
+  pointer-events: none;
 }
 
 .heroContentZA {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 3;
-    text-align: center;
-    box-sizing: border-box;
-    /* Include padding in width calculations */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  text-align: center;
 }
-
+.MoviesAndShowsHeroTZA {
+  padding-bottom: 30px;
+}
 .heroButtonsZA {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    /* Allow buttons to wrap on smaller screens */
-    gap: 10px;
-    /* Add spacing between buttons and icons */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
-
+.moviesHeroIconsGroup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
 .heroIconsZA {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 12px;
-    background-color: var(--black-shade06);
-    border-radius: 8px;
-    border: 1px solid var(--black-shade15);
-    box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px;
+  width: 56px;
+  height: 56px;
+  background-color: var(--black-shade06);
+  border-radius: 8px;
+  border: 1px solid var(--black-shade15);
+  transition: border-color 0.3s ease;
 }
 
+.heroIconsZA:hover {
+  border-color: var(--primary-color-gray);
+}
+
+.heroVideoZA {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 2;
+  padding-top: 170px;
+  margin-bottom: 100px;
+}
+@media (max-width: 1440px) {
+  .MoviesAndShowsHeroZA {
+    padding-top: 138px;
+    margin-bottom: 80px;
+  }
+  .heroVideoZA {
+    padding-top: 138px;
+    margin-bottom: 80px;
+  }
+  .heroContentZA {
+    padding: 16px;
+  }
+  .MoviesAndShowsHeroTZA {
+      padding-bottom: 24px;
+  }
+  .moviesHeroIconsGroup {
+      gap: 8px;
+  }
+  .heroIconsZA { 
+      padding: 12px;
+      width: 48px;
+      height: 48px;     
+  }
+}
+@media (max-width: 576px) {
+    .MoviesAndShowsHeroZA {
+      padding-top: 142px;
+      margin-bottom: 60px;
+    }
+    .heroVideoZA {
+      padding-top: 142px;
+      margin-bottom: 60px;
+    }
+    .heroContentZA {
+      padding: 16px 24px 16px 24px;
+    }
+    .MoviesAndShowsHeroTZA {
+        padding-bottom: 20px;
+    }
+
+}

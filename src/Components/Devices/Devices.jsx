@@ -24,8 +24,8 @@ export default function Devices() {
   ];
 
   return (
-    <div className="StreamingExpTay xContainer customMargin">
-      <div className="StreamingExpTitleTay">
+    <div id ="Devices" className="StreamingExpTay xContainer customMargin">
+      <div className="StreamingExpTitleTay headingZA">
         <HomeMoviesAndShowsTitle
           title="We Provide you streaming experience across various devices."
           home={true}

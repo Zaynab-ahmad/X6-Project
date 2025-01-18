@@ -6,7 +6,7 @@ export default function Button({
   isFullWidth = false, // Default to false
   isSmallerBorderRadius = false, // Default to false
   isBlack = false, // Default to false
-  paddingType = "type1", // Default padding type
+  paddingType, 
 }) {
   // Define padding values for different types and screen sizes
   const paddingOptions = {
@@ -22,7 +22,7 @@ export default function Button({
   const [padding, setPadding] = useState("");
 
   const updatePadding = () => {
-    if (window.innerWidth > 1400) {
+    if (window.innerWidth > 1440) {
       setPadding(selectedPadding.lg);
     } else {
       setPadding(selectedPadding.md);
@@ -38,7 +38,7 @@ export default function Button({
   }, [paddingType]); // Re-run when paddingType changes
 
   return (
-    <div>
+    
       <button
         className={`mainButton ${isFullWidth ? "fullWidth" : ""} 
         ${isSmallerBorderRadius ? "smallerBorderRadius" : ""}`}
@@ -50,6 +50,6 @@ export default function Button({
       >
         {text}
       </button>
-    </div>
+    
   );
 }

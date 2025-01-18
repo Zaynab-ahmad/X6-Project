@@ -37,9 +37,9 @@ function Pricing() {
   };
 
   return (
-    <div className="xContainer customMargin">
-<div className="pricingTopEM d-flex flex-column flex-md-row justify-content-start justify-content-md-between align-items-md-start align-items-md-center">
-        <div>
+    <div id="Pricing" className="xContainer customMargin">
+      <div className="headingZA d-flex flex-column flex-md-row justify-content-start justify-content-md-between align-items-md-start align-items-md-center">
+        <div className="pricingTEM">
           <HomeMoviesAndShowsTitle
             title="Choose the plan that is right for you"
             home={true}

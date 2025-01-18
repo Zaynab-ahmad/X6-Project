@@ -5,7 +5,7 @@ import OurGenres from "../OurGenres/OurGenres";
 
 export default function ShowsSection() {
   return (
-    <div className=" xContainer customMargin">
+    <div id = "showsSec" className=" xContainer customMargin">
       <div className="showsSectionZA">
         <div className="showsBadgeZA">Shows</div>
         <HomeMoviesAndShowsTitle

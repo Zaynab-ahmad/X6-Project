@@ -9,6 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 .mainButton:hover {
     filter: brightness(0.8);
@@ -27,7 +28,7 @@
 }
 @media (max-width:576px) {
     .fullWidth {
-            width: 100%;
+            width: 100% !important;
         }
     
 }

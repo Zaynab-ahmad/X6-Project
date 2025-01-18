@@ -5,7 +5,7 @@
 
 .controlsWrapper {
   position: absolute;
-  top: -90px;
+  top: -174px;
   right: 2%;
   display: flex;
   align-items: center;
@@ -178,4 +178,5 @@
     width: 64.6% !important;
     margin-left: 16.5% !important;
   }
+    
 }

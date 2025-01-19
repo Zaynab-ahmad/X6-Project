@@ -37,6 +37,10 @@ body,
 .customMargin {
   margin-bottom: 150px;
 }
+ .moviesMarginZA {
+   margin-bottom: 80px !important;
+
+ }
 .headingZA {
   padding-bottom: 80px;
 }
@@ -49,6 +53,10 @@ body,
 
   .customMargin {
     margin-bottom: 120px;
+  }
+  .moviesMarginZA {
+    margin-bottom: 80px !important;
+
   }
     .headingZA {
       padding-bottom: 60px;

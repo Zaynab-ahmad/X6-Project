@@ -5,6 +5,8 @@ import MovieShowCard from '../Cards/MovieShowCard/MovieShowCard';
 import fourAndHalf from '../../assets/Icons/fourAndHalfStar.png'
 import fiveStars from '../../assets/Icons/fiveStars.png'
 import fourStars from '../../assets/Icons/fourStars.png'
+import HomeMoviesAndShowsTitle from "../SharedTitlesAndParagraph/HomeMoviesAndShows/HomeMoviesAndShowsTitle";
+
 export default function MustWatchShows() { 
     const cards4Data = [
         { length: "7h 40min", rating: fourAndHalf , source: MustWatchShowsImages[0].src },
@@ -21,12 +23,13 @@ export default function MustWatchShows() {
         key={index}
         section={"MustWatch"}
         rating={data.rating}
+        ratio="MustWatch"
         />
       ));
   return (
-    <div>
-    <CardSlider cards={cards4} slidesToShow={4} />
-
+    <div className='moviesMarginZA'>
+    <HomeMoviesAndShowsTitle title="Must-Watch Shows" home={false} fontSizeType="type3" lineHeightType="type3"/>
+    <CardSlider cards={cards4} slidesToShow={4}  page="moviesAndShows" sec="movies" top="type2" right={true} />
     </div>
   )
 }

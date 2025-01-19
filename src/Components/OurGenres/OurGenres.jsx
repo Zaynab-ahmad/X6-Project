@@ -29,15 +29,14 @@ export default function OurGenres() {
     />
   ));
   return (
-    <div>
+    <div className="moviesMarginZA">
       <HomeMoviesAndShowsTitle
         title="Our Genres"
         home={false}
         fontSizeType="type3"
         lineHeightType="type3"
       />
-
-      <CardSlider cards={cards} slidesToShow={4} />
+     <CardSlider cards={cards} slidesToShow={5} page="moviesAndShows" sec="genres" top="type2" right={true} />
     </div>
   );
 }

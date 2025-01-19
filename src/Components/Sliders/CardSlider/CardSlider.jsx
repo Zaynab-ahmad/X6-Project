@@ -1,10 +1,10 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css"; 
-import "./CardSlider.css"; 
-import RightArrow from "../../../assets/Icons/rightarrow.svg"; 
-import LeftArrow from "../../../assets/Icons/leftarrow.svg"; 
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "./CardSlider.css";
+import RightArrow from "../../../assets/Icons/rightarrow.svg";
+import LeftArrow from "../../../assets/Icons/leftarrow.svg";
 
 // Custom previous arrow component
 function PrevArrow({ onClick }) {
@@ -24,9 +24,29 @@ function NextArrow({ onClick }) {
   );
 }
 
-export default function CardSlider({ cards, slidesToShow }) {
-  // Ref for the slider container 
-  const sliderContainerRef = useRef(null);
+export default function CardSlider({ cards, slidesToShow, page, sec, top, right }) {
+  const topOptions = {
+    type1: { lg: "-174px", md: "-170px" },
+    type2: { lg: "-80px", md: "-50px" },
+  };
+
+  const selectedTop = topOptions[top] || topOptions.type1;
+  const [dynamicTop, setDynamicTop] = useState("");
+
+  const updateTop = () => {
+    if (window.innerWidth > 1440) {
+      setDynamicTop(selectedTop.lg);
+    } else {
+      setDynamicTop(selectedTop.md);
+    }
+  };
+
+  useEffect(() => {
+    updateTop();
+    window.addEventListener("resize", updateTop);
+
+    return () => window.removeEventListener("resize", updateTop);
+  }, [selectedTop]);
 
   // Ref for the slider instance (used for controlling the slider)
   const sliderRef = useRef(null);
@@ -34,91 +54,83 @@ export default function CardSlider({ cards, slidesToShow }) {
   // State to track the current active slide
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  // Slick slider settings configuration
+  // Slick slider settings
   const settings = {
-    infinite: true, // Allows infinite looping of slides
-    speed: 500, // Transition speed in milliseconds
-    slidesToShow: slidesToShow, // Number of slides visible at a time
-    slidesToScroll: 1, // Number of slides to scroll at a time
-    arrows: false, // Disable default slick arrows (custom arrows are used)
-    beforeChange: (_, next) => setCurrentSlide(next), // Updates current slide state before changing
+    infinite: true,
+    speed: 500,
+    slidesToShow,
+    slidesToScroll: 1,
+    arrows: false,
+    beforeChange: (_, next) => setCurrentSlide(next),
     responsive: [
-      // Responsive breakpoints for adapting slider settings
-      {
-        breakpoint: 992, 
-        settings: {
-          slidesToShow: slidesToShow - 1, 
-        },
-      },
-      {
-        breakpoint: 768, 
-        settings: {
-          slidesToShow: slidesToShow - 2, 
-        },
-      },
-      {
-        breakpoint: 576, 
-        settings: {
-          slidesToShow: slidesToShow - 3, 
-        },
-      },
+      { breakpoint: 992, settings: { slidesToShow: slidesToShow - 1 } },
+      { breakpoint: 768, settings: { slidesToShow: slidesToShow - 2 } },
+      { breakpoint: 576, settings: { slidesToShow: slidesToShow - 3 } },
     ],
   };
 
-  // Function to navigate to a specific slide
   const goToSlide = (index) => {
-    sliderRef.current.slickGoTo(index); // Use the slick slider method to navigate
-    setCurrentSlide(index); // Update the current slide state
+    sliderRef.current.slickGoTo(index);
+    setCurrentSlide(index);
   };
 
   return (
-    <div className="sliderContainer" ref={sliderContainerRef}>
-      <div className="controlsWrapper">
-        <PrevArrow onClick={() => sliderRef.current.slickPrev()} />
-        {/* Custom pagination dots */}
+    <div className="sliderContainer">
+      {/* Custom navigation controls */}
+<div
+  className="controlsWrapper"
+  style={{ 
+    top: dynamicTop, 
+    right: right ? "2%" : "0%" // Add "px" units for numerical values
+  }}
+>        <PrevArrow onClick={() => sliderRef.current.slickPrev()} />
         <div className="customPagination">
           {cards.map((_, index) => (
             <div
               key={index}
-              className={`paginationDot ${
-                index === currentSlide ? "active" : "" 
-              }`}
-              onClick={() => goToSlide(index)} // Navigate to corresponding slide on click
+              className={`paginationDot ${index === currentSlide ? "active" : ""}`}
+              onClick={() => goToSlide(index)}
             ></div>
           ))}
         </div>
-
         <NextArrow onClick={() => sliderRef.current.slickNext()} />
       </div>
 
       {/* Slider component */}
       <Slider ref={sliderRef} {...settings}>
-        {cards.map((CardComponent, index) => (
-          <div
-            key={index}
-            className={`sliderItemZA ${
-              slidesToShow === 4 ? "itemCustomWidthZA" : "" // Apply custom width styling for specific slidesToShow
-            }`}
-          >
-            {CardComponent} 
-          </div>
-        ))}
+        {cards.map((CardComponent, index) => {
+          const itemClass =
+            slidesToShow === 5 && page === "home"
+              ? "sliderItemZA"
+              : slidesToShow === 5 && page === "moviesAndShows" && sec === "genres"
+              ? "multiSliderItemZA"
+              : slidesToShow === 4 && sec === "genres"
+              ? "genreItemWidthZA"
+              : slidesToShow === 5 && page === "moviesAndShows" && sec === "movies"
+              ? "movieSliderItemZA"
+              : slidesToShow === 4 && page === "moviesAndShows" && sec === "movies"
+              ? "mustSliderItemZA"
+              : "";
+
+          return (
+            <div key={index} className={itemClass}>
+              {CardComponent}
+            </div>
+          );
+        })}
       </Slider>
 
-      {/* Custom scrollbar for additional navigation */}
+      {/* Custom scrollbar */}
       <div className="customScrollbar">
         {cards.map((_, index) => (
           <div
             key={index}
             className="scrollbarSegment"
-            onClick={() => goToSlide(index)} // Navigate to corresponding slide on click
+            onClick={() => goToSlide(index)}
             style={{
-              width: `calc(100% / ${cards.length})`, // Each segment takes up equal width
-              cursor: "pointer", 
-              background:
-                index === currentSlide
-                  ? "var(--primary-color-red)" 
-                  : "transparent", 
+              width: `calc(100% / ${cards.length})`,
+              cursor: "pointer",
+              background: index === currentSlide ? "var(--primary-color-red)" : "transparent",
             }}
           ></div>
         ))}
@@ -126,3 +138,4 @@ export default function CardSlider({ cards, slidesToShow }) {
     </div>
   );
 }
+

@@ -2,6 +2,8 @@ import './TrendingNow.css'
 import CardSlider from "../Sliders/CardSlider/CardSlider";
 import {Trendingimages} from "../../Data/data";
 import MovieShowCard from '../Cards/MovieShowCard/MovieShowCard';
+import HomeMoviesAndShowsTitle from "../SharedTitlesAndParagraph/HomeMoviesAndShows/HomeMoviesAndShowsTitle";
+
 
 export default function TrendingNow() {
     const cards2Data = [
@@ -18,12 +20,13 @@ export default function TrendingNow() {
         src={data.source}
         key={index}
         section={"TrendingMovies"}
+        ratio="Movies"
         />
       ));
   return (
-    <div>
-    <CardSlider cards={cards2} slidesToShow={5} />
-
+    <div className='moviesMarginZA'>
+    <HomeMoviesAndShowsTitle title="Trending Now" home={false} fontSizeType="type3" lineHeightType="type3"/>
+    <CardSlider cards={cards2} slidesToShow={5} page="moviesAndShows" sec="movies" top="type2" right={true}/>
     </div>
   )
 }

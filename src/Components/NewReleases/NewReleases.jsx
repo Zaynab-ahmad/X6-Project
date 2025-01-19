@@ -2,6 +2,8 @@ import './NewReleases.css'
 import CardSlider from "../Sliders/CardSlider/CardSlider";
 import {NewreleaseImages} from "../../Data/data";
 import MovieShowCard from '../Cards/MovieShowCard/MovieShowCard';
+import HomeMoviesAndShowsTitle from "../SharedTitlesAndParagraph/HomeMoviesAndShows/HomeMoviesAndShowsTitle";
+
 
 export default function NewReleases() {
     const cards3Data = [
@@ -19,12 +21,13 @@ export default function NewReleases() {
         src={data.source}
         key={index}
         section={"NewReleases"}
+        ratio="Movies"
         />
       ));
   return (
-    <div>
-    <CardSlider cards={cards3} slidesToShow={5} />
-
+    <div className='moviesMarginZA'>
+    <HomeMoviesAndShowsTitle title="New Releases" home={false} fontSizeType="type3" lineHeightType="type3"/>
+    <CardSlider cards={cards3} slidesToShow={5} page="moviesAndShows" sec="movies" top="type2" right={true}/>
     </div>
   )
 }

@@ -9,7 +9,6 @@
   overflow: hidden;
   width: 100%;
   cursor: pointer;
-  transition: box-shadow 0.3s ease;
 }
 
 .imageGalleryContainer {

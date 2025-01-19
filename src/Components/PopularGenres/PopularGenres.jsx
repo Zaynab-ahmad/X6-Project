@@ -25,6 +25,7 @@ export default function PopularGenres({sho}) {
       imagesArray={data.imagesArray}
       badge={true}
       pageName="moviesAndShowsPage" 
+      genre={sho ? "movies" : "shows"}
     />
   ));
   return (
@@ -38,7 +39,7 @@ export default function PopularGenres({sho}) {
           className ="MA-margin"
         />
         </div>        
-     <CardSlider cards={cardsMA} slidesToShow={4} page="moviesAndShows" sec="genres" top = "type2" right={true} />
+     <CardSlider cards={cardsMA} slidesToShow={4} page="moviesAndShows" sec="genres" top = "type2" right={false} />
     </div>
    
   )

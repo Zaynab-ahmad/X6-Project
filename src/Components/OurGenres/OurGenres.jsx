@@ -11,7 +11,7 @@ import {
   HorrorMovies,
 } from "../../Data/data";
 
-export default function OurGenres() {
+export default function OurGenres({movies}) {
   const cardsData = [
     { text: "Action", imagesArray: ActionMovies.slice(0, 4) },
     { text: "Adventure", imagesArray: AdventureMovies.slice(0, 4) },
@@ -26,6 +26,7 @@ export default function OurGenres() {
       imagesArray={data.imagesArray}
       badge={false}
       pageName="moviesAndShowsPage"
+      genre={movies ? "movies" : "shows"}
     />
   ));
   return (
@@ -36,7 +37,7 @@ export default function OurGenres() {
         fontSizeType="type3"
         lineHeightType="type3"
       />
-     <CardSlider cards={cards} slidesToShow={5} page="moviesAndShows" sec="genres" top="type2" right={true} />
+     <CardSlider cards={cards} slidesToShow={5} page="moviesAndShows" sec="genres" top="type2" right={false} />
     </div>
   );
 }

@@ -10,7 +10,7 @@ export default function MoviesSection() {
     <div className=" xContainer customMargin">
       <div className="moviesSectionZA">
         <div className="moviesBadgeZA">Movies</div>
-        <OurGenres />
+        <OurGenres movies={true} />
         <PopularGenres sho={true} />
         <TrendingNow />
         <NewReleases />

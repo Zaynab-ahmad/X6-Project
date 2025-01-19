@@ -24,7 +24,14 @@ function NextArrow({ onClick }) {
   );
 }
 
-export default function CardSlider({ cards, slidesToShow, page, sec, top, right }) {
+export default function CardSlider({
+  cards,
+  slidesToShow,
+  page,
+  sec,
+  top,
+  right,
+}) {
   const topOptions = {
     type1: { lg: "-174px", md: "-170px" },
     type2: { lg: "-80px", md: "-50px" },
@@ -76,19 +83,22 @@ export default function CardSlider({ cards, slidesToShow, page, sec, top, right 
 
   return (
     <div className="sliderContainer">
-      {/* Custom navigation controls */}
-<div
-  className="controlsWrapper"
-  style={{ 
-    top: dynamicTop, 
-    right: right ? "2%" : "0%" // Add "px" units for numerical values
-  }}
->        <PrevArrow onClick={() => sliderRef.current.slickPrev()} />
+      <div
+        className="controlsWrapper"
+        style={{
+          top: dynamicTop,
+          right: right ? "2%" : "1%",
+        }}
+      >
+        {" "}
+        <PrevArrow onClick={() => sliderRef.current.slickPrev()} />
         <div className="customPagination">
           {cards.map((_, index) => (
             <div
               key={index}
-              className={`paginationDot ${index === currentSlide ? "active" : ""}`}
+              className={`paginationDot ${
+                index === currentSlide ? "active" : ""
+              }`}
               onClick={() => goToSlide(index)}
             ></div>
           ))}
@@ -102,13 +112,19 @@ export default function CardSlider({ cards, slidesToShow, page, sec, top, right 
           const itemClass =
             slidesToShow === 5 && page === "home"
               ? "sliderItemZA"
-              : slidesToShow === 5 && page === "moviesAndShows" && sec === "genres"
+              : slidesToShow === 5 &&
+                page === "moviesAndShows" &&
+                sec === "genres"
               ? "multiSliderItemZA"
               : slidesToShow === 4 && sec === "genres"
               ? "genreItemWidthZA"
-              : slidesToShow === 5 && page === "moviesAndShows" && sec === "movies"
+              : slidesToShow === 5 &&
+                page === "moviesAndShows" &&
+                sec === "movies"
               ? "movieSliderItemZA"
-              : slidesToShow === 4 && page === "moviesAndShows" && sec === "movies"
+              : slidesToShow === 4 &&
+                page === "moviesAndShows" &&
+                sec === "movies"
               ? "mustSliderItemZA"
               : "";
 
@@ -130,7 +146,10 @@ export default function CardSlider({ cards, slidesToShow, page, sec, top, right 
             style={{
               width: `calc(100% / ${cards.length})`,
               cursor: "pointer",
-              background: index === currentSlide ? "var(--primary-color-red)" : "transparent",
+              background:
+                index === currentSlide
+                  ? "var(--primary-color-red)"
+                  : "transparent",
             }}
           ></div>
         ))}
@@ -138,4 +157,3 @@ export default function CardSlider({ cards, slidesToShow, page, sec, top, right 
     </div>
   );
 }
-

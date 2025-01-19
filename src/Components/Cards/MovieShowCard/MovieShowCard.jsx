@@ -1,10 +1,17 @@
-import React from 'react'
+import { useNavigate } from "react-router-dom";
 import './MovieShowCard.css'
 import clock from '../../../assets/Icons/clock.svg'
 import seasonimg from '../../../assets/Icons/season.svg'
 import viewsicon from '../../../assets/Icons/views.svg'
 
-export default function MovieShowCard({ length, views, src, section, ratio, releaseDate, rating, seasons }) {
+export default function MovieShowCard({id, length, views, src, section, ratio, releaseDate, rating, seasons, genre }) {
+  const navigate = useNavigate();
+ 
+  const handleImageClick = () => {
+ {
+    navigate(`/pageopen/${genre}/${id}`);
+  }
+};
   return (
     <div className={section=="MustWatch" ? "MustWatchCard" : "MovieShowCard"}>
 <img 
@@ -19,6 +26,7 @@ export default function MovieShowCard({ length, views, src, section, ratio, rele
   } 
   src={src} 
   alt="ThumbnailImg" 
+   onClick={handleImageClick}
 />      <div className='detailSection'>
         {
           section == "TrendingMovies" ?

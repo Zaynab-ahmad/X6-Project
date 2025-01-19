@@ -10,7 +10,7 @@ export default function ShowsSection() {
     <div id="showsSec" className=" xContainer customMargin">
       <div className="showsSectionZA">
         <div className="showsBadgeZA">Shows</div>
-        <OurGenres />
+        <OurGenres movies={false} />
         <div className="MA-pop-sh">
         <PopularGenres sho={false} />
         </div>

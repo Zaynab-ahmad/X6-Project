@@ -1,40 +1,41 @@
 .mainButton {
-    height: fit-content;
-    width: fit-content;
-    color: #fff;
-    font-size: 18px;
-    line-height: 27px;
-    font-weight: 600;
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+  height: fit-content;
+  width: fit-content;
+  color: #fff;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 600;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .mainButton:hover {
-    filter: brightness(0.8);
+  filter: brightness(0.8);
 }
 @media (min-width: 1441px) and (max-width: 1690px) {
-    .mainButton {
-            padding: 17px 14px !important;
-            font-size: 16px;
-        }
+  .mainButton {
+    padding: 17px 14px !important;
+    font-size: 16px;
+  }
 }
 @media (max-width: 1440px) {
-    .mainButton {
-        font-size: 14px;
-        line-height: 21px;
-        border-radius: 6px;}
-    .smallerBorderRaduis {
-            border-radius: 6px;
-        }   
+  .mainButton {
+    font-size: 14px;
+    line-height: 21px;
+    border-radius: 6px;
+  }
+  .smallerBorderRaduis {
+    border-radius: 6px;
+  }
 }
 @media (min-width: 768px) and (max-width: 1290px) {
-.mainButton{padding: 12px 9px !important;} 
+  .mainButton {
+    padding: 12px 9px !important;
+  }
 }
-@media (max-width:576px) {
-    .fullWidth {
-            width: 100% !important;
-        }
-    
+@media (max-width: 576px) {
+  .fullWidth {
+    width: 100% !important;
+  }
 }

@@ -216,31 +216,31 @@ export const HorrorMovies = [
 ];
 
 export const NewreleaseImages = [
-  { id: 43, src: NewRelease1, alt: "NewRelease Movie 1", Title: "Adipurush", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
-  { id: 44, src: NewRelease2, alt: "NewRelease Movie 2", Title: "The Kashmir Files", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
-  { id: 45, src: NewRelease3, alt: "NewRelease Movie 3", Title: "sin city", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
-  { id: 46, src: NewRelease4, alt: "NewRelease Movie 4", Title: "The Tomorrow War", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
-  { id: 47, src: NewRelease5, alt: "NewRelease Movie 5", Title: "Misfire", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
+  { id: 47, src: NewRelease1, alt: "NewRelease Movie 1", Title: "Adipurush", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
+  { id: 48, src: NewRelease2, alt: "NewRelease Movie 2", Title: "The Kashmir Files", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
+  { id: 49, src: NewRelease3, alt: "NewRelease Movie 3", Title: "sin city", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
+  { id: 50, src: NewRelease4, alt: "NewRelease Movie 4", Title: "The Tomorrow War", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
+  { id: 51, src: NewRelease5, alt: "NewRelease Movie 5", Title: "Misfire", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
 ]
 
 export const NewReleasedShowsImages = [
-  { id: 48, src: NewReleasedShow1, alt: "NewReleased Show 1", Title: "High Town", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
-  { id: 49, src: NewReleasedShow2, alt: "NewReleased Show 2", Title: "Mirzapur", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
-  { id: 50, src: NewReleasedShow3, alt: "NewReleased Show 3", Title: "Into The Shadows", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
-  { id: 51, src: NewReleasedShow4, alt: "NewReleased Show 4", Title: "Peaky Blinders", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
+  { id: 52, src: NewReleasedShow1, alt: "NewReleased Show 1", Title: "High Town", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
+  { id: 53, src: NewReleasedShow2, alt: "NewReleased Show 2", Title: "Mirzapur", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
+  { id: 54, src: NewReleasedShow3, alt: "NewReleased Show 3", Title: "Into The Shadows", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
+  { id: 55, src: NewReleasedShow4, alt: "NewReleased Show 4", Title: "Peaky Blinders", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
   
 ]
 export const TrendingShowsImages = [
-  { id: 52, src: TrendingShow1, alt: "Trending Show 1", Title: "Stranger Things", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
-  { id: 53, src: TrendingShow2, alt: "Trending Show 2", Title: "Money Heist", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
-  { id: 54, src: TrendingShow3, alt: "Trending Show 3", Title: "Lucifer", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
-  { id: 55, src: TrendingShow4, alt: "Trending Show 4", Title: "The Gray Man", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
+  { id: 56, src: TrendingShow1, alt: "Trending Show 1", Title: "Stranger Things", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
+  { id: 57, src: TrendingShow2, alt: "Trending Show 2", Title: "Money Heist", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
+  { id: 58, src: TrendingShow3, alt: "Trending Show 3", Title: "Lucifer", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
+  { id: 59, src: TrendingShow4, alt: "Trending Show 4", Title: "The Gray Man", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
 ]
 export const MustWatchShowsImages=[
-  { id: 56, src: MustWatchShow1, alt: "Must Watch 1", Title: "Duranga", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
-  { id: 57, src: MustWatchShow2, alt: "Must Watch 2", Title: "Money Heist", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
-  { id: 58, src: MustWatchShow3, alt: "Must Watch 3", Title: "Mai", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
-  { id: 59, src: MustWatchShow4, alt: "Must Watch 4", Title: "Stranger Things", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
+  { id: 60, src: MustWatchShow1, alt: "Must Watch 1", Title: "Duranga", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
+  { id: 61, src: MustWatchShow2, alt: "Must Watch 2", Title: "Money Heist", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
+  { id: 62, src: MustWatchShow3, alt: "Must Watch 3", Title: "Mai", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
+  { id: 63, src: MustWatchShow4, alt: "Must Watch 4", Title: "Stranger Things", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
 ]
 
 export const AllMovies = [
@@ -251,4 +251,8 @@ export const AllMovies = [
   ...DramaMovies,
   ...ComedyMovies,
   ...HorrorMovies,
+  ...NewreleaseImages,
+  ...NewReleasedShowsImages,
+  ...TrendingShowsImages,
+  ...MustWatchShowsImages,
 ];

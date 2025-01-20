@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import  { useState, useEffect } from "react";
 import ShowsSection from "../../Components/ShowsSection/ShowsSection";
 import MoviesSection from "../../Components/MoviesSection/MoviesSection";
 import "./MoviesAndShows.css";

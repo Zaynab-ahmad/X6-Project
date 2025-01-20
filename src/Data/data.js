@@ -55,6 +55,7 @@ import Action10 from '../assets/Imgs/Action10.webp'
 import Action11 from '../assets/Imgs/Action11.webp'
 import Action12 from '../assets/Imgs/Action12.webp'
 
+
 // Importing Action  movies covers images
 import Action1Cover from '../assets/Imgs/action1cover.webp'
 import Action2Cover from '../assets/Imgs/action2cover.webp'
@@ -184,8 +185,6 @@ export const mustWatchMoviesimages = [
 ];
 
 export const ActionMovies = [
-
-
   { id: 10, src: Action1, coverSrc: Action1Cover, alt: "Welcome To The Punch", title: "Welcome To The Punch", description: "a former English criminal Jacob Sternwood, who comes out of hiding in Iceland, in an effort to save his son Ruan Sternwoodwhen a heist goes wrong.", videoLink: "https://www.youtube.com/watch?v=16K6BDTn9iI" },
   { id: 11, src: Action2, coverSrc: Action2Cover, alt: "Black Panther", title: "Black Panther", description: "story of T'Challa  who has just been crowned king in his country, Wakanda. He had to replace his father King T'Chaka who died from an explosion at the PBB office.", videoLink: "https://www.youtube.com/watch?v=16K6BDTn9iI" },
   { id: 12, src: Action3, coverSrc: Action3Cover, alt: "The Batman", title: "The Batman", description: "Batman ventures into Gotham City's underworld when a sadistic killer leaves behind a trail of cryptic clues. He must bring justice to the abuse of power and corruption that plagues the metropolis.", videoLink: "https://www.youtube.com/watch?v=16K6BDTn9iI" },
@@ -198,7 +197,6 @@ export const ActionMovies = [
   { id: 19, src: Action10, coverSrc:Action10Cover, alt: "Action Movie 10", title: "The Avengers", description: "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving", videoLink: "https://www.youtube.com/watch?v=16K6BDTn9iI"},
   { id: 20, src: Action11, coverSrc:Action11, alt: "Action Movie 11", title: "Arrow", description: "Spoiled billionaire playboy Oliver Queen is missing and presumed dead when his yacht is lost at sea. He returns five years later a changed man.", videoLink: "https://www.youtube.com/watch?v=16K6BDTn9iI"},
   { id: 21, src: Action12, coverSrc:TrendingShow1cover, alt: "Action Movie 12", title: "Stranger Things", description: "When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl.", videoLink: "https://www.youtube.com/watch?v=16K6BDTn9iI"}
-
   ];
 
 

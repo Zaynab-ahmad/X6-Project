@@ -50,6 +50,11 @@ import Action5 from '../assets/Imgs/Action5.webp'
 import Action6 from '../assets/Imgs/Action6.webp'
 import Action7 from '../assets/Imgs/Action7.webp'
 import Action8 from '../assets/Imgs/Action8.webp'
+import Action9 from '../assets/Imgs/Action9.svg'
+import Action10 from '../assets/Imgs/Action10.svg'
+import Action11 from '../assets/Imgs/Action11.svg'
+import Action12 from '../assets/Imgs/Action12.svg'
+
 
 // Importing Action  movies covers images
 import Action1Cover from '../assets/Imgs/action1cover.webp'
@@ -166,7 +171,7 @@ export const ActionMovies = [
   { id: 15, src: Action6, coverSrc: Action6Cover, alt: "Bad Boys", title: "Bad Boys", description: "Miami-Dade detectives Mike Lowrey and Marcus Burnett  blow a fuse when $100 million worth of heroin they recently confiscated is heisted from station headquarters.", videoLink: "https://www.youtube.com/watch?v=16K6BDTn9iI" },
   { id: 16, src: Action7, coverSrc: Action7Cover, alt: "The Foreigner", title: "The Foreigner", description: "Quan is a humble London businessman whose long-buried past erupts in a revenge-fueled vendetta when the only person left for him to love -- his teenage daughter -- dies in a senseless act of politically motivated terrorism.", videoLink: "https://www.youtube.com/watch?v=16K6BDTn9iI"},
   { id: 17, src: Action8, coverSrc: Action8Cover, alt: "Iron Man", title: "Iron Man", description: "After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight evil.", videoLink: "https://www.youtube.com/watch?v=16K6BDTn9iI" },
-{ id: 18, src: Action9, alt: "Action Movie 9", title: "The Dark Knight Rises", description: "A story of a man who is trying to save the world from a"},
+  { id: 18, src: Action9, alt: "Action Movie 9", title: "The Dark Knight Rises", description: "A story of a man who is trying to save the world from a"},
   { id: 19, src: Action10, alt: "Action Movie 10", title: "The Dark Knight Rises", description: "A story of a man who is trying to save the world from a"},
   { id: 20, src: Action11, alt: "Action Movie 11", title: "The Dark Knight Rises", description: "A story of a man who is trying to save the world from a"},
   { id: 21, src: Action12, alt: "Action Movie 12", title: "The Dark Knight Rises", description: "A story of a man who is trying to save the world from a"}

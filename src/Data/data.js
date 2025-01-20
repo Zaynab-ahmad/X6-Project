@@ -50,10 +50,10 @@ import Action5 from '../assets/Imgs/Action5.webp'
 import Action6 from '../assets/Imgs/Action6.webp'
 import Action7 from '../assets/Imgs/Action7.webp'
 import Action8 from '../assets/Imgs/Action8.webp'
-import Action9 from '../assets/Imgs/Action9.svg'
-import Action10 from '../assets/Imgs/Action10.svg'
-import Action11 from '../assets/Imgs/Action11.svg'
-import Action12 from '../assets/Imgs/Action12.svg'
+import Action9 from '../assets/Imgs/Action9.webp'
+import Action10 from '../assets/Imgs/Action10.webp'
+import Action11 from '../assets/Imgs/Action11.webp'
+import Action12 from '../assets/Imgs/Action12.webp'
 
 
 // Importing Action  movies covers images
@@ -65,6 +65,8 @@ import Action5Cover from '../assets/Imgs/action5cover.webp'
 import Action6Cover from '../assets/Imgs/action6cover.webp'
 import Action7Cover from '../assets/Imgs/action7cover.webp'
 import Action8Cover from '../assets/Imgs/action8cover.webp'
+import Action9Cover from '../assets/Imgs/action9cover.webp'
+import Action10Cover from '../assets/Imgs/action10cover.webp'
 
 
 // Importing Drama  movies images
@@ -120,11 +122,17 @@ import Horror3cover from '../assets/Imgs/horror3cover.webp'
 import Horror4cover from '../assets/Imgs/horror4cover.webp'
 
 //importing new released movies images
-import NewRelease1 from '../assets/Imgs/Movies/NewReleasesMovies1.png'
+import NewRelease1 from '../assets/Imgs/Movies/MustWatchMovies4.webp'
 import NewRelease2 from '../assets/Imgs/Movies/NewReleasesMovies2.webp'
 import NewRelease3 from '../assets/Imgs/Movies/NewReleasesMovies3.webp'
 import NewRelease4 from '../assets/Imgs/Movies/NewReleasesMovies4.webp'
 import NewRelease5 from '../assets/Imgs/Movies/NewReleasesMovies5.webp'
+
+//importing new released movies cover images
+import NewRelease2cover from '../assets/Imgs/Movies/NewReleasesMovies2cover.webp'
+import NewRelease3cover from '../assets/Imgs/Movies/NewReleasesMovies3cover.webp'
+import NewRelease4cover from '../assets/Imgs/Movies/NewReleasesMovies4cover.webp'
+import NewRelease5cover from '../assets/Imgs/Movies/NewReleasesMovies5cover.webp'
 
 //importing new released shows images
 import NewReleasedShow1 from '../assets/Imgs/Shows/NewReleasedShows1.webp'
@@ -132,17 +140,33 @@ import NewReleasedShow2 from '../assets/Imgs/Shows/NewReleasedShows2.webp'
 import NewReleasedShow3 from '../assets/Imgs/Shows/NewReleasedShows3.webp'
 import NewReleasedShow4 from '../assets/Imgs/Shows/NewReleasedShows4.webp'
 
+//importing new released shows cover images
+import NewReleasedShow1cover from '../assets/Imgs/Shows/NewReleasedShows1cover.webp'
+import NewReleasedShow2cover from '../assets/Imgs/Shows/NewReleasedShows2cover.webp'
+import NewReleasedShow3cover from '../assets/Imgs/Shows/NewReleasedShows3cover.webp'
+import NewReleasedShow4cover from '../assets/Imgs/Shows/NewReleasedShows4cover.webp'
+
 //importing trending shows images
-import TrendingShow1 from '../assets/Imgs/Shows/TrendingShows1.png'
+import TrendingShow1 from '../assets/Imgs/Shows/MustWatchShows4.webp'
 import TrendingShow2 from '../assets/Imgs/Shows/TrendingShows2.webp'
 import TrendingShow3 from '../assets/Imgs/Shows/TrendingShows3.webp'
 import TrendingShow4 from '../assets/Imgs/Shows/TrendingShows4.webp'
+
+//importing trending shows cover images
+import TrendingShow1cover from '../assets/Imgs/ShowsPageOpen/StrangerThings.webp'
+import TrendingShow2cover from '../assets/Imgs/Shows/TrendingShows2cover.webp'
+import TrendingShow3cover from '../assets/Imgs/Shows/TrendingShows3cover.webp'
+import TrendingShow4cover from '../assets/Imgs/Shows/TrendingShows4cover.webp'
 
 //importing must watch shows
 import MustWatchShow1 from '../assets/Imgs/Shows/MustWatchShows1.webp'
 import MustWatchShow2 from '../assets/Imgs/Shows/MustWatchShows2.webp'
 import MustWatchShow3 from '../assets/Imgs/Shows/MustWatchShows3.webp'
 import MustWatchShow4 from '../assets/Imgs/Shows/MustWatchShows4.webp'
+
+//importing must watch cover shows
+import MustWatchShow1cover from '../assets/Imgs/Shows/MustWatchShows1cover.webp'
+import MustWatchShow3cover from '../assets/Imgs/Shows/MustWatchShows3cover.webp'
 
 
 export const Trendingimages = [
@@ -161,8 +185,6 @@ export const mustWatchMoviesimages = [
 ];
 
 export const ActionMovies = [
-
-
   { id: 10, src: Action1, coverSrc: Action1Cover, alt: "Welcome To The Punch", title: "Welcome To The Punch", description: "a former English criminal Jacob Sternwood, who comes out of hiding in Iceland, in an effort to save his son Ruan Sternwoodwhen a heist goes wrong.", videoLink: "https://www.youtube.com/watch?v=16K6BDTn9iI" },
   { id: 11, src: Action2, coverSrc: Action2Cover, alt: "Black Panther", title: "Black Panther", description: "story of T'Challa  who has just been crowned king in his country, Wakanda. He had to replace his father King T'Chaka who died from an explosion at the PBB office.", videoLink: "https://www.youtube.com/watch?v=16K6BDTn9iI" },
   { id: 12, src: Action3, coverSrc: Action3Cover, alt: "The Batman", title: "The Batman", description: "Batman ventures into Gotham City's underworld when a sadistic killer leaves behind a trail of cryptic clues. He must bring justice to the abuse of power and corruption that plagues the metropolis.", videoLink: "https://www.youtube.com/watch?v=16K6BDTn9iI" },
@@ -171,11 +193,10 @@ export const ActionMovies = [
   { id: 15, src: Action6, coverSrc: Action6Cover, alt: "Bad Boys", title: "Bad Boys", description: "Miami-Dade detectives Mike Lowrey and Marcus Burnett  blow a fuse when $100 million worth of heroin they recently confiscated is heisted from station headquarters.", videoLink: "https://www.youtube.com/watch?v=16K6BDTn9iI" },
   { id: 16, src: Action7, coverSrc: Action7Cover, alt: "The Foreigner", title: "The Foreigner", description: "Quan is a humble London businessman whose long-buried past erupts in a revenge-fueled vendetta when the only person left for him to love -- his teenage daughter -- dies in a senseless act of politically motivated terrorism.", videoLink: "https://www.youtube.com/watch?v=16K6BDTn9iI"},
   { id: 17, src: Action8, coverSrc: Action8Cover, alt: "Iron Man", title: "Iron Man", description: "After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight evil.", videoLink: "https://www.youtube.com/watch?v=16K6BDTn9iI" },
-  { id: 18, src: Action9, alt: "Action Movie 9", title: "The Dark Knight Rises", description: "A story of a man who is trying to save the world from a"},
-  { id: 19, src: Action10, alt: "Action Movie 10", title: "The Dark Knight Rises", description: "A story of a man who is trying to save the world from a"},
-  { id: 20, src: Action11, alt: "Action Movie 11", title: "The Dark Knight Rises", description: "A story of a man who is trying to save the world from a"},
-  { id: 21, src: Action12, alt: "Action Movie 12", title: "The Dark Knight Rises", description: "A story of a man who is trying to save the world from a"}
-
+  { id: 18, src: Action9, coverSrc:Action9Cover, alt: "WandaVision", title: "WandaVision", description: "Vision and Wanda live a normal life in Westview and conceal their superpowers.", videoLink: "https://www.youtube.com/watch?v=16K6BDTn9iI"},
+  { id: 19, src: Action10, coverSrc:Action10Cover, alt: "Action Movie 10", title: "The Avengers", description: "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving", videoLink: "https://www.youtube.com/watch?v=16K6BDTn9iI"},
+  { id: 20, src: Action11, coverSrc:Action11, alt: "Action Movie 11", title: "Arrow", description: "Spoiled billionaire playboy Oliver Queen is missing and presumed dead when his yacht is lost at sea. He returns five years later a changed man.", videoLink: "https://www.youtube.com/watch?v=16K6BDTn9iI"},
+  { id: 21, src: Action12, coverSrc:TrendingShow1cover, alt: "Action Movie 12", title: "Stranger Things", description: "When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl.", videoLink: "https://www.youtube.com/watch?v=16K6BDTn9iI"}
   ];
 
 
@@ -217,31 +238,32 @@ export const HorrorMovies = [
 ];
 
 export const NewreleaseImages = [
-  { id: 47, src: NewRelease1, alt: "NewRelease Movie 1", Title: "Adipurush", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
-  { id: 48, src: NewRelease2, alt: "NewRelease Movie 2", Title: "The Kashmir Files", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
-  { id: 49, src: NewRelease3, alt: "NewRelease Movie 3", Title: "sin city", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
-  { id: 50, src: NewRelease4, alt: "NewRelease Movie 4", Title: "The Tomorrow War", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
-  { id: 51, src: NewRelease5, alt: "NewRelease Movie 5", Title: "Misfire", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
+
+  { id: 47, src: NewRelease1, coverSrc: MustWatchMovies4cover, alt: "NewRelease Movie 1", title: "Adipurush", description: "Adipurush is a mythological drama based on the epic Hindu poem, the Mahabharata. The film is set in the kingdom of Ayodhya, where the Pandavas and Kauravas are locked in a battle for the throne.", videoLink: "https://www.youtube.com/watch?v=16K6BDTn9iI" },
+  { id: 48, src: NewRelease2, coverSrc: NewRelease2cover, alt: "NewRelease Movie 2", title: "The Foreigner", description: "uan is a humble London businessman whose long-buried past erupts in a revenge-fueled vendetta when the only person left for him to love -- his teenage daughter -- dies in a senseless act of politically motivated terrorism.",videoLink: "https://www.youtube.com/watch?v=16K6BDTn9iI" },
+  { id: 49, src: NewRelease3, coverSrc: NewRelease3cover, alt: "NewRelease Movie 3", title: "Sin City", description: "A film that explores the dark and miserable town, Basin City, and tells the story of three different people, all caught up in violent corruption.",videoLink: "https://www.youtube.com/watch?v=16K6BDTn9iI" },
+  { id: 50, src: NewRelease4, coverSrc: NewRelease4cover, alt: "NewRelease Movie 4", title: "The Tomorrow War", description: "A family man is drafted to fight in a future war where the fate of humanity relies on his ability to confront the past",videoLink: "https://www.youtube.com/watch?v=16K6BDTn9iI" },
+  { id: 51, src: NewRelease5, coverSrc: NewRelease5cover, alt: "NewRelease Movie 5", title: "Misfire", description: "Hardened DEA agent, Cole, descends into the dangerous underworld of Tijuana, Mexico in search of his journalist ex-wife who he believes has been abducted.",videoLink: "https://www.youtube.com/watch?v=16K6BDTn9iI" },
 ]
 
 export const NewReleasedShowsImages = [
-  { id: 52, src: NewReleasedShow1, alt: "NewReleased Show 1", Title: "High Town", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
-  { id: 53, src: NewReleasedShow2, alt: "NewReleased Show 2", Title: "Mirzapur", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
-  { id: 54, src: NewReleasedShow3, alt: "NewReleased Show 3", Title: "Into The Shadows", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
-  { id: 55, src: NewReleasedShow4, alt: "NewReleased Show 4", Title: "Peaky Blinders", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
+  { id: 52, src: NewReleasedShow1, coverSrc:NewReleasedShow1cover, alt: "NewReleased Show 1", title: "High Town", description: "Set in the world of beautiful but bleak Cape Cod, one woman's journey to sobriety is overshadowed by a murder investigation dragging her into its fold.",videoLink: "https://www.youtube.com/watch?v=16K6BDTn9iI" },
+  { id: 53, src: NewReleasedShow2, coverSrc:NewReleasedShow2cover, alt: "NewReleased Show 2", title: "Mirzapur", description: "A shocking incident at a wedding procession ignites a series of events entangling the lives of two families in the lawless city of Mirzapur.",videoLink: "https://www.youtube.com/watch?v=16K6BDTn9iI" },
+  { id: 54, src: NewReleasedShow3, coverSrc:NewReleasedShow3cover, alt: "NewReleased Show 3", title: "Breathe Into The Shadows", description: "A modern, upper-middle-class family unwittingly caught up in a maelstrom that threatens their very existence.",videoLink: "https://www.youtube.com/watch?v=16K6BDTn9iI" },
+  { id: 55, src: NewReleasedShow4, coverSrc:NewReleasedShow4cover, alt: "NewReleased Show 4", title: "Peaky Blinders", description: "The Peaky Blinders begin as a criminal gang engaged in theft, extortion and illegal gambling.",videoLink: "https://www.youtube.com/watch?v=16K6BDTn9iI" },
   
 ]
 export const TrendingShowsImages = [
-  { id: 56, src: TrendingShow1, alt: "Trending Show 1", Title: "Stranger Things", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
-  { id: 57, src: TrendingShow2, alt: "Trending Show 2", Title: "Money Heist", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
-  { id: 58, src: TrendingShow3, alt: "Trending Show 3", Title: "Lucifer", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
-  { id: 59, src: TrendingShow4, alt: "Trending Show 4", Title: "The Gray Man", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
+  { id: 56, src: TrendingShow1, coverSrc:TrendingShow1cover, alt: "Trending Show 1", title: "Stranger Things", description: "When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl.",videoLink: "https://www.youtube.com/watch?v=16K6BDTn9iI" },
+  { id: 57, src: TrendingShow2, coverSrc:TrendingShow2cover, alt: "Trending Show 2", title: "Money Heist", description: "A criminal mastermind who goes by The Professor has a plan to pull off the biggest heist in recorded history -- to print billions of euros in the Royal Mint of Spain",videoLink: "https://www.youtube.com/watch?v=16K6BDTn9iI" },
+  { id: 58, src: TrendingShow3, coverSrc:TrendingShow3cover, alt: "Trending Show 3", title: "Lucifer", description: "Lucifer Morningstar has decided he's had enough of being the dutiful servant in Hell and decides to spend some time on Earth to better understand humanity.",videoLink: "https://www.youtube.com/watch?v=16K6BDTn9iI" },
+  { id: 59, src: TrendingShow4, coverSrc:TrendingShow4cover, alt: "Trending Show 4", title: "The Gray Man", description: "A psychopathic former colleague puts a bounty on his head, setting off a global manhunt by international assassins.",videoLink: "https://www.youtube.com/watch?v=16K6BDTn9iI" },
 ]
 export const MustWatchShowsImages=[
-  { id: 60, src: MustWatchShow1, alt: "Must Watch 1", Title: "Duranga", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
-  { id: 61, src: MustWatchShow2, alt: "Must Watch 2", Title: "Money Heist", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
-  { id: 62, src: MustWatchShow3, alt: "Must Watch 3", Title: "Mai", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
-  { id: 63, src: MustWatchShow4, alt: "Must Watch 4", Title: "Stranger Things", description: "dddkkdkdkdkdkdkdkdkdkdkdkd" },
+  { id: 60, src: MustWatchShow1, coverSrc:MustWatchShow1cover, alt: "Must Watch 1", title: "Duranga", description: "Ira begins investigating multiple murders by the suspected acomplice of a serial killer, and it leads her to discover some revelations about her husband's twisted past.",videoLink: "https://www.youtube.com/watch?v=16K6BDTn9iI" },
+  { id: 61, src: MustWatchShow2, coverSrc:TrendingShow2cover, alt: "Must Watch 2", title: "Money Heist", description: " A criminal mastermind who goes by The Professor has a plan to pull off the biggest heist in recorded history -- to print billions of euros in the Royal Mint of Spain",videoLink: "https://www.youtube.com/watch?v=16K6BDTn9iI" },
+  { id: 62, src: MustWatchShow3, coverSrc:MustWatchShow3cover, alt: "Must Watch 3", title: "Mai", description: "A grieving mother discovers the criminals behind her daughter's tragic death, and transforms from meek to merciless to get the real story",videoLink: "https://www.youtube.com/watch?v=16K6BDTn9iI" },
+  { id: 63, src: MustWatchShow4, coverSrc:TrendingShow1cover, alt: "Must Watch 4", title: "Stranger Things", description: "When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl.",videoLink: "https://www.youtube.com/watch?v=16K6BDTn9iI" },
 ]
 
 export const AllMovies = [

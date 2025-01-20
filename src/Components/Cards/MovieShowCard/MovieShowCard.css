@@ -16,7 +16,14 @@
   width: 100%;
   border-radius: 12px;
   object-fit: cover;
+  transition: transform 0.2s ease-in-out;
 }
+.mustWatchThumbnail:hover,
+.moviesThumbnailImg:hover,
+.showsThumbnailImg:hover {
+  transform: scale(1.1);
+}
+
 .mustWatchThumbnail {
   aspect-ratio: 2/ 2.529;
 }

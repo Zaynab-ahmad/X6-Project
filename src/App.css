@@ -6,7 +6,6 @@
   box-sizing: border-box;
   font-family: "Manrope", serif;
 }
-
 :root {
 
   --absolute-white: #ffffff;
@@ -38,6 +37,9 @@ body,
 .customMargin {
   margin-bottom: 150px;
 }
+.headingZA {
+  padding-bottom: 80px;
+}
 
 @media (max-width: 1440px) {
   .xContainer {
@@ -48,6 +50,9 @@ body,
   .customMargin {
     margin-bottom: 120px;
   }
+    .headingZA {
+      padding-bottom: 60px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -59,5 +64,8 @@ body,
   .customMargin {
     margin-bottom: 80px;
   }
+    .headingZA {
+      padding-bottom: 40px;
+    }
 
 }

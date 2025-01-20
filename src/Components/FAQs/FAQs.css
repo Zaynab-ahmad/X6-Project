@@ -1,69 +1,26 @@
-.FAQ-accordion{
+.FAQ-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 80px;
-}
-.left-acco , 
-.right-acco{
-  width: 758px;
-}
-@media (max-width:1900px) {
-  .FAQ-accordion{
-    gap: 20px;
-  }
-  .left-acco , 
-  .right-acco{
-    width: 620px;
-  }
+  gap: 20px;
+  justify-content: space-between;
+  margin-top: 40px;
 }
 
-@media (max-width:1416px) {
-  .FAQ-accordion{
-    gap: 15px;
-    justify-content: space-around;
-  }
-  .left-acco , 
-  .right-acco{
-    width: 460px;
-  }
+.FAQ-column {
+  flex: 1 1 calc(50% - 10px);
+  max-width: calc(50% - 10px);
 }
 
-@media (max-width:358px) {
-  .FAQ-accordion{
-    display: flex;
-    padding: 0;
-    width: 100%;
-    gap: 20px;
-    padding: 0 145px;
-  }}
-
-  /* edit */
-  @media (max-width:665px) {
-    .FAQ-accordion .left-acco,
-    .FAQ-accordion .right-acco{
-        gap: 20px;
-        width: 350px;
+@media(max-width: 992px){
+  .faqTMA {
+      padding-bottom: 20px;
     }
-    .FAQ-accordion{
-      width: 355px;
-      align-items: center;
-    }
+}   
 
+@media (max-width: 768px) {
+  .FAQ-column {
+    flex: 1 1 100%;
+    max-width: 100%;
   }
-  
-  @media (max-width:389px) {
-    
-    .FAQ-accordion,
-    .FAQ-accordion .left-acco,
-    .FAQ-accordion .right-acco{
-        gap: 10px;
-        width: 300px;
-        padding: 0;
-    }
-    .FAQ-accordion{
-        align-items: center;
-        justify-content: center;
-    }
-  }
-
-
+     
+}

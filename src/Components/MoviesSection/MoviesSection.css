@@ -12,7 +12,7 @@
     line-height: 30px;
     padding: 10px 24px;
     border-radius: 8px;
-    top: -4%;
+    top: -1%;
 }
 @media (max-width: 576px) {
     .moviesSectionZA {
@@ -23,7 +23,4 @@
     .moviesBadgeZA {
         display: none;
     }
-}
-.MA-pop-Mo{
-    margin-top: 100px;
 }

@@ -1,9 +1,13 @@
+
+import Pricing from '../../Components/Pricing/Pricing'
 import './Subscription.css'
 
 export default function Subscription() {
   return (
-    <div>
-      
+    <>
+    <div className='subscriptionPricingZA'>
+      <Pricing/>
     </div>
+    </>
   )
 }

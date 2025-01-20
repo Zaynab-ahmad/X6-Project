@@ -9,7 +9,6 @@
   overflow: hidden;
   width: 100%;
   cursor: pointer;
-  transition: box-shadow 0.3s ease;
 }
 
 .imageGalleryContainer {
@@ -20,7 +19,7 @@
   padding: 0;
 }
 
-.imageGalleryContainer:hover  {
+.imageGalleryContainer:hover {
   transform: scale(1.1);
 }
 .imageGallery {
@@ -104,7 +103,6 @@
   z-index: 10;
 }
 
-
 @media (max-width: 1440px) {
   .multiImgsCardZA {
     padding: 24px;
@@ -119,7 +117,7 @@
   }
 
   .customRatio {
-    aspect-ratio: 1 / 0.94;
+    aspect-ratio: 1 / 0.942;
   }
 
   .multiImgsCardTextZA,
@@ -175,5 +173,4 @@
   .customRatio {
     aspect-ratio: 1 / 0.96;
   }
-
 }

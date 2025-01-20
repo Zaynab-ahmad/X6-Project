@@ -23,7 +23,7 @@ export default function FAQs() {
         <div className="faqTMA d-flex flex-column justify-content-center align-items-start">
           <HomeMoviesAndShowsTitle 
             title="Frequently Asked Questions" 
-            home={true} 
+            titlePadding="home" 
             fontSizeType="type4" 
             lineHeightType="type4" 
           />

@@ -39,10 +39,10 @@ function Pricing() {
   return (
     <div id="Pricing" className="xContainer customMargin">
       <div className="headingZA d-flex flex-column flex-md-row justify-content-start justify-content-md-between align-items-md-start align-items-md-center">
-        <div className="pricingTEM">
+        <div className="pricingTEM" style={{paddingRight: 5}}>
           <HomeMoviesAndShowsTitle
             title="Choose the plan that is right for you"
-            home={true}
+            titlePadding="home"
             fontSizeType="type4"
             lineHeightType="type4"
           />

@@ -1,0 +1,152 @@
+.MovieShowCard,
+.MustWatchCard {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid var(--black-shade15);
+  background-color: var(--black-shade10);
+  width: 100%;
+  cursor: pointer;
+}
+
+.mustWatchThumbnail,
+.moviesThumbnailImg,
+.showsThumbnailImg {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+.mustWatchThumbnail {
+  aspect-ratio: 2/ 2.529;
+}
+.moviesThumbnailImg {
+  aspect-ratio: 2/ 2.3;
+}
+.showsThumbnailImg {
+  aspect-ratio: 2/ 2.175;
+}
+.detailSection {
+  background-color: transparent;
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lengthTime,
+.releaseDate,
+.viewCount {
+  display: flex;
+  align-items: center;
+  padding: 6px 10px 6px 6px;
+  border-radius: 51px;
+  background-color: var(--black-shade08);
+  border: solid 1px var(--black-shade15);
+  color: var(--primary-color-gray);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  flex-shrink: 0;
+}
+.releaseDate {
+  margin: 0 auto;
+}
+.viewCount .ratingImage {
+  width: 97px;
+  height: 18px;
+  margin: auto 4px;
+}
+.viewCount img,
+.lengthTime img {
+  width: 25px;
+  height: 25px;
+  margin-right: 2px;
+}
+@media (max-width: 1600px) and (min-width: 1441px) {
+  .viewCount img,
+  .lengthTime img {
+    width: 22px;
+    height: 22px;
+  }
+  .lengthTime,
+  .releaseDate,
+  .viewCount {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .MovieShowCard,
+  .MustWatchCard {
+    padding: 16px;
+    border-radius: 10px;
+  }
+
+  .detailSection {
+    margin-top: 16px;
+  }
+
+  .lengthTime,
+  .releaseDate,
+  .viewCount {
+    padding: 4px 8px 4px 4px !important;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .lengthTime img,
+  .viewCount img {
+    width: 20px !important;
+    height: 20px !important;
+  }
+  .viewCount .ratingImage {
+    width: 74px !important;
+    height: 14px !important;
+  }
+  .moviesThumbnailImg {
+    aspect-ratio: 2 / 2.37;
+  }
+  .showsThumbnailImg {
+    aspect-ratio: 2 / 2.555;
+  }
+  .mustWatchThumbnail {
+    aspect-ratio: 2 / 2.555;
+  }
+  .moviesThumbnailImg,
+  .showsThumbnailImg,
+  .mustWatchThumbnail {
+    border-radius: 10px !important;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 768px) {
+  .viewCount img,
+  .lengthTime img {
+    width: 18px !important;
+    height: 18px !important;
+  }
+
+  .lengthTime,
+  .releaseDate,
+  .viewCount {
+    font-size: 12px;
+  }
+}
+@media (max-width: 390px) {
+  .MovieShowCard,
+  .MustWatchCard {
+    padding: 12px;
+  }
+  .lengthTime img,
+  .viewCount img {
+    margin-right: 1px !important;
+  }
+
+  .detailSection {
+    margin-top: 12px !important;
+  }
+
+  .moviesThumbnailImg {
+    aspect-ratio: 2 / 2.7;
+  }
+}

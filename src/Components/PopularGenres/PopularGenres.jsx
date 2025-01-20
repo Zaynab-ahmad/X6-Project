@@ -7,6 +7,8 @@ import {
 } from "../../Data/data";
 import MultiImgsCard from "../Cards/MltiImgsCard/MultiImgsCard";
 import CardSlider from "../Sliders/CardSlider/CardSlider";
+import HomeMoviesAndShowsTitle from "../SharedTitlesAndParagraph/HomeMoviesAndShows/HomeMoviesAndShowsTitle";
+
 
 
 export default function PopularGenres({sho}) {
@@ -23,12 +25,22 @@ export default function PopularGenres({sho}) {
       imagesArray={data.imagesArray}
       badge={true}
       pageName="moviesAndShowsPage" 
+      genre={sho ? "movies" : "shows"}
     />
   ));
   return (
-    <>
-     <CardSlider cards={cardsMA} slidesToShow={4} />
-    </>
+    <div className="moviesMarginZA">
+    <div className="MA-pop-Mo">
+      <HomeMoviesAndShowsTitle
+          title="Popular Top 10 In Geners"
+          home={false}
+          fontSizeType="type3"
+          lineHeightType="type3"
+          className ="MA-margin"
+        />
+        </div>        
+     <CardSlider cards={cardsMA} slidesToShow={4} page="moviesAndShows" sec="genres" top = "type2" right={false} />
+    </div>
    
   )
 }

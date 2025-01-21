@@ -36,7 +36,9 @@
   justify-content: start;
   gap: 16px;
 }
-
+.CardTay:hover{
+  transform: scale(0.9)
+}
 .CardIconTay {
   width: 72px;
   height: 72px;
@@ -48,6 +50,7 @@
   background: var(--black-shade08);
   border: 1px solid var(--black-shade12);
 }
+
 .IconTay {
   width: 40px;
   height: 40px;
@@ -123,12 +126,12 @@
     height: 24px;
   }
 
-  .CardTitleH4Tay {
+/*   .CardTitleH4Tay {
     font-size: 18px;
     line-height: 27px;
   }
   .CardPTay {
     font-size: 14px;
     line-height: 21px;
-  }
+  } */
 }

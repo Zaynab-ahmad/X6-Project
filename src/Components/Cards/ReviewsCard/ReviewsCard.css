@@ -1,0 +1,164 @@
+.tayCard{ 
+    width: 100%; 
+    padding: 40px;
+    gap: 20px;
+    border-radius: 12px;
+    background: rgba(15, 15, 15, 1);
+    border: 1px solid rgba(38, 38, 38, 1);
+    max-width: 600px;
+    margin: auto;
+}
+.tayCardTiltle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.tayNameAndFrom{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+.tayName{
+    font-family: Manrope;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
+.tayfrom{
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    text-align: left;
+    color: rgba(153, 153, 153, 1);
+}
+.tayValue{
+    /* flex-wrap: wrap; */
+    width: Hug (133px)px;
+    display: flex;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    /* justify-content:space-between; */
+    padding: 5px 9px;
+    gap: 4px;
+    border-radius: 51px;
+    background: rgba(20, 20, 20, 1);
+    border: 1px solid rgba(38, 38, 38, 1);
+}
+.tayNumber{
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    text-align: left;
+    color: rgba(153, 153, 153, 1);
+}
+.tayStars{
+    display: flex;
+    /* justify-items: center; */
+    /* align-items: center; */
+    gap: 1px;
+    /* justify-content: center; */
+}
+.tayParagraph{     
+    display: flex; 
+    justify-content: start; 
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    color: rgba(153, 153, 153, 1)}
+
+
+
+
+@media(max-width:768px){
+    .tayCard{
+        padding: 24px;
+        gap: 16px;
+    }
+    .tayName{
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .tayfrom{
+        font-size: 16px;
+        line-height: 21px;
+    }
+    .tayParagraph{
+        font-size: 16px;
+        line-height: 21px;
+    }
+
+    .tayStars{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tayNumber{
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;        
+    }
+}
+
+@media(max-width:576px){
+    .tayCard{
+        padding: 20px;
+    }
+    .tayName{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .tayfrom{
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .tayParagraph{
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .tayStars{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .tayNumber{
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;        
+    }
+
+    .tayValue{
+        display: flex;
+        align-items: center; 
+        flex-direction: row;    
+    }
+}
+
+@media(min-width:1200px) and (max-width:1439px){
+    .tayCard{
+        padding: 30px;
+        gap: 16px;
+    }
+    .tayName{
+        font-size: 18px;
+    }
+    .tayfrom{
+        font-size: 16px;
+    }
+    .tayParagraph{
+        font-size: 16px;
+    }
+
+    .tayStars{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

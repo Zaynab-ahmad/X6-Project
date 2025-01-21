@@ -27,7 +27,6 @@ export default function Categories() {
       imagesArray={data.imagesArray}
       badge={false}
       pageName="homePage" 
-
     />
   ));
   return (

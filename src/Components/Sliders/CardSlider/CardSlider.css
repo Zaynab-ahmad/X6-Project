@@ -5,8 +5,6 @@
 
 .controlsWrapper {
   position: absolute;
-  top: -90px;
-  right: 2%;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -19,9 +17,17 @@
 .sliderItemZA {
   width: 86.2% !important;
 }
-
-.itemCustomWidthZA {
-  width: 85% !important;
+.multiSliderItemZA {
+  width: 92% !important;
+}
+.genreItemWidthZA {
+  width: 94.2% !important;
+}
+.movieSliderItemZA {
+  width: 94.8% !important;
+}
+.mustSliderItemZA {
+  width: 96.12% !important;
 }
 
 .customArrow {
@@ -63,7 +69,6 @@
   width: 23px;
 }
 
-
 .customScrollbar {
   position: relative;
   display: none;
@@ -83,6 +88,15 @@
 @media (max-width: 1440px) {
   .sliderContainer {
     padding-top: 40px;
+  }
+  .mustSliderItemZA {
+    width: 96.7% !important;
+  }
+  .genreItemWidthZA {
+    width: 96.3% !important;
+  }
+  .multiSliderItemZA {
+    width: 95% !important;
   }
 
   .controlsWrapper {
@@ -112,10 +126,6 @@
   .sliderItemZA {
     width: 93.7% !important;
   }
-
-  .itemCustomWidthZA {
-    width: 89.3% !important;
-  }
 }
 
 @media (max-width: 1200px) {
@@ -123,7 +133,6 @@
     width: 88% !important;
   }
 }
-
 
 @media (max-width: 992px) {
   .controlsWrapper {
@@ -136,10 +145,8 @@
     padding: 6px;
 
     img {
-
       width: 18px;
       height: 18px;
-
     }
   }
 
@@ -150,9 +157,7 @@
   .paginationDot.active {
     width: 12px;
   }
-
 }
-
 
 @media (max-width: 768px) {
   .controlsWrapper {
@@ -161,12 +166,11 @@
 
   .customScrollbar {
     display: flex;
- }
-
+  }
 }
 
 @media (max-width: 576px) {
-  .sliderItemZA {
+  .multiSliderItemZA {
     width: 95.7% !important;
   }
 
@@ -174,8 +178,8 @@
     padding-top: 20px;
   }
 
-  .itemCustomWidthZA {
+  .genreItemWidthZA {
     width: 64.6% !important;
-    margin-left: 16.5% !important;
+    margin-left: 17% !important;
   }
 }

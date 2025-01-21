@@ -1,51 +1,67 @@
-/* body {
-  font-family: Arial, sans-serif;
-  background-color: var(--black-shade08);
-  color: var(--absolute-white);
-  margin: 0;
-  padding: 0;
-} */
-
-h1 {
-  font-size: 1.7rem;
-  margin-bottom: 10px;
+.cardRowEM {
+  row-gap: 30px;
 }
 
-.pa {
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 150%;
-  color: var(--primary-color-gray);
-}
-
-.toggle-buttons {
+.toggleBtn {
+  display: flex;
   background-color: var(--black-shade06);
-  box-sizing: border-box;
-  padding: 10px 0;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
   border: 1px solid var(--black-shade15);
+  padding: 10px;
+  border-radius: 10px;
+  width: fit-content;
+  height: fit-content;
+  align-self: end;
 }
 
-.toggle2 {
+.toggle {
   color: var(--primary-color-gray);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  border: none;
+  padding: 14px 24px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.btn-check:checked + .btn,
-.btn.active,
-.btn:first-child:active,
-.btn:active {
-  color: var(--bs-btn-active-color);
-  background-color: var(--black-shade15);
-  border-color: var(--black-shade15);
-  border-radius: 5px !important;
-  -webkit-border-radius: 5px !important;
-  -moz-border-radius: 5px !important;
-  -ms-border-radius: 5px !important;
-  -o-border-radius: 5px !important;
+.btn-check:checked+.btn,
+.btn.active {
+  color: white;
+  background-color: var(--black-shade12);
+  border-radius: 10px !important;
+}
+
+@media (max-width: 1440px) {
+  .toggleBtn {
+    padding: 8px;
+    border-radius: 8px;
+  }
+
+  .toggle {
+    font-size: 14px;
+    line-height: 21px;
+    padding: 12px 20px;
+  }
+
+  .btn-check:checked+.btn,
+  .btn.active {
+    border-radius: 6px !important;
+  }
+
+  .pricingTEM {
+    width: 80%
+  }
+}
+
+@media (max-width: 992px) {
+
+  .pricingTEM {
+    padding-bottom: 20px;
+    width: 100%;
+  }
+    .toggleBtn {
+      align-self: start;
+    }
 }

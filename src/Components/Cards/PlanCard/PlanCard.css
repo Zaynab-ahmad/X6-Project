@@ -1,95 +1,112 @@
-.plans {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.plan {
+.planEM {
   background-color: var(--black-shade10);
-  box-sizing: border-box;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
   border-radius: 12px;
-  -webkit-border-radius: 12px;
-  -moz-border-radius: 12px;
-  -ms-border-radius: 12px;
-  -o-border-radius: 12px;
-}
-
-.plan h2 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
-
-.plan p {
-  color: var(--primary-color-gray);
-  margin-bottom: 20px;
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 150%;
-}
-
-.price{
- background-color: inherit;
-  margin-bottom: 20px;
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 30px;
-  line-height: 73%;
-  color: var(--absolute-white);
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  padding: 0px;
-  gap: 4px;
-}
-
-.price span {
-  color: var(--primary-color-gray);
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 73%;
-  color: var(--primary-color-gray);
-}
-
-button {
-  background-color: var(--primary-color-red);
-  color: var(--absolute-white);
-  border: none;
-  padding: 18px;
-  margin: 5px 0;
-  cursor: pointer;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-}
-
-button.trial {
-  background-color: var(--black-shade08);
   border: 1px solid var(--black-shade15);
+  padding: 50px;
+  gap: 50px;
+  color: white;
+  width: fit-content;
 }
 
-.button-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 15px;
+.cardTitleEM {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  padding-bottom: 16px;
 }
 
-.outline-project{
-    background-color: var(--primary-color-red);
-    border: none;
+.cardParagraphEM {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+  color: var(--primary-color-gray);
+  padding-bottom: 50px;
 }
 
-.btn:hover{
-  opacity: 0.9;
+.priceEM {
+  font-size: 40px;
+  line-height: 29.2px;
+  font-weight: 600;
+  padding-bottom: 50px;
+}
+
+.periodEM {
+  color: var(--primary-color-gray);
+  font-size: 18px;
+  line-height: 13.14px;
+  font-weight: 500;
+}
+.planButtons {
+  gap:20px;
+}
+.planButton {
+  width: -webkit-fill-available;
+  
+}
+@media(max-width: 1700px){
+  .planButtons {
+      gap: 12px;
+    }
+}
+
+@media (max-width: 1440px) {
+  .planEM {
+    border-radius: 10px;
+    padding: 40px;
+    gap: 40px;
+  }
+  .cardTitleEM {
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 12px;
+  }
+  .cardParagraphEM {
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 40px;
+  }
+  .priceEM {
+    font-size: 30px;
+    line-height: 21.9px;
+    padding-bottom: 40px;
+  }
+
+  .periodEM {
+    font-size: 16px;
+    line-height: 11.68px;
+  }
+    .planButtons {
+      gap: 12px;
+    }
+}
+@media (max-width: 576px) {
+  .planEM {
+    padding: 24px;
+    gap: 30px;
+  }
+  .cardTitleEM {
+    font-size: 18px;
+    line-height: 27px;
+    padding-bottom: 10px;
+  }
+
+  .cardParagraphEM {
+    font-size: 14px;
+    line-height: 21px;
+    padding-bottom: 30px;
+  }
+
+  .priceEM {
+    font-size: 24px;
+    line-height: 17.52px;
+    padding-bottom: 30px;
+  }
+
+  .periodEM {
+    font-size: 14px;
+    line-height: 10.22px;
+  }
+    .planButtons {
+      gap: 9px;
+    }
 }

@@ -30,11 +30,22 @@
     padding: 80px 60px;
   }
 }
-
+@media (max-width:1200px) {
+  .ctaSA {
+      padding: 40px 30px;
+    }
+    .ctaTextSection {
+      padding-bottom: 20px;
+    }
+}
+@media (max-width: 768px)  {
+  .ctaSA {
+    background-image: url(../../assets/Imgs/CTAMobile.png);
+  }
+}
 @media (max-width: 576px) {
   .ctaSA {
     padding: 50px 30px;
-    background-image: url(../../assets/Imgs/CTAMobile.png);
   }
 
   .ctaTextSection {

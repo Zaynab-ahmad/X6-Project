@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import "./MultiImgsCard.css";
 import Rightarrow from "../../../assets/icons/rightarrow.svg";
 
-export default function MultiImgsCard({ text, imagesArray, badge, pageName, section }) {
+export default function MultiImgsCard({ text, imagesArray, badge, pageName, genre }) {
   const navigate = useNavigate();
 
   const handleCardClick = () => {
@@ -13,7 +13,7 @@ export default function MultiImgsCard({ text, imagesArray, badge, pageName, sect
 
  const handleImageClick = (movie) => {
   if (pageName === "moviesAndShowsPage") {
-    navigate(`/pageopen/${section || "movies"}/${movie.id}`);
+    navigate(`/pageopen/${genre || "movies"}/${movie.id}`);
   }
 };
 
@@ -43,7 +43,7 @@ export default function MultiImgsCard({ text, imagesArray, badge, pageName, sect
                 className={`multiImgsZA ${badge ? "customRatio" : "defaultRatio"}`}
                 src={movie.src}
                 alt={movie.alt}
-                onClick={() => handleImageClick(movie)} // Correctly passing the function reference
+                onClick={() => handleImageClick(movie)} 
               />
             </div>
           ))}

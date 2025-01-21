@@ -1,46 +1,57 @@
-import React from "react";
-import { Card, Col, Row, Button } from "react-bootstrap";
+import MainButton from "../../Buttons/Button.jsx";
+import { Card, Col } from "react-bootstrap";
 import "./PlanCard.css";
 
 export default function PlanCard({ plans, isMonthly }) {
-  const displayedPlans = plans.map((plan, index) => {
+  return plans.map((plan, index) => {
     const price = isMonthly ? plan.monthlyPrice : plan.yearlyPrice;
     const period = isMonthly ? "/month" : "/year";
+
     return (
       <Col
         key={index}
-        xs={12}
-        sm={6}
-        md={12}
-        lg={4}
+        sm={12}
+        md={6}
         xl={4}
-        className="mb-3 d-flex justify-content-center align-items-center"
+        className="d-flex justify-content-center"
       >
-        <Card className="plan h-100">
-          <Card.Body className="p-0">
-            <Card.Title className="text-light">{plan.name}</Card.Title>
-            <Card.Text>{plan.description}</Card.Text>
-            <div className="price">
-              ${price}
-              <span>{period}</span>
+        <div className="planEM">
+          <div>
+            <Card.Title className="cardTitleEM">{plan.name}</Card.Title>
+            <Card.Text className="cardParagraphEM">
+              {plan.description}
+            </Card.Text>
+            <div className="planCardbottomEM">
+              <div className="priceEM">
+                ${price}
+                <span className="periodEM">{period}</span>
+              </div>
+              <div className="planButtons d-flex justify-content-between align-items-center">
+                <div className="planButton">
+
+                <MainButton
+                  text="Start a Free Trial"
+                  isFullWidth={false}
+                  isSmallerBorderRaduis={true}
+                  isBlack={true}
+                  paddingType="type2"
+                />
+                </div>
+                <div className="planButton">
+
+                <MainButton
+                  text="Choose Plan"
+                  isFullWidth={false}
+                  isSmallerBorderRaduis={true}
+                  isBlack={false}
+                  paddingType="type2"
+                />
+                </div>
+              </div>
             </div>
-            <div className="button-container d-flex justify-content-center">
-              <Button variant="primary" className="trial p-3">
-                Start Free Trial
-              </Button>
-              <Button variant="primary" className="outline-project p-3">
-                Choose Plan
-              </Button>
-            </div>
-          </Card.Body>
-        </Card>
+          </div>
+        </div>
       </Col>
     );
   });
-
-  return (
-    <Row className="m-0">
-      {displayedPlans}
-    </Row>
-  );
 }

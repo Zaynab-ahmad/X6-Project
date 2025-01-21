@@ -9,7 +9,8 @@
   position: relative;
   height: 836px;
   width: 100%;
-  background: url(../../../assets/Imgs/hero1.png) center center / cover no-repeat;
+  background: url(../../../assets/Imgs/hero1.png) center center / cover
+    no-repeat;
   z-index: 90;
   animation: zoomOut 1s ease-in-out forwards !important;
 }
@@ -75,6 +76,8 @@
 
 .kr-subcontainer-2 .kr-text-container {
   text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .kr-subcontainer-2 .kr-text-container h1 {
@@ -84,20 +87,18 @@
   color: white;
 }
 
-.kr-subcontainer-2 .kr-text-container p {
-  font-size: 18px !important;
-  line-height: 27px !important;
-}
 
 .kr-subcontainer-2 .kr-text-container .longParagraph {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
+  font-size: 18px;
+  line-height: 27px;
+  margin: 0 !important;
   color: var(--primary-color-gray);
 }
 
 .shortParagraph {
   display: none;
+  margin: 0 !important;
 }
 
 .kr-subcontainer-2 .kr-btn {
@@ -108,9 +109,9 @@
   overflow-x: hidden;
 }
 
-.kr-subcontainer-2 .kr-btn img {
-  width: 24px;
-  height: 24px;
+.playImg {
+  width: 28px;
+  height: 28px;
 }
 
 /* Animations */
@@ -150,11 +151,25 @@
 
   .kr-subcontainer-2 {
     padding: 0 150px;
+    bottom: -25%;
   }
 
+
+  .playImg {
+    width: 24px;
+    height: 24px;
+  }
+  .kr-text-container {
+    padding-left: 63px;
+    padding-right: 63px;
+  }
   .kr-subcontainer-2 .kr-text-container h1 {
     font-size: 48px;
     line-height: 72px;
+  }
+  .kr-subcontainer-2 .kr-text-container .longParagraph {
+    font-size: 14px;
+    line-height: 21px;
   }
 
   .HeroCenterImg {
@@ -167,10 +182,10 @@
   }
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1200px) {
   .heroContainer {
-      margin-bottom: 32.7%;
-    }
+    margin-bottom: 32.7%;
+  }
   .kr-subcontainer-2 {
     padding: 0 80px;
   }
@@ -178,9 +193,9 @@
 
 @media (max-width: 768px) {
   .heroContainer {
-      margin-bottom: 46.7%;
-    }
-  
+    margin-bottom: 46.7%;
+  }
+
   .kr-subcontainer-1 {
     height: 600px;
   }
@@ -203,6 +218,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
+
     color: var(--primary-color-gray);
   }
 
@@ -212,14 +228,17 @@
 }
 
 @media (max-width: 576px) {
-      .heroContainer {
-          margin-bottom: 61.3%;
-        }
-  .kr-subcontainer-1 {  
-      background: url(../../../assets/Imgs/hero3.png) center center / cover no-repeat;
+  .heroContainer {
+    margin-bottom: 61.3%;
+  }
+  .kr-subcontainer-1 {
+    background: url(../../../assets/Imgs/hero3.png) center center / cover
+      no-repeat;
     height: 500px;
   }
-
+  .kr-text-container {
+    padding: 0;
+  }
   .HeroCenter {
     height: 80%;
   }
@@ -231,7 +250,7 @@
   }
 
   .kr-subcontainer-2 {
-    bottom: -43%;
+    bottom: -33%;
     padding: 0 20px;
   }
 

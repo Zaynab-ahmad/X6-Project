@@ -1,35 +1,45 @@
 import { useEffect, useState } from 'react';
-import Button from '../Buttons/Button';
 import './NavBar.css';
 import Nav from 'react-bootstrap/Nav';
 import ring from '../../assets/Icons/Ring.svg';
 import search from '../../assets/Icons/search.svg';
 import logo from '../../assets/Imgs/Logo.png';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import bars from '../../assets/Icons/bars.svg';
 
 export default function NavBar() {
-    const [activeLink, setActiveLink] = useState('Home');
-    const [isDropdownOpen, setIsdDropdownOpen] = useState(false);
+    const [activeLink, setActiveLink] = useState(localStorage.getItem('activeLink') || 'Home');
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
 
+    const location = useLocation(); // To detect route changes
+
     const toggleDropdown = () => {
-        setIsdDropdownOpen(!isDropdownOpen);
+        setIsDropdownOpen(!isDropdownOpen);
     };
 
     const closeDropdown = (e) => {
         if (!e.target.closest('.barsBtn')) {
-            setIsdDropdownOpen(false);
+            setIsDropdownOpen(false);
         }
     };
 
     const handleScroll = () => {
-        if (window.scrollY > 50) {
-            setScrolled(true);
-        } else {
-            setScrolled(false);
-        }
+        setScrolled(window.scrollY > 50);
     };
+
+    // Update active link on route change
+    useEffect(() => {
+        const pathToActiveLinkMap = {
+            '/': 'Home',
+            '/movies-and-shows': 'link-1',
+            '/support': 'link-2',
+            '/subscription': 'link-3',
+        };
+        const newActiveLink = pathToActiveLinkMap[location.pathname] || 'Home';
+        setActiveLink(newActiveLink);
+        localStorage.setItem('activeLink', newActiveLink);
+    }, [location.pathname]);
 
     useEffect(() => {
         document.addEventListener('click', closeDropdown);
@@ -46,44 +56,39 @@ export default function NavBar() {
             <Link className="logoContainer" to={'/'} onClick={() => setActiveLink('Home')}>
                 <img className="kr-logo" src={logo} alt="logo" />
             </Link>
-            <Nav className="kr-navigation-container" variant="pills" defaultActiveKey="/home">
+            <Nav className="kr-navigation-container" variant="pills">
                 <Nav.Item className="kr-navitem">
                     <Nav.Link
                         as={Link}
                         to={'/'}
-                        onClick={() => setActiveLink('Home')}
                         className={activeLink === 'Home' ? 'active-link' : 'notactive-link'}
-                        href="/"
                     >
                         Home
                     </Nav.Link>
                 </Nav.Item>
-                <Nav.Item style={{ textDecoration: 'none' }} as={Link} to={'/movies-and-shows'} className="kr-navitem">
+                <Nav.Item className="kr-navitem">
                     <Nav.Link
-                        onClick={() => setActiveLink('link-1')}
+                        as={Link}
+                        to={'/movies-and-shows'}
                         className={activeLink === 'link-1' ? 'active-link' : 'notactive-link'}
-                        eventKey="link-1"
-                        href="/movies-and-shows"
                     >
                         Movies & Shows
                     </Nav.Link>
                 </Nav.Item>
-                <Nav.Item style={{ textDecoration: 'none' }} as={Link} to={'/support'} className="kr-navitem">
+                <Nav.Item className="kr-navitem">
                     <Nav.Link
-                        onClick={() => setActiveLink('link-2')}
+                        as={Link}
+                        to={'/support'}
                         className={activeLink === 'link-2' ? 'active-link' : 'notactive-link'}
-                        eventKey="link-2"
-                        href="/X6-Project/support"
                     >
                         Support
                     </Nav.Link>
                 </Nav.Item>
-                <Nav.Item style={{ textDecoration: 'none' }} as={Link} to={'/subscription'} className="kr-navitem">
+                <Nav.Item className="kr-navitem">
                     <Nav.Link
-                        onClick={() => setActiveLink('link-3')}
+                        as={Link}
+                        to={'/subscription'}
                         className={activeLink === 'link-3' ? 'active-link' : 'notactive-link'}
-                        eventKey="link-3"
-                        href="/X6-Project/Subscriptions"
                     >
                         Subscriptions
                     </Nav.Link>
@@ -98,18 +103,34 @@ export default function NavBar() {
             </button>
             {isDropdownOpen && (
                 <div className="dropdownmenu">
-                    <Link className="dropdownitem" to={'/'} onClick={() => setActiveLink('Home')}>
+                    <Link
+                        className="dropdownitem"
+                        to={'/'}
+                        onClick={() => setActiveLink('Home')}
+                    >
                         Home
                     </Link>
-                    <Link className="dropdownitem" to={'/movies-and-shows'} onClick={() => setActiveLink('link-1')}>
+                    <Link
+                        className="dropdownitem"
+                        to={'/movies-and-shows'}
+                        onClick={() => setActiveLink('link-1')}
+                    >
                         Movies & Shows
                     </Link>
-                    <Link className="dropdownitem" to={'/support'} onClick={() => setActiveLink('link-2')}>
+                    <Link
+                        className="dropdownitem"
+                        to={'/support'}
+                        onClick={() => setActiveLink('link-2')}
+                    >
                         Support
                     </Link>
-                    <Link className="dropdownitem" to={'/subscriptions'} onClick={() => setActiveLink('link-3')}>
-                        Subscriptions
-                    </Link>
+                    <Link
+    className="dropdownitem"
+    to={'/subscriptions'}
+    onClick={() => setActiveLink('link-3')}
+>
+    Subscriptions
+</Link>
                 </div>
             )}
         </div>

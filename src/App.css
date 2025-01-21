@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Manrope", serif;
+  font-family: "Manrope", serif !important;
 }
 :root {
 
@@ -38,7 +38,7 @@ body,
   margin-bottom: 150px;
 }
  .moviesMarginZA {
-   margin-bottom: 80px !important;
+   margin-bottom: 100px !important;
 
  }
 .headingZA {
@@ -72,6 +72,10 @@ body,
   .customMargin {
     margin-bottom: 80px;
   }
+    .moviesMarginZA {
+      margin-bottom: 50px !important;
+  
+    }
     .headingZA {
       padding-bottom: 40px;
     }

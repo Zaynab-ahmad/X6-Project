@@ -9,8 +9,11 @@
   overflow: hidden;
   margin-bottom: 30px;
   flex-shrink: 0;
-}
+  transition: transform 0.3s ease;}
 
+.CardTay:hover {
+  transform: scale(0.9);
+}
 .devicesCardOverlay {
   position: absolute;
   top: 0;
@@ -35,9 +38,6 @@
   align-items: center;
   justify-content: start;
   gap: 16px;
-}
-.CardTay:hover{
-  transform: scale(0.9)
 }
 .CardIconTay {
   width: 72px;
@@ -126,12 +126,4 @@
     height: 24px;
   }
 
-/*   .CardTitleH4Tay {
-    font-size: 18px;
-    line-height: 27px;
-  }
-  .CardPTay {
-    font-size: 14px;
-    line-height: 21px;
-  } */
 }

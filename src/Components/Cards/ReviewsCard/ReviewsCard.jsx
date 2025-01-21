@@ -1,7 +1,6 @@
 import './ReviewsCard.css'
 import React from "react";
-import StarRatings from "react-star-ratings";
-export default function ReviewsCard({from,name,numbervalue,paragraph,star}) {
+export default function ReviewsCard({from,name,numbervalue,paragraph}) {
   const rating = parseFloat(numbervalue);
   return (
     <div className='tayCard'>
@@ -12,14 +11,14 @@ export default function ReviewsCard({from,name,numbervalue,paragraph,star}) {
             </div>
             <div className='tayValue'>
               <div className='tayStars'>
-                  <StarRatings
+                  {/* <StarRatings
               rating={rating}
               starRatedColor="red"
               starEmptyColor="gray"
               numberOfStars={4}
               starDimension="14px"
               starSpacing="0px"
-            />
+            /> */}
             </div> 
               <h6 className='tayNumber'>{numbervalue}</h6>
            
@@ -32,3 +31,4 @@ export default function ReviewsCard({from,name,numbervalue,paragraph,star}) {
     
   )
 }
+

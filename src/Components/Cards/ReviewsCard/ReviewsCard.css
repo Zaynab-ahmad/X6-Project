@@ -5,7 +5,7 @@
     border-radius: 12px;
     background: rgba(15, 15, 15, 1);
     border: 1px solid rgba(38, 38, 38, 1);
-    max-width: 600px;
+    /* max-width: 600px; */
     margin: auto;
 }
 .tayCardTiltle{

@@ -25,11 +25,6 @@
   }
 }
 
-@media (max-width: 1440px) {
-  .ctaSA {
-    padding: 80px 60px;
-  }
-}
 @media (max-width:1200px) {
   .ctaSA {
       padding: 40px 30px;

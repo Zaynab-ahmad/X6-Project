@@ -1,25 +1,24 @@
 .tayTotalCard {
-    padding: 5vw;
-    gap: 3vw;
+    padding: 5px;
+    /* gap: 3px; */
     border-radius: 12px;
     background: rgba(26, 26, 26, 1);
     border: 1px solid rgba(38, 38, 38, 1);
-    max-width: 90%;
-    margin: auto;
+    /* max-width: 90%; */
+    /* margin: auto; */
 }
 
 .tay-TitleCard {
-    margin-bottom: 2vw;
+    margin-bottom: 2px;
     display: flex;
     align-items: center;
     justify-content: space-between;    
-    gap: 2vw;
+    /* gap: 2px; */
 
 }
 
 .tay-TitleCardh2 {
-    font-family: Manrope, sans-serif;
-    font-size: 2.5vw;
+    font-size: 2.5px;
     font-weight: 500;
     line-height: 1.5;
     text-align: left;
@@ -27,8 +26,8 @@
 }
 
 .tay-TitleCardbutton {
-    /* padding: 1vw 2vw; */
-    gap: 1vw;
+    /* padding: 1px 2px; */
+    gap: 1px;
     border-radius: 8px;
     background: rgba(20, 20, 20, 1);
     border: 1px solid rgba(38, 38, 38, 1);
@@ -39,12 +38,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.5vw;
+    gap: 0.5px;
 }
 
 .spanButtonH6 {
-    font-family: Manrope, sans-serif;
-    font-size: 2vw;
+    font-size: 2px;
     font-weight: 500;
     line-height: 1.5;
     text-align: left;
@@ -52,45 +50,45 @@
 }
 
 .spanButtonimg {
-    margin: 0.2vw;
-    width: 3vw;
+    margin: 0.2px;
+    width: 3px;
     height: auto;
 }
 
 /* استجابة التصميم للشاشات الصغيرة */
 @media (max-width: 768px) {
     .tayTotalCard {
-        padding: 6vw;
-        gap: 4vw;
+        padding: 6px;
+        gap: 4px;
     }
     .tay-TitleCardh2 {
-        font-size: 4vw;
+        font-size: 4px;
     }
     .tay-TitleCardbutton {
-        padding: 3vw;
+        padding: 3px;
     }
     .spanButtonH6 {
-        font-size: 3vw;
+        font-size: 3px;
     }
 }
 
 @media (max-width: 480px) {
     .tayTotalCard {
-        padding: 8vw;
-        gap: 5vw;
+        padding: 8px;
+        gap: 5px;
     }
     .tay-TitleCard {
         display: flex;
         
     }
     .tay-TitleCardh2 {
-        font-size: 5vw;
+        font-size: 5px;
     }
     .tay-TitleCardbutton {
         /* width: 100%; */
         text-align: center;
     }
     .spanButtonH6 {
-        font-size: 4vw;
+        font-size: 4px;
     }
 }

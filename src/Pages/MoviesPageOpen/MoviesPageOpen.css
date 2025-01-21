@@ -1,1 +1,72 @@
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    /* 12-column grid */
+    grid-gap: 20px;
+}
 
+/* Episodes section */
+.bento-item.episodes {
+    grid-column: 1 / 9;
+    /* Spans columns 1 to 8 */
+    grid-row: 1;
+    /* First row */
+}
+
+/* Description section */
+.bento-item.description {
+    grid-column: 1 / 9;
+    /* Spans columns 1 to 8 */
+    grid-row: 2;
+    /* Second row */
+}
+
+/* Info section */
+.bento-item.info {
+    grid-column: 9 / -1;
+    /* Spans columns 9 to 12 (right side) */
+    grid-row: 1 / span 4;
+    /* Spans rows 1 to 4 to align with all left-side content */
+    justify-self: start;
+    /* Aligns the content on the left of its column */
+}
+
+/* Cast section */
+.bento-item.cast {
+    grid-column: 1 / 9;
+    /* Spans columns 1 to 8 */
+    grid-row: 3;
+    /* Third row */
+}
+
+/* Reviews section */
+.bento-item.reviews {
+    grid-column: 1 / 9;
+    /* Spans columns 1 to 8 */
+    grid-row: 4;
+    /* Fourth row */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .bento-grid {
+        grid-template-columns: 1fr;
+        /* Single-column layout */
+    }
+
+    .bento-item.episodes,
+    .bento-item.description,
+    .bento-item.info,
+    .bento-item.cast,
+    .bento-item.reviews {
+        grid-column: 1 / -1;
+        /* Full width for all items */
+        grid-row: auto;
+        /* Natural stacking order */
+    }
+
+    /* Optional: Place Info section between Description and Cast */
+    .bento-item.info {
+        order: 2;
+    }
+}

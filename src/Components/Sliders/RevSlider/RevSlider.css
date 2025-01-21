@@ -27,7 +27,7 @@
   width: 85% !important;
 }
 .taySliderContainer{
-  max-width: 1200px;
+  /* max-width: 1200px; */
   width: 100%;
   position: relative;
   margin: 40px auto;

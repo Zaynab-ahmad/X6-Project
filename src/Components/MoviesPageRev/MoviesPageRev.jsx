@@ -22,7 +22,7 @@ export default function MoviesPageRev() {
       
     />
   ));
-  
+   
   return(
 <>
  <div className="tayTotalCard">

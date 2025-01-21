@@ -32,14 +32,12 @@ export default function RevSlider({ CardsRev, slidesToShow }) {
     const settings = {
       infinite: true,
       speed: 500,
-      slidesToShow: slidesToShow,
+      slidesToShow: 2,
       slidesToScroll: 1,
       arrows: false,
       beforeChange: (_, next) => setCurrentSlide(next),
       responsive: [
-        { breakpoint: 992, settings: { slidesToShow: Math.max(slidesToShow - 1, 1) } },
-        { breakpoint: 768, settings: { slidesToShow: Math.max(slidesToShow - 2, 1) } },
-        { breakpoint: 576, settings: {slidesToShow: Math.max(slidesToShow-1, 1)}}
+        { breakpoint: 576, settings: {slidesToShow: 1}}
       ]
     };
   

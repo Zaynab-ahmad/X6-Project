@@ -1,0 +1,120 @@
+.tayCustomArrow{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+  background: rgba(20, 20, 20, 1);
+  border-radius: 100px;
+  transition: border-color 0.3s ease;
+  cursor: pointer;
+  gap: 10px;
+  border: 1px solid rgba(38, 38, 38, 1);
+  img{
+    width: 15px;
+    height: 13.5px;
+    border: 2px solid transparent;
+  }
+}
+.customArrow:hover {
+  border-color: var(--primary-color-gray);
+}
+
+.sliderItemZA {
+  width: 78.2% !important;
+}
+ 
+.itemCustomWidthZA {
+  width: 85% !important;
+}
+.taySliderContainer{
+  max-width: 1200px;
+  width: 100%;
+  position: relative;
+  margin: 40px auto;
+  padding-left:10px;
+  padding-right:10px;
+}
+.tayControlsWrapper{
+  margin-top: 40px;
+  position: absolute;
+  top: 200px;
+  left: 45%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+}
+.tayCustomPagination {
+  display: flex;
+  gap: 3px;
+}
+.paginationDot {
+  width: 23px;
+  height: 4px;
+  background: var(--black-shade20);
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.paginationDot.active {
+  background: var(--primary-color-red);
+  width: 23px;
+}
+
+
+@media(min-width:992px){
+  .tayControlsWrapper{
+    margin-top: 24px;
+    top: 270px;
+    left: 45%;
+    transform: translateX(-50%);
+    gap: 10px;
+}
+}
+@media(min-width:1200px) and (max-width:1439px){
+  .tayControlsWrapper{
+    margin-top: 24px;
+    top: 200px;
+    left: 45%;
+    transform: translateX(-50%);
+    gap: 10px;
+}
+}
+
+@media(min-width:767px)and(max-width:991px){
+  .tayControlsWrapper{
+    /* margin-top: 14px; */
+    top:290px;
+    left: 45%;
+    transform: translateX(-50%);
+    gap: 10px;}
+}
+
+@media(max-width:768px){
+  .tayControlsWrapper{
+      margin-top: 24px;
+      top: 160px;
+      left: 50%;
+      transform: translateX(-50%);
+      gap: 10px;
+  }
+
+  .tayCustomArrow img{
+      width: 15px;
+      height: 12.5px;
+      border: 1.5px solid transparent;
+  }
+}
+
+@media (max-width: 480px) {
+  .tayControlsWrapper {
+      top: 215px;
+      left: 55%;
+      transform: translateX(-50%);
+  }
+  .paginationDot {
+      width: 15px;
+  }
+}

@@ -6,6 +6,9 @@ opacity: 0px;
 border: 1px solid rgba(38, 38, 38, 1);
 margin-bottom: 30px;
 }
+.CardTay:hover{
+  transform: scale(0.9)
+}
 .CardTitleTay{
   margin-bottom: 30px;
   display: flex;
@@ -35,7 +38,7 @@ line-height: 36px;
 text-align: left;
 text-underline-position: from-font;
 text-decoration-skip-ink: none;
-color:var(--absolute-colors2) ;
+color:wheat;
 }
 .CardPTay{
 font-family: Manrope;
@@ -49,7 +52,12 @@ color: rgba(153, 153, 153, 1);
 display: flex;
 align-items: center;
 justify-content: start;
+cursor: pointer;
 }
+.CardPTay:hover{
+  transform: scale(0.9);
+}
+
  @media(max-width:576px){
   .CardTay{
 border: 1px solid rgba(38, 38, 38, 1);

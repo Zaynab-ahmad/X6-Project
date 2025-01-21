@@ -66,6 +66,7 @@ export default function CardSlider({ cards, slidesToShow }) {
   };
 
   // Function to navigate to a specific slide
+  
   const goToSlide = (index) => {
     sliderRef.current.slickGoTo(index); // Use the slick slider method to navigate
     setCurrentSlide(index); // Update the current slide state

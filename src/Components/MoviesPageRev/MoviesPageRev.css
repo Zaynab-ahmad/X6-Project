@@ -1,0 +1,96 @@
+.tayTotalCard {
+    padding: 5vw;
+    gap: 3vw;
+    border-radius: 12px;
+    background: rgba(26, 26, 26, 1);
+    border: 1px solid rgba(38, 38, 38, 1);
+    max-width: 90%;
+    margin: auto;
+}
+
+.tay-TitleCard {
+    margin-bottom: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+    gap: 2vw;
+
+}
+
+.tay-TitleCardh2 {
+    font-family: Manrope, sans-serif;
+    font-size: 2.5vw;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: left;
+    color: rgba(153, 153, 153, 1);
+}
+
+.tay-TitleCardbutton {
+    /* padding: 1vw 2vw; */
+    gap: 1vw;
+    border-radius: 8px;
+    background: rgba(20, 20, 20, 1);
+    border: 1px solid rgba(38, 38, 38, 1);
+    cursor: pointer;
+}
+
+.spanButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5vw;
+}
+
+.spanButtonH6 {
+    font-family: Manrope, sans-serif;
+    font-size: 2vw;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
+
+.spanButtonimg {
+    margin: 0.2vw;
+    width: 3vw;
+    height: auto;
+}
+
+/* استجابة التصميم للشاشات الصغيرة */
+@media (max-width: 768px) {
+    .tayTotalCard {
+        padding: 6vw;
+        gap: 4vw;
+    }
+    .tay-TitleCardh2 {
+        font-size: 4vw;
+    }
+    .tay-TitleCardbutton {
+        padding: 3vw;
+    }
+    .spanButtonH6 {
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .tayTotalCard {
+        padding: 8vw;
+        gap: 5vw;
+    }
+    .tay-TitleCard {
+        display: flex;
+        
+    }
+    .tay-TitleCardh2 {
+        font-size: 5vw;
+    }
+    .tay-TitleCardbutton {
+        /* width: 100%; */
+        text-align: center;
+    }
+    .spanButtonH6 {
+        font-size: 4vw;
+    }
+}

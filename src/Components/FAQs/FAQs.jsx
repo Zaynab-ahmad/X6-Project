@@ -4,6 +4,7 @@ import HomeParagraph from '../SharedTitlesAndParagraph/HomeParagraph/HomeParagra
 import Button from '../Buttons/Button';
 import HomeMoviesAndShowsTitle from '../SharedTitlesAndParagraph/HomeMoviesAndShows/HomeMoviesAndShowsTitle';
 import { Col, Container, Row } from 'react-bootstrap';
+import { useState, useEffect } from 'react';
 
 const faqData = [
   { number: '01', que: 'What is StreamVibe?', ans: 'StreamVibe is a streaming service that allows you to watch movies and shows on demand.', lin: true },
@@ -17,8 +18,23 @@ const faqData = [
 ];
 
 export default function FAQs() {
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  useEffect(() => {
+    const updateScreenSize = () => {
+      setIsSmallScreen(window.innerWidth <= 768); 
+    };
+
+    window.addEventListener('resize', updateScreenSize);
+    updateScreenSize(); 
+
+    return () => {
+      window.removeEventListener('resize', updateScreenSize);
+    };
+  }, []);
+
   return (
-    <div id ="FAQ" className="xContainer customMargin">
+    <div id="FAQ" className="xContainer customMargin">
       <div className="headingZA d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-start align-items-lg-center">
         <div className="faqTMA d-flex flex-column justify-content-center align-items-start">
           <HomeMoviesAndShowsTitle 
@@ -40,9 +56,6 @@ export default function FAQs() {
         />
       </div>
 
-      {/* FAQ Accordion Section */}
-      
-        
       <Row>
         <Col md={12} lg={6}>
           <div className="FAQ-accordion">
@@ -58,7 +71,7 @@ export default function FAQs() {
         </Col>
         <Col md={12} lg={6}>
           <div className="FAQ-accordion">
-            {faqData.slice(4).map((faq, index) => (
+            {faqData.slice(-4, isSmallScreen ? -2 : 8).map((faq, index) => (
               <ACCO 
                 key={index} 
                 number={faq.number} 
@@ -69,7 +82,6 @@ export default function FAQs() {
           </div>
         </Col>
       </Row>
-      
     </div>
   );
 }

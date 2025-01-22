@@ -18,6 +18,9 @@
 .bento-item.episodes {
     grid-column: span 8;
     grid-row: 1;
+    background-color: var(--black-shade10);
+    border-radius: 12px;
+    padding: 40px;
 }
 
 .bento-item.description {

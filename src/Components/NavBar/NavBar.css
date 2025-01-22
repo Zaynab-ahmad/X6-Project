@@ -49,7 +49,6 @@
   display: flex;
   font-size: 18px;
   line-height: 27px;
-  font-weight: 500;
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }
@@ -59,20 +58,22 @@
 }
 
 .active-link {
-  background-color: #1a1a1a !important;
+  background-color: var(--black-shade10) !important;
   border: none !important;
   color: #ffffff !important;
   border-radius: 8px !important;
   padding: 14px 24px !important;
   margin: 0 5px;
+  font-weight: 500;
 }
 
 .notactive-link {
-  background-color: #0f0f0f !important;
+  background-color: var(--black-shade06) !important;
   color: #bfbfbf !important;
   padding: 0 !important;
   margin-left: 15px;
   margin-right: 15px;
+  font-weight: 400;
 }
 
 .kr-icons-container img {
@@ -92,14 +93,14 @@
   display: none;
   padding: 12px;
   background-color: var(--black-shade15);
-  border: solid 3px #1f1f1f !important;
+  border: solid 3px var(--black-shade12) !important;
   border-radius: 6px;
   transition: 0.3s ease-in-out;
 }
 
 .barsBtn.open {
   padding: 12px;
-  border: solid 3px #1f1f1f !important;
+  border: solid 3px var(--black-shade12) !important;
   border-bottom: none !important;
   border-radius: 6px;
   transition: 0.3s ease-in-out;
@@ -122,7 +123,7 @@
   border-radius: 5px;
   z-index: 100px;
   min-width: 150px;
-  border: solid 3px #1f1f1f !important;
+  border: solid 3px var(--black-shade12) !important;
   border-top: none !important;
 }
 
@@ -137,7 +138,7 @@
 }
 
 .dropdownitem:hover {
-  background-color: #1f1f1f;
+  background-color: var(--black-shade12);
 }
 
 @media (max-width: 1440px) {
@@ -153,7 +154,7 @@
 
   .kr-navigation-container {
     padding: 8px 25px 8px 5px !important;
-    border: solid 3px #1f1f1f !important;
+    border: solid 3px var(--black-shade12) !important;
     border-radius: 10px !important;
   }
 

@@ -1,0 +1,48 @@
+.showsChapterZA {
+    background-color: var(--black-shade06);
+    padding: 24px 50px;
+    border-radius: 12px;
+    border: 1px solid var(--black-shade15);
+    width: 100%;
+    margin-bottom: 20px;
+}
+.showsChapterTitleZA {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.seasonTitleZA {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+}
+.chapterArrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: var(--black-shade08);
+    border: 1px solid var(--black-shade15);
+    cursor: pointer;
+}
+.showsChapterContentZA {
+    margin-top: 30px;
+}
+.epH {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    color: white;
+    margin: 0 !important;
+}
+.epE {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    color: var(--primary-color-gray);
+    margin: 0 !important;
+}

@@ -168,6 +168,13 @@ import MustWatchShow4 from '../assets/Imgs/Shows/MustWatchShows4.webp'
 import MustWatchShow1cover from '../assets/Imgs/Shows/MustWatchShows1cover.webp'
 import MustWatchShow3cover from '../assets/Imgs/Shows/MustWatchShows3cover.webp'
 
+//importing Episode shows
+import Episodes1 from '../assets/Imgs/ShowsPageOpen/StrangerThings.webp'
+import Episodes2 from '../assets/Imgs/ShowsPageOpen/StrangerThingsCh2.webp'
+import Episodes3 from '../assets/Imgs/ShowsPageOpen/StrangerThingsCh3.webp'
+import Episodes4 from '../assets/Imgs/ShowsPageOpen/StrangerThingsCh4.webp'
+import Episodes5 from '../assets/Imgs/ShowsPageOpen/StrangerThingsCh5.webp'
+
 
 export const Trendingimages = [
   { id: 1, src: trending1, coverSrc: TrendingMovies1cover, alt: "Trending Image 1", title: "Morbius", description: "Dr. Michael Morbius attempts a desperate gamble that could cure him of his rare blood disease, but when his experiment goes awry, he becomes something…", videoLink: "https://www.youtube.com/watch?v=16K6BDTn9iI"},
@@ -265,6 +272,13 @@ export const MustWatchShowsImages=[
   { id: 62, src: MustWatchShow3, coverSrc:MustWatchShow3cover, alt: "Must Watch 3", title: "Mai", description: "A grieving mother discovers the criminals behind her daughter's tragic death, and transforms from meek to merciless to get the real story",videoLink: "https://www.youtube.com/watch?v=16K6BDTn9iI" },
   { id: 63, src: MustWatchShow4, coverSrc:TrendingShow1cover, alt: "Must Watch 4", title: "Stranger Things", description: "When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl.",videoLink: "https://www.youtube.com/watch?v=16K6BDTn9iI" },
 ]
+export const Episodes = [
+  { id: 64, num:1, src: Episodes1, coverSrc:Episodes1, alt: "Episodes 1", duration:"49", title: "Chapter One : The Vanishing of Will Byers", description: "On his way from a friend’s house, young Will sees something terrifying . Nearby, a sinister secret lurks in the depths of a government lab.",videoLink: "https://www.youtube.com/watch?v=16K6BDTn9iI" },
+  { id: 65, num:2, src: Episodes2, coverSrc:Episodes2, alt: "Episodes 2", duration:"56", title: "Chapter Two: The Weirdo on Maple Street", description: "Lucas, Mike and Dustin try to talk to the girl they found in the woods. Hopper questions an anxious Joyce about an unsettling phone call.",videoLink: "https://www.youtube.com/watch?v=16K6BDTn9iI" },
+  { id: 66, num:3, src: Episodes3, coverSrc:Episodes3, alt: "Episodes 3", duration:"52", title: "Chapter Three: Holly, Jolly", description: "An increasingly concerned Nancy looks for Barb and finds out what Jonathan's been up to. Joyce is convinced Will is trying to talk to her.",videoLink: "https://www.youtube.com/watch?v=16K6BDTn9iI" },
+  { id: 67, num:4, src: Episodes4, coverSrc:Episodes3, alt: "Episodes 3", duration:"51", title: "Chapter Four: The Body", description: "Refusing to believe Will is dead, Joyce tries to connect with her son. The boys give Eleven a makeover..",videoLink: "https://www.youtube.com/watch?v=16K6BDTn9iI" },
+  { id: 68, num:5, src: Episodes5, coverSrc:Episodes3, alt: "Episodes 3", duration:"53", title: "Chapter Five: The Flea and the Acrobat", description: "Hopper breaks into the lab while Nancy and Jonathan confront the force that took Will. The boys ask Mr. Clarke how to travel to another dimension.",videoLink: "https://www.youtube.com/watch?v=16K6BDTn9iI" },
+] 
 
 export const AllMovies = [
   ...Trendingimages,

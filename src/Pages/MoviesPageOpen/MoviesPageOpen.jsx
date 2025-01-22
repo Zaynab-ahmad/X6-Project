@@ -5,11 +5,17 @@ import MoviesPageInfo from "../../Components/MoviesPageInfo/MoviesPageInfo";
 import MoviesPageRev from "../../Components/MoviesPageRev/MoviesPageRev";
 import MoviesAndShowsHero from "../../Components/Heros/MoviesAndShowsHero/MoviesAndShowsHero";
 import { AllMovies } from "../../Data/data";
-import "./MoviesPageOpen.css"; // Add your styles here
+import "./MoviesPageOpen.css";
+import ShowsChapter from "../../Components/ShowsChapter/ShowsChapter";
 
 export default function MoviesPageOpen() {
-  const { section, id } = useParams();
+  const { genre, id } = useParams();
   const cover = AllMovies.find((movie) => movie.id === parseInt(id, 10));
+
+  if (!cover) {
+    return <div>Movie not found</div>;
+  }
+
 
   return (
     <div>
@@ -22,10 +28,13 @@ export default function MoviesPageOpen() {
       <div className="xContainer customMargin">
         <div className="bento-grid">
           {/* Episodes Section */}
-          <div className="bento-item episodes">
-            {/* Add your Episodes component here */}
-            <h3>Episodes Section</h3>
-          </div>
+         
+            <div className="bento-item episodes" style={{display: genre==="movies"? "none": "block"}}>  
+              <ShowsChapter Season="1" epnum="9" />
+              <ShowsChapter Season="2" epnum="5" />
+              <ShowsChapter Season="3" epnum="7" />
+            </div>
+          
 
           {/* Description Section */}
           <div className="bento-item description">

@@ -20,7 +20,7 @@
     "react-router-bootstrap": "^0.26.3",
     "react-router-dom": "^7.0.1",
     "react-slick": "^0.30.2",
-    "react-star-ratings": "^2.3.0",
+    "select": "^1.1.2",
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {

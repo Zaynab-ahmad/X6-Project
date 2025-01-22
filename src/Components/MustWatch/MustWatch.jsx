@@ -29,7 +29,7 @@ export default function MustWatch() {
         />
       ));
   return (
-    <div className='moviesMarginZA'>
+    <div>
     <HomeMoviesAndShowsTitle title="Must-Watch Movies" home={false} fontSizeType="type3" lineHeightType="type3"/>  
     <CardSlider cards={cards4} slidesToShow={4} page="moviesAndShows" sec="movies" top="type2" right={false} />
 

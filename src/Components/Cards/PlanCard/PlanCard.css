@@ -36,6 +36,18 @@
   line-height: 13.14px;
   font-weight: 500;
 }
+.planButtons {
+  gap:20px;
+}
+.planButton {
+  width: -webkit-fill-available;
+  
+}
+@media(max-width: 1700px){
+  .planButtons {
+      gap: 12px;
+    }
+}
 
 @media (max-width: 1440px) {
   .planEM {
@@ -63,6 +75,9 @@
     font-size: 16px;
     line-height: 11.68px;
   }
+    .planButtons {
+      gap: 12px;
+    }
 }
 @media (max-width: 576px) {
   .planEM {
@@ -91,4 +106,7 @@
     font-size: 14px;
     line-height: 10.22px;
   }
+    .planButtons {
+      gap: 9px;
+    }
 }

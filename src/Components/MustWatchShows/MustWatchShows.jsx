@@ -48,7 +48,7 @@ export default function MustWatchShows() {
     />
   ));
   return (
-    <div className="moviesMarginZA">
+    <div>
       <HomeMoviesAndShowsTitle
         title="Must-Watch Shows"
         home={false}

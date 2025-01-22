@@ -41,7 +41,7 @@ export default function MoviesAndShowsHero({ src, videoLink, title, description 
             <Button
               text={
                 <>
-                  <img src={Play} alt="play" />
+                  <img className="playImg" src={Play} alt="play" />
                   Play Now
                 </>
               }

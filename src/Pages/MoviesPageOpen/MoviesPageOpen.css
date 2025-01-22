@@ -1,72 +1,81 @@
 .bento-grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    /* 12-column grid */
-    grid-gap: 20px;
+    gap: 20px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
-/* Episodes section */
+/* General Styles for Bento Items */
+.bento-item {
+    word-wrap: break-word;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+/* Default Layout (Above 1200px) */
 .bento-item.episodes {
-    grid-column: 1 / 9;
-    /* Spans columns 1 to 8 */
+    grid-column: span 8;
     grid-row: 1;
-    /* First row */
 }
 
-/* Description section */
 .bento-item.description {
-    grid-column: 1 / 9;
-    /* Spans columns 1 to 8 */
+    grid-column: span 8;
     grid-row: 2;
-    /* Second row */
 }
 
-/* Info section */
 .bento-item.info {
-    grid-column: 9 / -1;
-    /* Spans columns 9 to 12 (right side) */
+    grid-column: span 4;
     grid-row: 1 / span 4;
-    /* Spans rows 1 to 4 to align with all left-side content */
     justify-self: start;
-    /* Aligns the content on the left of its column */
 }
 
-/* Cast section */
 .bento-item.cast {
-    grid-column: 1 / 9;
-    /* Spans columns 1 to 8 */
+    grid-column: span 8;
     grid-row: 3;
-    /* Third row */
 }
 
-/* Reviews section */
 .bento-item.reviews {
-    grid-column: 1 / 9;
-    /* Spans columns 1 to 8 */
+    grid-column: span 8;
     grid-row: 4;
-    /* Fourth row */
 }
 
-/* Responsive adjustments */
-@media screen and (max-width: 768px) {
+/* Disable Grid and Stack Elements for 1200px and Below */
+@media (max-width: 1200px) {
     .bento-grid {
-        grid-template-columns: 1fr;
-        /* Single-column layout */
+        display: block;
+        /* Disable the grid layout */
     }
 
-    .bento-item.episodes,
-    .bento-item.description,
-    .bento-item.info,
-    .bento-item.cast,
-    .bento-item.reviews {
-        grid-column: 1 / -1;
-        /* Full width for all items */
-        grid-row: auto;
-        /* Natural stacking order */
+    .bento-item {
+        display: block;
+        width: 100%;
+        /* Ensure full width */
+        margin-bottom: 20px;
+        /* Add consistent spacing */
     }
 
-    /* Optional: Place Info section between Description and Cast */
+    /* Control the order of the items */
     .bento-item.info {
         order: 2;
+        /* Place Info section between other sections if needed */
+    }
+
+    /* Optional: Adjust other items if needed */
+    .bento-item.episodes {
+        order: 1;
+    }
+
+    .bento-item.description {
+        order: 3;
+    }
+
+    .bento-item.cast {
+        order: 4;
+    }
+
+    .bento-item.reviews {
+        order: 5;
     }
 }

@@ -1,120 +1,138 @@
-.tayCustomArrow{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 14px;
-  background: rgba(20, 20, 20, 1);
-  border-radius: 100px;
-  transition: border-color 0.3s ease;
-  cursor: pointer;
-  gap: 10px;
-  border: 1px solid rgba(38, 38, 38, 1);
-  img{
-    width: 15px;
-    height: 13.5px;
-    border: 2px solid transparent;
-  }
-}
-.customArrow:hover {
-  border-color: var(--primary-color-gray);
+.taySliderContainer{
+  width: 100%;
+  position: relative;
+  padding-bottom: 92px;
 }
 
 .sliderItemZA {
-  width: 78.2% !important;
+  width: 97% !important;
 }
- 
-.itemCustomWidthZA {
-  width: 85% !important;
-}
-.taySliderContainer{
-  /* max-width: 1200px; */
-  width: 100%;
-  position: relative;
-  margin: 40px auto;
-  padding-left:10px;
-  padding-right:10px;
-}
-.tayControlsWrapper{
-  margin-top: 40px;
+
+.tayCustomArrow {
   position: absolute;
-  top: 200px;
-  left: 45%;
-  transform: translateX(-50%);
+  bottom: -85px;
   display: flex;
   align-items: center;
-  gap: 10px;
-  border-radius: 12px;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  padding: 14px;
+  background: var(--black-shade08);
+  border: 1px solid var(--black-shade15);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+  img{
+    width: 24px;
+    height: 24px;
+  }
 }
+.tayCustomArrow:hover {
+  border-color: var(--primary-color-gray);
+}
+.tayLeftHeroArrow {
+  left: calc(50% - 75px);
+  transform: translateX(-50%);
+}
+
+.tayRightHeroArrow {
+  left: calc(50% + 75px);
+  transform: translateX(-50%);
+}
+
 .tayCustomPagination {
+  position: absolute;
+  bottom: -60px;
+  left: 48%;
+  transform: translateX(-50%);
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 3px;
 }
-.paginationDot {
-  width: 23px;
+
+.tayCustomPagination .paginationDot {
+  width: 16.33px;
   height: 4px;
-  background: var(--black-shade20);
+  background-color: var(--black-shade20);
   border-radius: 100px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: background-color 0.3s ease, width 0.3s ease;
 }
 
-.paginationDot.active {
-  background: var(--primary-color-red);
+.tayCustomPagination .slick-active .paginationDot {
+  background-color: var(--primary-color-red);
   width: 23px;
 }
 
-
-@media(min-width:992px){
-  .tayControlsWrapper{
-    margin-top: 24px;
-    top: 270px;
-    left: 45%;
-    transform: translateX(-50%);
-    gap: 10px;
-}
-}
-@media(min-width:1200px) and (max-width:1439px){
-  .tayControlsWrapper{
-    margin-top: 24px;
-    top: 200px;
-    left: 45%;
-    transform: translateX(-50%);
-    gap: 10px;
-}
+.tayCustomPagination li {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
 }
 
-@media(min-width:767px)and(max-width:991px){
-  .tayControlsWrapper{
-    /* margin-top: 14px; */
-    top:290px;
-    left: 45%;
-    transform: translateX(-50%);
-    gap: 10px;}
-}
 
-@media(max-width:768px){
-  .tayControlsWrapper{
-      margin-top: 24px;
-      top: 160px;
-      left: 50%;
+
+@media (max-width:1440px){
+  .taySliderContainer {
+    padding-bottom: 74px;   
+   }
+ .tayCustomArrow {
+   bottom: -80px;
+   width: 44px;
+   height: 44px;
+   padding: 12px;
+
+   img {
+     width: 20px;
+     height: 20px;
+   }
+ }
+}
+@media (max-width: 992px){
+   .tayLeftHeroArrow {
+     left: calc(50% - 70px);
+     transform: translateX(-50%);
+   }
+   
+   .tayRightHeroArrow {
+     left: calc(50% + 70px);
+     transform: translateX(-50%);
+   }
+
+ }  
+@media (max-width: 767px){
+  .tayLeftHeroArrow {
+      left: calc(50% - 65px);
       transform: translateX(-50%);
-      gap: 10px;
-  }
-
-  .tayCustomArrow img{
-      width: 15px;
-      height: 12.5px;
-      border: 1.5px solid transparent;
-  }
+    }
+  
+    .tayRightHeroArrow {
+      left: calc(50% + 75px);
+      transform: translateX(-50%);
+    }
 }
 
-@media (max-width: 480px) {
-  .tayControlsWrapper {
-      top: 215px;
-      left: 55%;
-      transform: translateX(-50%);
-  }
-  .paginationDot {
-      width: 15px;
-  }
+@media (max-width: 576px) {
+    .tayLeftHeroArrow {
+        left: calc(50% - 60px);
+        transform: translateX(-50%);
+      }
+    
+      .tayRightHeroArrow {
+        left: calc(50% + 78px);
+        transform: translateX(-50%);
+      }
+  .taySliderContainer {
+      padding-bottom: 68px;
+    }
+  
+    .tayCustomArrow {
+      bottom: -80px;  
+    }
+  
+ 
 }

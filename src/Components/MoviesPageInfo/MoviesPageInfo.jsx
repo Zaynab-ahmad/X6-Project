@@ -4,9 +4,8 @@ import clender from "./../../assets/Icons/calendar.svg"
 import languag from "./../../assets/Icons/Language.svg"
 import rating from "./../../assets/Icons/ratingStar.svg"
 import gerne from "./../../assets/Icons/genre.svg"
-import redstar from "./../../assets/Icons/redstar.svg"
-import halfstar from "./../../assets/Icons/halfstar.svg"
-import graystar from "./../../assets/Icons/star.svg"
+import FourRating1 from './../../assets/Icons/fourAndHalfStar.png'
+import FourRating2 from './../../assets/Icons/fourStars.png'
 import kantaraphoto from "./../../assets/Imgs/MoviesPageOpen/KantaraCast1.png"
 import kanteramusic from "./../../assets/Imgs/MoviesPageOpen/KantaraMusic.png"
 
@@ -44,11 +43,7 @@ export default function MoviesPageInfo() {
       <div className='borderStar'>
       <p className='pargraphSA'>IMDb</p>
       <div className='controlStarParagraph'>
-      <img className='iconClender' src={redstar}/>
-      <img className='iconClender' src={redstar}/>
-      <img className='iconClender' src={redstar}/>
-      <img className='iconClender' src={redstar}/>
-      <img className='iconClender' src={halfstar}/>
+      <img className='iconStars' src={FourRating1}/>
       <p className='pargraphNumber'>4.5</p>
       </div>
 
@@ -56,11 +51,7 @@ export default function MoviesPageInfo() {
       <div className='borderStar'>
       <p className='pargraphSA'>Streamvibe</p>
       <div className='controlStarParagraph'>
-      <img className='iconClender' src={redstar}/>
-      <img className='iconClender' src={redstar}/>
-      <img className='iconClender' src={redstar}/>
-      <img className='iconClender' src={redstar}/>
-      <img className='iconClender' src={graystar}/>
+      <img className='iconStars' src={FourRating2}/>
       <p className='pargraphNumber'>4</p>
       </div>
       </div>

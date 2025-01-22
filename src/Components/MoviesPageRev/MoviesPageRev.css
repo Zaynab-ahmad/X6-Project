@@ -1,94 +1,75 @@
 .tayTotalCard {
-    padding: 5px;
-    /* gap: 3px; */
-    border-radius: 12px;
-    background: rgba(26, 26, 26, 1);
-    border: 1px solid rgba(38, 38, 38, 1);
-    /* max-width: 90%; */
-    /* margin: auto; */
+  padding: 50px;
+  border-radius: 12px;
+  background: var(--black-shade10);
+  border: 1px solid var(--black-shade15);
+  gap: 40px;
 }
 
-.tay-TitleCard {
-    margin-bottom: 2px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;    
-    /* gap: 2px; */
-
+.tayTitleCard {
+  padding-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.tay-TitleCardh2 {
-    font-size: 2.5px;
-    font-weight: 500;
-    line-height: 1.5;
-    text-align: left;
-    color: rgba(153, 153, 153, 1);
-}
-
-.tay-TitleCardbutton {
-    /* padding: 1px 2px; */
-    gap: 1px;
-    border-radius: 8px;
-    background: rgba(20, 20, 20, 1);
-    border: 1px solid rgba(38, 38, 38, 1);
-    cursor: pointer;
-}
-
-.spanButton {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5px;
-}
-
+.tayTitleCardh2,
 .spanButtonH6 {
-    font-size: 2px;
-    font-weight: 500;
-    line-height: 1.5;
-    text-align: left;
-    color: rgba(255, 255, 255, 1);
+  font-size: 18px;
+  font-weight: 400; /*400 is better than 500 on figma */
+  line-height: 27px;
+  margin: 0 !important;
+}
+.tayTitleCardh2 {
+  color: var(--primary-color-gray);
+}
+.tayTitleCardbutton {
+  padding: 14px 16px;
+  border-radius: 8px;
+  background: var(--black-shade08);
+  border: 1px solid var(--black-shade15);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  gap: 4px;
 }
 
-.spanButtonimg {
-    margin: 0.2px;
-    width: 3px;
-    height: auto;
+@media (max-width: 1440px) {
+  .tayTotalCard {
+    padding: 40px;
+    border-radius: 10px;
+    gap: 30px;
+  }
+  .tayTitleCard {
+    padding-bottom: 30px;
+  }
+  .tayTitleCardh2,
+  .spanButtonH6 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .tayTitleCardbutton {
+    padding: 12px;
+    border-radius: 6px;
+    gap: 4px;
+  }
 }
 
-/* استجابة التصميم للشاشات الصغيرة */
-@media (max-width: 768px) {
-    .tayTotalCard {
-        padding: 6px;
-        gap: 4px;
-    }
-    .tay-TitleCardh2 {
-        font-size: 4px;
-    }
-    .tay-TitleCardbutton {
-        padding: 3px;
-    }
-    .spanButtonH6 {
-        font-size: 3px;
-    }
-}
+@media (max-width: 576px) {
+  .tayTotalCard {
+    padding: 24px;
+    gap: 24px;
+  }
 
-@media (max-width: 480px) {
-    .tayTotalCard {
-        padding: 8px;
-        gap: 5px;
-    }
-    .tay-TitleCard {
-        display: flex;
-        
-    }
-    .tay-TitleCardh2 {
-        font-size: 5px;
-    }
-    .tay-TitleCardbutton {
-        /* width: 100%; */
-        text-align: center;
-    }
-    .spanButtonH6 {
-        font-size: 4px;
-    }
+  .tayTitleCard {
+    padding-bottom: 24px;
+  }
+
+  .tayTitleCardh2,
+  .spanButtonH6 {
+    font-size: 14px;
+    line-height: 21px;
+  }
 }

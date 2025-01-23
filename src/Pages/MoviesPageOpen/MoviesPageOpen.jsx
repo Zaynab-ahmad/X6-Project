@@ -6,7 +6,7 @@ import MoviesPageRev from "../../Components/MoviesPageRev/MoviesPageRev";
 import MoviesAndShowsHero from "../../Components/Heros/MoviesAndShowsHero/MoviesAndShowsHero";
 import { AllMovies } from "../../Data/data";
 import "./MoviesPageOpen.css";
-import ShowsChapter from "../../Components/ShowsChapter/ShowsChapter";
+import Episods from "../../Components/Episods/Episods";
 
 export default function MoviesPageOpen() {
   const { genre, id } = useParams();
@@ -26,33 +26,26 @@ export default function MoviesPageOpen() {
         description={cover.description}
       />
       <div className="xContainer customMargin">
-        <div className="bento-grid">
-          {/* Episodes Section */}
-         
-            <div className="bento-item episodes" style={{display: genre==="movies"? "none": "block"}}>  
-              <ShowsChapter Season="1" epnum="9" />
-              <ShowsChapter Season="2" epnum="5" />
-              <ShowsChapter Season="3" epnum="7" />
+        <div className="bento-grid">         
+            <div className="bentoItem episodes" style={{display: genre==="movies"? "none": "block"}} >  
+              <Episods/> 
             </div>
           
-
-          {/* Description Section */}
-          <div className="bento-item description">
+          <div className="bentoItem description">
             <MoviesPageDes des={cover.description} />
           </div>
 
-          {/* Info Section */}
-          <div className="bento-item info">
+          <div className="bentoItem info">
             <MoviesPageInfo />
           </div>
 
           {/* Cast Section */}
-          <div className="bento-item cast">
+          <div className="bentoItem cast">
             <MoviesPageCast />
           </div>
 
           {/* Reviews Section */}
-          <div className="bento-item reviews">
+          <div className="bentoItem reviews">
             <MoviesPageRev />
           </div>
         </div>

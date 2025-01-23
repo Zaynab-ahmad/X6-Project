@@ -1,0 +1,35 @@
+.episodsSecZA {
+  background-color: var(--black-shade10);
+  border-radius: 12px;
+  padding: 40px 40px 20px 40px;
+}
+.EpHeader {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  color: white;
+  padding-bottom: 40px;
+}
+
+@media (max-width: 1440px) {
+  .EpHeader {
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 30px;
+    .episodsSecZA {
+      border-radius: 10px;
+      padding: 30px 30px 14px 30px;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .EpHeader {
+    font-size: 18px;
+    line-height: 27px;
+    padding-bottom: 20px;
+  }
+  .episodsSecZA {
+    border-radius: 10px;
+    padding: 24px 24px 8px 24px;
+  }
+}

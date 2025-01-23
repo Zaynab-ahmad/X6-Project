@@ -5,7 +5,7 @@ import Clock from "./../../assets/Icons/clock2.svg";
 export default function ShowsEpisodes({ num, img, title, duration, dis }) {
   return (
     <div className="showsEpisodesZA">
-      <div className="episodesNumZA">{num}</div>
+      <div className="episodesNumZA">0{num}</div>
 
       <div className="episodesImgZA" style={{ backgroundImage: `url(${img})` }}>
         <div className="episodeOverlay"></div>
@@ -20,10 +20,7 @@ export default function ShowsEpisodes({ num, img, title, duration, dis }) {
           <div className="EpDurationZA">
             <img src={Clock} alt="Clock" />
             <p className="epPZ"> {duration} min </p>
-          
-          
           </div>
-         
         </div>
         <div className="episodesDisZA">
           <p>{dis}</p>

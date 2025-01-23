@@ -1,0 +1,54 @@
+.plan-dad{
+    display: none;
+}
+.plan-tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background-color:  rgba(15, 15, 15, 1);
+    padding: 8px;
+    border-radius: 8px;
+  }
+  @media (max-width:700px) {
+    .plan-dad{
+        display: block;
+    }
+  }
+  
+  .plan-tabs button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    color: rgba(153, 153, 153, 1);
+    cursor: pointer;
+  }
+  
+  .plan-tabs button.active {
+    background-color: rgba(31, 31, 31, 1);
+    color: white;
+
+  }
+  
+  .plan-details {
+    background-color: #111;
+    padding: 20px;
+    color: #fff;
+  }
+  
+  .spe-width{
+    width: 145px;
+  }
+  .spe-color-g{
+    color: gray;
+    margin-bottom: 4px;
+  }
+  .spe-gap{
+    margin-bottom: 24px;
+  }
+  
+  .details-row {
+    display: flex;
+    gap: 20px;
+  }
+  

@@ -1,0 +1,33 @@
+  .plans-h2{
+      font-size: 48px ; 
+      font-weight: 700;
+      line-height: 72px;
+      color: rgba(255, 255, 255, 1);
+  }
+  .plans-para{
+    font-size: 18px;
+    font-weight: 400;
+    color: gray;
+    margin-bottom: 80px;
+  }
+  @media (max-width: 1440px) {
+    .plans-h2{
+      font-size: 38px ; 
+      line-height: 57px;
+  }
+  .plans-para{
+    font-size: 16px;
+    margin-bottom: 60px;
+  }
+  }
+  @media (max-width: 390px) {
+    .plans-h2{
+      font-size: 24px ; 
+      line-height: 36px;
+  }
+  .plans-para{
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+  }
+  

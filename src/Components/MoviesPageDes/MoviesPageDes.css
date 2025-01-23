@@ -1,0 +1,19 @@
+.moviesPageDes {
+    background: var(--black-shade10);
+    padding: 50px;
+    border-radius: 12px;
+    border: 1px solid var(--black-shade15);
+}
+.descriptionTit {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 500;
+    color: var(--primary-color-gray)
+}
+.descriptionParag {
+
+    font-size: 18px;
+        line-height: 27px;
+        font-weight: 500;
+        color: white;
+}

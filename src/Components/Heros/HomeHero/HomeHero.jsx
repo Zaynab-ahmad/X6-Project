@@ -27,7 +27,7 @@ export default function HomeHero() {
             <Button
               text={
                 <>
-                  <img src={Play} alt="play" />Start Watching Now
+                  <img className="playImg" src={Play} alt="play" />Start Watching Now
                 </>
               }
               isFullWidth={true}

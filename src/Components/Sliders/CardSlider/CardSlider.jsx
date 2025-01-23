@@ -33,7 +33,7 @@ export default function CardSlider({
   right,
 }) {
   const topOptions = {
-    type1: { lg: "-174px", md: "-170px" },
+    type1: { lg: "-174px", md: "-140px" },
     type2: { lg: "-80px", md: "-50px" },
   };
 

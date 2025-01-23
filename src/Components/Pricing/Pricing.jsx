@@ -43,13 +43,11 @@ function Pricing() {
           <HomeMoviesAndShowsTitle
             title="Choose the plan that is right for you"
             titlePadding="home"
-            fontSizeType="type4"
-            lineHeightType="type4"
+            fontSizeType="type3"
+            lineHeightType="type3"
           />
           <HomeParagraph
-            paragraph="Join StreamVibe and select from our flexible subscription
-                options tailored to suit your viewing preferences. Get ready for
-                non-stop entertainment!"
+            paragraph="Join StreamVibe and select from our flexible subscription options tailored to suit your viewing preferences. Get ready for non-stop entertainment!"
           />
         </div>
 

@@ -7,7 +7,6 @@ export default function CTA() {
   return (
     <div className="xContainer customMargin">
       <div className="ctaSA">
-        {/* Content Section */}
         <div className="ctaContentSA d-flex flex-column flex-xl-row align-items-center">
           <div className="ctaTextSection d-flex flex-column align-items-center align-items-xl-start text-center text-xl-start">
             <div className="d-none d-sm-block">

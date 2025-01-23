@@ -16,7 +16,14 @@
   width: 100%;
   border-radius: 12px;
   object-fit: cover;
+  transition: transform 0.2s ease-in-out;
 }
+.mustWatchThumbnail:hover,
+.moviesThumbnailImg:hover,
+.showsThumbnailImg:hover {
+  transform: scale(1.04);
+}
+
 .mustWatchThumbnail {
   aspect-ratio: 2/ 2.529;
 }
@@ -64,14 +71,12 @@
   margin-right: 2px;
 }
 @media (max-width: 1600px) and (min-width: 1441px) {
-  .viewCount img,
   .lengthTime img {
     width: 22px;
     height: 22px;
   }
   .lengthTime,
-  .releaseDate,
-  .viewCount {
+  .releaseDate {
     font-size: 12px;
   }
 }
@@ -86,10 +91,12 @@
   .detailSection {
     margin-top: 16px;
   }
+  .viewCount {
+    display: flex;
+  }
 
   .lengthTime,
-  .releaseDate,
-  .viewCount {
+  .releaseDate {
     padding: 4px 8px 4px 4px !important;
     font-size: 12px;
     line-height: 18px;
@@ -119,7 +126,7 @@
   }
 }
 
-@media (max-width: 1200px) and (min-width: 768px) {
+@media (max-width: 1200px) and (min-width: 577px) {
   .viewCount img,
   .lengthTime img {
     width: 18px !important;
@@ -127,12 +134,14 @@
   }
 
   .lengthTime,
-  .releaseDate,
-  .viewCount {
+  .releaseDate {
     font-size: 12px;
   }
+  .viewCount {
+    display: none !important;
+  }
 }
-@media (max-width: 390px) {
+@media (max-width: 576px) {
   .MovieShowCard,
   .MustWatchCard {
     padding: 12px;

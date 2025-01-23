@@ -1,0 +1,110 @@
+.showsEpisodesZA{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-top: 1px solid var(--black-shade15);
+}
+.episodesNumZA {
+    color: var(--primary-color-gray);
+    padding-right: 20px;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 45px;
+}
+.episodesImgZA {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    border: 1px solid var(--black-shade15);
+    background-size: cover;
+    background-position: center;
+    width: 172px;
+    height: 118px;
+    padding: 34px 72px;
+    position: relative;
+    
+}
+
+.episodeOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000080;
+    z-index: 1;
+    border-radius: 12px;
+    pointer-events: none;
+}
+.epIconZA {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    background-color: #00000099;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.episodesInfoZA {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding-left: 20px;
+    padding-top: 5px;
+    
+}
+.episodesTitleZA {
+    display: flex;
+    justify-content: space-between;
+}
+.epHZ {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+    color: white;
+}
+.epPZ {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: var(--primary-color-gray);
+    margin: 0 !important;
+}
+.EpDurationZA{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black-shade08);
+    border: 1px solid var(--black-shade15);
+    border-radius: 8px;
+    padding: 8px 10px;
+    gap: 4px;
+}
+.episodesDisZA {
+    color: var(--primary-color-gray);
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+@media(max-width: 1440px) {
+    .episodesNumZA {
+            padding-right: 18px;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 36px;
+        }
+                .episodesDisZA {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+}

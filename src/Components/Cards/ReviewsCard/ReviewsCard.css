@@ -1,0 +1,92 @@
+.tayCard {
+  width: 100%;
+  padding: 40px;
+  border-radius: 12px;
+  background: var(--black-shade06);
+  border: 1px solid var(--black-shade15);
+}
+
+.tayCardTiltle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tayNameAndFrom {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+}
+
+.tayName {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  color: white;
+}
+
+.tayfrom,
+.tayNumber,
+.tayParagraph {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  color: var(--primary-color-gray);
+  margin: 0 !important;
+}
+
+.tayfrom,
+.tayNumber {
+  font-weight: 500;
+}
+
+.tayParagraph {
+  padding-top: 20px;
+  font-weight: 400;
+}
+
+.tayValue {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 10px;
+  gap: 4px;
+  border-radius: 51px;
+  background: var(--black-shade08);
+  border: 1px solid var(--black-shade15);
+}
+
+@media (max-width: 1440px) {
+  .tayCard {
+    padding: 30px;
+  }
+
+  .tayName {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .tayfrom,
+  .tayParagraph {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .tayNumber {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+@media (max-width: 576px) {
+  .tayName {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .tayfrom,
+  .tayParagraph {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}

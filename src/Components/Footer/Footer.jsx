@@ -59,6 +59,9 @@ export default function Footer() {
               Genres
             </a>
             <a href="#" className="footerElementZA">
+              Trending
+            </a>
+            <a href="#" className="footerElementZA">
               New Release
             </a>
             <a href="#" className="footerElementZA">
@@ -73,6 +76,9 @@ export default function Footer() {
             </Link>
             <a href="#" className="footerElementZA">
               Genres
+            </a>
+            <a href="#" className="footerElementZA">
+              Trending
             </a>
             <a href="#" className="footerElementZA">
               New Release

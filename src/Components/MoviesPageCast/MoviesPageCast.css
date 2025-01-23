@@ -1,0 +1,357 @@
+.slick-slide {
+  margin-inline: 7px;
+}
+
+.img-fluid {
+  border-radius: 12px;
+}
+
+.Con-slider {
+  background-color: var(--black-shade10);
+  border: 1px solid var(--black-shade15);
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  margin-bottom: 5%;
+  padding-bottom: 3%;
+}
+
+.text-main {
+  color: var(--primary-color-gray);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: left;
+  margin-top: 20px;
+  margin-left: 2% !important;
+}
+
+.slick-next::before,
+.slick-prev::before {
+  width: 250%;
+  padding: 0.875rem;
+  background-color: var(--black-shade08);
+  border: 1px solid var(--black-shade15);
+  color: inherit;
+  position: absolute;
+  z-index: 2;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.slick-next::before{
+  background-image: url(../../assets/Icons/rightarrow.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: translate(-3rem, -6.7rem)!important;
+  -webkit-transform: translate(-3rem, -6.7rem)!important;
+  -moz-transform: translate(-3rem, -6.7rem)!important;
+  -ms-transform: translate(-3rem, -6.7rem)!important;
+  -o-transform: translate(-3rem, -6.7rem)!important;
+}
+
+.slick-prev::before{
+  background-image: url(../../assets/Icons/leftarrow.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: translate(40rem, -6.7rem) !important;
+  -webkit-transform: translate(40rem, -6.7rem) !important;
+  -moz-transform: translate(40rem, -6.7rem) !important;
+  -ms-transform: translate(40rem, -6.7rem) !important;
+  -o-transform: translate(40rem, -6.7rem) !important;
+}
+
+.arrow {
+  position: absolute;
+  z-index: 1;
+}
+
+/* .img-arrow {
+  cursor: pointer;
+  margin-right: 4%;
+  position: absolute;
+  top: 50% !important;
+  z-index: 2;
+}
+
+.img-arrow:first-child {
+  left: 340%;
+}
+
+.img-arrow:last-child {
+  right: -281%;
+} */
+
+.w- {
+  width: 55%;
+}
+
+/* للأحجام الكبيرة (1920px) */
+@media (max-width: 120rem) {
+  .Con-slider{
+    font-size: 100%;
+  }
+}
+  .slick-next::before {
+  transform: translate(-4.5rem, -8.5rem);
+  -webkit-transform: translate(-4.5rem, -8.5rem);
+  -moz-transform: translate(-4.5rem, -8.5rem);
+  -ms-transform: translate(-4.5rem, -8.5rem);
+  -o-transform: translate(-4.5rem, -8.5rem);
+}
+  .slick-prev::before {
+  transform: translate(58rem, -8.5rem);
+  -webkit-transform: translate(58rem, -8.5rem);
+  -moz-transform: translate(58rem, -8.5rem);
+  -ms-transform: translate(58rem, -8.5rem);
+  -o-transform: translate(58rem, -8.5rem);
+}
+  .ml- {
+    margin-left: 9% !important;
+  }
+
+
+/* للأحجام الكبيرة (1440px) */
+@media (max-width: 90rem) {
+  .Con-slider{
+    font-size: 14px;
+  }
+  .ml- {
+    margin-left: 6.4% !important;
+  }
+  .slick-next::before {
+  transform: translate(-4.3rem, -7.3rem);
+  -webkit-transform: translate(-4.3rem, -7.3rem);
+  -moz-transform: translate(-4.3rem, -7.3rem);
+  -ms-transform: translate(-4.3rem, -7.3rem);
+  -o-transform: translate(-4.3rem, -7.3rem);
+}
+  .slick-prev::before {
+  transform: translate(42rem, -7.3rem);
+  -webkit-transform: translate(42rem, -7.3rem);
+  -moz-transform: translate(42rem, -7.3rem);
+  -ms-transform: translate(42rem, -7.3rem);
+  -o-transform: translate(42rem, -7.3rem);
+}
+}
+
+/* للأحجام المتوسطة (1270px) */
+@media (max-width: 79.375rem) {
+  .Con-slider{
+    width: 100.3% !important;
+  }
+  .slick-next::before {
+  transform: translate(-4.3rem, -7.3rem);
+  -webkit-transform: translate(-4.3rem, -7.3rem);
+  -moz-transform: translate(-4.3rem, -7.3rem);
+  -ms-transform: translate(-4.3rem, -7.3rem);
+  -o-transform: translate(-4.3rem, -7.3rem);
+}
+  .slick-prev::before {
+  transform: translate(36rem, -7.3rem);
+  -webkit-transform: translate(36rem, -7.3rem);
+  -moz-transform: translate(36rem, -7.3rem);
+  -ms-transform: translate(36rem, -7.3rem);
+  -o-transform: translate(36rem, -7.3rem);
+}
+  .ml- {
+    margin-left: 6.5% !important;
+  }
+}
+
+/* للأحجام المتوسطة (1024px) */
+@media (max-width: 64rem) {
+.Con-slider{
+  width: 99.7% !important;
+}
+  .slick-next::before {
+  transform: translate(-4.3rem, -7.3rem);
+  -webkit-transform: translate(-4.3rem, -7.3rem);
+  -moz-transform: translate(-4.3rem, -7.3rem);
+  -ms-transform: translate(-4.3rem, -7.3rem);
+  -o-transform: translate(-4.3rem, -7.3rem);
+}
+  .slick-prev::before {
+  transform: translate(27.5rem, -7.3rem);
+  -webkit-transform: translate(27.5rem, -7.3rem);
+  -moz-transform: translate(27.5rem, -7.3rem);
+  -ms-transform: translate(27.5rem, -7.3rem);
+  -o-transform: translate(27.5rem, -7.3rem);
+}
+  .ml- {
+    margin-left: 6.6% !important;
+  }
+}
+
+/* للأحجام الصغيرة (992px) */
+@media (max-width: 62rem) {
+  .Con-slider{
+    width: 97.5% !important;
+  }
+  .slick-next::before {
+  transform: translate(-4.2rem, -7rem);
+  -webkit-transform: translate(-4.2rem, -7rem);
+  -moz-transform: translate(-4.2rem, -7rem);
+  -ms-transform: translate(-4.2rem, -7rem);
+  -o-transform: translate(-4.2rem, -7rem);
+}
+.slick-prev::before{
+  transform: translate(25.3rem, -7rem);
+  -webkit-transform: translate(25.3rem, -7rem);
+  -moz-transform: translate(25.3rem, -7rem);
+  -ms-transform: translate(25.3rem, -7rem);
+  -o-transform: translate(25.3rem, -7rem);
+}
+  .ml- {
+    margin-left: 6.6% !important;
+  }
+}
+
+/* للأحجام الصغيرة (768px) */
+@media (max-width: 48rem) {
+  .Con-slider{
+    width: 153% !important;
+  }
+    .slick-next::before {
+  transform: translate(-4.5rem, -7.5rem);
+  -webkit-transform: translate(-4.5rem, -7.5rem);
+  -moz-transform: translate(-4.5rem, -7.5rem);
+  -ms-transform: translate(-4.5rem, -7.5rem);
+  -o-transform: translate(-4.5rem, -7.5rem);
+}
+.slick-prev::before{
+  transform: translate(33rem, -7.5rem);
+  -webkit-transform: translate(33rem, -7.5rem);
+  -moz-transform: translate(33rem, -7.5rem);
+  -ms-transform: translate(33rem, -7.5rem);
+  -o-transform: translate(33rem, -7.5rem);
+}
+  .ml- {
+    margin-left: 7% !important;
+  }
+}
+
+/* للأحجام الصغيرة جدًا (600px) */
+@media (max-width: 37.5rem) {
+  .slick-next::before {
+  transform: translate(-4.5rem, -7.5rem);
+  -webkit-transform: translate(-4.5rem, -7.5rem);
+  -moz-transform: translate(-4.5rem, -7.5rem);
+  -ms-transform: translate(-4.5rem, -7.5rem);
+  -o-transform: translate(-4.5rem, -7.5rem);
+}
+.slick-prev::before{
+  transform: translate(24.5rem, -7.5rem);
+  -webkit-transform: translate(24.5rem, -7.5rem);
+  -moz-transform: translate(24.5rem, -7.5rem);
+  -ms-transform: translate(24.5rem, -7.5rem);
+  -o-transform: translate(24.5rem, -7.5rem);
+}
+  .ml- {
+    margin-left: 6.6% !important;
+  }
+}
+
+/* للأحجام الصغيرة جدًا (480px) */
+@media (max-width: 30rem) {
+  .Con-slider {
+    width: 153% !important;
+  }
+    .slick-next::before {
+  transform: translate(-4.5rem, -7rem);
+  -webkit-transform: translate(-4.5rem, -7rem);
+  -moz-transform: translate(-4.5rem, -7rem);
+  -ms-transform: translate(-4.5rem, -7rem);
+  -o-transform: translate(-4.5rem, -7rem);
+}
+.slick-prev::before{
+  transform: translate(18rem, -7rem);
+  -webkit-transform: translate(18rem, -7rem);
+  -moz-transform: translate(18rem, -7rem);
+  -ms-transform: translate(18rem, -7rem);
+  -o-transform: translate(18rem, -7rem);
+}
+  .ml- {
+    margin-left: 6.5% !important;
+  }
+}
+
+/* للأحجام الأصغر (425px) */
+@media (max-width: 26.563rem) {
+    .Con-slider {
+    width: 151.6% !important;
+  }
+    .slick-next::before {
+  transform: translate(-4.5rem, -6.5rem);
+  -webkit-transform: translate(-4.5rem, -6.5rem);
+  -moz-transform: translate(-4.5rem, -6.5rem);
+  -ms-transform: translate(-4.5rem, -6.5rem);
+  -o-transform: translate(-4.5rem, -6.5rem);
+}
+.slick-prev::before{
+  transform: translate(15rem, -6.5rem);
+  -webkit-transform: translate(15rem, -6.5rem);
+  -moz-transform: translate(15rem, -6.5rem);
+  -ms-transform: translate(15rem, -6.5rem);
+  -o-transform: translate(15rem, -6.5rem);
+}
+  .ml- {
+    margin-left: 7% !important;
+  }
+}
+
+/* للأحجام الأصغر جدًا (375px) */
+@media (max-width: 23.438rem) {
+  .Con-slider {
+    width: 149.5% !important;
+  }
+  
+    .slick-next::before {
+  transform: translate(-4.5rem, -6rem);
+  -webkit-transform: translate(-4.5rem, -6rem);
+  -moz-transform: translate(-4.5rem, -6rem);
+  -ms-transform: translate(-4.5rem, -6rem);
+  -o-transform: translate(-4.5rem, -6rem);
+}
+.slick-prev::before{
+  transform: translate(12rem, -6rem);
+  -webkit-transform: translate(12rem, -6rem);
+  -moz-transform: translate(12rem, -6rem);
+  -ms-transform: translate(12rem, -6rem);
+  -o-transform: translate(12rem, -6rem);
+}
+  .ml- {
+    margin-left: 7.5% !important;
+  }
+}
+
+/* للأحجام الأصغر جدًا (320px) */
+@media (max-width: 20rem) {
+  .Con-slider {
+    width: 148% !important;
+    font-size: 7px;
+    padding: 5px;
+  }
+  .slick-next::before {
+  transform: translate(-3.3rem, -5.5rem);
+  -webkit-transform: translate(-3.3rem, -5.5rem);
+  -moz-transform: translate(-3.3rem, -5.5rem);
+  -ms-transform: translate(-3.3rem, -5.5rem);
+  -o-transform: translate(-3.3rem, -5.5rem);
+}
+.slick-prev::before{
+  transform: translate(10rem, -5.5rem);
+  -webkit-transform: translate(10rem, -5.5rem);
+  -moz-transform: translate(10rem, -5.5rem);
+  -ms-transform: translate(10rem, -5.5rem);
+  -o-transform: translate(10rem, -5.5rem);
+}
+  .ml- {
+    margin-left: 7.7% !important;
+  }
+}

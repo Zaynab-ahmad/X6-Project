@@ -1,0 +1,191 @@
+.Des {
+    background-color: var(--black-shade10);
+    border: 1px solid var(--black-shade15);
+    font-family: "Manrope", serif;
+    padding: 30px;
+    gap: 14px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 27px;
+    text-align: left;
+    margin-bottom:30px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+.text-title {
+  color: var(--primary-color-gray);
+}
+.ml-pro{
+    margin-left:5.5% !important;
+    margin-right: 0;
+}
+
+.w-pro{
+  width: 56.3%;
+}
+
+/* للأحجام الكبيرة (1920px) */
+@media (max-width: 120rem) {
+  .Des {
+    width: 100%;
+    font-size: 110%!important;
+    padding: 25px;
+  }
+  .text-title {
+    font-size: 110%!important;
+  }
+  .ml-pro {
+    margin-left: 8.4% !important;
+  }
+}
+
+/* للأحجام الكبيرة (1440px) */
+@media (max-width: 90rem) {
+  .Des {
+    width: 100.5%;
+    font-size: 14px !important;
+    padding: 20px;
+  }
+  .ml-pro {
+    margin-left: 5.6% !important;
+  }
+}
+
+/* للأحجام المتوسطة (1270px) */
+@media (max-width: 79.375rem) {
+  .Des {
+    width: 101.4%;
+    font-size: 14px;
+    padding: 18px;
+  }
+  .text-title {
+    font-size: 14px;
+  }
+  .ml-pro {
+    margin-left: 5.6% !important;
+  }
+}
+
+/* للأحجام المتوسطة (1024px) */
+@media (max-width: 64rem) {
+  .Des {
+    width: 101.4% !important;
+    font-size: 13px;
+    padding: 16px;
+  }
+  .text-title {
+    font-size: 13px;
+  }
+  .ml-pro {
+    margin-left: 5.5% !important;
+  }
+}
+
+/* للأحجام الصغيرة (992px) */
+@media (max-width: 62rem) {
+  .Des {
+    width: 99.5% !important;
+    font-size: 12px;
+    padding: 15px;
+  }
+  .text-title {
+    font-size: 12px;
+  }
+  .ml-pro {
+    margin-left: 5.3% !important;
+  }
+}
+
+/* للأحجام الصغيرة (768px) */
+@media (max-width: 48rem) {
+  .Des {
+    width: 158% !important;
+    font-size: 12px;
+    padding: 14px;
+  }
+  .text-title {
+    font-size: 12px;
+  }
+  .ml-pro {
+    margin-left: 5.5% !important;
+  }
+}
+
+/* للأحجام الصغيرة جدًا (600px) */
+@media (max-width: 37.5rem) {
+  .Des {
+    width: 160.3%!important;
+    font-size: 11px;
+    padding: 12px;
+  }
+  .text-title {
+    font-size: 11px;
+  }
+  .ml-pro {
+    margin-left: 4.5% !important;
+  }
+}
+
+/* للأحجام الصغيرة جدًا (480px) */
+@media (max-width: 30rem) {
+  .Des {
+    width: 163% !important;
+    font-size: 10px;
+    padding: 10px;
+  }
+  .text-title {
+    font-size: 10px;
+  }
+  .ml-pro {
+    margin-left: 4% !important;
+  }
+}
+
+/* للأحجام الأصغر (425px) */
+@media (max-width: 26.563rem) {
+  .Des {
+    width: 100%;
+    font-size: 9px;
+    padding: 8px;
+  }
+  .text-title {
+    font-size: 9px;
+  }
+  .ml-pro {
+    margin-left: 4.2% !important;
+  }
+}
+
+/* للأحجام الأصغر جدًا (375px) */
+@media (max-width: 23.438rem) {
+  .Des {
+    width: 162.7% !important;
+    font-size: 8px;
+    padding: 6px;
+  }
+  .text-title {
+    font-size: 8px;
+  }
+  .ml-pro {
+    margin-left: 4% !important;
+  }
+}
+
+/* للأحجام الأصغر جدًا (320px) */
+@media (max-width: 20rem) {
+  .Des {
+    width: 164% !important;
+    font-size: 7px;
+    padding: 5px;
+  }
+  .text-title {
+    font-size: 7px;
+  }
+  .ml-pro {
+    margin-left: 4% !important;
+  }
+}

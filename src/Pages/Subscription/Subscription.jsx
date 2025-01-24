@@ -1,5 +1,6 @@
 
 import Pricing from '../../Components/Pricing/Pricing'
+import SubTable from '../../Components/SubTable/SubTable'
 import './Subscription.css'
 
 export default function Subscription() {
@@ -7,6 +8,7 @@ export default function Subscription() {
     <>
     <div className='subscriptionPricingZA'>
       <Pricing/>
+      <SubTable />
     </div>
     </>
   )

@@ -13,7 +13,12 @@
     line-height: 30px;
     padding: 10px 24px;
     border-radius: 8px;
-    top: -4%;
+    top: -1%;
+}
+@media (max-width: 1440px) {
+    .showsSectionZA {
+        padding: 40px;
+    }
 }
 @media (max-width: 576px) {
     .showsSectionZA {
@@ -23,7 +28,4 @@
     .showsBadgeZA {
         display: none;
     }
-}
-.MA-pop-sh{
-    margin-top: 100px;
 }

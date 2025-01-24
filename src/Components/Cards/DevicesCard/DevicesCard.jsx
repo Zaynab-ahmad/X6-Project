@@ -11,7 +11,7 @@ export default function DevicesCard({ icon, title }) {
             </div>
             <h4 className="CardTitleH4Tay">{title}</h4>
           </div>
-          <p className=" CardPTay">
+          <p className="CardPTay">
             StreamVibe is optimized for both Android and iOS smartphones.
             Download our app from the Google Play Store or the Apple App Store
           </p>

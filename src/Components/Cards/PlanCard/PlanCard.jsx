@@ -26,7 +26,9 @@ export default function PlanCard({ plans, isMonthly }) {
                 ${price}
                 <span className="periodEM">{period}</span>
               </div>
-              <div className="d-flex justify-content-between align-items-center">
+              <div className="planButtons d-flex justify-content-between align-items-center">
+                <div className="planButton">
+
                 <MainButton
                   text="Start a Free Trial"
                   isFullWidth={false}
@@ -34,6 +36,9 @@ export default function PlanCard({ plans, isMonthly }) {
                   isBlack={true}
                   paddingType="type2"
                 />
+                </div>
+                <div className="planButton">
+
                 <MainButton
                   text="Choose Plan"
                   isFullWidth={false}
@@ -41,6 +46,7 @@ export default function PlanCard({ plans, isMonthly }) {
                   isBlack={false}
                   paddingType="type2"
                 />
+                </div>
               </div>
             </div>
           </div>

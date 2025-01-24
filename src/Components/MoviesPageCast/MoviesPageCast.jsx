@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import KantaraCast1 from "../../assets/Imgs/MoviesPageOpen/KantaraCast1.png";
 import KantaraCast2 from "../../assets/Imgs/MoviesPageOpen/KantaraCast2.png";
 import KantaraCast3 from "../../assets/Imgs/MoviesPageOpen/KantaraCast3.png";
@@ -166,4 +167,23 @@ export default function MoviesPageCast() {
       </Row>
     </Container>
   );
+=======
+import './MoviesPageCast.css'
+import CastSlider from '../Sliders/CastSlider/CastSlider'
+import { MoviesCast } from '../../Data/data'
+import { ShowCast } from '../../Data/data'
+
+export default function MoviesPageCast({ genre }) {
+  const castData = genre === "movies" ? MoviesCast : ShowCast;
+
+  return (
+    <div className='moviesPageDes '>
+      <h3 className='castTit'>
+        Cast
+      </h3>
+      <CastSlider cast={castData} />
+
+    </div>
+  )
+>>>>>>> ea3609b916cdd728a040950d3dd2f7e23a0ec515
 }

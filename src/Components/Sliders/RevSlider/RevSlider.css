@@ -1,0 +1,87 @@
+.taySliderContainer{
+  width: 100%;
+  position: relative;
+  padding-bottom: 92px;
+}
+
+.taySliderItem {
+  width: 97% !important;
+}
+.tayControlsWrapper {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+
+.tayCustomArrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  padding: 14px;
+  background: var(--black-shade08);
+  border: 1px solid var(--black-shade15);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+  img{
+    width: 24px;
+    height: 24px;
+  }
+}
+.tayCustomArrow:hover {
+  border-color: var(--primary-color-gray);
+}
+
+
+.tayCustomPagination {
+  display: flex;
+  gap: 3px;
+}
+
+.tayPaginationDot {
+  width: 16px;
+  height: 4px;
+  background: var(--black-shade20);
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tayPaginationDot.active {
+  background: var(--primary-color-red);
+  width: 23px;
+}
+
+
+@media (max-width:1440px){
+  .taySliderContainer {
+    padding-bottom: 74px;   
+   }
+ .tayCustomArrow {
+   width: 44px;
+   height: 44px;
+   padding: 12px;
+
+   img {
+     width: 20px;
+     height: 20px;
+   }
+ }
+}
+
+
+@media (max-width: 576px) {
+   
+  .taySliderContainer {
+      padding-bottom: 68px;
+    }
+  
+}

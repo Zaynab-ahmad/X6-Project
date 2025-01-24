@@ -32,6 +32,7 @@ export default function Devices() {
           fontSizeType="type4"
           lineHeightType="type4"
         />
+        <div className="d-none d-md-block">
         <HomeParagraph
           paragraph="With StreamVibe, you can enjoy your favorite movies and TV shows anytime,
                 anywhere. Our platform is designed to be compatible with 
@@ -39,6 +40,13 @@ export default function Devices() {
                 ensuring that you 
                 never miss a moment of entertainment."
         />
+        </div>
+        <div className="d-block d-md-none">
+        <HomeParagraph
+          paragraph="With StreamVibe, you can enjoy your favorite movies and TV shows anytime,
+                anywhere."
+        />
+        </div>
       </div>
       <Row>
         {devices.map((device, index) => (

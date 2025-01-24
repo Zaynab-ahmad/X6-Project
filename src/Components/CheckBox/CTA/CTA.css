@@ -1,0 +1,58 @@
+.ctaSA {
+  border-radius: 12px;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../assets/Imgs/CTA.png);
+  background-size: contain !important;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 80px;
+  overflow: hidden;
+}
+
+.ctaContentSA {
+  z-index: 2;
+  justify-content: space-between;
+  width: 100%;
+  color: var(--absolute-white);
+}
+
+@media (max-width: 992px) {
+  .ctaContentSA {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1440px) {
+  .ctaSA {
+    padding: 80px 60px;
+  }
+}
+@media (max-width:1200px) {
+  .ctaSA {
+      padding: 40px 30px;
+    }
+    .ctaTextSection {
+      padding-bottom: 20px;
+    }
+}
+@media (max-width: 768px)  {
+  .ctaSA {
+    background-image: url(../../assets/Imgs/CTAMobile.png);
+  }
+}
+@media (max-width: 576px) {
+  .ctaSA {
+    padding: 50px 30px;
+  }
+
+  .ctaTextSection {
+    display: flex;
+    flex-direction: column !important;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+}

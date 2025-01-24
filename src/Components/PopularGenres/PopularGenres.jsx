@@ -25,10 +25,11 @@ export default function PopularGenres({sho}) {
       imagesArray={data.imagesArray}
       badge={true}
       pageName="moviesAndShowsPage" 
+      genre={sho ? "movies" : "shows"}
     />
   ));
   return (
-    <>
+    <div className="moviesMarginZA">
     <div className="MA-pop-Mo">
       <HomeMoviesAndShowsTitle
           title="Popular Top 10 In Geners"
@@ -37,9 +38,9 @@ export default function PopularGenres({sho}) {
           lineHeightType="type3"
           className ="MA-margin"
         />
-        </div>
-     <CardSlider cards={cardsMA} slidesToShow={4} />
-    </>
+        </div>        
+     <CardSlider cards={cardsMA} slidesToShow={4} page="moviesAndShows" sec="genres" top = "type2" right={false} />
+    </div>
    
   )
 }

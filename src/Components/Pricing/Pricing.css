@@ -10,6 +10,7 @@
   border-radius: 10px;
   width: fit-content;
   height: fit-content;
+  align-self: end;
 }
 
 .toggle {
@@ -25,7 +26,7 @@
   align-items: center;
 }
 
-.btn-check:checked + .btn,
+.btn-check:checked+.btn,
 .btn.active {
   color: white;
   background-color: var(--black-shade12);
@@ -44,13 +45,23 @@
     padding: 12px 20px;
   }
 
-  .btn-check:checked + .btn,
+  .btn-check:checked+.btn,
   .btn.active {
     border-radius: 6px !important;
   }
-}
-@media (max-width: 992px){
 
-  .pricingTEM { padding-bottom: 20px ;
+  .pricingTEM {
+    width: 80%
   }
+}
+
+@media (max-width: 992px) {
+
+  .pricingTEM {
+    padding-bottom: 20px;
+    width: 100%;
+  }
+    .toggleBtn {
+      align-self: start;
+    }
 }

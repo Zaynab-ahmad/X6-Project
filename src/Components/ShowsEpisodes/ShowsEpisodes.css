@@ -1,0 +1,205 @@
+.showsEpisodesZA {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-top: 1px solid var(--black-shade15);
+}
+
+.episodesNumImgZA {
+  display: flex;
+  align-items: center;
+}
+
+.episodesNumZA {
+  color: var(--primary-color-gray);
+  padding-right: 20px;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 45px;
+}
+
+.episodesImgZA {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  border: 1px solid var(--black-shade15);
+  background-size: cover;
+  background-position: center;
+  width: 172px;
+  height: 118px;
+  padding: 34px 72px;
+  position: relative;
+}
+
+.episodeOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000080;
+  z-index: 1;
+  border-radius: 12px;
+  pointer-events: none;
+}
+
+.epIconZA {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  background-color: #00000099;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.episodesInfoZA {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding-left: 20px;
+}
+
+.episodesTitleZA {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.epHZ {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+  color: white;
+}
+
+.epPZ {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: var(--primary-color-gray);
+  margin: 0 !important;
+}
+
+.EpDurationZA {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black-shade08);
+  border: 1px solid var(--black-shade15);
+  border-radius: 8px;
+  padding: 8px 10px;
+  gap: 4px;
+  width: fit-content;
+}
+
+.episodesDisZA {
+  color: var(--primary-color-gray);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+@media (max-width: 1440px) {
+  .showsEpisodesZA {
+    padding-top: 30px;
+  }
+
+  .episodesNumZA {
+    padding-right: 18px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .episodesInfoZA {
+    gap: 10px;
+    padding-left: 18px;
+  }
+
+  .epHZ {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .epPZ {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .EpDurationZA {
+    border-radius: 6px;
+    padding: 6px;
+  }
+
+  .episodesDisZA {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .showsEpisodesZA {
+    flex-wrap: wrap;
+  }
+  
+  .episodesDisZA {
+    display: none;
+  }
+
+  .episodesNumImgZA {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    width: 100%;
+  }
+
+  .showsEpisodesZA {
+    justify-content: left;
+    gap: 18px;
+  }
+
+  .episodesTitleZA {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 390px) {
+  .showsEpisodesZA {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .episodesNumZA {
+    padding-left: 18px;
+  }
+
+  .episodesImgZA {
+    width: 192px; /*192 is better than 182 to for match figma*/
+  }
+
+  .episodesInfoZA {
+    gap: 10px;
+    padding: 0;
+  }
+
+  .epHZ {
+    font-size: 17px; /*17 to match figma*/
+    line-height: 24px;
+  }
+
+  .epPZ {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}

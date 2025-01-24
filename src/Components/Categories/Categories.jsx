@@ -27,17 +27,16 @@ export default function Categories() {
       imagesArray={data.imagesArray}
       badge={false}
       pageName="homePage" 
-
     />
   ));
   return (
 
     <div id ="Categories" className="categories xContainer customMargin">
       <div className="categoriesTxtZA headingZA">
-      <HomeMoviesAndShowsTitle title="Explore our wide variety of categories" titlePadding="home" fontSizeType="type4" lineHeightType="type4"/>
+      <HomeMoviesAndShowsTitle title="Explore our wide variety of categories" titlePadding="home" fontSizeType="type3" lineHeightType="type3"/>
       <HomeParagraph paragraph ="Whether you're looking for a comedy to make you laugh, a drama to make you think, or a documentary to learn something new"/> 
       </div>
-      <CardSlider cards={cards} slidesToShow={5} />
+      <CardSlider cards={cards} slidesToShow={5} page="home" top="type1" right={true} />
 
     </div>
   );

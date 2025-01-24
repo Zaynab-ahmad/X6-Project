@@ -1,255 +1,216 @@
-.moviesInfoSA
-{
-    width: 519px;
-    height: 937px;
-    padding: 50px;
-    gap: 30px;
-    border-radius: 12px;
-   border: 1px solid #262626;
-   background-color: #1A1A1A;
-}
-.infoContentSA 
-{
-    gap: 14px;
-}
-.infoLanguageSA
-{
-    gap: 14px;
-}
-.year
-{
-    display: flex;
-    gap: 4px;
-}
-.iconClender
-{
-width: 18px;
-height: 18px;
-margin-top: 3px;
-margin-left: 3px;
-
-
-
-}
-.titleSA
-
-{
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 27px;
-    text-align: left;
-    color: #999999;
-}
-.pargraphSA
-{
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 30px;
-    text-align: left;
-    color:#FFFFFF;    
-}
-.borderSA
-{
-display: flex;
-flex-wrap: wrap;
-/*width: 419px;
-height: 96px;*/
-gap: 10px;
-}
-.bordText
-{
-    height: 43px;
-    padding: 8px 14px 8px 14px ;
-    border-radius: 8px;
-    border: 1px solid #1d1c1c;
-    background: #141414;
-   
-}
-.ratingSA, .infoLanguageSA, .gernesSA, .director, .music
-{
-margin-top: 30px;
-}
-.borderRating
-{
-    display: flex;
-    gap: 20px;
-}
-.borderStar
-{
-   
-   width: 199.5px;
-    height: 96px;
-    padding: 16px;
-    gap: 4px;
-    border-radius: 8px;
-    border: 1px solid #262626 ;
-    background-color: #141414; 
+.moviesInfoSA {
+  padding: 50px;
+  gap: 30px;
+  border-radius: 12px;
+  border: 1px solid var(--black-shade15);
+  background-color: var(--black-shade10);
 }
 
-.controlStarParagraph
-{
-    display: flex;
-    gap: 4px;
+.year {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 4px;
+  padding-bottom: 14px;
 }
 
-.pargraphNumber
-{
-font-size: 20px;
-font-weight: 500;
-line-height: 30px;
-text-align: left;
-color: #FFFFFF;
-
+.titleSA {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  margin: 0 !important;
+  color: var(--primary-color-gray);
 }
-.bordLast
-{
-    width: 419px;
-    height: 88px;
-    padding: 14px;
-    gap: 10px;
-    border-radius: 8px;
-    border: 1px solid #262626;
-    background-color: #141414;
-    display: flex;
-   
-    
+.pargraphSA {
+  font-size: 20px;
+  font-weight: 600; 
+  line-height: 30px;
+  margin: 0 !important;
+  color: white;
 }
-.photoSA
-{
-width: 56.56px;
-height: 60px;
-border-radius: 8px;
-}
-.controlParagraphEnd
-{
-    flex-direction: column;
-   
-}
-.paragraphEnd
-{
+.pargraphBordeSA {
 font-size: 18px;
-font-weight: 500;
-line-height: 27px;
-text-align: left;
-color:#FFFFFF ;
+  font-weight: 500;
+  line-height: 27px;
+  margin: 0 !important;
+  color: white;
 }
-.paragraphENdia
-{
-font-size: 16px;
-font-weight: 500;
-line-height: 24px;
-text-align: left;
-color: #999999;
-margin-top: 8px;
+.borderSA {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: wrap !important;
+  width: 100%;
+  gap: 10px;
+}
+.bordText {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--black-shade15);
+  background: var(--black-shade08);
+  }
+.ratingSA,
+.infoLanguageSA,
+.gernesSA,
+.director,
+.music {
+  margin-top: 30px;
+}
+.borderRating {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.borderStar {
+  width: fit-content;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid var(--black-shade15);
+  background-color: var(--black-shade08);
+}
+
+.controlStarParagraph {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 4px;
+  gap: 4px;
+}
+.iconStars {
+  width: 129.09px;
+}
+
+.pargraphNumber {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+  margin: 0 !important;
+  color: #ffffff;
+}
+.bordLast {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 14px;
+  gap: 10px;
+  border-radius: 8px;
+  border: 1px solid var(--black-shade15);
+  background-color: var(--black-shade08);
+}
+.photoSA {
+  width: 56.56px;
+  height: 60px;
+  border-radius: 8px;
+}
+.controlParagraphEnd {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+.paragraphEnd {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  text-align: left;
+  color: #ffffff;
+  margin: 0 !important;
+}
+.paragraphENdia {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: var(--primary-color-gray);
+  margin-top: 8px;
+  margin: 0 !important;
 }
 
 
-
-
-  
-  @media (max-width: 1440px) {
-   .moviesInfoSA{
-    
-     padding: 40px;
-     gap: 24px;
+@media (max-width: 1440px) {
+  .moviesInfoSA {
+    padding: 40px;
+    gap: 24px;
     border-radius: 10px;
-    }
-    .titleSA
-
-{
+  }
+  .iconClender {
+    width: 20px;
+    height: 20px;
+  }
+  .titleSA {
     font-size: 16px;
     line-height: 24px;
-   
-}
-    .pargraphSA
-{
+  }
+  .pargraphSA {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .bordText {
+    padding: 6px 12px;
+    border-radius: 6px;
+  }
+  .pargraphBordeSA {
     font-size: 14px;
     line-height: 21px;
-   
-}
-.bordText
-{
-    height: 33px;
-    padding: 6px 12px 6px 12px ;
-    border-radius: 6px;
-    
-   
-}
-.borderStar
-{
-   
-    width: 160px;
-    height: 77px;
+  }
+  .borderStar {
     padding: 14px;
-   
-}
-.pargraphNumber
-{
-font-size: 14px;
-line-height: 21px;
-}
-.controlStarParagraph
-{
-   margin-top: 2px;
-}
-.iconClender
-{
-    width: 18px;
-    height: 18px;
-}
-
   }
-  
-  @media (max-width: 576px) {
-    
-    .moviesInfoSA{
-    
-        padding: 24px;
-        gap: 20px;
-       border-radius: 10px;
-       }
-       .titleSA
-   
-   {
-       font-size: 14px;
-       line-height: 21px;
-      
-   }
-       .pargraphSA
-   {
-       font-size: 14px;
-       line-height: 21px;
-      
-   }
-   .bordText
-{
-    height: 33px;
-    padding: 6px 12px 6px 12px ;
-    border-radius: 6px;
-    
-   
-}
-.borderStar
-{
-   
-    width: 147px;
-    height: 68px;
+    .iconStars {
+      width: 94.82px;
+    }
+  .pargraphNumber {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .controlStarParagraph {
+    margin-top: 2px;
+  }
+  .bordLast {
     padding: 12px;
-   
-}
-.pargraphNumber
-{
-font-size: 14px;
-line-height: 21px;
-}
-.controlStarParagraph
-{
-    gap: 2px;
-}
-.iconClender
-{
-    width: 18px;
-    height: 18px;
-}
-
   }
+ .paragraphEnd {
+  font-size: 16px;
+    line-height: 24px;
+  }
+    .paragraphENdia{
+      font-size: 14px;
+    line-height: 21px;
+  }
+  }
+
+
+
+@media (max-width: 576px) {
+  .moviesInfoSA {
+    padding: 24px;
+    gap: 20px;
+    border-radius: 10px;
+  }
+  .titleSA {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .pargraphSA {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .bordText {
+    padding: 6px 12px;
+    border-radius: 6px;
+  }
+  .borderStar { 
+    padding: 12px;
+  }
+  .pargraphNumber {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .controlStarParagraph {
+    gap: 2px;
+  }
+
+}

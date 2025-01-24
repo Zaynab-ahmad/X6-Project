@@ -41,7 +41,7 @@ export default function MoviesPageOpen() {
 
           {/* Cast Section */}
           <div className="bentoItem cast">
-            <MoviesPageCast />
+            <MoviesPageCast genre = {genre}/>
           </div>
 
           {/* Reviews Section */}

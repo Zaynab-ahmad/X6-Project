@@ -35,6 +35,10 @@
   color: white;
   gap: 4px;
 }
+.spanButtonimg {
+  width: 30px;
+  height: 30px;
+}
 
 @media (max-width: 1440px) {
   .tayTotalCard {
@@ -45,15 +49,22 @@
   .tayTitleCard {
     padding-bottom: 30px;
   }
-  .tayTitleCardh2,
-  .spanButtonH6 {
+  .tayTitleCardh2 {
     font-size: 16px;
     line-height: 24px;
+  }
+  .spanButtonH6 {
+    font-size: 14px;
+    line-height: 21.42px;
   }
   .tayTitleCardbutton {
     padding: 12px;
     border-radius: 6px;
     gap: 4px;
+  }
+  .spanButtonimg {
+    width: 24px;
+    height: 24px;
   }
 }
 

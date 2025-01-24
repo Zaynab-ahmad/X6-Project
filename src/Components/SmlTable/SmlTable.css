@@ -5,42 +5,42 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
-    background-color:  rgba(15, 15, 15, 1);
+    background-color: var(--black-shade06);
+    border: 1px solid var(--black-shade15);
     padding: 8px;
     border-radius: 8px;
-  }
-  @media (max-width:700px) {
-    .plan-dad{
-        display: block;
-    }
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
   }
   
   .plan-tabs button {
-    padding: 10px 20px;
+    padding: 12px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
     background-color: transparent;
-    color: rgba(153, 153, 153, 1);
+    color: var(--primary-color-gray);
     cursor: pointer;
   }
   
   .plan-tabs button.active {
-    background-color: rgba(31, 31, 31, 1);
+    background-color: var(--black-shade12);
     color: white;
-
+    
   }
   
   .plan-details {
-    background-color: #111;
+    background-color: var(--black-shade06);
+    border: 1px solid var(--black-shade15);
     padding: 20px;
-    color: #fff;
+    color: white;
   }
   
   .spe-width{
     width: 145px;
   }
   .spe-color-g{
-    color: gray;
+    color: var(--primary-color-gray);
     margin-bottom: 4px;
   }
   .spe-gap{
@@ -50,5 +50,10 @@
   .details-row {
     display: flex;
     gap: 20px;
+  }
+  @media (max-width:768px) {
+    .plan-dad{
+        display: block;
+    }
   }
   

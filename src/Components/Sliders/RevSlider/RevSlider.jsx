@@ -16,13 +16,13 @@ export default function RevSlider({ CardsRev }) {
   };
 
   const PrevArrow = ({ onClick }) => (
-    <div className="tayCustomArrow tayLeftHeroArrow" onClick={onClick}>
+    <div className="tayCustomArrow" onClick={onClick}>
       <img src={LeftArrow} alt="Previous" />
     </div>
   );
 
   const NextArrow = ({ onClick }) => (
-    <div className="tayCustomArrow tayRightHeroArrow" onClick={onClick}>
+    <div className="tayCustomArrow" onClick={onClick}>
       <img src={RightArrow} alt="Next" />
     </div>
   );

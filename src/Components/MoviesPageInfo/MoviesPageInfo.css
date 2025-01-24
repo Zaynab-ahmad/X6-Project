@@ -39,7 +39,7 @@ font-size: 18px;
   display: flex;
   justify-content: left;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap !important;
   width: 100%;
   gap: 10px;
 }
@@ -48,8 +48,6 @@ font-size: 18px;
   border-radius: 8px;
   border: 1px solid var(--black-shade15);
   background: var(--black-shade08);
-  /* need to fix this */
-  text-wrap: nowrap;
   }
 .ratingSA,
 .infoLanguageSA,
@@ -60,12 +58,13 @@ font-size: 18px;
 }
 .borderRating {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
 }
 .borderStar {
-  width: 100%;
+  width: fit-content;
   padding: 16px;
   border-radius: 8px;
   border: 1px solid var(--black-shade15);
@@ -129,9 +128,7 @@ font-size: 18px;
   margin-top: 8px;
   margin: 0 !important;
 }
-.bordShowText {
 
-}
 
 @media (max-width: 1440px) {
   .moviesInfoSA {

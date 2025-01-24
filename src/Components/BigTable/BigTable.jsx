@@ -14,27 +14,6 @@ export default function BigTable() {
         </tr>
       </thead>
       <tbody>
-        {/* {BTplans.map((plan, index) => (
-          <tr key={index}>
-            <td>{plan.name}</td>
-            <td>{plan.price}</td>
-            <td>{plan.content}</td>
-            <td>{plan.devices}</td>
-            <td>{plan.freeTrial}</td>
-            <td>{plan.cancelAnytime}</td>
-            <td>{plan.hdr}</td>
-            <td>{plan.dolbyAtmos}</td>
-            <td>{plan.adFree}</td>
-            <td>{plan.offlineViewing}</td>
-            <td>{plan.familySharing}</td>
-          </tr>
-        ))} */}
-        <tr className='table-row'>
-            <td>price</td>
-            <td>$9.99/Month</td>
-            <td>$12.99/Month</td>
-            <td>$14.99/Month</td>
-        </tr>
         <tr className='table-row'>
             <td>price</td>
             <td>$9.99/Month</td>

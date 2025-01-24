@@ -175,6 +175,26 @@ import Episodes3 from '../assets/Imgs/ShowsPageOpen/StrangerThingsCh3.webp'
 import Episodes4 from '../assets/Imgs/ShowsPageOpen/StrangerThingsCh4.webp'
 import Episodes5 from '../assets/Imgs/ShowsPageOpen/StrangerThingsCh5.webp'
 
+// Importing Movies Cast
+import MovieCast1 from '../assets/Imgs/MoviesPageOpen/KantaraCast1.png'
+import MovieCast2 from '../assets/Imgs/MoviesPageOpen/KantaraCast2.png'
+import MovieCast3 from '../assets/Imgs/MoviesPageOpen/KantaraCast3.png'
+import MovieCast4 from '../assets/Imgs/MoviesPageOpen/KantaraCast4.png'
+import MovieCast5 from '../assets/Imgs/MoviesPageOpen/KantaraCast5.png'
+import MovieCast6 from '../assets/Imgs/MoviesPageOpen/KantaraCast6.png'
+import MovieCast7 from '../assets/Imgs/MoviesPageOpen/KantaraCast7.png'
+import MovieCast8 from '../assets/Imgs/MoviesPageOpen/KantaraCast8.png'
+
+// Importing Show Cast
+import ShowCast1 from '../assets/Imgs/ShowsPageOpen/StrangerThingsCast1.png'
+import ShowCast2 from '../assets/Imgs/ShowsPageOpen/StrangerThingsCast2.png'
+import ShowCast3 from '../assets/Imgs/ShowsPageOpen/StrangerThingsCast3.png'
+import ShowCast4 from '../assets/Imgs/ShowsPageOpen/StrangerThingsCast4.png'
+import ShowCast5 from '../assets/Imgs/ShowsPageOpen/StrangerThingsCast5.png'
+import ShowCast6 from '../assets/Imgs/ShowsPageOpen/StrangerThingsCast6.png'
+import ShowCast7 from '../assets/Imgs/ShowsPageOpen/StrangerThingsCast7.png'
+import ShowCast8 from '../assets/Imgs/ShowsPageOpen/StrangerThingsCast8.png'
+
 
 export const Trendingimages = [
   { id: 1, src: trending1, coverSrc: TrendingMovies1cover, alt: "Trending Image 1", title: "Morbius", description: "Dr. Michael Morbius attempts a desperate gamble that could cure him of his rare blood disease, but when his experiment goes awry, he becomes something…", videoLink: "https://www.youtube.com/watch?v=16K6BDTn9iI"},
@@ -279,6 +299,26 @@ export const Episodes = [
   { id: 67, num:4, src: Episodes4, coverSrc:Episodes3, alt: "Episodes 3", duration:"51", title: "Chapter Four: The Body", description: "Refusing to believe Will is dead, Joyce tries to connect with her son. The boys give Eleven a makeover..",videoLink: "https://www.youtube.com/watch?v=16K6BDTn9iI" },
   { id: 68, num:5, src: Episodes5, coverSrc:Episodes3, alt: "Episodes 3", duration:"53", title: "Chapter Five: The Flea and the Acrobat", description: "Hopper breaks into the lab while Nancy and Jonathan confront the force that took Will. The boys ask Mr. Clarke how to travel to another dimension.",videoLink: "https://www.youtube.com/watch?v=16K6BDTn9iI" },
 ] 
+export const MoviesCast = [
+  {id: 69, src: MovieCast1},
+  {id: 70, src: MovieCast2},
+  {id: 71, src: MovieCast3},
+  {id: 72, src: MovieCast4},
+  {id: 73, src: MovieCast5},
+  {id: 74, src: MovieCast6},
+  {id: 75, src: MovieCast7},
+  {id: 76, src: MovieCast8}
+]
+export const ShowCast =[
+  {id: 77, src: ShowCast1},
+  {id: 78, src: ShowCast2},
+  {id: 79, src: ShowCast3},
+  {id: 80, src: ShowCast4},
+  {id: 81, src: ShowCast5},
+  {id: 82, src: ShowCast6},
+  {id: 83, src: ShowCast7},
+  {id: 84, src: ShowCast8}
+]
 
 export const AllMovies = [
   ...Trendingimages,

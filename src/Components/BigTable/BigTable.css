@@ -1,62 +1,69 @@
-@media (max-width:700px) {
-    .big-table-dad{
-        display: none;
-    }
+table {
+  border: 1px solid var(--black-shade15);
+  border-radius: 12px;
 }
 
-
-table{
-    border: 1px solid rgb(29 29 29) ;
-    border-radius: 12px;
-}
-
-.plan-table th{
-    font-size: 20px;
-    font-weight: 600px;
-}
+.plan-table th,
 .plan-table td {
-    font-size: 18px;
-    color: rgba(153, 153, 153, 1);
+  border: 1px solid var(--black-shade15);
+  width: 399.25px;
+  padding: 30px;
+  text-align: left;
+  
+}
+
+.plan-table th {
+  background-color: var(--black-shade06);
+  color: white;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600px;
 
 }
+
+.plan-table th .spe-table {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  background-color: var(--primary-color-red);
+  padding: 6px 10px;
+  border-radius: 2px;
+  margin-left: 8px;
+  
+}
+
+.plan-table td {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 500;
+  color: var(--primary-color-gray);
+}
+
+@media (max-width: 1440px) {
   .plan-table th,
-  .plan-table td {
-    border: 1px solid rgb(29 29 29);
-    width: 399.25px;
-    padding: 30px;
-    text-align: left;
-  }
-  @media (max-width:1440px) {
-    .plan-table th,
   .plan-table td {
     width: 319.75px;
     padding: 24px;
   }
   .plan-table td {
     font-size: 16px;
+    line-height: 24px;
   }
-  .plan-table th{
-    font-size: 18px;
-    
-}
-  }
-  .plan-table th .spe-table{
-    background-color:rgba(229, 0, 0, 1);
-    padding: 6px ; 
-    margin-left: 6px
-    ;
-  }
-  
   .plan-table th {
-    background-color:rgba(15, 15, 15, 1);
-    color: white
-    ;
+    font-size: 18px;
+    line-height: 27px;
   }
-  
-  /* Responsive design for smaller screens
-  @media (max-width: 768px) {
-    .plan-table {
-      display: block;
-      overflow-x: auto;
-    }
-  } */
+  .plan-table th .spe-table {
+    padding: 6px;
+    margin-left: 6px;
+  }
+  .plan-table th .spe-table {
+    padding: 6px;
+  }
+}
+
+@media (max-width: 768px) {
+  .big-table-dad {
+    display: none;
+  }
+}

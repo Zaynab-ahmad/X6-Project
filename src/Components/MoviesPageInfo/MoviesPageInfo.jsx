@@ -65,31 +65,26 @@ export default function MoviesPageInfo({genre}) {
       <img className='iconClender' src={gerne}/>
       <h6 className='titleSA'>Gernes</h6>
       </div>
-      <div className='borderSA'>
-        <div style={{display: genre === "movies" ? 'flex' : 'none'}}>
+        <div className='borderSA' style={{display: genre === "movies" ? 'flex' : 'none'}}>
         <div className='bordText'><p className='pargraphBordeSA'>Action</p></div>
         <div className='bordText'><p className='pargraphBordeSA'>Adventure</p></div>
         </div>
-        <div style={{display: genre === "movies" ? 'none' : 'flex'}}>
+        <div className='borderSA' style={{display: genre === "movies" ? 'none' : 'flex'}}>
         <div className='bordText'><p className='pargraphBordeSA'>Sci-Fi TV</p></div>
         <div className='bordText'><p className='pargraphBordeSA'>Teen TV Shows</p></div>
-        <div className='bordText'><p className='pargraphBordeSA'>US TV Shows</p></div>
-        </div>
+        <div className='bordText'><p className='pargraphBordeSA'>US TV Shows</p></div>    
      </div>
     </div>
-
     <div className='director'>
     <h6 className='titleSA year'>Director</h6>
     <div className='bordLast'>
     <img className='photoSA' src={genre === "movies" ? kantaraphoto : Director2} />
     <div className='controlParagraphEnd'>
      <p className='paragraphEnd'>{genre === "movies" ? "Rishab Shetty" : "The Duffer Brothers"}</p>
-      <p className='paragraphENdia'>{genre === "movies" ? "From India" : "From USA"}</p>
-
+     <p className='paragraphENdia'>{genre === "movies" ? "From India" : "From USA"}</p>
      </div>
     </div>
     </div>
-
     <div className='music'>
     <h6 className='titleSA year'>Music</h6>
     <div className='bordLast'>
@@ -100,9 +95,6 @@ export default function MoviesPageInfo({genre}) {
      </div>
     </div>
     </div>
-   
-
-
   </div>
   )
 }

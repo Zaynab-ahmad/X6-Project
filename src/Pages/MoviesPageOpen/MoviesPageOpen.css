@@ -24,7 +24,7 @@
 
 .bentoItem.info {
     grid-column: span 4;
-    grid-row: 1 / span 4;
+    grid-row: 1 / span 6;
     justify-self: start;
 }
 
@@ -38,7 +38,7 @@
     grid-row: 4;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 992px) {
     .bento-grid {
         display: block;
     }

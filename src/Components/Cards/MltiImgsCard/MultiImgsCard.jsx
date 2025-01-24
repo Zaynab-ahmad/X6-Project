@@ -5,11 +5,11 @@ import Rightarrow from "../../../assets/icons/rightarrow.svg";
 export default function MultiImgsCard({ text, imagesArray, badge, pageName, genre }) {
   const navigate = useNavigate();
 
-  const handleCardClick = () => {
-    if (pageName === "homePage") {
-      navigate("/movies-and-shows");
-    }
-  };
+ const handleCardClick = () => {
+  if (pageName === "homePage") {
+    navigate(`/movies-and-shows/${text}`);
+  }
+};
 
  const handleImageClick = (movie) => {
   if (pageName === "moviesAndShowsPage") {

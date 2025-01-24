@@ -4,7 +4,7 @@ import { TrendingShowsImages } from "../../Data/data";
 import MovieShowCard from "../Cards/MovieShowCard/MovieShowCard";
 import HomeMoviesAndShowsTitle from "../SharedTitlesAndParagraph/HomeMoviesAndShows/HomeMoviesAndShowsTitle";
 
-export default function TrendingShows() {
+export default function TrendingShows({text}) {
   const cards3Data = [
     {
       length: "8h 20min",
@@ -48,7 +48,7 @@ export default function TrendingShows() {
   return (
     <div className="moviesMarginZA">
       <HomeMoviesAndShowsTitle
-        title="Trending Shows"
+        title={`Trending ${text} Shows`}
         home={false}
         fontSizeType="type3"
         lineHeightType="type3"

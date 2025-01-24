@@ -5,16 +5,16 @@ import NewReleases from "../NewReleases/NewReleases";
 import MustWatch from "../MustWatch/MustWatch";
 import PopularGenres from "../PopularGenres/PopularGenres";
 
-export default function MoviesSection() {
+export default function MoviesSection({text}) {
   return (
     <div className=" xContainer customMargin">
       <div className="moviesSectionZA">
         <div className="moviesBadgeZA">Movies</div>
-        <OurGenres movies={true} />
-        <PopularGenres sho={true} />
-        <TrendingNow />
-        <NewReleases />
-        <MustWatch />
+        <OurGenres movies={true} text ={text}/>
+        <PopularGenres sho={true} text ={text}/>
+        <TrendingNow text ={text} />
+        <NewReleases text ={text} />
+        <MustWatch text ={text} />
       </div>
     </div>
   );

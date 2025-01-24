@@ -29,6 +29,7 @@
   line-height: 27px;
   color: #ffffff;
 }
+
 .PhoneNumberContainer {
   display: flex;
   align-items: center;
@@ -45,12 +46,13 @@
   border: solid 1px var(--black-shade15);
   background-color: var(--black-shade08);
   cursor: pointer;
+flex-shrink: 1;
 }
-
+ 
 .CountrySelector img {
   width: 40px;
   height: 26px;
-}
+} 
 .CountrySelector::after {
     display: none;
 }
@@ -151,7 +153,6 @@
   background-color: var(----primary-color-red);
 }
 
-/* Add a checkmark */
 .custom-checkbox input[type="checkbox"]:checked + .checkbox-mark::after {
   content: "✓";
   color: white;
@@ -163,7 +164,26 @@
 .custom-checkbox:hover .checkbox-mark {
   border-color: var(--primary-color-gray);
 }
+.custom-alert {
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
 
+.alert-error {
+    background-color: var(--black-shade08);
+    border: 1px solid var(--primary-color-red);
+    color: var(--primary-color-gray);
+}
+
+.alert-success {
+    background-color: var(--black-shade08);
+    border: 1px solid #155724;
+    color: var(--primary-color-gray);
+}
 @media (max-width: 1440px) {
   .SupportForm {
     width: 61.4%;
@@ -176,6 +196,11 @@
     line-height: 24px;
   }
 
+  .custom-alert {
+      padding: 14px;
+      margin-bottom: 14px;
+      font-size: 14px;
+  }
   .SupportFormInput {
     padding: 16px !important;
     font-size: 14px !important;
@@ -192,10 +217,10 @@
       border-radius: 6px;
      
   }
-  .CountrySelector img {
+   .CountrySelector img {
       width: 38px;
       height: 24px;
-  }
+  } 
 
   .SupportFormArea {
     height: 129px;

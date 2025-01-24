@@ -10,7 +10,6 @@ import Button from "../Buttons/Button";
 import Dropdown from "react-bootstrap/Dropdown";
 import DropdownIcon from "../../assets/Icons/dropDownarrow.svg";
 
-
 export default function SupportForm() {
   const [formData, setFormData] = useState({
     firstName: "",
@@ -20,6 +19,8 @@ export default function SupportForm() {
     message: "",
     isChecked: false,
   });
+  const [alert, setAlert] = useState({ visible: false, message: "", type: "" });
+
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -30,7 +31,25 @@ export default function SupportForm() {
   };
 
   const handleSendMessage = () => {
-    console.log("Form Data Submitted:", formData);
+    if (!formData.isChecked) {
+      setAlert({
+        visible: true,
+        message: "You have to enter valid inputs and agree with the Terms of Use and Privacy Policy",
+        type: "alert-error",
+      });
+      setTimeout(() => setAlert({ visible: false, message: "", type: "" }), 3000);
+      return; 
+    }
+
+    setAlert({
+      visible: true,
+      message: "Thank you! Your message has been sent.",
+      type: "alert-success",
+    });
+    setTimeout(() => setAlert({ visible: false, message: "", type: "" }), 3000);
+
+
+    // Reset form data
     setFormData({
       firstName: "",
       lastName: "",
@@ -43,6 +62,13 @@ export default function SupportForm() {
 
   return (
     <Container className="SupportForm">
+      {/* Alert Box */}
+      {alert.visible && (
+        <div className={`custom-alert ${alert.type}`}>
+          {alert.message}
+        </div>
+      )}
+
       <Row>
         <Col md={6} sm={12}>
           <div className="inputContainer bottom-margin">
@@ -92,7 +118,7 @@ export default function SupportForm() {
               <Dropdown>
                 <Dropdown.Toggle className="CountrySelector">
                   <img src={flag1} alt="Flag" />
-                  <img src={DropdownIcon} alt="DropdownIcon" />
+                  <img src={DropdownIcon} alt="Dropdown Icon" />
                 </Dropdown.Toggle>
                 <Dropdown.Menu>
                   <Dropdown.Item>
@@ -138,9 +164,9 @@ export default function SupportForm() {
           </div>
         </Col>
       </Row>
-      <Row className="d-flex  justify-between align-items-center">
+      <Row className="d-flex justify-between align-items-center">
         <Col md={9} sm={12}>
-          <div className="CheckBoxArea  ">
+          <div className="CheckBoxArea">
             <label className="custom-checkbox">
               <input
                 type="checkbox"
@@ -149,7 +175,6 @@ export default function SupportForm() {
               />
               <span className="checkbox-mark"></span>
             </label>
-
             <p>I agree with Terms of Use and Privacy Policy</p>
           </div>
         </Col>

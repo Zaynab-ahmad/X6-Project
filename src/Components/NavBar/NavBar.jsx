@@ -126,7 +126,7 @@ export default function NavBar() {
                     </Link>
                     <Link
     className="dropdownitem"
-    to={'/subscriptions'}
+    to={'/subscription'}
     onClick={() => setActiveLink('link-3')}
 >
     Subscriptions

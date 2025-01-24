@@ -63,8 +63,8 @@ export default function MoviesAndShows() {
           )}
 
           {/* Display One Section for Small Screens */}
-          {isSmallScreen && activeSection === "movies" && <MoviesSection />}
-          {isSmallScreen && activeSection === "shows" && <ShowsSection />}
+          {isSmallScreen && activeSection === "movies" && <MoviesSection text={text}  />}
+          {isSmallScreen && activeSection === "shows" && <ShowsSection text={text}/>}
         </div>
       </div>
     </>

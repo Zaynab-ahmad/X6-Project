@@ -4,7 +4,7 @@ import { Trendingimages } from "../../Data/data";
 import MovieShowCard from "../Cards/MovieShowCard/MovieShowCard";
 import HomeMoviesAndShowsTitle from "../SharedTitlesAndParagraph/HomeMoviesAndShows/HomeMoviesAndShowsTitle";
 
-export default function TrendingNow() {
+export default function TrendingNow({text}) {
   const cards2Data = [
     {
       length: "1h 30min",
@@ -52,7 +52,7 @@ export default function TrendingNow() {
   return (
     <div className="moviesMarginZA">
       <HomeMoviesAndShowsTitle
-        title="Trending Now"
+        title={`Trending ${text} Now`}
         home={false}
         fontSizeType="type3"
         lineHeightType="type3"

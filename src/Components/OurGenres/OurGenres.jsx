@@ -11,7 +11,7 @@ import {
   HorrorMovies,
 } from "../../Data/data";
 
-export default function OurGenres({movies}) {
+export default function OurGenres({movies, text}) {
   const cardsData = [
     { text: "Action", imagesArray: ActionMovies.slice(0, 4) },
     { text: "Adventure", imagesArray: AdventureMovies.slice(0, 4) },
@@ -32,7 +32,7 @@ export default function OurGenres({movies}) {
   return (
     <div className="moviesMarginZA">
       <HomeMoviesAndShowsTitle
-        title="Our Genres"
+        title={`Our ${text} Genres`}
         home={false}
         fontSizeType="type3"
         lineHeightType="type3"

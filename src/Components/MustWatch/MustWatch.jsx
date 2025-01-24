@@ -7,7 +7,7 @@ import fiveStars from '../../assets/Icons/fiveStars.png'
 import fourStars from '../../assets/Icons/fourStars.png'
 import HomeMoviesAndShowsTitle from "../SharedTitlesAndParagraph/HomeMoviesAndShows/HomeMoviesAndShowsTitle";
 
-export default function MustWatch() { 
+export default function MustWatch({text}) { 
     const cards4Data = [
         {length: "1h 57min", rating: fourAndHalf, source: mustWatchMoviesimages[0].src, id: mustWatchMoviesimages[0].id},
         {length: "1h 30min", rating: fourStars, source: mustWatchMoviesimages[1].src, id: mustWatchMoviesimages[1].id},
@@ -30,7 +30,7 @@ export default function MustWatch() {
       ));
   return (
     <div>
-    <HomeMoviesAndShowsTitle title="Must-Watch Movies" home={false} fontSizeType="type3" lineHeightType="type3"/>  
+    <HomeMoviesAndShowsTitle title={`Must-Watch ${text} Movies`} home={false} fontSizeType="type3" lineHeightType="type3"/>  
     <CardSlider cards={cards4} slidesToShow={4} page="moviesAndShows" sec="movies" top="type2" right={false} />
 
     </div>

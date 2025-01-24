@@ -4,7 +4,7 @@ import { NewReleasedShowsImages } from "../../Data/data";
 import MovieShowCard from "../Cards/MovieShowCard/MovieShowCard";
 import HomeMoviesAndShowsTitle from "../SharedTitlesAndParagraph/HomeMoviesAndShows/HomeMoviesAndShowsTitle";
 
-export default function NewReleasedShows() {
+export default function NewReleasedShows({text}) {
   const cards3Data = [
     {
       length: "12h 32min",
@@ -48,7 +48,7 @@ export default function NewReleasedShows() {
   return (
     <div className="moviesMarginZA">
       <HomeMoviesAndShowsTitle
-        title="New Releases Shows"
+        title={`New Releases ${text} Shows`}
         home={false}
         fontSizeType="type3"
         lineHeightType="type3"

@@ -1,4 +1,5 @@
 import  { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 import ShowsSection from "../../Components/ShowsSection/ShowsSection";
 import MoviesSection from "../../Components/MoviesSection/MoviesSection";
 import "./MoviesAndShows.css";
@@ -13,16 +14,14 @@ export default function MoviesAndShows() {
     const handleResize = () => {
       setIsSmallScreen(window.innerWidth <= 576);
     };
-
-    // Initial check
     handleResize();
-
-    // Add event listener for resize
     window.addEventListener("resize", handleResize);
-
-    // Cleanup event listener on unmount
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
+   const { text } = useParams();
+   
+
 
   return (
     <>
@@ -58,8 +57,8 @@ export default function MoviesAndShows() {
         <div>
           {!isSmallScreen && (
             <>
-              <MoviesSection />
-              <ShowsSection />
+              <MoviesSection text={text} />
+              <ShowsSection text={text} />
             </>
           )}
 

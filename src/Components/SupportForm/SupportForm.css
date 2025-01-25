@@ -261,16 +261,27 @@
     width: 100%;
   }
 }
-
 @media (max-width: 768px) {
   .CheckBoxArea {
     margin-bottom: 20px;
   }
-  .container {
-    max-width: 100%;
+}
+@media (min-width: 768px) {
+  .CheckBoxArea {
+    margin-bottom: 20px;
+  }
+  .container,
+  .container-md,
+  .container-sm {
+    max-width: 100% !important;
   }
 }
-
+@media (min-width: 576px) {
+  .container,
+  .container-sm {
+    max-width: 100% !important;
+  }
+}
 @media (max-width: 576px) {
   .SupportForm {
     width: 100%;

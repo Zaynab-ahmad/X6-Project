@@ -12,6 +12,7 @@ import {
 } from "../../Data/data";
 
 export default function OurGenres({movies, text}) {
+  const defaultText = "";
   const cardsData = [
     { text: "Action", imagesArray: ActionMovies.slice(0, 4) },
     { text: "Adventure", imagesArray: AdventureMovies.slice(0, 4) },
@@ -32,7 +33,7 @@ export default function OurGenres({movies, text}) {
   return (
     <div className="moviesMarginZA">
       <HomeMoviesAndShowsTitle
-        title={`Our ${text} Genres`}
+         title={`Our ${text ?? defaultText} Genres`}
         home={false}
         fontSizeType="type3"
         lineHeightType="type3"

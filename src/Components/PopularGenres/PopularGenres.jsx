@@ -12,6 +12,7 @@ import HomeMoviesAndShowsTitle from "../SharedTitlesAndParagraph/HomeMoviesAndSh
 
 
 export default function PopularGenres({sho, text}) {
+  const defaultText = "";
   const cardsDataMA = [
     { text: "Action", imagesArray: sho ? ActionMovies.slice(4, 8) : ActionMovies.slice(8, 12) }  ,
     { text: "Adventure", imagesArray: [...AdventureMovies.slice(0, 2), ...AdventureMovies.slice(-2)] },
@@ -32,7 +33,7 @@ export default function PopularGenres({sho, text}) {
     <div className="moviesMarginZA">
     <div className="MA-pop-Mo">
       <HomeMoviesAndShowsTitle
-          title={`Popular Top 10 In ${text} Geners`}
+          title={`Popular Top 10 In ${text ?? defaultText} Geners`}
           home={false}
           fontSizeType="type3"
           lineHeightType="type3"

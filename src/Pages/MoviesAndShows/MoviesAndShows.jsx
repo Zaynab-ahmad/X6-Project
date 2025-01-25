@@ -1,4 +1,4 @@
-import  { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import ShowsSection from "../../Components/ShowsSection/ShowsSection";
 import MoviesSection from "../../Components/MoviesSection/MoviesSection";
@@ -19,15 +19,11 @@ export default function MoviesAndShows() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-   const { text } = useParams();
-   
-
+  const { text } = useParams();
 
   return (
     <>
-
       <SliderHero />
-
       <div>
         {/* Toggle Buttons for Small Screens */}
         {isSmallScreen && (
@@ -63,8 +59,12 @@ export default function MoviesAndShows() {
           )}
 
           {/* Display One Section for Small Screens */}
-          {isSmallScreen && activeSection === "movies" && <MoviesSection />}
-          {isSmallScreen && activeSection === "shows" && <ShowsSection />}
+          {isSmallScreen && activeSection === "movies" && (
+            <MoviesSection text={text} />
+          )}
+          {isSmallScreen && activeSection === "shows" && (
+            <ShowsSection text={text} />
+          )}
         </div>
       </div>
     </>

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import KantaraCast1 from "../../assets/Imgs/MoviesPageOpen/KantaraCast1.png";
 import KantaraCast2 from "../../assets/Imgs/MoviesPageOpen/KantaraCast2.png";
 import KantaraCast3 from "../../assets/Imgs/MoviesPageOpen/KantaraCast3.png";
@@ -172,18 +173,30 @@ import './MoviesPageCast.css'
 import CastSlider from '../Sliders/CastSlider/CastSlider'
 import { MoviesCast } from '../../Data/data'
 import { ShowCast } from '../../Data/data'
+=======
+import "./MoviesPageCast.css";
+import CastSlider from "../Sliders/CastSlider/CastSlider";
+import { MoviesCast } from "../../Data/data";
+import { ShowCast } from "../../Data/data";
+import ScrollAnimation from "../ScrollAnimation/ScrollAnimation";
+>>>>>>> f5913079834c0c3ad77d28cdf5007d41b2afa335
 
 export default function MoviesPageCast({ genre }) {
   const castData = genre === "movies" ? MoviesCast : ShowCast;
 
   return (
-    <div className='moviesPageDes '>
-      <h3 className='castTit'>
-        Cast
-      </h3>
-      <CastSlider cast={castData} />
-
+    <div className="moviesPageDes ">
+      <ScrollAnimation>
+        <h3 className="castTit">Cast</h3>
+      </ScrollAnimation>
+      <ScrollAnimation>
+        <CastSlider cast={castData} />
+      </ScrollAnimation>
     </div>
+<<<<<<< HEAD
   )
 >>>>>>> ea3609b916cdd728a040950d3dd2f7e23a0ec515
+=======
+  );
+>>>>>>> f5913079834c0c3ad77d28cdf5007d41b2afa335
 }

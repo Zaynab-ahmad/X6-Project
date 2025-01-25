@@ -96,6 +96,7 @@
   border: solid 3px var(--black-shade12) !important;
   border-radius: 6px;
   transition: 0.3s ease-in-out;
+  width: 48px;
 }
 
 .barsBtn.open {
@@ -104,7 +105,7 @@
   border-bottom: none !important;
   border-radius: 6px;
   transition: 0.3s ease-in-out;
-  width: 150px;
+  
 }
 
 .barsBtn:hover {
@@ -125,6 +126,7 @@
   min-width: 150px;
   border: solid 3px var(--black-shade12) !important;
   border-top: none !important;
+  display: none;
 }
 
 .dropdownitem {
@@ -202,6 +204,9 @@
   .barsBtn .active {
     display: block;
   }
+  .dropdownmenu{
+    display: block;
+  }
 }
 
 @media (max-width: 576px) {
@@ -217,6 +222,6 @@
 
   .dropdownmenu {
     right: 16px;
-    top: 85px;
+    top: 90px;
   }
 }

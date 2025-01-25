@@ -3,7 +3,7 @@ import ACCO from "../FAQ_ACCO/ACCO";
 import HomeParagraph from "../SharedTitlesAndParagraph/HomeParagraph/HomeParagraph";
 import Button from "../Buttons/Button";
 import HomeMoviesAndShowsTitle from "../SharedTitlesAndParagraph/HomeMoviesAndShows/HomeMoviesAndShowsTitle";
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import { useState, useEffect } from "react";
 import ScrollAnimation from "../ScrollAnimation/ScrollAnimation";
 

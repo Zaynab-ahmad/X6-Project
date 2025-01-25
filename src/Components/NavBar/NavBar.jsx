@@ -14,7 +14,7 @@ export default function NavBar() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
-  const location = useLocation(); // To detect route changes
+  const location = useLocation(); 
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
@@ -30,7 +30,7 @@ export default function NavBar() {
     setScrolled(window.scrollY > 50);
   };
 
-  // Update active link on route change
+
   useEffect(() => {
     const pathToActiveLinkMap = {
       "/": "Home",

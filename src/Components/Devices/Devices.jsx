@@ -1,6 +1,5 @@
 import DevicesCard from "../Cards/DevicesCard/DevicesCard";
 import "./Devices.css";
-import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import icon1 from "./../../assets/Icons/smartphone.svg";
@@ -13,7 +12,6 @@ import HomeMoviesAndShowsTitle from "../SharedTitlesAndParagraph/HomeMoviesAndSh
 import HomeParagraph from "../SharedTitlesAndParagraph/HomeParagraph/HomeParagraph";
 
 export default function Devices() {
-  // Array of devices with icons and titles
   const devices = [
     { icon: icon1, title: "Smartphones" },
     { icon: icon2, title: "Tablet" },

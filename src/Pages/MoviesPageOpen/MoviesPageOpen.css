@@ -1,69 +1,67 @@
 .bento-grid {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 20px;
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .bentoItem {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .bentoItem.episodes {
-    grid-column: span 8;
-    grid-row: 1;
-   
+  grid-column: span 8;
+  grid-row: 1;
 }
 
 .bentoItem.description {
-    grid-column: span 8;
-    
+  grid-column: span 8;
 }
 
 .bentoItem.info {
-    grid-column: span 4;
-    grid-row: 1 / span 6;
-    justify-self: start;
+  grid-column: span 4;
+  grid-row: 1 / span 6;
+  justify-self: start;
 }
 
 .bentoItem.cast {
-    grid-column: span 8;
+  grid-column: span 8;
 }
 
 .bentoItem.reviews {
-    grid-column: span 8;
+  grid-column: span 8;
 }
 
 @media (max-width: 992px) {
-    .bento-grid {
-        display: block;
-    }
+  .bento-grid {
+    display: block;
+  }
 
-    .bentoItem {
-        display: block;
-        width: 100%;
-        margin-bottom: 20px;
-    }
+  .bentoItem {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+  }
 
-    .bentoItem.info {
-        order: 2;
-    }
+  .bentoItem.info {
+    order: 2;
+  }
 
-    .bentoItem.episodes {
-        order: 1;
-    }
+  .bentoItem.episodes {
+    order: 1;
+  }
 
-    .bentoItem.description {
-        order: 3;
-    }
+  .bentoItem.description {
+    order: 3;
+  }
 
-    .bentoItem.cast {
-        order: 4;
-    }
+  .bentoItem.cast {
+    order: 4;
+  }
 
-    .bentoItem.reviews {
-        order: 5;
-    }
+  .bentoItem.reviews {
+    order: 5;
+  }
 }

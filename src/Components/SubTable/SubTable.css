@@ -1,33 +1,38 @@
-  .plans-h2{
-      font-size: 48px ; 
-      font-weight: 700;
-      line-height: 72px;
-      color: rgba(255, 255, 255, 1);
+.plans-h2 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 72px;
+  color: white;
+}
+.plans-para {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: var(--primary-color-gray);
+  margin-bottom: 80px;
+  width: 82%;
+}
+@media (max-width: 1440px) {
+  .plans-h2 {
+    font-size: 38px;
+    line-height: 57px;
   }
-  .plans-para{
-    font-size: 18px;
-    font-weight: 400;
-    color: gray;
-    margin-bottom: 80px;
-  }
-  @media (max-width: 1440px) {
-    .plans-h2{
-      font-size: 38px ; 
-      line-height: 57px;
-  }
-  .plans-para{
+  .plans-para {
     font-size: 16px;
+    line-height: 24px;
     margin-bottom: 60px;
+    width: 89%;
   }
+}
+@media (max-width: 576px) {
+  .plans-h2 {
+    font-size: 24px;
+    line-height: 36px;
   }
-  @media (max-width: 576px) {
-    .plans-h2{
-      font-size: 24px ; 
-      line-height: 36px;
-  }
-  .plans-para{
+  .plans-para {
     font-size: 14px;
+    line-height: 21px;
     margin-bottom: 40px;
+    width: 100%;
   }
-  }
-  
+}

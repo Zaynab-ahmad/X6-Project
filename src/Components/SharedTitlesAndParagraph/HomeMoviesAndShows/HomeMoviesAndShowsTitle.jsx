@@ -3,7 +3,7 @@ import "./HomeMoviesAndShowsTitle.css";
 
 export default function HomeMoviesAndShowsTitle({
   title,
-  titlePadding = "else", 
+  titlePadding = "else",
   fontSizeType,
   lineHeightType,
 }) {
@@ -13,7 +13,6 @@ export default function HomeMoviesAndShowsTitle({
     type3: { lg: "38px", md: "28px", sm: "24px" },
     type4: { lg: "38px", md: "28px", sm: "20px" },
     type5: { lg: "48px", md: "38px", sm: "28px" },
-
   };
 
   const lineHeights = {
@@ -22,7 +21,6 @@ export default function HomeMoviesAndShowsTitle({
     type3: { lg: "57px", md: "42px", sm: "36px" },
     type4: { lg: "57px", md: "42px", sm: "30px" },
     type5: { lg: "72px", md: "57px", sm: "42px" },
-
   };
 
   const paddingType = {
@@ -56,16 +54,20 @@ export default function HomeMoviesAndShowsTitle({
   };
 
   useEffect(() => {
-    updateStyles(); // Set initial values
-    window.addEventListener("resize", updateStyles); // Update on resize
+    updateStyles();
+    window.addEventListener("resize", updateStyles);
 
-    // Cleanup the event listener on unmount
     return () => window.removeEventListener("resize", updateStyles);
-  }, [fontSizeType, lineHeightType, titlePadding]); // Re-run when dependencies change
-
+  }, [fontSizeType, lineHeightType, titlePadding]);
   return (
     <div className="homeTitleZA">
-      <h2 style={{ fontSize: fontSize, lineHeight: lineHeight, paddingBottom: padding }}>
+      <h2
+        style={{
+          fontSize: fontSize,
+          lineHeight: lineHeight,
+          paddingBottom: padding,
+        }}
+      >
         {title}
       </h2>
     </div>

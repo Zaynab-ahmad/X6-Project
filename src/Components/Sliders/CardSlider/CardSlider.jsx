@@ -6,7 +6,6 @@ import "./CardSlider.css";
 import RightArrow from "../../../assets/Icons/rightarrow.svg";
 import LeftArrow from "../../../assets/Icons/leftarrow.svg";
 
-// Custom previous arrow component
 function PrevArrow({ onClick }) {
   return (
     <div className="customArrow" onClick={onClick}>
@@ -15,7 +14,6 @@ function PrevArrow({ onClick }) {
   );
 }
 
-// Custom next arrow component
 function NextArrow({ onClick }) {
   return (
     <div className="customArrow" onClick={onClick}>

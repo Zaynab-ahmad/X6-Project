@@ -195,6 +195,8 @@ import ShowCast6 from '../assets/Imgs/ShowsPageOpen/StrangerThingsCast6.png'
 import ShowCast7 from '../assets/Imgs/ShowsPageOpen/StrangerThingsCast7.png'
 import ShowCast8 from '../assets/Imgs/ShowsPageOpen/StrangerThingsCast8.png'
 
+import heroBack from '../assets/Imgs/showsAndMoviesHero.webp'
+
 
 export const Trendingimages = [
   { id: 1, src: trending1, coverSrc: TrendingMovies1cover, alt: "Trending Image 1", title: "Morbius", description: "Dr. Michael Morbius attempts a desperate gamble that could cure him of his rare blood disease, but when his experiment goes awry, he becomes something…", videoLink: "https://www.youtube.com/watch?v=16K6BDTn9iI"},
@@ -221,7 +223,7 @@ export const ActionMovies = [
   { id: 16, src: Action7, coverSrc: Action7Cover, alt: "The Foreigner", title: "The Foreigner", description: "Quan is a humble London businessman whose long-buried past erupts in a revenge-fueled vendetta when the only person left for him to love -- his teenage daughter -- dies in a senseless act of politically motivated terrorism.", videoLink: "https://www.youtube.com/watch?v=16K6BDTn9iI"},
   { id: 17, src: Action8, coverSrc: Action8Cover, alt: "Iron Man", title: "Iron Man", description: "After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight evil.", videoLink: "https://www.youtube.com/watch?v=16K6BDTn9iI" },
   { id: 18, src: Action9, coverSrc:Action9Cover, alt: "WandaVision", title: "WandaVision", description: "Vision and Wanda live a normal life in Westview and conceal their superpowers.", videoLink: "https://www.youtube.com/watch?v=16K6BDTn9iI"},
-  { id: 19, src: Action10, coverSrc:Action10Cover, alt: "Action Movie 10", title: "The Avengers", description: "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving", videoLink: "https://www.youtube.com/watch?v=16K6BDTn9iI"},
+  { id: 19, src: Action10, coverSrc:heroBack, alt: "Action Movie 10", title: "The Avengers", description: "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving", videoLink: "https://www.youtube.com/watch?v=16K6BDTn9iI"},
   { id: 20, src: Action11, coverSrc:Action11, alt: "Action Movie 11", title: "Arrow", description: "Spoiled billionaire playboy Oliver Queen is missing and presumed dead when his yacht is lost at sea. He returns five years later a changed man.", videoLink: "https://www.youtube.com/watch?v=16K6BDTn9iI"},
   { id: 21, src: Action12, coverSrc:TrendingShow1cover, alt: "Action Movie 12", title: "Stranger Things", description: "When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl.", videoLink: "https://www.youtube.com/watch?v=16K6BDTn9iI"}
   ];

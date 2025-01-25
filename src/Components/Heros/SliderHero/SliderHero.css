@@ -30,7 +30,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: coner;
   object-position: center;
   z-index: 0;
   border-radius: 12px;
@@ -42,7 +42,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to top, #141414 0%, #14141400 100%);
+  background: linear-gradient(to top, #141414 4%, #14141400 100%);
   z-index: 2;
 }
 
@@ -119,7 +119,7 @@
 
 .heroCustomDots {
   position: absolute;
-  bottom: 50px;
+  bottom: 75px;
   left: 45%;
   display: flex;
   justify-content: center;
@@ -149,6 +149,7 @@
   justify-content: center;
   width: fit-content;
 }
+
 @media (max-width: 1440px) {
   .sliderHeroZA {
     padding-top: 138px;
@@ -173,9 +174,11 @@
   .rightHeroArrowZA {
     right: 45px;
   }
+  .heroCustomDots {
+    bottom: 50px;
+  }
 }
 @media (max-width: 992px) {
-  
   .slick-slider {
     height: 100%;
   }

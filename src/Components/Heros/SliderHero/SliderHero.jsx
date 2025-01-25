@@ -9,10 +9,8 @@ import Volume from "../../../assets/Icons/volume.svg";
 import Slider from "react-slick";
 import RightArrow from "../../../assets/Icons/rightarrow.svg";
 import LeftArrow from "../../../assets/Icons/leftarrow.svg";
-import SliderHeroImg1 from "../../../assets/Imgs/showsAndMoviesHero.webp";
-import SliderHeroImg2 from "../../../assets/Imgs/MoviesPageOpen/Kantara.webp";
-import SliderHeroImg3 from "../../../assets/Imgs/drama2cover.webp";
-import SliderHeroImg4 from "../../../assets/Imgs/ShowsPageOpen/StrangerThings.webp";
+import { AllMovies } from "../../../Data/data";
+import { useNavigate } from "react-router-dom";
 
 function PrevArrow({ onClick }) {
   return (
@@ -31,7 +29,17 @@ function NextArrow({ onClick }) {
 }
 
 export default function SliderHero() {
-  // Slider settings for "react-slick"
+  const navigate = useNavigate();
+
+  const filteredSlides = AllMovies.filter((movie) =>
+    [19, 29, 55, 61].includes(movie.id)
+  );
+
+  const handleClick = (genre, id) => {
+    navigate(`/pageopen/${genre}/${id}`);
+  };
+
+  // Slider settings
   const settings = {
     infinite: true,
     speed: 500,
@@ -43,48 +51,20 @@ export default function SliderHero() {
       <div style={{ marginTop: "20px" }}>
         <ul className="heroCustomDots">{dots}</ul>
       </div>
-    ), // Customize dots container
+    ),
     customPaging: (i) => <div className="dot"></div>,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
   };
 
-  // Slides array
-  const slides = [
-    {
-      src: SliderHeroImg1,
-      title: "Avengers : Endgame",
-      description:
-        "With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos's actions and undo the chaos to the universe, no matter what consequences may be in store, and no matter who they face... Avenge the fallen.",
-    },
-    {
-      src: SliderHeroImg2,
-      title: "Kantara: An Epic Adventure",
-      description:
-        "When greed paves the way for betrayal, scheming and murder, a young tribal reluctantly dons the traditions of his ancestors to seek justice.",
-    },
-    {
-      src: SliderHeroImg3,
-      title: "Joker",
-      description:
-        "Forever alone in a crowd, failed comedian Arthur Fleck seeks connection as he walks the streets of Gotham City.",
-    },
-    {
-      src: SliderHeroImg4,
-      title: "Stranger Things",
-      description:
-        "When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl.",
-    },
-  ];
-
   return (
     <div className="sliderHeroZA xContainer">
       <Slider {...settings}>
-        {slides.map((slide, index) => (
+        {filteredSlides.map((slide, index) => (
           <div key={index} className="heroSliderItemZA">
             <img
               className="herobackgroundZA"
-              src={slide.src}
+              src={slide.coverSrc}
               alt={slide.title}
             />
             <div className="sliderHeroOverlay"></div>
@@ -104,7 +84,7 @@ export default function SliderHero() {
                 <Button
                   text={
                     <>
-                      <img className="playImg" src={Play} alt="play"  />
+                      <img className="playImg" src={Play} alt="play" />
                       Play Now
                     </>
                   }
@@ -112,8 +92,8 @@ export default function SliderHero() {
                   isSmallerBorderRaduis={false}
                   isBlack={false}
                   paddingType="type4"
+                  onClick={() => handleClick("movies", slide.id)} 
                 />
-
                 <div className="SliderHeroIconsGroupzA d-flex">
                   <button className="sliderHeroIconsZA">
                     <img src={Plus} alt="Add to Watchlist" />
@@ -133,3 +113,4 @@ export default function SliderHero() {
     </div>
   );
 }
+

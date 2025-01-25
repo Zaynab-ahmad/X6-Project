@@ -26,17 +26,18 @@ export default function MoviesPageOpen() {
         description={cover.description}
       />
       <div className="xContainer customMargin">
-        <div className="bento-grid">         
-            <div className="bentoItem episodes" style={{display: genre==="movies"? "none": "block"}} >  
+        <div className="bento-grid">     
+              
+            <div className="bentoItem episodes" style={{display: genre==="movies"? "none": "block"}}>  
               <Episods/> 
             </div>
           
-          <div className="bentoItem description">
+          <div className="bentoItem description"   style={{ gridRow: genre === "movies" ? 1 : 2 }}>
             <MoviesPageDes des={cover.description} />
           </div>
 
           <div className="bentoItem info">
-            <MoviesPageInfo />
+            <MoviesPageInfo genre={genre}/>
           </div>
 
           {/* Cast Section */}

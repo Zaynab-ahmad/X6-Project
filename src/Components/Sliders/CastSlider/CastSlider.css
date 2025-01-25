@@ -23,7 +23,7 @@
   aspect-ratio: 1 / 1.07;
   height: auto;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 12px;
 }
 .castControlsWrapper {
   display: flex;
@@ -41,6 +41,7 @@
   .castImg {
     width: 115%;
     aspect-ratio: 1 / 1.02;
+    border-radius: 10px;
   }
   .castSliderWrapper {
     padding-top: 30px;

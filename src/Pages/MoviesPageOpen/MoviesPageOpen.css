@@ -19,7 +19,7 @@
 
 .bentoItem.description {
     grid-column: span 8;
-    grid-row: 2;
+    
 }
 
 .bentoItem.info {

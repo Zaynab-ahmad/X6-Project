@@ -31,23 +31,33 @@ export default function SupportForm() {
   };
 
   const handleSendMessage = () => {
-    if (!formData.isChecked) {
+    // Check if any required field is empty
+    if (
+      !formData.firstName.trim() ||
+      !formData.lastName.trim() ||
+      !formData.email.trim() ||
+      !formData.phone.trim() ||
+      !formData.isChecked
+    ) {
       setAlert({
         visible: true,
-        message: "You have to enter valid inputs and agree with the Terms of Use and Privacy Policy",
+        message: "Please fill out all required fields and agree to the terms.",
         type: "alert-error",
       });
-      setTimeout(() => setAlert({ visible: false, message: "", type: "" }), 3000);
-      return; 
+      setTimeout(
+        () => setAlert({ visible: false, message: "", type: "" }),
+        3000
+      );
+      return;
     }
 
+    // Success alert
     setAlert({
       visible: true,
       message: "Thank you! Your message has been sent.",
       type: "alert-success",
     });
     setTimeout(() => setAlert({ visible: false, message: "", type: "" }), 3000);
-
 
     // Reset form data
     setFormData({
@@ -62,12 +72,6 @@ export default function SupportForm() {
 
   return (
     <Container className="SupportForm">
-      {/* Alert Box */}
-      {alert.visible && (
-        <div className={`custom-alert ${alert.type}`}>
-          {alert.message}
-        </div>
-      )}
 
       <Row>
         <Col md={6} sm={12}>
@@ -108,7 +112,7 @@ export default function SupportForm() {
               value={formData.email}
               onChange={handleInputChange}
               placeholder="Enter your Email"
-            />
+              />
           </div>
         </Col>
         <Col md={6} sm={12}>
@@ -186,8 +190,11 @@ export default function SupportForm() {
             paddingType="type2"
             isSmallerBorderRadius={true}
             isBlack={false}
-          />
+            />
         </Col>
+      {alert.visible && (
+        <div className={`custom-alert ${alert.type}`}>{alert.message}</div>
+      )}
       </Row>
     </Container>
   );

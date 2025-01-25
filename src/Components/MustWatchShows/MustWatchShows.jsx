@@ -8,6 +8,7 @@ import fourStars from "../../assets/Icons/fourStars.png";
 import HomeMoviesAndShowsTitle from "../SharedTitlesAndParagraph/HomeMoviesAndShows/HomeMoviesAndShowsTitle";
 
 export default function MustWatchShows({text}) {
+   const defaultText = "";
   const cards4Data = [
     {
       length: "7h 40min",
@@ -50,7 +51,7 @@ export default function MustWatchShows({text}) {
   return (
     <div>
       <HomeMoviesAndShowsTitle
-        title={`Must-Watch ${text} Shows`}
+        title={`Must-Watch ${text ?? defaultText} Shows`}
         home={false}
         fontSizeType="type3"
         lineHeightType="type3"

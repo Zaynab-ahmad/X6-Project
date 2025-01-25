@@ -30,12 +30,10 @@
 
 .bentoItem.cast {
     grid-column: span 8;
-    grid-row: 3;
 }
 
 .bentoItem.reviews {
     grid-column: span 8;
-    grid-row: 4;
 }
 
 @media (max-width: 992px) {

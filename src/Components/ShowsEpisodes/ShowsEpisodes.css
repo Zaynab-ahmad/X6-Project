@@ -177,14 +177,16 @@
   .showsEpisodesZA {
     padding-top: 20px;
     padding-bottom: 20px;
+    border:none;
   }
 
   .episodesNumZA {
     padding-left: 18px;
+    padding-right: 0;
   }
 
   .episodesImgZA {
-    width: 192px; /*192 is better than 182 to for match figma*/
+    width: 182px; 
   }
 
   .episodesInfoZA {
@@ -193,7 +195,7 @@
   }
 
   .epHZ {
-    font-size: 17px; /*17 to match figma*/
+    font-size: 16px; 
     line-height: 24px;
   }
 

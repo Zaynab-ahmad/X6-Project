@@ -33,12 +33,12 @@ export default function MoviesPageInfo({ genre }) {
   };
 
   return (
-    <div className="moviesInfoSA">
+    <div className="moviesInfoSA openpageDevs">
       <ScrollAnimation>
         <div className="infoContentSA">
           <div className="year">
             <img className="iconClender" src={clender} alt="Calendar Icon" />
-            <h6 className="titleSA">Released Year</h6>
+            <h6 className="openpageTitle marginZero">Released Year</h6>
           </div>
           <p className="pargraphSA">2022</p>
         </div>
@@ -48,7 +48,7 @@ export default function MoviesPageInfo({ genre }) {
         <div className="infoLanguageSA">
           <div className="year">
             <img className="iconClender" src={languag} alt="Language Icon" />
-            <h6 className="titleSA">Available Languages</h6>
+            <h6 className="openpageTitle marginZero">Available Languages</h6>
           </div>
           <div className="borderSA">
             {languages.map((lang, index) => (
@@ -64,7 +64,7 @@ export default function MoviesPageInfo({ genre }) {
         <div className="ratingSA">
           <div className="year">
             <img className="iconClender" src={rating} alt="Rating Icon" />
-            <h6 className="titleSA">Ratings</h6>
+            <h6 className="openpageTitle marginZero">Ratings</h6>
           </div>
           <div className="borderRating">
             {ratings.map((rate, index) => (
@@ -87,7 +87,7 @@ export default function MoviesPageInfo({ genre }) {
         <div className="gernesSA">
           <div className="year">
             <img className="iconClender" src={gerne} alt="Genre Icon" />
-            <h6 className="titleSA">Gernes</h6>
+            <h6 className="openpageTitle marginZero">Gernes</h6>
           </div>
           <div
             className="borderSA"
@@ -120,7 +120,7 @@ export default function MoviesPageInfo({ genre }) {
 
       <ScrollAnimation>
         <div className="director">
-          <h6 className="titleSA year">Director</h6>
+          <h6 className="openpageTitle marginZero year">Director</h6>
           <div className="bordLast">
             <img
               className="photoSA"
@@ -137,7 +137,7 @@ export default function MoviesPageInfo({ genre }) {
 
       <ScrollAnimation>
         <div className="music">
-          <h6 className="titleSA year">Music</h6>
+          <h6 className="openpageTitle marginZero year">Music</h6>
           <div className="bordLast">
             <img
               className="photoSA"

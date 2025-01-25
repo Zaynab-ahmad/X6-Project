@@ -3,9 +3,9 @@ import "./MoviesPageDes.css";
 
 export default function MoviesPageDes({ des }) {
   return (
-    <div className="moviesPageDes">
+    <div className="moviesPageDes openpageDevs">
       <ScrollAnimation>
-        <h3 className="descriptionTit">Description</h3>
+        <h3 className="openpageTitle">Description</h3>
       </ScrollAnimation>
       <ScrollAnimation>
         <p className="descriptionParag">{des}</p>

@@ -103,4 +103,10 @@
     font-size: 14px;
     line-height: 21px;
   }
+  .showsEpisodesZA {
+    background-color: var(--black-shade08);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
 }

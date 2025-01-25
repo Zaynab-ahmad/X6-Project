@@ -1,31 +1,19 @@
 .moviesPageDes {
-  background: var(--black-shade10);
-  border: 1px solid var(--black-shade15);
-  padding: 50px;
-  border-radius: 12px;
   gap: 14px;
 }
-.descriptionTit,
+
 .descriptionParag {
   font-size: 18px;
   line-height: 27px;
   font-weight: 500;
-}
-.descriptionTit {
-  color: var(--primary-color-gray);
-}
-.descriptionParag {
   color: white;
 }
 
 @media (max-width: 1440px) {
   .moviesPageDes {
-    padding: 40px;
-    border-radius: 10px;
     gap: 10px;
   }
 
-  .descriptionTit,
   .descriptionParag {
     font-size: 16px;
     line-height: 24px;
@@ -34,11 +22,9 @@
 
 @media (max-width: 576px) {
   .moviesPageDes {
-    padding: 24px;
     gap: 8px;
   }
 
-  .descriptionTit,
   .descriptionParag {
     font-size: 14px;
     line-height: 21px;

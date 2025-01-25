@@ -6,13 +6,13 @@ export default function Episods() {
     <div className="episodsSecZA">
       <h3 className="EpHeader">Seasons and Episodes</h3>
       <ScrollAnimation>
-        <ShowsChapter Season="1" epnum="9" />
+        <ShowsChapter Season="01" epnum="9" />
       </ScrollAnimation>
       <ScrollAnimation>
-        <ShowsChapter Season="2" epnum="5" />
+        <ShowsChapter Season="02" epnum="5" />
       </ScrollAnimation>
       <ScrollAnimation>
-        <ShowsChapter Season="3" epnum="7" />
+        <ShowsChapter Season="03" epnum="7" />
       </ScrollAnimation>
     </div>
   );

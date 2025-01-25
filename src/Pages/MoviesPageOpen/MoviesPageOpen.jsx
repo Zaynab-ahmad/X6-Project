@@ -41,12 +41,12 @@ export default function MoviesPageOpen() {
           </div>
 
           {/* Cast Section */}
-          <div className="bentoItem cast">
+          <div className="bentoItem cast" style={{ gridRow: genre === "movies" ? 2 : 3 }}>
             <MoviesPageCast genre = {genre}/>
           </div>
 
           {/* Reviews Section */}
-          <div className="bentoItem reviews">
+          <div className="bentoItem reviews" style={{ gridRow: genre === "movies" ? 3 : 4 }}>
             <MoviesPageRev />
           </div>
         </div>

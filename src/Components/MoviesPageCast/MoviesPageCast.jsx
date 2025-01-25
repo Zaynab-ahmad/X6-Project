@@ -8,9 +8,9 @@ export default function MoviesPageCast({ genre }) {
   const castData = genre === "movies" ? MoviesCast : ShowCast;
 
   return (
-    <div className="moviesPageDes ">
+    <div className="openpageDevs">
       <ScrollAnimation>
-        <h3 className="castTit">Cast</h3>
+        <h3 className="openpageTitle">Cast</h3>
       </ScrollAnimation>
       <ScrollAnimation>
         <CastSlider cast={castData} />

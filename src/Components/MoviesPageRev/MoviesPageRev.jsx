@@ -52,10 +52,10 @@ export default function MoviesPageRev() {
 
   return (
     <>
-      <div className="tayTotalCard">
+      <div className="tayTotalCard openpageDevs">
         <ScrollAnimation>
           <div className="tayTitleCard">
-            <h2 className="tayTitleCardh2">Reviews</h2>
+            <h2 className="openpageTitle">Reviews</h2>
             <div className="tayTitleCardbutton">
               <img className="spanButtonimg" src={plus} />{" "}
               <h6 className="spanButtonH6">Add Your Review</h6>

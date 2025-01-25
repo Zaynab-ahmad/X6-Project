@@ -1,9 +1,5 @@
 .moviesInfoSA {
-  padding: 50px;
   gap: 30px;
-  border-radius: 12px;
-  border: 1px solid var(--black-shade15);
-  background-color: var(--black-shade10);
 }
 
 .year {
@@ -14,22 +10,15 @@
   padding-bottom: 14px;
 }
 
-.titleSA {
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 27px;
-  margin: 0 !important;
-  color: var(--primary-color-gray);
-}
 .pargraphSA {
   font-size: 20px;
-  font-weight: 600; 
+  font-weight: 600;
   line-height: 30px;
   margin: 0 !important;
   color: white;
 }
 .pargraphBordeSA {
-font-size: 18px;
+  font-size: 18px;
   font-weight: 500;
   line-height: 27px;
   margin: 0 !important;
@@ -48,7 +37,7 @@ font-size: 18px;
   border-radius: 8px;
   border: 1px solid var(--black-shade15);
   background: var(--black-shade08);
-  }
+}
 .ratingSA,
 .infoLanguageSA,
 .gernesSA,
@@ -129,21 +118,15 @@ font-size: 18px;
   margin: 0 !important;
 }
 
-
 @media (max-width: 1440px) {
   .moviesInfoSA {
-    padding: 40px;
     gap: 24px;
-    border-radius: 10px;
   }
   .iconClender {
     width: 20px;
     height: 20px;
   }
-  .titleSA {
-    font-size: 16px;
-    line-height: 24px;
-  }
+
   .pargraphSA {
     font-size: 16px;
     line-height: 24px;
@@ -159,9 +142,9 @@ font-size: 18px;
   .borderStar {
     padding: 14px;
   }
-    .iconStars {
-      width: 94.82px;
-    }
+  .iconStars {
+    width: 94.82px;
+  }
   .pargraphNumber {
     font-size: 14px;
     line-height: 21px;
@@ -172,27 +155,19 @@ font-size: 18px;
   .bordLast {
     padding: 12px;
   }
- .paragraphEnd {
-  font-size: 16px;
+  .paragraphEnd {
+    font-size: 16px;
     line-height: 24px;
   }
-    .paragraphENdia{
-      font-size: 14px;
+  .paragraphENdia {
+    font-size: 14px;
     line-height: 21px;
   }
-  }
-
-
+}
 
 @media (max-width: 576px) {
   .moviesInfoSA {
-    padding: 24px;
     gap: 20px;
-    border-radius: 10px;
-  }
-  .titleSA {
-    font-size: 14px;
-    line-height: 21px;
   }
   .pargraphSA {
     font-size: 16px;
@@ -202,7 +177,7 @@ font-size: 18px;
     padding: 6px 12px;
     border-radius: 6px;
   }
-  .borderStar { 
+  .borderStar {
     padding: 12px;
   }
   .pargraphNumber {
@@ -212,5 +187,4 @@ font-size: 18px;
   .controlStarParagraph {
     gap: 2px;
   }
-
 }

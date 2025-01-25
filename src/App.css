@@ -7,7 +7,6 @@
   font-family: "Manrope", serif !important;
 }
 :root {
-
   --absolute-white: #ffffff;
   --absolute-black: #000000;
   --primary-color-red: #e50000;
@@ -31,37 +30,56 @@ body,
 }
 
 .xContainer {
-  padding-left:  8.4375%;
-  padding-right:  8.4375%;
+  padding-left: 8.4375%;
+  padding-right: 8.4375%;
 }
 
 .customMargin {
   margin-bottom: 150px;
 }
- .moviesMarginZA {
-   margin-bottom: 100px !important;
-
- }
+.moviesMarginZA {
+  margin-bottom: 100px !important;
+}
 .headingZA {
   padding-bottom: 80px;
 }
-
+.openpageTitle {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 500;
+  color: var(--primary-color-gray);
+}
+.marginZero {
+  margin: 0;
+}
+.openpageDevs {
+  padding: 50px;
+  border-radius: 12px;
+  background: var(--black-shade10);
+  border: 1px solid var(--black-shade15);
+}
 @media (max-width: 1440px) {
   .xContainer {
-    padding-left:  5.5556%;
-    padding-right:  5.5556%;
+    padding-left: 5.5556%;
+    padding-right: 5.5556%;
   }
-
   .customMargin {
     margin-bottom: 120px;
   }
   .moviesMarginZA {
     margin-bottom: 80px !important;
-
   }
-    .headingZA {
-      padding-bottom: 60px;
-    }
+  .headingZA {
+    padding-bottom: 60px;
+  }
+  .openpageTitle {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .openpageDevs {
+    padding: 40px;
+    border-radius: 10px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -73,12 +91,17 @@ body,
   .customMargin {
     margin-bottom: 80px;
   }
-    .moviesMarginZA {
-      margin-bottom: 50px !important;
-  
-    }
-    .headingZA {
-      padding-bottom: 40px;
-    }
-
+  .moviesMarginZA {
+    margin-bottom: 50px !important;
+  }
+  .headingZA {
+    padding-bottom: 40px;
+  }
+  .openpageTitle {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .openpageDevs {
+    padding: 24px;
+  }
 }

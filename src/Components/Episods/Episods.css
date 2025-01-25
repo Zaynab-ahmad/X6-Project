@@ -1,5 +1,6 @@
 .episodsSecZA {
   background-color: var(--black-shade10);
+  border: 1px solid var(--black-shade15);
   border-radius: 12px;
   padding: 40px 40px 20px 40px;
 }

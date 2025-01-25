@@ -1,7 +1,7 @@
 .castSliderWrapper {
   width: 100%;
   position: relative;
-  padding-top: 42.5px;
+  padding-top: 30px;
 }
 .castSliderItem {
   border-radius: 12px;
@@ -30,7 +30,7 @@
   justify-content: space-between;
   align-items: center;
   position: absolute;
-  top: -42.5px;
+  top: -25%;
   right: 0;
   width: fit-content;
   z-index: 10 !important;
@@ -44,16 +44,21 @@
     border-radius: 10px;
   }
   .castSliderWrapper {
-    padding-top: 30px;
+    padding-top: 20px;
   }
+}
+@media (max-width: 1200px) {
   .castControlsWrapper {
-    top: -30px;
+    top: -42px;
   }
 }
 @media (max-width: 992px) {
   .castImg {
     width: 100%;
     aspect-ratio: 1 / 1.02;
+  }
+  .castControlsWrapper {
+    top: -40px;
   }
 }
 @media (max-width: 576px) {
@@ -62,9 +67,9 @@
     aspect-ratio: 1 / 1.07;
   }
   .castSliderWrapper {
-    padding-top: 27.5px;
+    padding-top: 16px;
   }
   .castControlsWrapper {
-    top: -27.5px;
+    top: -35px;
   }
 }

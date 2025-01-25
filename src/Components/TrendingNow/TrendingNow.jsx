@@ -51,7 +51,7 @@ export default function TrendingNow({ text }) {
     />
   ));
   return (
-    <div className="moviesMarginZA">
+    <div id ="Trending" className="moviesMarginZA">
       <HomeMoviesAndShowsTitle
         title={`Trending ${text ?? defaultText} Now`}
         home={false}

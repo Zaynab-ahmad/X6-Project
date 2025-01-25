@@ -47,7 +47,7 @@ export default function NewReleases({ text }) {
     />
   ));
   return (
-    <div className="moviesMarginZA">
+    <div id="New-Release" className="moviesMarginZA">
       <HomeMoviesAndShowsTitle
         title={`New Releases ${text ?? defaultText}`}
         home={false}

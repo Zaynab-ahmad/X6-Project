@@ -47,7 +47,7 @@ export default function TrendingShows({text}) {
     />
   ));
   return (
-    <div className="moviesMarginZA">
+    <div id="Trending-Shows" className="moviesMarginZA">
       <HomeMoviesAndShowsTitle
         title={`Trending ${text ?? defaultText} Shows`}
         home={false}

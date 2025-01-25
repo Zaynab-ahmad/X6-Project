@@ -5,7 +5,7 @@ import "./SubTable.css";
 export default function SubTable() {
   return (
     <>
-      <div className="xContainer customMargin">
+      <div id ="Features" className="xContainer customMargin">
         <ScrollAnimation>
           <h2 className="plans-h2">
             Compare our plans and find the right one for you

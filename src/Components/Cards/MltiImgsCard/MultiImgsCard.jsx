@@ -25,7 +25,7 @@ export default function MultiImgsCard({
   const gapValue = badge ? "2.86%" : "1.82%";
 
   return (
-    <div className="multiImgsCardZA" onClick={handleCardClick}>
+    <div className={!badge? "multiImgsCardZA": "multiImgsCardwithBZA"} onClick={handleCardClick}>
       <div className="imageGalleryContainer">
         <div
           className="gradientOverlay"

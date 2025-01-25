@@ -34,6 +34,9 @@ export default function RevSlider({ CardsRev }) {
     slidesToScroll: 1,
     arrows: false,
     responsive: [{ breakpoint: 1200, settings: { slidesToShow: 1 } }],
+    afterChange: (current) => {
+      setCurrentSlide(current);
+    },
   };
 
   return (

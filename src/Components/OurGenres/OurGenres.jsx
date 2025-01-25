@@ -31,7 +31,7 @@ export default function OurGenres({movies, text}) {
     />
   ));
   return (
-    <div className="moviesMarginZA">
+    <div id="OurGenre" className="moviesMarginZA">
       <HomeMoviesAndShowsTitle
          title={`Our ${text ?? defaultText} Genres`}
         home={false}

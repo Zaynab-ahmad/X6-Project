@@ -1,4 +1,4 @@
-.multiImgsCardZA {
+.multiImgsCardZA, .multiImgsCardwithBZA {
   background-color: var(--black-shade10);
   border: 1px solid var(--black-shade15);
   padding: 30px;
@@ -110,6 +110,9 @@
   .multiImgsCardZA {
     padding: 24px;
   }
+  .multiImgsCardwithBZA {
+    padding: 30px;
+  }
 
   .multiImgsZA {
     border-radius: 4px;
@@ -161,7 +164,7 @@
 }
 
 @media (max-width: 576px) {
-  .multiImgsCardZA {
+  .multiImgsCardZA, .multiImgsCardwithBZA {
     padding: 20px;
   }
 

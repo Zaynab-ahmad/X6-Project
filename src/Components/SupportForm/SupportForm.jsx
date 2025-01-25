@@ -21,6 +21,8 @@ export default function SupportForm() {
   });
   const [alert, setAlert] = useState({ visible: false, message: "", type: "" });
 
+  const [selectedFlag, setSelectedFlag] = useState(flag1);
+
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -31,7 +33,6 @@ export default function SupportForm() {
   };
 
   const handleSendMessage = () => {
-    // Check if any required field is empty
     if (
       !formData.firstName.trim() ||
       !formData.lastName.trim() ||
@@ -51,7 +52,6 @@ export default function SupportForm() {
       return;
     }
 
-    // Success alert
     setAlert({
       visible: true,
       message: "Thank you! Your message has been sent.",
@@ -59,7 +59,6 @@ export default function SupportForm() {
     });
     setTimeout(() => setAlert({ visible: false, message: "", type: "" }), 3000);
 
-    // Reset form data
     setFormData({
       firstName: "",
       lastName: "",
@@ -70,9 +69,12 @@ export default function SupportForm() {
     });
   };
 
-  return (
-    <Container className="SupportForm">
+  const handleFlagSelect = (flag) => {
+    setSelectedFlag(flag); 
+  };
 
+  return (
+    <Container id="Contact-Us" className="SupportForm">
       <Row>
         <Col md={6} sm={12}>
           <div className="inputContainer bottom-margin">
@@ -112,7 +114,7 @@ export default function SupportForm() {
               value={formData.email}
               onChange={handleInputChange}
               placeholder="Enter your Email"
-              />
+            />
           </div>
         </Col>
         <Col md={6} sm={12}>
@@ -121,23 +123,23 @@ export default function SupportForm() {
             <div className="PhoneNumberContainer">
               <Dropdown>
                 <Dropdown.Toggle className="CountrySelector">
-                  <img src={flag1} alt="Flag" />
+                  <img src={selectedFlag} alt="Flag" />
                   <img src={DropdownIcon} alt="Dropdown Icon" />
                 </Dropdown.Toggle>
                 <Dropdown.Menu>
-                  <Dropdown.Item>
+                  <Dropdown.Item onClick={() => handleFlagSelect(flag1)}>
                     <img src={flag1} alt="India" /> India
                   </Dropdown.Item>
-                  <Dropdown.Item>
+                  <Dropdown.Item onClick={() => handleFlagSelect(flag2)}>
                     <img src={flag2} alt="Saudi Arabia" /> Saudi Arabia
                   </Dropdown.Item>
-                  <Dropdown.Item>
+                  <Dropdown.Item onClick={() => handleFlagSelect(flag3)}>
                     <img src={flag3} alt="USA" /> USA
                   </Dropdown.Item>
-                  <Dropdown.Item>
+                  <Dropdown.Item onClick={() => handleFlagSelect(flag4)}>
                     <img src={flag4} alt="Germany" /> Germany
                   </Dropdown.Item>
-                  <Dropdown.Item>
+                  <Dropdown.Item onClick={() => handleFlagSelect(flag5)}>
                     <img src={flag5} alt="France" /> France
                   </Dropdown.Item>
                 </Dropdown.Menu>
@@ -190,11 +192,11 @@ export default function SupportForm() {
             paddingType="type2"
             isSmallerBorderRadius={true}
             isBlack={false}
-            />
+          />
         </Col>
-      {alert.visible && (
-        <div className={`custom-alert ${alert.type}`}>{alert.message}</div>
-      )}
+        {alert.visible && (
+          <div className={`custom-alert ${alert.type}`}>{alert.message}</div>
+        )}
       </Row>
     </Container>
   );

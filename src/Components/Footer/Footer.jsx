@@ -5,6 +5,7 @@ import Facebook from "../../assets/Icons/facebook.svg";
 import Twitter from "../../assets/Icons/twitter.svg";
 import LinkedIn from "../../assets/Icons/linkedIn.svg";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 export default function Footer() {
   const [padding, setPadding] = useState("20px");
@@ -18,13 +19,8 @@ export default function Footer() {
       }
     };
 
-    // Set the initial padding
     updatePadding();
-
-    // Add a resize listener
     window.addEventListener("resize", updatePadding);
-
-    // Cleanup the listener on unmount
     return () => window.removeEventListener("resize", updatePadding);
   }, []);
   return (
@@ -36,56 +32,78 @@ export default function Footer() {
             <Link to="/" className="footerTitleZA">
               Home
             </Link>
-            <a href="#Categories" className="footerElementZA">
+            <HashLink to="/#Categories" className="footerElementZA">
               Categories
-            </a>
-            <a href="#Devices" className="footerElementZA">
+            </HashLink>
+            <HashLink to="/#Devices" className="footerElementZA">
               Devices
-            </a>
-            <a href="#Pricing" className="footerElementZA">
+            </HashLink>
+            <HashLink to="/#Pricing" className="footerElementZA">
               Pricing
-            </a>
-            <a href="#FAQ" className="footerElementZA">
+            </HashLink>
+            <HashLink to="/#FAQ" className="footerElementZA">
               FAQ
-            </a>
+            </HashLink>
           </Col>
-
-          {/* Movies Section */}
+          {/* movies Section */}
           <Col className="col-6 col-md-4 col-lg-2 d-flex flex-column">
             <Link to="/movies-and-shows" className="footerTitleZA">
               Movies
             </Link>
-            <a href="#" className="footerElementZA">
+            <HashLink
+              to="/movies-and-shows#OurGenre"
+              className="footerElementZA"
+            >
               Genres
-            </a>
-            <a href="#" className="footerElementZA">
+            </HashLink>
+            <HashLink
+              to="/movies-and-shows#Trending"
+              className="footerElementZA"
+            >
               Trending
-            </a>
-            <a href="#" className="footerElementZA">
+            </HashLink>
+            <HashLink
+              to="/movies-and-shows#New-Release"
+              className="footerElementZA"
+            >
               New Release
-            </a>
-            <a href="#" className="footerElementZA">
+            </HashLink>
+            <HashLink
+              to="/movies-and-shows#Popular"
+              className="footerElementZA"
+            >
               Popular
-            </a>
+            </HashLink>
           </Col>
-
           {/* Shows Section */}
           <Col className="col-6 col-md-4 col-lg-2 d-flex flex-column">
             <Link to="/movies-and-shows" className="footerTitleZA">
               Shows
             </Link>
-            <a href="#" className="footerElementZA">
+            <HashLink
+              to="/movies-and-shows#OurGenre"
+              className="footerElementZA"
+            >
               Genres
-            </a>
-            <a href="#" className="footerElementZA">
+            </HashLink>
+            <HashLink
+              to="/movies-and-shows#Trending-Shows"
+              className="footerElementZA"
+            >
               Trending
-            </a>
-            <a href="#" className="footerElementZA">
+            </HashLink>
+            <HashLink
+              to="/movies-and-shows#New-Release-Shows"
+              className="footerElementZA"
+            >
               New Release
-            </a>
-            <a href="#" className="footerElementZA">
+            </HashLink>
+            <HashLink
+              to="/movies-and-shows#Popular"
+              className="footerElementZA"
+            >
               Popular
-            </a>
+            </HashLink>
           </Col>
 
           {/* Support Section */}
@@ -93,9 +111,9 @@ export default function Footer() {
             <Link to="/support" className="footerTitleZA">
               Support
             </Link>
-            <a href="#" className="footerElementZA">
+            <HashLink to="/support#Contact-Us" className="footerElementZA">
               Contact Us
-            </a>
+            </HashLink>
           </Col>
 
           {/* Subscription Section */}
@@ -103,12 +121,12 @@ export default function Footer() {
             <Link to="/subscription" className="footerTitleZA">
               Subscription
             </Link>
-            <a href="#" className="footerElementZA">
+            <HashLink to="/subscription#Pricing" className="footerElementZA">
               Plans
-            </a>
-            <a href="#" className="footerElementZA">
+            </HashLink>
+            <HashLink to="/subscription#Features" className="footerElementZA">
               Features
-            </a>
+            </HashLink>
           </Col>
 
           {/* Connect With Us Section */}

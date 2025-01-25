@@ -30,7 +30,7 @@ export default function PopularGenres({sho, text}) {
     />
   ));
   return (
-    <div className="moviesMarginZA">
+    <div id ="Popular" className="moviesMarginZA">
     <div className="MA-pop-Mo">
       <HomeMoviesAndShowsTitle
           title={`Popular Top 10 In ${text ?? defaultText} Geners`}

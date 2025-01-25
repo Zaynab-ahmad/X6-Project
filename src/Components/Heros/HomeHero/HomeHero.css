@@ -139,7 +139,7 @@
   }
 }
 
-/* Media Queries */
+
 @media (max-width: 1440px) {
   .kr-subcontainer-1 {
     height: 699px;
@@ -153,7 +153,6 @@
     padding: 0 150px;
     bottom: -25%;
   }
-
 
   .playImg {
     width: 24px;

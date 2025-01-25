@@ -82,7 +82,7 @@ export default function CardSlider({
   };
 
   return (
-    <div className="sliderContainer">
+    <div className={page ==="home"? "sliderContainer": "moviesSliderContainer"}>
       <div
         className="controlsWrapper"
         style={{

@@ -1,8 +1,9 @@
-.sliderContainer {
+.sliderContainer,.moviesSliderContainer  {
   position: relative;
+}
+.moviesSliderContainer {
   padding-top: 50px;
 }
-
 .controlsWrapper {
   position: absolute;
   display: flex;

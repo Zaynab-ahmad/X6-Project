@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* flex-wrap: wrap; */
   padding-top: 40px;
   padding-bottom: 40px;
   border-top: 1px solid var(--black-shade15);
@@ -174,7 +173,7 @@
   }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 576px) {
   .showsEpisodesZA {
     padding-top: 20px;
     padding-bottom: 20px;

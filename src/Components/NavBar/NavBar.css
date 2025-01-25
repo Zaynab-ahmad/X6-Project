@@ -29,9 +29,8 @@
 
 .kr-navigation-container {
   padding: 10px 40px 10px 10px !important;
-
   background-color: #0f0f0f !important;
-  border: solid 4px #1f1f1f !important;
+  outline: solid 4px #1f1f1f !important;
 
   border-radius: 12px !important;
 

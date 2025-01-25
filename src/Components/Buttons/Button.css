@@ -14,12 +14,14 @@
 .mainButton:hover {
   filter: brightness(0.8);
 }
+
 @media (min-width: 1441px) and (max-width: 1690px) {
   .mainButton {
     padding: 17px 14px !important;
     font-size: 16px;
   }
 }
+
 @media (max-width: 1440px) {
   .mainButton {
     font-size: 14px;
@@ -30,11 +32,13 @@
     border-radius: 6px;
   }
 }
+
 @media (min-width: 768px) and (max-width: 1290px) {
   .mainButton {
     padding: 12px 9px !important;
   }
 }
+
 @media (max-width: 576px) {
   .fullWidth {
     width: 100% !important;

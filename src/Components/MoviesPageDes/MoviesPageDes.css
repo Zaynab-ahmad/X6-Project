@@ -32,7 +32,7 @@
   }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 576px) {
   .moviesPageDes {
     padding: 24px;
     gap: 8px;

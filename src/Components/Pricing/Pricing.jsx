@@ -4,6 +4,7 @@ import PlanCard from "../Cards/PlanCard/PlanCard";
 import HomeMoviesAndShowsTitle from "../SharedTitlesAndParagraph/HomeMoviesAndShows/HomeMoviesAndShowsTitle";
 import HomeParagraph from "../SharedTitlesAndParagraph/HomeParagraph/HomeParagraph";
 import "./Pricing.css";
+import ScrollAnimation from "../ScrollAnimation/ScrollAnimation";
 
 function Pricing() {
   const [isMonthly, setIsMonthly] = useState(true);

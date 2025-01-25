@@ -18,6 +18,11 @@
   .moviesSectionZA {
     padding: 40px;
   }
+  .moviesBadgeZA {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 8px 20px;
+  }
 }
 @media (max-width: 576px) {
   .moviesSectionZA {

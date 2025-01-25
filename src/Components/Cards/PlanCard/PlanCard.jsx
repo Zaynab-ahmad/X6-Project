@@ -1,7 +1,6 @@
 import MainButton from "../../Buttons/Button.jsx";
 import { Card, Col } from "react-bootstrap";
 import "./PlanCard.css";
-
 export default function PlanCard({ plans, isMonthly }) {
   return plans.map((plan, index) => {
     const price = isMonthly ? plan.monthlyPrice : plan.yearlyPrice;
@@ -28,24 +27,22 @@ export default function PlanCard({ plans, isMonthly }) {
               </div>
               <div className="planButtons d-flex justify-content-between align-items-center">
                 <div className="planButton">
-
-                <MainButton
-                  text="Start a Free Trial"
-                  isFullWidth={false}
-                  isSmallerBorderRaduis={true}
-                  isBlack={true}
-                  paddingType="type2"
-                />
+                  <MainButton
+                    text="Start a Free Trial"
+                    isFullWidth={false}
+                    isSmallerBorderRaduis={true}
+                    isBlack={true}
+                    paddingType="type2"
+                  />
                 </div>
                 <div className="planButton">
-
-                <MainButton
-                  text="Choose Plan"
-                  isFullWidth={false}
-                  isSmallerBorderRaduis={true}
-                  isBlack={false}
-                  paddingType="type2"
-                />
+                  <MainButton
+                    text="Choose Plan"
+                    isFullWidth={false}
+                    isSmallerBorderRaduis={true}
+                    isBlack={false}
+                    paddingType="type2"
+                  />
                 </div>
               </div>
             </div>
